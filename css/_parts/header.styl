@@ -1,11 +1,21 @@
 @import 'settings'
 @import 'colors'
 
+$home_header_img_path = $base_url '/assets/img/mountain_placeholder.jpg'
+
 .header__home
-  background-image: url($base_url '/assets/img/mountain-placeholder.jpg')
+  background-image: url($home_header_img_path)
   background-position: center
   background-size: cover
   height: 80vh
+  position: relative
 
 .header__page
   height: 50vh
+
+.header__mountain-profile
+  position: absolute
+  width: 100%
+  z-index: 2
+  bottom: 0
+  left: 0
