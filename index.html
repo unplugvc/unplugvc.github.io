@@ -42,8 +42,20 @@ layout: home
     <div class="general__spacer--big"></div>
     <div class="row">
       <div class="col-12">
-        {% include components/headings.html negative="true" big="OUR PHILOSOPHY" small="Your home for a weekend, in the mountains" %}
+        {% include components/headings.html 
+          negative="true" 
+          big="OUR PHILOSOPHY" 
+          small="Your home for a weekend, in the mountains"
+        %}
       </div>
+    </div>
+    <div class="general__spacer"></div>
+    <div class="row">
+      {% for p in site.data.philosophies %}
+        <div class="col-3">
+          {% include components/card.html title=p.title text=p.text %}
+        </div>
+      {% endfor %}
     </div>
   </div>
 </div>
