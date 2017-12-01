@@ -55,12 +55,15 @@
   font-weight: 300
   margin-top: 40px
 
+.text--small
+  @extend .text
+  font-size: 16px
+
 .general__spacer
   height: 46px
 
-.general__spacer--big
-  height: 250px
-
+// .general__spacer--big
+// height: 250px
 .quotes
   margin-top: 35px
 
@@ -84,18 +87,42 @@
   right: 0
 
 /*
-  Cards
+   Cards
 */
-
-.card
+.card__philosophies
+  background-color: $white
   border-radius: 8px
-  min-height: 236px
   box-shadow: $card-shadow
+  height: 268px
   margin-top: 24px
 
 .card__header
-  position: relative
+  border-top-left-radius: 8px
+  border-top-right-radius: 8px
   height: 50% - 8px
+  position: relative
+  width: 100%
+
+  .img-overlay
+    border-top-left-radius: 8px
+    border-top-right-radius: 8px
+
+.card__header--title
+  color: $white
+  position: absolute
+  padding: 0 16px
+  bottom: 16px
+  z-index: 2
+  margin-bottom: 0
+
+.card__separator
+  background-image: linear-gradient(-225deg, #AE8A61 0, #73733C 100%)
+  height: 8px
+  width: 100%
 
 .card__body
   padding: 16px 16px 22px 16px
+
+  p
+    margin-bottom: 0
+    margin-top: 0

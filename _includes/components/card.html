@@ -1,9 +1,10 @@
-<div class="card">
+<div class="card__{{ include.type }}">
   <div class="card__header">
-    <p>{{ include.title }}</p>
+    <p class="card__header--title">{{ include.title }}</p>
     <div class="img-overlay"></div>
   </div>
+  <div class="card__separator"></div>
   <div class="card__body">
-    <p>{{ include.text }}</p>
+    <p class="text--small">{{ include.text }}</p>
   </div>
 </div>

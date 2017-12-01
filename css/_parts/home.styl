@@ -2,10 +2,15 @@
 
 $row_background_img_path = $base_url '/assets/img/cartography_background.png'
 
-
 .our-philosophy
   background-image: url($row_background_img_path)
-  min-height: 200px
-  background-size: cover
   background-position: top
+  background-size: cover
   margin-top: -60px
+  min-height: 200px
+  padding-top: 250px
+  padding-bottom: 50px
+
+@media (min-width: 1600px)
+  .our-philosophy
+    padding-top: 400px
