@@ -36,6 +36,18 @@
   font-weight: 500
   letter-spacing: 1px
 
+.title--first--negative
+  @extend .title--first
+  color: $white
+
+.title--second--negative
+  @extend .title--second
+  color: $white
+
+.title--third--negative
+  @extend .title--third
+  color: $white
+
 .text
   color: $black-default
   font-family: 'Gibson', sans-serif
@@ -45,6 +57,9 @@
 
 .general__spacer
   height: 46px
+
+.general__spacer--big
+  height: 250px
 
 .quotes
   margin-top: 35px
@@ -67,3 +82,11 @@
 .quotes__down
   position: absolute
   right: 0
+
+/*
+  Cards
+*/
+
+.card
+  border-radius: 8px
+  min-height: 200px
