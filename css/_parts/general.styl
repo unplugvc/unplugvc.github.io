@@ -96,7 +96,12 @@
   height: 268px
   margin-top: 24px
 
+  .img-overlay
+    background-image: $card-image-gradient
+
 .card__header
+  background-position: center
+  background-size: cover
   border-top-left-radius: 8px
   border-top-right-radius: 8px
   height: 50% - 8px
@@ -108,12 +113,13 @@
     border-top-right-radius: 8px
 
 .card__header--title
-  color: $white
-  position: absolute
-  padding: 0 16px
   bottom: 16px
-  z-index: 2
+  color: $white
+  font-family: 'Gibson', sans-serif
   margin-bottom: 0
+  padding: 0 16px
+  position: absolute
+  z-index: 2
 
 .card__separator
   background-image: linear-gradient(-225deg, #AE8A61 0, #73733C 100%)

@@ -53,7 +53,7 @@ layout: home
     <div class="row">
       {% for p in site.data.philosophies %}
         <div class="col-3">
-          {% include components/card.html type="philosophies" title=p.title text=p.text %}
+          {% include components/card.html type="philosophies" title=p.title text=p.text img=p.img %}
         </div>
       {% endfor %}
     </div>
