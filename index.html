@@ -81,7 +81,13 @@ layout: home
         per day, per guest." %}
       </div>
       <div class="col-6">
-          {% include components/card.html type="location" title="Tierser Alpl Alpine Refuge" subtitle="Trentino - Alto  Adige, Italy" img="1.png" %}
+        {% assign current_event = site.data.events[0] %}
+        {% 
+          include components/card.html type="location" title=current_event.title subtitle=current_event.location img=current_event.image
+          altitude=current_event.caratteristics.altitude
+          cooking=current_event.caratteristics.cooking
+          beds=current_event.caratteristics.beds
+        %}
       </div>
     </div>
   </div>
@@ -106,22 +112,22 @@ layout: home
     </a>
   </div>
   <div id="slider" class="carousel__home-slider_2">
-      <a data-fancybox="gallery" href="{{"/assets/img/home_carousel/big/1-big.jpg" | relative_url }}" data-caption="This image has a caption">
-        <img src="{{"/assets/img/home_carousel/1-small.jpg" | relative_url }}" alt="">
-      </a>
-      <a data-fancybox="gallery" href="{{"/assets/img/home_carousel/big/2-big.jpg" | relative_url }}" data-caption="This image has a caption">
-        <img src="{{"/assets/img/home_carousel/2-small.jpg" | relative_url }}" alt="">
-      </a>
-      <a data-fancybox="gallery" href="{{"/assets/img/home_carousel/big/3-big.jpg" | relative_url }}" data-caption="This image has a caption">
-        <img src="{{"/assets/img/home_carousel/3-small.jpg" | relative_url }}" alt="">
-      </a>
-      <a data-fancybox="gallery" href="{{"/assets/img/home_carousel/big/4-big.jpg" | relative_url }}" data-caption="This image has a caption">
-        <img src="{{"/assets/img/home_carousel/4-small.jpg" | relative_url }}" alt="">
-      </a>
-      <a data-fancybox="gallery" href="{{"/assets/img/home_carousel/big/5-big.jpg" | relative_url }}" data-caption="This image has a caption">
-        <img src="{{"/assets/img/home_carousel/5-small.jpg" | relative_url }}" alt="">
-      </a>
-    </div>
+    <a data-fancybox="gallery" href="{{"/assets/img/home_carousel/big/1-big.jpg" | relative_url }}" data-caption="This image has a caption">
+      <img src="{{"/assets/img/home_carousel/1-small.jpg" | relative_url }}" alt="">
+    </a>
+    <a data-fancybox="gallery" href="{{"/assets/img/home_carousel/big/2-big.jpg" | relative_url }}" data-caption="This image has a caption">
+      <img src="{{"/assets/img/home_carousel/2-small.jpg" | relative_url }}" alt="">
+    </a>
+    <a data-fancybox="gallery" href="{{"/assets/img/home_carousel/big/3-big.jpg" | relative_url }}" data-caption="This image has a caption">
+      <img src="{{"/assets/img/home_carousel/3-small.jpg" | relative_url }}" alt="">
+    </a>
+    <a data-fancybox="gallery" href="{{"/assets/img/home_carousel/big/4-big.jpg" | relative_url }}" data-caption="This image has a caption">
+      <img src="{{"/assets/img/home_carousel/4-small.jpg" | relative_url }}" alt="">
+    </a>
+    <a data-fancybox="gallery" href="{{"/assets/img/home_carousel/big/5-big.jpg" | relative_url }}" data-caption="This image has a caption">
+      <img src="{{"/assets/img/home_carousel/5-small.jpg" | relative_url }}" alt="">
+    </a>
+  </div>
   <img class="carousel__home__mountain-profile" src="{{"/assets/img/mountain_profile_2.svg" | relative_url }}" alt="">
 </div>
 
@@ -138,9 +144,11 @@ layout: home
           you want it!
         </p>
       </div>
-      <div class="col-12">
-        line
-      </div>
+    </div>
+  </div>
+  <div class="schedule__line-container">
+    <div class="container">
+      asdf
     </div>
   </div>
 </div>
