@@ -1,0 +1,37 @@
+[
+  {
+    "title": "Amazing traditional food",
+    "text":
+      "Enjoy 3 days of authentic italian mountain food, straight from ancient, simpler times.",
+    "img": "1.png"
+  },
+  {
+    "title": "Speak the same language",
+    "text":
+      "The event is invite-only and you will spend time with like-minded but diverse and extremely impressive people.",
+    "img": "1.png"
+  },
+  {
+    "title": "Professional mountain guide",
+    "text":
+      "We will be joined by professional, licensed mountain guides. They will help us explore the trails and will be able to answer.",
+    "img": "1.png"
+  },
+  {
+    "title": "Freedom from your phone",
+    "text":
+      "Meet people in total serendipity and take time for yourself. It’s time to loosen your relationship with your mobile.",
+    "img": "1.png"
+  },
+  {
+    "title": "Night sky exploration",
+    "text":
+      "Bozen's planetarium astronomers will guide us in a night-time exploration to understand the stars above us.",
+    "img": "1.png"
+  },
+  {
+    "title": "Morning yoga",
+    "text": "We are bringing a professional yoga and meditation teacher.",
+    "img": "1.png"
+  }
+]

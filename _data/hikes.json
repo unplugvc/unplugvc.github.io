@@ -1,0 +1,7 @@
+[
+  { "icon": "time.png", "title": "TIME", "text": "2.5 hours" },
+  { "icon": "distance.png", "title": "DISTANCE", "text": "14.3 km" },
+  { "icon": "difficulty.png", "title": "DIFFICULTY", "text": "Low" },
+  { "icon": "people.png", "title": "GROUP SIZE", "text": "70 people" },
+  { "icon": "time.png", "title": "DAYS", "text": "3 days" }
+]

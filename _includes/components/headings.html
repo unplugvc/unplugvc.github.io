@@ -1,0 +1,8 @@
+<div>
+  <h3 {% if include.negative %} class="title--third--negative" {% else %} class="title--third" {% endif %}>
+    {{include.small}}
+  </h3>
+  <h1 {% if include.negative %} class="title--first--negative" {% else %} class="title--first" {% endif %}>
+    {{include.big}}
+  </h1>
+</div>

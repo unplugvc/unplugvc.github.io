@@ -1,7 +1,155 @@
+--- 
+layout: home 
 ---
-layout: home
----
+<div class="general__spacer">
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      {% include components/headings.html big="HOW WAS IT?" small="A weekend to unplug and connect." %}
+    </div>
+  </div>
+</div>
 
-StyLivJek
+<div class="container">
+  <div class="row how-it-was">
+    <div class="col-5">
+      <h2 class="title--second">Another conference?</h2>
+      <p class="text">
+        This is not a conference. It is a weekend in the mountains, with serious hiking and bunk bed sleeping.
+      </p>
+      <p class="text">
+        It is an occasion to really deeply connect with fellow entrepreneurs and investors, but most of all to feel the pull of nature,
+        enjoying the silence and solitude that you can only get by being in the middle of the mountains.
+      </p>
+    </div>
+    <div class="col-1">
+    </div>
+    <div class="col-6">
+      {% include components/quotes.html quote="We will spend 3 nights in the beautiful Dolomites, sleeping at 2,400m high up where
+      you can only hear your own breath." %}
+      <p class="text">
+        The event is deliberately light in its schedule, to maximize the amount of time you can spend actually getting to know the
+        other participants, as well as meditating with yourself.
+      </p>
+    </div>
+  </div>
+</div>
 
-A jekyll configuration boilerplate
+<div class="our-philosophy">
+  <div class="container">
+    <div class="general__spacer--big"></div>
+    <div class="row">
+      <div class="col-12">
+        {% include components/headings.html negative="true" big="OUR PHILOSOPHY" small="Your home for a weekend, in the mountains"
+        %}
+      </div>
+    </div>
+    <div class="general__spacer"></div>
+    <div class="row">
+      {% for p in site.data.philosophies %}
+      <div class="col-3">
+        {% include components/card.html type="philosophies" title=p.title text=p.text img=p.img %}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+<div class="hike">
+  <div class="container">
+    <h1 class="title--first--negative">THE HIKE</h1>
+  </div>
+  {% include components/hike.html %}
+</div>
+
+<div class="location">
+  <div class="container">
+    <div class="row">
+      <div class="col-6">
+        {% include components/headings.html big="THE LOCATION" small="A refuge, but with comfort" %}
+        <p class="text">
+          We have chosen the best of the best. The Tierser Alpl mountain refuge sits on top of Sieser Alm, which is the largest high-altitude
+          Alpine meadow in Europe.
+        </p>
+        <p class="text">
+          The refuge is an historic hut used by mountaineers for decades, but has been completely restored and remodeled into a marvel
+          of wooden architecture.
+        </p>
+        {% include components/quotes.html quote="No need to bring a sleep bag, everything is ready for you. 
+        We also negotiated 1 hot shower 
+        per day, per guest." %}
+      </div>
+      <div class="col-6">
+          {% include components/card.html type="location" title="Tierser Alpl Alpine Refuge" subtitle="Trentino - Alto  Adige, Italy" img="1.png" %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="carousel__home">
+  <div class="carousel__home-slider">
+    <div><img src="{{"/assets/img/home_carousel/1.png" | relative_url }}" alt=""></div>
+    <div><img src="{{"/assets/img/home_carousel/2.png" | relative_url }}" alt=""></div>
+    <div><img src="{{"/assets/img/home_carousel/3.png" | relative_url }}" alt=""></div>
+    <div><img src="{{"/assets/img/home_carousel/4.png" | relative_url }}" alt=""></div>
+    <div><img src="{{"/assets/img/home_carousel/5.png" | relative_url }}" alt=""></div>
+  </div>
+  <img class="carousel__home__mountain-profile" src="{{"/assets/img/mountain_profile_2.svg" | relative_url }}" alt="">
+</div>
+
+
+<div class="schedule">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        {% include components/headings.html big="THE SCHEDULE" small="Your home for a weekend, in the mountains" %}
+      </div>
+      <div class="col-6">
+        <p class="text">
+          We will meet at Monte Bianco to ski altogether and have fun and stuff, you know. Hi Stefano let’s do this website I know
+          you want it!
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="speakers">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+      {% include components/headings.html big="SPEAKERS" small="Amazing speakers for an amazing event" %}
+      </div>
+      <div class="col-12">
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="attendees">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+      {% include components/headings.html big="THE ATTENDEES" small="Amazing attendees" %}
+      </div>
+      <div class="col-12">
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="organized">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+      {% include components/headings.html big="ORGANIZED BY" small="The dream team of the event" %}
+      </div>
+      <div class="col-12">
+        
+      </div>
+    </div>
+  </div>
+</div>
