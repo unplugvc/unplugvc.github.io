@@ -1,6 +1,6 @@
 ---
 ---
-"---"
+'---';
 
 $('.carousel__home-slider').slick({
   dots: false,
@@ -14,5 +14,5 @@ $('.carousel__home-slider').slick({
   autoplay: true,
   autoplaySpeed: 2000,
   infinite: true,
-  speed: 500  
+  speed: 500
 });
