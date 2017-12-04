@@ -1,7 +1,6 @@
 --- 
 layout: home 
 ---
-
 <div class="general__spacer">
 </div>
 <div class="container">
@@ -42,27 +41,48 @@ layout: home
     <div class="general__spacer--big"></div>
     <div class="row">
       <div class="col-12">
-        {% include components/headings.html 
-          negative="true" 
-          big="OUR PHILOSOPHY" 
-          small="Your home for a weekend, in the mountains"
+        {% include components/headings.html negative="true" big="OUR PHILOSOPHY" small="Your home for a weekend, in the mountains"
         %}
       </div>
     </div>
     <div class="general__spacer"></div>
     <div class="row">
       {% for p in site.data.philosophies %}
-        <div class="col-3">
-          {% include components/card.html type="philosophies" title=p.title text=p.text img=p.img %}
-        </div>
+      <div class="col-3">
+        {% include components/card.html type="philosophies" title=p.title text=p.text img=p.img %}
+      </div>
       {% endfor %}
     </div>
   </div>
 </div>
 
 <div class="hike">
-    <div class="container">
-      <h1 class="title--first--negative">THE HIKE</h1>
+  <div class="container">
+    <h1 class="title--first--negative">THE HIKE</h1>
+  </div>
+  {% include components/hike.html %}
+</div>
+
+<div class="location">
+  <div class="container">
+    <div class="row">
+      <div class="col-6">
+        {% include components/headings.html big="THE LOCATION" small="A refuge, but with comfort" %}
+        <p class="text">
+          We have chosen the best of the best. The Tierser Alpl mountain refuge sits on top of Sieser Alm, which is the largest high-altitude
+          Alpine meadow in Europe.
+        </p>
+        <p class="text">
+          The refuge is an historic hut used by mountaineers for decades, but has been completely restored and remodeled into a marvel
+          of wooden architecture.
+        </p>
+        {% include components/quotes.html quote="No need to bring a sleep bag, everything is ready for you. 
+        We also negotiated 1 hot shower 
+        per day, per guest." %}
+      </div>
+      <div class="col-6">
+          {% include components/card.html type="location" title="Tierser Alpl Alpine Refuge" subtitle="Trentino - Alto  Adige, Italy" img="1.png" %}
+      </div>
     </div>
-    {% include components/hike.html %}
+  </div>
 </div>

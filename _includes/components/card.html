@@ -1,10 +1,48 @@
-<div class="card__{{ include.type }}">
-  <div class="card__header" style="background-image: url({{site.baseurl}}/assets/img/pholosophies_cards/{{ include.img}})">
-    <p class="card__header--title">{{ include.title }}</p>
+<div class="card__{{include.type}}">
+  {% if include.type == "philosophies" %}
+  <div class="card__header" style="background-image: url({{site.baseurl}}/assets/img/pholosophies_cards/{{include.img}})">
+    <p class="card__header--title">{{include.title}}</p>
+    {% elsif include.type == "location" %}
+    <div class="card__header" style="background-image: url({{site.baseurl}}/assets/img/location/{{include.img}})">
+      <p class="card__header--title">{{include.title}}</p>
+      <p class="card__header--subtitle">{{include.subtitle}}</p>
+  {% endif %}
     <div class="img-overlay"></div>
   </div>
   <div class="card__separator"></div>
   <div class="card__body">
-    <p class="text--small">{{ include.text }}</p>
+    {% if include.type == "philosophies" %}
+      <p class="text--small">{{include.text}}</p>
+    {% elsif include.type == "location" %}
+      <div class="row location__carateristics">
+        <div class="col-4 location__column-separator">
+          <img src="{{"/assets/img/icons/location_card/altitude.png" | relative_url }}" alt="">
+          <h2 class="title--second">
+            title
+          </h2>
+          <p class="text">
+            asdf
+          </p>
+        </div>
+        <div class="col-4 location__column-separator">
+          <img src="{{"/assets/img/icons/location_card/cooking.png" | relative_url }}" alt="">
+          <h2 class="title--second">
+            p.title
+          </h2>
+          <p class="text">
+            asdf
+          </p>
+        </div>
+        <div class="col-4">
+          <img src="{{"/assets/img/icons/location_card/beds.png" | relative_url }}" alt="">
+          <h2 class="title--second">
+            p.title
+          </h2>
+          <p class="text">
+            asdf
+          </p>
+        </div>
+      </div>
+    {% endif %}
   </div>
 </div>
