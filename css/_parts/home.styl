@@ -10,19 +10,43 @@ $row_background_img_path = $base_url '/assets/img/cartography_background.png'
   background-size: cover
   margin-top: -60px
   min-height: 200px
+  padding-bottom: 250px
   padding-top: 250px
-  padding-bottom: 150px
 
-// .hike
-//   min-height: 200px
+.hike
+  height: 200px
+  position: relative
+
+  .container
+    position: relative
+
+  .title--first--negative
+    left: 15px
+    position: absolute
+    top: -144px
+    z-index: 2
 
 .hike__card
+  background: $white
+  border-radius: 8px
   box-shadow: $card-shadow
   height: 200px
-  background: $white
+  position: absolute
+  text-align: center
+  top: -100px
+  width: 100%
 
+  .title--second
+    margin-top: 8px
+    margin-bottom: 0
+    font-size: 2vw
+  .text
+    margin-top: 4px
+    font-weight: 500
 
-
+  img
+    display: table
+    margin: 35px auto 0 auto
 
 @media (min-width: 1600px)
   .our-philosophy

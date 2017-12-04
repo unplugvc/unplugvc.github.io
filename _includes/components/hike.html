@@ -4,7 +4,21 @@
       <div class="col-1"></div>
       {% for p in site.data.hikes %}
       <div class="col-2">
-        <img src="{{"/assets/img/icons/hike/" | relative_url }}{{p.icon}}" alt=""> {{p.icon}} {{p.title}} {{p.text}}
+        <div class="row">
+          <div class="col-12">
+            <img src="{{"/assets/img/icons/hike/" | relative_url }}{{p.icon}}" alt=""> 
+          </div>
+          <div class="col-12">
+            <h2 class="title--second">
+              {{p.title}}
+            </h2>
+          </div>
+          <div class="col-12">
+            <p class="text">
+              {{p.text}}
+            </p>
+          </div>
+        </div>
       </div>
       {% endfor %}
       <div class="col-1"></div>
