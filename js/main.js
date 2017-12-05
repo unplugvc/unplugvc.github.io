@@ -41,7 +41,6 @@ $(document).ready(() => {
  * Scroll listener
  */
 $(document).scroll(() => {
-  console.log($(document).scrollTop());
   if ($(document).scrollTop() > 100) {
     $('.top_navbar').addClass('negative');
   } else {
