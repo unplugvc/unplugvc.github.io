@@ -3,70 +3,139 @@
 
 $home_header_img_path = $base_url '/assets/img/mountain_placeholder.jpg'
 
-.header__home
-  background-image: url($home_header_img_path)
-  background-position: center
-  background-size: cover
-  height: 80vh
-  overflow-x: hidden
-  position: relative
+@media (min-width: 320px)
+  .header__home
+    background-image: url($home_header_img_path)
+    background-position: center
+    background-size: cover
+    height: 98vh
+    overflow-x: hidden
+    position: relative
 
-.header__home-content
-  // background-color: green
-  height: 31vh
-  margin-top: -15.5vh
-  position: absolute
-  top: 50%
-  width: 100%
-  z-index: 2
+  .header__home-content
+    height: 56vh
+    margin-top: -23vh
+    position: absolute
+    top: 50%
+    width: 100%
+    z-index: 2
 
-.header__home-content--title-big
-  color: #FFFFFF
-  font-family: 'Nexa'
-  font-size: 48px
-  font-weight: 900
-  line-height: 48px
+  .header__home-content--title-big
+    color: #FFFFFF
+    font-family: 'Nexa'
+    font-size: 24px
+    font-weight: 900
+    line-height: 24px
 
-.header__home-content--title-medium
-  @extend .header__home-content--title-big
-  font-size: 40px
-  line-height: 40px
+  .header__home-content--title-medium
+    @extend .header__home-content--title-big
+    font-size: 18px
+    line-height: 18px
 
-  &.gibson
+    &.gibson
+      font-family: 'Gibson', sans-serif
+      font-size: 18px
+      font-weight: 400
+
+  .header__home-content--title-small
+    @extend .header__home-content--title-big
+    font-family: 'Gibson'
+    font-size: 20px
+    font-weight: 300
+    line-height: 20px
+    margin: 40px 0 60px 0
+
+  .header__home-content--button
+    background-color: $red
+    border-radius: 8px
+    box-shadow: 0 2px 8px 0 $black-default
+    color: $white
+    display: block
     font-family: 'Gibson', sans-serif
-    font-size: 32px
+    font-size: 20px
     font-weight: 400
+    height: 64px
+    line-height: 64px
+    margin-top: 44px
+    text-align: center
+    width: 198px
 
-.header__home-content--title-small
-  @extend .header__home-content--title-big
-  font-family: 'Gibson'
-  font-size: 26px
-  font-weight: 400
-  line-height: 26px
-  margin: 40px 0 60px 0
+  .header__page
+    background-color: green
+    height: 50vh
 
-.header__home-content--button
-  background-color: $red
-  border-radius: 8px
-  box-shadow: 0 2px 8px 0 $black-default
-  color: $white
-  display: block
-  font-family: 'Gibson', sans-serif
-  font-size: 26px
-  font-weight: 400
-  height: 80px
-  line-height: 80px
-  margin-top: 44px
-  text-align: center
-  width: 248px
+  .header__mountain-profile
+    bottom: 0
+    left: -450px
+    position: absolute
+    width: 400%
+    z-index: 2
 
-.header__page
-  background-color: green
-  height: 50vh
+@media (min-width: 1024px)
+  .header__home
+    background-image: url($home_header_img_path)
+    background-position: center
+    background-size: cover
+    height: 80vh
+    overflow-x: hidden
+    position: relative
 
-.header__mountain-profile
-  bottom: 0
-  left: 0
-  position: absolute
-  width: 101%
-  z-index: 2
+  .header__home-content
+    // background-color: green
+    height: 31vh
+    margin-top: -15.5vh
+    position: absolute
+    top: 50%
+    width: 100%
+    z-index: 2
+
+  .header__home-content--title-big
+    color: #FFFFFF
+    font-family: 'Nexa'
+    font-size: 48px
+    font-weight: 900
+    line-height: 48px
+
+  .header__home-content--title-medium
+    @extend .header__home-content--title-big
+    font-size: 40px
+    line-height: 40px
+
+    &.gibson
+      font-family: 'Gibson', sans-serif
+      font-size: 32px
+      font-weight: 400
+
+  .header__home-content--title-small
+    @extend .header__home-content--title-big
+    font-family: 'Gibson'
+    font-size: 26px
+    font-weight: 400
+    line-height: 26px
+    margin: 40px 0 60px 0
+
+  .header__home-content--button
+    background-color: $red
+    border-radius: 8px
+    box-shadow: 0 2px 8px 0 $black-default
+    color: $white
+    display: block
+    font-family: 'Gibson', sans-serif
+    font-size: 26px
+    font-weight: 400
+    height: 80px
+    line-height: 80px
+    margin-top: 44px
+    text-align: center
+    width: 248px
+
+  .header__page
+    background-color: green
+    height: 50vh
+
+  .header__mountain-profile
+    bottom: 0
+    left: 0
+    position: absolute
+    width: 101%
+    z-index: 2
