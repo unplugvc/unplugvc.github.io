@@ -1,10 +1,21 @@
 <nav class="top_navbar">
   <div class="container">
-    <ul class="top_navbar__menu">
-      <li>About</li>
-      <li>Schedule</li>
-      <li>Past editions</li>
-      <li>Contact</li>
-    </ul>
+    <div class="row">
+      <div class="col-2">
+        <div class="top_navbar__logo">
+          <a href="{{ site.baseurl }}/">
+            <img src="{{'/assets/img/icons/logo/logo.png' | relative_url }}" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="col-10">
+        <ul class="top_navbar__menu">
+          <li><a href="{{ site.baseurl }}/about">About</a></li>
+          <li><a href="{{ site.baseurl }}/schedule">Schedule</a></li>
+          <li><a href="{{ site.baseurl }}/past_editions">Past editions</a></li>
+          <li><a href="{{ site.baseurl }}/contacts">Contact</a></li>
+        </ul>
+      </div>
+    </div>
   </div>
 </nav>

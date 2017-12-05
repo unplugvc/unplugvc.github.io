@@ -1,10 +1,9 @@
 ---
 ---
-'---';
-
-
+/**
+ * Document ready
+ */
 $(document).ready(() => {
-
   $('.carousel__home-slider_1').slick({
     dots: false,
     speed: 300,
@@ -30,15 +29,22 @@ $(document).ready(() => {
     infinite: true,
     speed: 500
   });
-  
-  $('[data-fancybox="gallery"]').not($('.slick-cloned')).fancybox({
-    buttons : [
-      'slideShow',
-      'fullScreen',
-      'thumbs',
-      'share',
-      'close'
-    ]
-  });
 
-})
+  $('[data-fancybox="gallery"]')
+    .not($('.slick-cloned'))
+    .fancybox({
+      buttons: ['slideShow', 'fullScreen', 'thumbs', 'share', 'close']
+    });
+});
+
+/**
+ * Scroll listener
+ */
+$(document).scroll(() => {
+  console.log($(document).scrollTop());
+  if ($(document).scrollTop() > 100) {
+    $('.top_navbar').addClass('negative');
+  } else {
+    $('.top_navbar').removeClass('negative');
+  }
+});

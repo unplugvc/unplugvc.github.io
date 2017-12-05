@@ -1,4 +1,7 @@
+@import 'settings'
 @import 'colors'
+
+$negative_logo_path = $base_url '/assets/img/icons/logo/logo_negative.png'
 
 .top_navbar
   background: transparent
@@ -8,7 +11,21 @@
   line-height: 116px
   position: fixed
   width: 100%
-  z-index: 2
+  z-index: 10
+
+  &.negative
+    background: $white
+    background-color: $white
+
+    .top_navbar__logo
+      img
+        content: url($negative_logo_path)
+        width: 136px
+
+    .top_navbar__menu
+      li
+        a
+          color: $black-default
 
 .top_navbar__menu
   float: right
@@ -17,5 +34,7 @@
 
   li
     float: left
-    padding-left: 50px
     font-size: 24px
+    padding-left: 50px
+    a
+      color: $white
