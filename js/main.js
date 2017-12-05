@@ -42,7 +42,7 @@ $(document).ready(() => {
  */
 $(document).scroll(() => {
   let limit = 100;
-  if ($(window).width() < 768) {
+  if ($(window).width() < 769) {
     limit = 0;
   }
 
@@ -57,27 +57,22 @@ $(document).scroll(() => {
 
 $('.open_menu').click(() => {
   /**
-   * Toggle the content
-   */
-  /**
    * Change the text of button menu content toggle
-   */
-  console.log($('.top_navbar--mobile-content.show'));
-  
+   */  
   if ($('.top_navbar--mobile-content.show').length) {
     $('.top_navbar--mobile-content').removeClass('show');
-    $('.open_menu').html('CLOSE');
+    $('.open_menu').html('MENU');
   } else {
     $('.top_navbar--mobile-content').addClass('show');
-    $('.open_menu').html('MENU');
+    $('.open_menu').html('CLOSE');
   }
 });
 
 
 var onResizeDebounced = debounce(() =>{
-  if ($(window).width() > 768) {
+  if ($(window).width() > 769) {
     $('.open_menu').html('MENU');
-    $('.top_navbar--mobile-content').hide();
+    $('.top_navbar--mobile-content').removeClass('show');
   }
 }, 250);
 

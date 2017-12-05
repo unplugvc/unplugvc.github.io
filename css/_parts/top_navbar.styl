@@ -24,12 +24,12 @@ $negative_logo_path = $base_url '/assets/img/icons/logo/logo_negative.png'
       font-size: 18px
       font-weight: 600
 
-    .top_navbar__menu
       a
         color: $white
         font-family: 'Gibson', sans-serif
 
-        &:focus
+        &:not([href]):not([tabindex]):focus,
+        &:not([href]):not([tabindex]):hover
           color: $white
 
     &.negative
@@ -69,7 +69,8 @@ $negative_logo_path = $base_url '/assets/img/icons/logo/logo_negative.png'
     &::-webkit-scrollbar-thumb
       background: transparent
 
-    .top_navbar__menu
+    .top_navbar__menu-list
+      color: $white
       list-style: none
 
       li
