@@ -1,6 +1,9 @@
---- 
-layout: home 
 ---
+layout: home
+---
+
+{% assign current_event = site.data.events[0] %}
+
 <div class="general__spacer">
 </div>
 <div class="container">
@@ -76,13 +79,12 @@ layout: home
           The refuge is an historic hut used by mountaineers for decades, but has been completely restored and remodeled into a marvel
           of wooden architecture.
         </p>
-        {% include components/quotes.html quote="No need to bring a sleep bag, everything is ready for you. 
-        We also negotiated 1 hot shower 
+        {% include components/quotes.html quote="No need to bring a sleep bag, everything is ready for you.
+        We also negotiated 1 hot shower
         per day, per guest." %}
       </div>
       <div class="col-6">
-        {% assign current_event = site.data.events[0] %}
-        {% 
+        {%
           include components/card.html type="location" title=current_event.title subtitle=current_event.location img=current_event.image
           altitude=current_event.caratteristics.altitude
           cooking=current_event.caratteristics.cooking
@@ -148,9 +150,35 @@ layout: home
   </div>
   <div class="schedule__line-container">
     <div class="container">
-      asdf
+      <div class="row">
+        <div class="col-2"></div>
+        {% for schedule in current_event.schedule %}
+          <div class="col-2">
+            {{schedule.day}}
+          </div>
+        {% endfor %}
+      </div>
     </div>
   </div>
+</div>
+
+<div class="container">
+  {% for schedule in current_event.schedule %}
+    {% for program in schedule.program %}
+      <div class="row">
+        <div class="col-2">{{program.time}}</div>
+        <div class="col-10">
+          <div class="col-12">
+            {{program.what}}
+          </div>
+          <div class="col-12">
+            {{program.description}}
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+    --
+  {% endfor %}
 </div>
 
 <div class="speakers">
@@ -160,7 +188,7 @@ layout: home
       {% include components/headings.html big="SPEAKERS" small="Amazing speakers for an amazing event" %}
       </div>
       <div class="col-12">
-        
+
       </div>
     </div>
   </div>
@@ -173,7 +201,7 @@ layout: home
       {% include components/headings.html big="THE ATTENDEES" small="Amazing attendees" %}
       </div>
       <div class="col-12">
-        
+
       </div>
     </div>
   </div>
@@ -186,7 +214,7 @@ layout: home
       {% include components/headings.html big="ORGANIZED BY" small="The dream team of the event" %}
       </div>
       <div class="col-12">
-        
+
       </div>
     </div>
   </div>

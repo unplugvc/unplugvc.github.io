@@ -7,6 +7,52 @@
       "altitude": "2240 mt",
       "cooking": "Traditional",
       "beds": "70 peope"
-    }
+    },
+    "schedule": [
+      {
+        "day": "THURSDAY, SEPT 14",
+        "program": [
+          {
+            "time": "8.00 AM",
+            "what": "Breakfast",
+            "description":
+              "Meet in the Hotel lobby and load up on energies for the day."
+          }
+        ]
+      },
+      {
+        "day": "FRIDAY, SEPT 15",
+        "program": [
+          {
+            "time": "8.00 AM",
+            "what": "Breakfast",
+            "description":
+              "Meet in the Hotel lobby and load up on energies for the day."
+          }
+        ]
+      },
+      {
+        "day": "SATURDAY, SEPT 16",
+        "program": [
+          {
+            "time": "8.00 AM",
+            "what": "Breakfast",
+            "description":
+              "Meet in the Hotel lobby and load up on energies for the day."
+          }
+        ]
+      },
+      {
+        "day": "SUNDAY, SEPT 17",
+        "program": [
+          {
+            "time": "8.00 AM",
+            "what": "Breakfast",
+            "description":
+              "Meet in the Hotel lobby and load up on energies for the day."
+          }
+        ]
+      }
+    ]
   }
 ]

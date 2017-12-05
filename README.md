@@ -1,9 +1,4 @@
-# StyLivJek
-
-Jeckyll boilerplate with support for:
-
-* Stylus
-* Livereload
+# Made with StyLivJek
 
 ## Install ruby dependencies
 
@@ -28,3 +23,11 @@ When merging on master branch it will deploy the resultant build.
 
 * `jekyll build`
 * drop `./_site` where you need
+
+## Modify data
+
+### Current event
+
+* The first element in the json *events.json* is the current event, 
+* If you need to modify it just modify the values or ad new elements (es.: new activity in *program*)
+* To create a new current event just copy&modify the old current event and put it at the first position in the json.
