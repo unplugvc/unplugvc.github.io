@@ -20,6 +20,13 @@ stylus:
   compress: true
   path: css
 
+page_gen:
+  - index_files: true
+    data: 'events'
+    template: 'event'
+    name: 'title'
+    dir: 'event'
+
 
 # Exclude from processing.
 exclude:
@@ -32,3 +39,4 @@ exclude:
   - vendor/gems/
   - vendor/ruby/
   - script
+  - rakefile

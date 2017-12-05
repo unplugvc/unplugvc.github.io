@@ -3,6 +3,7 @@
 @import 'colors'
 
 $row_background_img_path = $base_url '/assets/img/cartography_background.png'
+$row_schedule_line_img_path = $base_url '/assets/img/line.svg'
 
 .our-philosophy
   background-image: url($row_background_img_path)
@@ -52,43 +53,56 @@ $row_background_img_path = $base_url '/assets/img/cartography_background.png'
 .location
   margin-top: 100px
 
+  .card__header
+    height: 56%
+
   .card__body
-    height: 57%
+    padding: 5px 15px
     text-align: center
 
   .card__header--title
     bottom: 50px
     font-size: 26px
-    font-weight: 600
+    font-weight: 500
+    letter-spacing: 1px
+
+  .title--second
+    font-size: 2vw
+    margin-bottom: 0
+    margin-top: 8px
 
 .location__column-separator
   border-right: 1px solid #EAEAEA
   display: block
   height: 100%
-
-.title--second
-  font-size: 2vw
-  margin-bottom: 0
-  margin-top: 8px
+  padding-bottom: 22px
 
 .location__carateristics
   img
     display: table
     margin: 0 auto
+    margin-top: 25px
 
 .carousel__home
   margin-top: 150px
+  overflow-x: hidden
   position: relative
+  width: 100%
 
 .carousel__home__mountain-profile
   bottom: 0
   left: 0
   position: absolute
-  width: 100%
+  width: 101%
   z-index: 2
 
 .schedule
   margin-top: 60px
+
+  .schedule__line-container
+    margin-top: 50px
+    background-image: url($row_schedule_line_img_path)
+    height: 168px
 
 .speakers
   margin-top: 60px
@@ -102,3 +116,8 @@ $row_background_img_path = $base_url '/assets/img/cartography_background.png'
 @media (min-width: 1600px)
   .our-philosophy
     padding-top: 400px
+
+  .hike__card,
+  .location
+    .title--second
+      font-size: 1.6vw

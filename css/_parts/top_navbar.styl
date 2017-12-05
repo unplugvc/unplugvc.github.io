@@ -1,21 +1,108 @@
+@import 'settings'
 @import 'colors'
 
-.top_navbar
-  background: transparent
-  background-color: transparent
-  color: $white
-  height: 116px
-  line-height: 116px
-  position: fixed
-  width: 100%
-  z-index: 2
+$negative_logo_path = $base_url '/assets/img/icons/logo/logo_negative.png'
 
-.top_navbar__menu
-  float: right
-  list-style: none
-  padding-left: 0
+@media (min-width: 320px)
+  .top_navbar
+    display: none
 
-  li
-    float: left
-    padding-left: 50px
-    font-size: 24px
+  .top_navbar--mobile
+    background-color: $white
+    box-shadow: 0 2px 4px 0 rgba(51, 51, 51, 0.3)
+    height: 116px
+    line-height: 116px
+    padding: 0 25px
+    position: fixed
+    width: 100%
+    z-index: 10
+
+    .top_navbar__logo
+      img
+        content: url($negative_logo_path)
+        width: 100px
+
+    .top_navbar__menu
+      float: right
+      font-size: 18px
+      font-weight: 600
+
+    .top_navbar__menu
+      a
+        color: $black-default
+
+  .top_navbar--mobile-content
+    background-color: $white
+    border-top: 1px solid $grey-separator
+    box-shadow: 0 2px 4px 0 rgba(51, 51, 51, 0.3)
+    display: none
+    height: 80px
+    left: 0
+    overflow-x: scroll
+    position: fixed
+    top: 116px
+    white-space: nowrap
+    width: 100%
+    z-index: 10
+
+    &::-webkit-scrollbar
+      background: transparent
+      width: 0
+
+    &::-webkit-scrollbar-thumb
+      background: transparent
+
+    .top_navbar__menu
+      list-style: none
+
+      li
+        display: inline-block
+        font-size: 18px
+        line-height: 80px
+        padding-right: 24px
+
+        a
+          color: $black-default
+
+@media (min-width: 1024px)
+  .top_navbar--mobile,
+  .top_navbar--mobile-content
+    display: none
+
+  .top_navbar
+    background: transparent
+    background-color: transparent
+    color: $white
+    display: block
+    height: 116px
+    line-height: 116px
+    position: fixed
+    width: 100%
+    z-index: 10
+
+    &.negative
+      background: $white
+      background-color: $white
+
+      .top_navbar__logo
+        img
+          content: url($negative_logo_path)
+          width: 136px
+
+      .top_navbar__menu
+        li
+          a
+            color: $black-default
+
+  .top_navbar__menu
+    float: right
+    list-style: none
+    padding-left: 0
+
+    li
+      float: left
+      font-size: 24px
+      padding-left: 50px
+
+      a
+        color: $white

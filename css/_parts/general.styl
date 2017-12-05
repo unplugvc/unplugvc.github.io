@@ -2,6 +2,11 @@
 @import 'variables'
 @import 'fonts'
 
+body
+  text-rendering: optimizeLegibility
+  -moz-osx-font-smoothing: grayscale
+  -webkit-font-smoothing: antialiased
+
 .container__content
   background-color: white
   margin-top: 50px
@@ -144,4 +149,4 @@
 
 .card__location
   @extend .card__philosophies
-  height: 520px
+  height: 500px
