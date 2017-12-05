@@ -8,8 +8,6 @@ $negative_logo_path = $base_url '/assets/img/icons/logo/logo_negative.png'
     display: none
 
   .top_navbar--mobile
-    background-color: $white
-    box-shadow: 0 2px 4px 0 rgba(51, 51, 51, 0.3)
     height: 116px
     line-height: 116px
     padding: 0 25px
@@ -19,7 +17,6 @@ $negative_logo_path = $base_url '/assets/img/icons/logo/logo_negative.png'
 
     .top_navbar__logo
       img
-        content: url($negative_logo_path)
         width: 100px
 
     .top_navbar__menu
@@ -27,24 +24,43 @@ $negative_logo_path = $base_url '/assets/img/icons/logo/logo_negative.png'
       font-size: 18px
       font-weight: 600
 
-    .top_navbar__menu
       a
-        color: $black-default
+        color: $white
         font-family: 'Gibson', sans-serif
+
+        &:not([href]):not([tabindex]):focus,
+        &:not([href]):not([tabindex]):hover
+          color: $white
+
+    &.negative
+      background-color: $white
+      box-shadow: 0 2px 4px 0 rgba(51, 51, 51, 0.3)
+
+      .top_navbar__menu
+        a
+          color: $black-default
+
+      .top_navbar__logo
+        img
+          content: url($negative_logo_path)
 
   .top_navbar--mobile-content
     background-color: $white
     border-top: 1px solid $grey-separator
     box-shadow: 0 2px 4px 0 rgba(51, 51, 51, 0.3)
-    display: none
     height: 80px
-    left: 0
+    left: 100vw
     overflow-x: scroll
     position: fixed
     top: 116px
+    transition: left 0.35s ease
     white-space: nowrap
     width: 100%
     z-index: 10
+
+    &.show
+      left: 0
+      transition: left 0.35s ease
 
     &::-webkit-scrollbar
       background: transparent
@@ -53,7 +69,8 @@ $negative_logo_path = $base_url '/assets/img/icons/logo/logo_negative.png'
     &::-webkit-scrollbar-thumb
       background: transparent
 
-    .top_navbar__menu
+    .top_navbar__menu-list
+      color: $white
       list-style: none
 
       li
