@@ -47,3 +47,12 @@ $(document).scroll(() => {
     $('.top_navbar').removeClass('negative');
   }
 });
+
+$('.open_menu').click(() => {
+  $('.top_navbar--mobile-content').toggle();
+  if ($('.top_navbar--mobile-content').is(':visible')) {
+    $('.open_menu').html('CLOSE');
+  } else {
+    $('.open_menu').html('MENU');
+  }
+});
