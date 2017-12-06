@@ -125,9 +125,6 @@ $row_schedule_line_img_path = $base_url '/assets/img/line.svg'
     margin-top: 60px
 
     .schedule__line-container
-      background-image: url($row_schedule_line_img_path)
-      background-position: center
-      background-size: cover
       box-shadow: 0 4px 4px 0 rgba(51, 51, 51, 0.3)
       height: 60px
       margin-top: 50px
@@ -136,7 +133,13 @@ $row_schedule_line_img_path = $base_url '/assets/img/line.svg'
       overflow-x: auto
       overflow-y: hidden
       padding-left: 44px
+      position: relative
       white-space: nowrap
+
+      img
+        left: -40px
+        position: absolute
+        width: 120%
 
       &::-webkit-scrollbar
         background: transparent
@@ -150,6 +153,8 @@ $row_schedule_line_img_path = $base_url '/assets/img/line.svg'
         font-size: 28px
         margin-top: 0
         padding-right: 40px
+        position: relative
+        z-index: 2
 
         p
           line-height: 56px
@@ -253,11 +258,16 @@ $row_schedule_line_img_path = $base_url '/assets/img/line.svg'
     height: 490px
 
   .schedule__line-container
+    background-image: url($row_schedule_line_img_path)
+    background-position: center
+    background-size: cover
+
     .container
       height: 100%
 
   .schedule
     .schedule__line-container
+      box-shadow: none
       height: 220px
       margin-top: 50px
 
