@@ -18,6 +18,18 @@
             "what": "Breakfast",
             "description":
               "Meet in the Hotel lobby and load up on energies for the day."
+          },
+          {
+            "time": "9.30 AM",
+            "what": "Cable car for Seiser Alm",
+            "description":
+              "It's just a short walk to the cable car that will bring us to the meadow."
+          },
+          {
+            "time": "10.00 AM",
+            "what": "Hike to the Refuge",
+            "description":
+              "It's a 2.5-3h walk to the refuge. But it's a beautiful one."
           }
         ]
       },
