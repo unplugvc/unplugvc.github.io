@@ -8,6 +8,10 @@
     -moz-osx-font-smoothing: grayscale
     -webkit-font-smoothing: antialiased
 
+  a
+    &:hover
+      text-decoration: none
+
   .container__content
     background-color: white
     margin-top: 50px
@@ -187,6 +191,18 @@
 
   .title--third
     font-size: 20px
+
+  .title--first--negative
+    @extend .title--first
+    color: $white
+
+  .title--second--negative
+    @extend .title--second
+    color: $white
+
+  .title--third--negative
+    @extend .title--third
+    color: $white
 
   .text
     font-size: 20px

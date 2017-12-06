@@ -1,9 +1,9 @@
 <div class="container">
   <div class="hike__card">
     <div class="row">
-      <div class="col-1"></div>
+      <div class="col-sm-1"></div>
       {% for p in site.data.hikes %}
-      <div class="col-2">
+      <div class="col-6 col-sm-2">
         <div class="row">
           <div class="col-12">
             <img src="{{"/assets/img/icons/hike/" | relative_url }}{{p.icon}}" alt=""> 

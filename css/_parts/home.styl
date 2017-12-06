@@ -46,23 +46,24 @@ $row_schedule_line_img_path = $base_url '/assets/img/line.svg'
       position: relative
 
     .title--first--negative
-      left: 15px
+      left: 50px
       position: absolute
-      top: -144px
+      top: -126px
       z-index: 2
 
   .hike__card
     background: $white
     border-radius: 8px
     box-shadow: $card-shadow
-    height: 200px
+    height: 500px
+    left: 10%
     position: absolute
     text-align: center
     top: -100px
-    width: 100%
+    width: 80%
 
     .title--second
-      font-size: 2vw
+      font-size: 16px
       margin-bottom: 0
       margin-top: 8px
 
@@ -140,7 +141,17 @@ $row_schedule_line_img_path = $base_url '/assets/img/line.svg'
 @media (min-width: 768px)
   .our-philosophy
     .title--third--negative
+      left: 15px
       padding-top: 300px
+
+  .hike
+    .title--first--negative
+      left: 15px
+
+  .hike__card
+    height: 200px
+    left: 15px
+    width: calc(100% - 30px)
 
 @media (min-width: 1024px)
   .our-philosophy
@@ -152,6 +163,15 @@ $row_schedule_line_img_path = $base_url '/assets/img/line.svg'
     .title--third--negative
       padding-top: 0
 
+  .hike
+    .title--first--negative
+      top: -144px
+
+  .hike__card,
+  .location
+    .title--second
+      font-size: 1.6vw
+
 @media (min-width: 1600px)
   .our-philosophy
     padding-top: 400px
@@ -159,4 +179,4 @@ $row_schedule_line_img_path = $base_url '/assets/img/line.svg'
   .hike__card,
   .location
     .title--second
-      font-size: 1.6vw
+      font-size: 1.3vw
