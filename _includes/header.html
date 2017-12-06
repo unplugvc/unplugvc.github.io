@@ -1,3 +1,5 @@
+{% assign current_event = site.data.events[0] %}
+
 <div class="header__{{include.type}}">
   {% if include.type == "home" %}
   <div class="header__home-content">
@@ -5,7 +7,7 @@
       <h1 class="header__home-content--title-big">European Venture Retreat</h1>
       <h3 class="header__home-content--title-small">A community of 60 entrepreneurs and investors surrounded by the Dolomites</h3>
       <h2 class="header__home-content--title-medium">WHEN</h2>
-      <h2 class="header__home-content--title-medium gibson">September 14-17, 2017</h2>
+      <h2 class="header__home-content--title-medium gibson">{{current_event.when_header}}</h2>
       <a href="" class="header__home-content--button">Apply to attend</a>
     </div>
   </div>
