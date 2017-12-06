@@ -5,113 +5,152 @@
 $row_background_img_path = $base_url '/assets/img/cartography_background.png'
 $row_schedule_line_img_path = $base_url '/assets/img/line.svg'
 
-.our-philosophy
-  background-image: url($row_background_img_path)
-  background-position: top
-  background-size: cover
-  margin-top: -60px
-  min-height: 200px
-  padding-bottom: 250px
-  padding-top: 250px
+@media (min-width: 320px)
+  .our-philosophy
+    background-image: url($row_background_img_path)
+    background-size: cover
+    padding-bottom: 250px
 
-.hike
-  height: 100px
-  position: relative
+    .title--third--negative
+      padding-top: 150px
 
-  .container
+  .our-philosophy__mobile-leteral-scroll
+    overflow-x: auto
+    overflow-y: hidden
+    white-space: nowrap
+
+    &::-webkit-scrollbar
+      background: transparent
+      width: 0
+
+    &::-webkit-scrollbar-thumb
+      background: transparent
+
+  .our-philosophy__mobile-leteral-scroll-content
+    padding-left: 15px
+
+    .card__philosophies
+      display: inline-block
+      margin-right: 20px
+      vertical-align: bottom
+      width: 80vw
+
+      .card__body
+        white-space: normal
+
+  .hike
+    height: 100px
     position: relative
 
-  .title--first--negative
-    left: 15px
+    .container
+      position: relative
+
+    .title--first--negative
+      left: 15px
+      position: absolute
+      top: -144px
+      z-index: 2
+
+  .hike__card
+    background: $white
+    border-radius: 8px
+    box-shadow: $card-shadow
+    height: 200px
     position: absolute
-    top: -144px
+    text-align: center
+    top: -100px
+    width: 100%
+
+    .title--second
+      font-size: 2vw
+      margin-bottom: 0
+      margin-top: 8px
+
+    .text
+      font-weight: 500
+      margin-top: 4px
+
+    img
+      display: table
+      margin: 35px auto 0 auto
+
+  .location
+    margin-top: 100px
+
+    .card__header
+      height: 56%
+
+    .card__body
+      padding: 5px 15px
+      text-align: center
+
+    .card__header--title
+      bottom: 50px
+      font-size: 26px
+      font-weight: 500
+      letter-spacing: 1px
+
+    .title--second
+      font-size: 2vw
+      margin-bottom: 0
+      margin-top: 8px
+
+  .location__column-separator
+    border-right: 1px solid #EAEAEA
+    display: block
+    height: 100%
+    padding-bottom: 22px
+
+  .location__carateristics
+    img
+      display: table
+      margin: 0 auto
+      margin-top: 25px
+
+  .carousel__home
+    margin-top: 150px
+    overflow-x: hidden
+    position: relative
+    width: 100%
+
+  .carousel__home__mountain-profile
+    bottom: 0
+    left: 0
+    position: absolute
+    width: 101%
     z-index: 2
 
-.hike__card
-  background: $white
-  border-radius: 8px
-  box-shadow: $card-shadow
-  height: 200px
-  position: absolute
-  text-align: center
-  top: -100px
-  width: 100%
+  .schedule
+    margin-top: 60px
 
-  .title--second
-    font-size: 2vw
-    margin-bottom: 0
-    margin-top: 8px
+    .schedule__line-container
+      background-image: url($row_schedule_line_img_path)
+      height: 168px
+      margin-top: 50px
 
-  .text
-    font-weight: 500
-    margin-top: 4px
+  .speakers
+    margin-top: 60px
 
-  img
-    display: table
-    margin: 35px auto 0 auto
+  .attendees
+    margin-top: 60px
 
-.location
-  margin-top: 100px
+  .organized
+    margin-top: 60px
 
-  .card__header
-    height: 56%
+@media (min-width: 768px)
+  .our-philosophy
+    .title--third--negative
+      padding-top: 300px
 
-  .card__body
-    padding: 5px 15px
-    text-align: center
+@media (min-width: 1024px)
+  .our-philosophy
+    background-position: top
+    margin-top: -60px
+    padding-bottom: 250px
+    padding-top: 250px
 
-  .card__header--title
-    bottom: 50px
-    font-size: 26px
-    font-weight: 500
-    letter-spacing: 1px
-
-  .title--second
-    font-size: 2vw
-    margin-bottom: 0
-    margin-top: 8px
-
-.location__column-separator
-  border-right: 1px solid #EAEAEA
-  display: block
-  height: 100%
-  padding-bottom: 22px
-
-.location__carateristics
-  img
-    display: table
-    margin: 0 auto
-    margin-top: 25px
-
-.carousel__home
-  margin-top: 150px
-  overflow-x: hidden
-  position: relative
-  width: 100%
-
-.carousel__home__mountain-profile
-  bottom: 0
-  left: 0
-  position: absolute
-  width: 101%
-  z-index: 2
-
-.schedule
-  margin-top: 60px
-
-  .schedule__line-container
-    margin-top: 50px
-    background-image: url($row_schedule_line_img_path)
-    height: 168px
-
-.speakers
-  margin-top: 60px
-
-.attendees
-  margin-top: 60px
-
-.organized
-  margin-top: 60px
+    .title--third--negative
+      padding-top: 0
 
 @media (min-width: 1600px)
   .our-philosophy

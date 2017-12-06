@@ -41,8 +41,7 @@ layout: home
   </div>
 </div>
 
-<!--
-<div class="our-philosophy">
+<div class="our-philosophy hidden-xs">
   <div class="container">
     <div class="general__spacer--big"></div>
     <div class="row">
@@ -52,16 +51,32 @@ layout: home
       </div>
     </div>
     <div class="general__spacer"></div>
-    <div class="row">
+    <div class="row hidden-mobile">
       {% for p in site.data.philosophies %}
-      <div class="col-3">
-        {% include components/card.html type="philosophies" title=p.title text=p.text img=p.img %}
-      </div>
+        <div class="col-12 col-sm-4 col-md-6 col-lg-4 col-xl-3">
+          {% include components/card.html type="philosophies" title=p.title text=p.text img=p.img %}
+        </div>
       {% endfor %}
     </div>
   </div>
 </div>
 
+<div class="our-philosophy hidden-sm hidden-md">
+  <div class="col-12">
+    {% include components/headings.html negative="true" big="OUR PHILOSOPHY" small="Your home for a weekend, in the mountains"
+    %}
+  </div>
+  <div class="our-philosophy__mobile-leteral-scroll">
+    <div class="our-philosophy__mobile-leteral-scroll-content">
+      {% for p in site.data.philosophies %}
+        {% include components/card.html type="philosophies" title=p.title text=p.text img=p.img %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+
+<!--
 <div class="hike">
   <div class="container">
     <h1 class="title--first--negative">THE HIKE</h1>
