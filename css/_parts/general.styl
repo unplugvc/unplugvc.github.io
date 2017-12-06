@@ -2,157 +2,236 @@
 @import 'variables'
 @import 'fonts'
 
-body
-  text-rendering: optimizeLegibility
-  -moz-osx-font-smoothing: grayscale
-  -webkit-font-smoothing: antialiased
+@media (min-width: 320px)
+  body
+    text-rendering: optimizeLegibility
+    -moz-osx-font-smoothing: grayscale
+    -webkit-font-smoothing: antialiased
 
-.container__content
-  background-color: white
-  margin-top: 50px
-  padding: 24px
+  a
+    &:hover
+      text-decoration: none
 
-.img-overlay
-  background: $img-gradient
-  height: 100%
-  left: 0
-  position: absolute
-  top: 0
-  width: 100%
-
-.title--first
-  color: $green
-  font-family: 'Nexa', sans-serif
-  font-size: 48px
-  font-style: normal
-  font-weight: bolder
-
-.title--second
-  color: $brown
-  font-family: 'Gibson', sans-serif
-  font-size: 26px
-  font-weight: 500
-  margin-top: 40px
-
-.title--third
-  color: $brown
-  font-family: 'Gibson', sans-serif
-  font-size: 20px
-  font-weight: 500
-  letter-spacing: 1px
-
-.title--first--negative
-  @extend .title--first
-  color: $white
-
-.title--second--negative
-  @extend .title--second
-  color: $white
-
-.title--third--negative
-  @extend .title--third
-  color: $white
-
-.text
-  color: $black-default
-  font-family: 'Gibson', sans-serif
-  font-size: 20px
-  font-weight: 300
-  margin-top: 40px
-
-.text--small
-  @extend .text
-  font-size: 16px
-
-.general__spacer
-  height: 46px
-
-.general_destination
-  left: 0
-  margin-top: -160px
-  position: absolute
-  z-index: -1
-
-.quotes
-  margin-top: 35px
-
-.quotes__text
-  color: $brown
-  font-family: 'Gibson', sans-serif
-  font-size: 26px
-  font-weight: 500
-  margin-bottom: 0
-
-.quotes__img-container
-  height: 25px
-  position: relative
-
-.quotes__up
-  left: -28px
-  position: absolute
-
-.quotes__down
-  position: absolute
-  right: 0
-
-/*
-   Cards
-*/
-.card__philosophies
-  background-color: $white
-  border-radius: 8px
-  box-shadow: $card-shadow
-  height: 268px
-  margin-top: 24px
+  .container__content
+    background-color: white
+    margin-top: 50px
+    padding: 24px
 
   .img-overlay
-    background-image: $card-image-gradient
+    background: $img-gradient
+    height: 100%
+    left: 0
+    position: absolute
+    top: 0
+    width: 100%
 
-.card__header
-  background-position: center
-  background-size: cover
-  border-top-left-radius: 8px
-  border-top-right-radius: 8px
-  height: 50% - 8px
-  position: relative
-  width: 100%
+  .title--first
+    color: $green
+    font-family: 'Nexa', sans-serif
+    font-size: 28px
+    font-style: normal
+    font-weight: bolder
 
-  .img-overlay
-    border-top-left-radius: 8px
-    border-top-right-radius: 8px
+  .title--second
+    color: $brown
+    font-family: 'Gibson', sans-serif
+    font-size: 18px
+    font-weight: 500
+    margin-top: 16px
 
-.card__header--title
-  bottom: 16px
-  color: $white
-  font-family: 'Gibson', sans-serif
-  margin-bottom: 0
-  padding: 0 16px
-  position: absolute
-  z-index: 2
+  .title--third
+    color: $brown
+    font-family: 'Gibson', sans-serif
+    font-size: 12px
+    font-weight: 500
+    letter-spacing: 1px
 
-.card__header--subtitle
-  bottom: 16px
-  color: $white
-  font-family: 'Gibson', sans-serif
-  font-weight: 300
-  margin-bottom: 0
-  padding: 0 16px
-  position: absolute
-  z-index: 2
+  .title--first--negative
+    @extend .title--first
+    color: $white
 
-.card__separator
-  background-image: linear-gradient(-225deg, #AE8A61 0, #73733C 100%)
-  height: 8px
-  width: 100%
+  .title--second--negative
+    @extend .title--second
+    color: $white
 
-.card__body
-  padding: 16px 16px 22px 16px
-  position: relative
+  .title--third--negative
+    @extend .title--third
+    color: $white
 
-  p
-    margin-bottom: 0
+  .text
+    color: $black-default
+    font-family: 'Gibson', sans-serif
+    font-size: 16px
+    font-weight: 300
+    margin-top: 16px
+
+  .text--small
+    @extend .text
+    font-size: 16px
+
+  .general__spacer
+    height: 46px
+
+  .general_destination
+    left: 0
+    margin-top: -160px
+    position: absolute
+    z-index: -1
+
+  .quotes
     margin-top: 0
 
-.card__location
-  @extend .card__philosophies
-  height: 500px
+  .quotes__text
+    color: $brown
+    font-family: 'Gibson', sans-serif
+    font-size: 16px
+    font-weight: 600
+    line-height: 23px
+    margin-bottom: 0
+
+  .quotes__img-container
+    display: none
+    height: 25px
+    position: relative
+
+  /*
+     Cards
+  */
+  .card__philosophies
+    background-color: $white
+    border-radius: 8px
+    box-shadow: $card-shadow
+    height: 268px
+    margin-top: 24px
+
+    .img-overlay
+      background-image: $card-image-gradient
+
+  .card__header
+    background-position: center
+    background-size: cover
+    border-top-left-radius: 8px
+    border-top-right-radius: 8px
+    height: 50% - 8px
+    position: relative
+    width: 100%
+
+    .img-overlay
+      border-top-left-radius: 8px
+      border-top-right-radius: 8px
+
+  .card__header--title
+    bottom: 16px
+    color: $white
+    font-family: 'Gibson', sans-serif
+    margin-bottom: 0
+    padding: 0 16px
+    position: absolute
+    z-index: 2
+
+  .card__header--subtitle
+    bottom: 16px
+    color: $white
+    font-family: 'Gibson', sans-serif
+    font-weight: 300
+    margin-bottom: 0
+    padding: 0 16px
+    position: absolute
+    z-index: 2
+
+  .card__separator
+    background-image: linear-gradient(-225deg, #AE8A61 0, #73733C 100%)
+    height: 8px
+    width: 100%
+
+  .card__body
+    padding: 16px 16px 22px 16px
+    position: relative
+
+    p
+      margin-bottom: 0
+      margin-top: 0
+
+  .card__location
+    @extend .card__philosophies
+    height: 430px
+
+  .location
+    &.hidden-sm
+      border-radius: 0
+      margin-top: 40px
+
+      .card__header
+        border-top-left-radius: 0
+        border-top-right-radius: 0
+
+  .hidden-xs
+    display: none
+
+@media (min-width: 768px)
+  .quotes__img-container
+    display: block
+    height: 25px
+    position: relative
+
+  .quotes__up
+    display: block
+    left: -28px
+    position: absolute
+
+  .quotes__down
+    display: block
+    position: absolute
+    right: 0
+
+  .card__location
+    @extend .card__philosophies
+    height: 500px
+
+  .hidden-xs
+    display: block
+
+  .hidden-sm
+    display: none
+
+@media (min-width: 1024px)
+  .title--first
+    font-size: 48px
+
+  .title--second
+    font-size: 26px
+    margin-top: 40px
+
+  .title--third
+    font-size: 20px
+
+  .title--first--negative
+    @extend .title--first
+    color: $white
+
+  .title--second--negative
+    @extend .title--second
+    color: $white
+
+  .title--third--negative
+    @extend .title--third
+    color: $white
+
+  .text
+    font-size: 20px
+    margin-top: 40px
+
+  .quotes
+    margin-top: 35px
+
+  .quotes__text
+    font-size: 26px
+    font-weight: 500
+    line-height: 26px
+    margin-bottom: 0
+
+  .hidden-sm
+    display: block
+
+  .hidden-md
+    display: none

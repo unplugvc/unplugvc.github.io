@@ -46,7 +46,7 @@ $(document).scroll(() => {
     limit = 0;
   }
 
-  if ($(document).scrollTop() > 100) {
+  if ($(document).scrollTop() > limit) {
     $('.top_navbar').addClass('negative');
     $('.top_navbar--mobile').addClass('negative');
   } else {
