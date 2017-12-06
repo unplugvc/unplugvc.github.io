@@ -12,6 +12,14 @@
     &:hover
       text-decoration: none
 
+  .general__noselect
+    user-select: none
+    -khtml-user-select: none
+    -moz-user-select: none
+    -ms-user-select: none
+    -webkit-touch-callout: none
+    -webkit-user-select: none
+
   .container__content
     background-color: white
     margin-top: 50px
@@ -61,13 +69,21 @@
   .text
     color: $black-default
     font-family: 'Gibson', sans-serif
-    font-size: 16px
+    font-size: 18px
     font-weight: 300
     margin-top: 16px
 
   .text--small
     @extend .text
     font-size: 16px
+
+  .text--semi-fat
+    @extend .text
+    font-weight: 500
+
+  .text--fat
+    @extend .text
+    font-weight: 700
 
   .general__spacer
     height: 46px
@@ -220,6 +236,10 @@
   .text
     font-size: 20px
     margin-top: 40px
+
+  .text--brown
+    @extend .text
+    color: $brown
 
   .quotes
     margin-top: 35px

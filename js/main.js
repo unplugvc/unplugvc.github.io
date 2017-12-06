@@ -1,9 +1,21 @@
 ---
 ---
+const state = {
+  currentTab: 1
+};
+
 /**
  * Document ready
  */
 $(document).ready(() => {
+  /**
+   * Init tabs
+   */
+  $(`.tab__${state.currentTab}`).show();
+  $(`.tabselector__${state.currentTab}`).addClass('active');
+  /**
+   * Init sliders
+   */
   $('.carousel__home-slider_1').slick({
     dots: false,
     speed: 300,
@@ -58,7 +70,8 @@ $(document).scroll(() => {
 $('.open_menu').click(() => {
   /**
    * Change the text of button menu content toggle
-   */  
+   */
+
   if ($('.top_navbar--mobile-content.show').length) {
     $('.top_navbar--mobile-content').removeClass('show');
     $('.open_menu').html('MENU');
@@ -68,8 +81,19 @@ $('.open_menu').click(() => {
   }
 });
 
+function displayScheduleTab(id) {
+  $(`.tabselector__${state.currentTab}`).removeClass('active');
+  $(`.tab__${state.currentTab}`).hide();
+  state.currentTab = id;
+  $(`.tab__${state.currentTab}`).show();
+  $(`.tabselector__${state.currentTab}`).addClass('active');
+}
 
-var onResizeDebounced = debounce(() =>{
+/**
+ * Debounced window resize
+ */
+
+var onResizeDebounced = debounce(() => {
   if ($(window).width() > 769) {
     $('.open_menu').html('MENU');
     $('.top_navbar--mobile-content').removeClass('show');

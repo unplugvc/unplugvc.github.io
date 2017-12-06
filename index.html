@@ -159,7 +159,6 @@ layout: home
   <img class="carousel__home__mountain-profile" src="{{"/assets/img/mountain_profile_2.svg" | relative_url }}" alt="">
 </div>
 
-<!--
 
 <div class="schedule" id="schedule">
   <div class="container">
@@ -167,7 +166,7 @@ layout: home
       <div class="col-12">
         {% include components/headings.html big="THE SCHEDULE" small="Your home for a weekend, in the mountains" %}
       </div>
-      <div class="col-6">
+      <div class="col-10 col-sm-6">
         <p class="text">
           We will meet at Monte Bianco to ski altogether and have fun and stuff, you know. Hi Stefano let’s do this website I know
           you want it!
@@ -177,10 +176,16 @@ layout: home
   </div>
   <div class="schedule__line-container">
     <div class="container">
-      <div class="row">
-        <div class="col-2"></div>
+      <div class="row schedule__line-date-element-sizer">
         {% for schedule in current_event.schedule %}
-          <div class="col-2">
+          <div class="
+            schedule__line-date-element 
+            general__noselect
+            tabselector__{{forloop.index}}
+            {% if forloop.last == false %}separator{% endif %}" 
+            onclick="displayScheduleTab({{forloop.index}})"
+          >
+            DAY #{{forloop.index}} <br>
             {{schedule.day}}
           </div>
         {% endfor %}
@@ -189,24 +194,27 @@ layout: home
   </div>
 </div>
 
-<div class="container">
+<div class="container schedule__tabs">
   {% for schedule in current_event.schedule %}
-    {% for program in schedule.program %}
-      <div class="row">
-        <div class="col-2">{{program.time}}</div>
-        <div class="col-10">
-          <div class="col-12">
-            {{program.what}}
-          </div>
-          <div class="col-12">
-            {{program.description}}
+    <div class="tab__{{forloop.index}}">
+      {% for program in schedule.program %}
+        <div class="row">
+          <div class="col-2"><p class="text--fat">{{program.time}}</p></div>
+          <div class="col-10">
+            <div class="col-12">
+              <p class="text--brown">{{program.what}}</p>
+            </div>
+            <div class="col-12">
+              <p class="text">{{program.description}}</p>
+            </div>
           </div>
         </div>
-      </div>
-    {% endfor %}
-    --
+      {% endfor %}
+    </div>
   {% endfor %}
 </div>
+
+<!--
 
 <div class="speakers">
   <div class="container">
