@@ -1,5 +1,9 @@
 # Made with StyLivJek
 
+## Install ruby
+
+* Required version is `ruby 2.4.2p198`
+
 ## Install ruby dependencies
 
 * `bundle install`
