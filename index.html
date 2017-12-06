@@ -83,12 +83,10 @@ layout: home
   {% include components/hike.html %}
 </div>
 
-<!--
-
 <div class="location">
   <div class="container">
     <div class="row">
-      <div class="col-6">
+      <div class="col-12 col-sm-6">
         {% include components/headings.html big="THE LOCATION" small="A refuge, but with comfort" %}
         <p class="text">
           We have chosen the best of the best. The Tierser Alpl mountain refuge sits on top of Sieser Alm, which is the largest high-altitude
@@ -102,7 +100,7 @@ layout: home
         We also negotiated 1 hot shower
         per day, per guest." %}
       </div>
-      <div class="col-6">
+      <div class="col-12 col-sm-6 hidden-xs">
         {%
           include components/card.html type="location" title=current_event.title subtitle=current_event.location img=current_event.image
           altitude=current_event.caratteristics.altitude
@@ -114,6 +112,16 @@ layout: home
   </div>
 </div>
 
+<div class="location hidden-sm hidden-md">
+  {%
+    include components/card.html type="location" title=current_event.title subtitle=current_event.location img=current_event.image
+    altitude=current_event.caratteristics.altitude
+    cooking=current_event.caratteristics.cooking
+    beds=current_event.caratteristics.beds
+  %}
+</div>
+
+<!--
 <div class="carousel__home">
   <div id="slider" class="carousel__home-slider_1">
     <a data-fancybox="gallery" href="{{"/assets/img/home_carousel/big/6-big.jpg" | relative_url }}" data-caption="This image has a caption">

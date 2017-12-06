@@ -154,7 +154,16 @@
 
   .card__location
     @extend .card__philosophies
-    height: 500px
+    height: 430px
+
+  .location
+    &.hidden-sm
+      border-radius: 0
+      margin-top: 40px
+
+      .card__header
+        border-top-left-radius: 0
+        border-top-right-radius: 0
 
   .hidden-xs
     display: none
@@ -174,6 +183,10 @@
     display: block
     position: absolute
     right: 0
+
+  .card__location
+    @extend .card__philosophies
+    height: 500px
 
   .hidden-xs
     display: block
