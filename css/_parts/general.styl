@@ -85,6 +85,10 @@
     @extend .text
     font-weight: 700
 
+  .text--fat--brown
+    @extend .text--fat
+    color: $brown
+
   .general__spacer
     height: 46px
 
@@ -184,6 +188,10 @@
   .hidden-xs
     display: none
 
+  .text--brown
+    @extend .text
+    color: $brown
+
 @media (min-width: 768px)
   .quotes__img-container
     display: block
@@ -237,17 +245,13 @@
     font-size: 20px
     margin-top: 40px
 
-  .text--brown
-    @extend .text
-    color: $brown
-
   .quotes
     margin-top: 35px
 
   .quotes__text
     font-size: 26px
     font-weight: 500
-    line-height: 26px
+    line-height: 34px
     margin-bottom: 0
 
   .hidden-sm

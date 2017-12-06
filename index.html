@@ -10,7 +10,7 @@ layout: home
 <div class="container">
   <div class="row">
     <div class="col-12">
-      {% include components/headings.html big="HOW WAS IT?" small="A weekend to unplug and connect." %}
+      {% include components/headings.html big="THE RETREAT" small="A weekend to unplug and connect." %}
     </div>
   </div>
 </div>
@@ -191,6 +191,18 @@ layout: home
         {% endfor %}
       </div>
     </div>
+    <div class="schedule__line-date-element-sizer--mobile">
+        {% for schedule in current_event.schedule %}
+        <div class="
+          schedule__line-date-element 
+          general__noselect
+          tabselector__{{forloop.index}}" 
+          onclick="displayScheduleTab({{forloop.index}})"
+        >
+          <p class="text--fat">DAY {{forloop.index}}</p>
+        </div>
+      {% endfor %}
+    </div>
   </div>
 </div>
 
@@ -198,14 +210,16 @@ layout: home
   {% for schedule in current_event.schedule %}
     <div class="tab__{{forloop.index}}">
       {% for program in schedule.program %}
-        <div class="row">
-          <div class="col-2"><p class="text--fat">{{program.time}}</p></div>
-          <div class="col-10">
-            <div class="col-12">
-              <p class="text--brown">{{program.what}}</p>
-            </div>
-            <div class="col-12">
-              <p class="text">{{program.description}}</p>
+        <div class="row element">
+          <div class="col-12 col-sm-2"><p class="text--fat">{{program.time}}</p></div>
+          <div class="col-12 col-sm-10">
+            <div class="row">
+              <div class="col-12 col-sm-12">
+                <p class="text--brown">{{program.what}}</p>
+              </div>
+              <div class="col-12 col-sm-12">
+                <p class="text">{{program.description}}</p>
+              </div>
             </div>
           </div>
         </div>
@@ -215,7 +229,6 @@ layout: home
 </div>
 
 <!--
-
 <div class="speakers">
   <div class="container">
     <div class="row">
