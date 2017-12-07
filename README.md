@@ -37,6 +37,7 @@ When merging on master branch it will deploy the resultant build.
 Use jekyll-admin to modify the data `http://localhost:4000/admin`
 
 * Go in the `Data Files` section
+* Select the element you want to modify
 * In the right column click on the `Switch View to GUI Editor` orange button to toggle a more readable UI
 
 
