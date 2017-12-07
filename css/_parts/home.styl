@@ -4,6 +4,7 @@
 
 $row_background_img_path = $base_url '/assets/img/cartography_background.png'
 $row_schedule_line_img_path = $base_url '/assets/img/line.svg'
+$row_schedule_line_img_mobile_path = $base_url '/assets/img/line_mobile.svg'
 
 @media (min-width: 320px)
   .our-philosophy
@@ -132,9 +133,17 @@ $row_schedule_line_img_path = $base_url '/assets/img/line.svg'
     .schedule__line-date-element-sizer--mobile
       overflow-x: auto
       overflow-y: hidden
-      padding-left: 44px
       position: relative
       white-space: nowrap
+
+      .dele
+        background-image: url($row_schedule_line_img_mobile_path)
+        background-position: center
+        background-repeat-x: repeat
+        background-repeat-y: no-repeat
+        background-size: contain
+        padding-left: 44px
+        width: 115%
 
       img
         left: -40px
@@ -258,17 +267,17 @@ $row_schedule_line_img_path = $base_url '/assets/img/line.svg'
     height: 490px
 
   .schedule__line-container
-    background-image: url($row_schedule_line_img_path)
-    background-position: center
-    background-size: cover
-
     .container
       height: 100%
 
   .schedule
     .schedule__line-container
+      background-image: url($row_schedule_line_img_path)
+      background-position: center
+      background-repeat: no-repeat
+      background-size: contain
       box-shadow: none
-      height: 220px
+      height: 296px
       margin-top: 50px
 
     .schedule__line-date-element-sizer--mobile

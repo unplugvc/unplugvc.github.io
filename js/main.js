@@ -1,7 +1,8 @@
 ---
 ---
 const state = {
-  currentTab: 1
+  currentTab: 1,
+  ww: $(window).width()
 };
 
 /**
