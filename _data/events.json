@@ -32,6 +32,10 @@
       { "name": "DigitalOcean", "logo": "algolia.png" },
       { "name": "cirrus", "logo": "algolia.png" }
     ],
+    "organizers": [
+      { "name": "STEFANO BERNARDI", "role": "Investor", "pic": "bernardi.png" },
+      { "name": "LORENZO SANNA", "role": "Mountaineer", "pic": "sanna.png" }
+    ],
     "schedule": [
       {
         "day": "THURSDAY, SEPT 14",
