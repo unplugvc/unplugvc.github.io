@@ -22,6 +22,16 @@
       { "name": "Tim Cook", "role": "Django expert", "pic": "tim_cook.png" },
       { "name": "Tim Cook", "role": "Blogger", "pic": "tim_cook.png" }
     ],
+    "attendees": [
+      { "name": "Algolia", "logo": "algolia.png" },
+      { "name": "Cachet", "logo": "algolia.png" },
+      { "name": "Ebanx", "logo": "algolia.png" },
+      { "name": "codebase", "logo": "algolia.png" },
+      { "name": "Google", "logo": "algolia.png" },
+      { "name": "Drip", "logo": "algolia.png" },
+      { "name": "DigitalOcean", "logo": "algolia.png" },
+      { "name": "cirrus", "logo": "algolia.png" }
+    ],
     "schedule": [
       {
         "day": "THURSDAY, SEPT 14",
