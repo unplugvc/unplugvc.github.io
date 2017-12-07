@@ -13,15 +13,11 @@ $home_header_img_path = $base_url '/assets/img/mountain_placeholder.jpg'
 
   .header__home-content
     height: auto
-    margin-bottom: calc(160px + 8vh)
-    margin-top: calc(160px + 4vh)
+    margin-bottom: 140px
+    margin-top: 160px
+    padding: 0 23px
     position: relative
     top: 0
-    // height: 56vh
-    // margin-top: -23vh
-    // position: absolute
-    // top: 50%
-    // width: 100%
     z-index: 2
 
   .header__home-content--title-big
@@ -83,6 +79,12 @@ $home_header_img_path = $base_url '/assets/img/mountain_placeholder.jpg'
     width: 400%
     z-index: 2
 
+@media (min-width: 768px)
+  .header__home-content
+    margin-bottom: calc(160px + 8vh)
+    margin-top: calc(160px + 4vh)
+    padding: 0 23px
+
 @media (min-width: 1024px)
   .header__home
     background-image: url($home_header_img_path)
@@ -93,8 +95,8 @@ $home_header_img_path = $base_url '/assets/img/mountain_placeholder.jpg'
 
   .header__home-content
     height: auto
-    margin-bottom: calc(160px + 8vh)
-    margin-top: calc(160px + 4vh)
+    margin-bottom: calc(160px + 4vh)
+    margin-top: calc(160px + 3vh)
     position: relative
     top: 0
 
@@ -148,3 +150,9 @@ $home_header_img_path = $base_url '/assets/img/mountain_placeholder.jpg'
     position: absolute
     width: 101%
     z-index: 2
+
+@media (min-width: 1280px)
+  .header__home-content
+    margin-bottom: calc(160px + 8vh)
+    margin-top: calc(160px + 4vh)
+    padding: 0 23px

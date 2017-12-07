@@ -1,7 +1,9 @@
 ---
 ---
 const state = {
-  currentTab: 1
+  currentTab: 1,
+  ww: $(window).width(),
+  baseurl: 'ventureretreat/'
 };
 
 /**
@@ -61,7 +63,9 @@ $(document).scroll(() => {
   if ($(document).scrollTop() > limit) {
     $('.top_navbar').addClass('negative');
     $('.top_navbar--mobile').addClass('negative');
+    $('.top_navbar__logo img').attr('src', `/${state.baseurl}/assets/img/icons/logo/logo_negative.png`).css({width: '100%'});
   } else {
+    $('.top_navbar__logo img').attr('src', `/${state.baseurl}/assets/img/icons/logo/logo.png`).css({width: '100%'});
     $('.top_navbar').removeClass('negative');
     $('.top_navbar--mobile').removeClass('negative');
   }

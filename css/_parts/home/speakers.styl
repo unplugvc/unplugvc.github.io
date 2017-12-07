@@ -1,0 +1,93 @@
+@media (min-width: 320px)
+  .speakers
+    .container
+      padding-left: 40px
+      padding-right: 40px
+
+    .speakers__pictures
+      display: none
+
+      img
+        width: 100%
+
+    .speakers__pictures--mobile
+      overflow-x: auto
+      overflow-y: hidden
+      padding-left: 40px
+      white-space: nowrap
+
+      img
+        width: 100%
+
+      &::-webkit-scrollbar
+        background: transparent
+        width: 0
+
+      &::-webkit-scrollbar-thumb
+        background: transparent
+
+      .speakers__pictures-card
+        border-radius: 8px
+        display: inline-block
+        margin-right: 24px
+        margin-top: 24px
+        overflow: hidden
+        position: relative
+        width: 80%
+
+        .speakers__pictures-card-data
+          bottom: 16px
+          color: white
+          left: 16px
+          position: absolute
+          width: 100%
+          z-index: 2
+
+        .speakers__pictures-card-data-name
+          font-size: 18px
+          font-weight: 700
+          line-height: 24px
+          margin-bottom: 0
+
+        .speakers__pictures-card-data-role
+          font-size: 16px
+          font-weight: 500
+          line-height: 20px
+
+@media (min-width: 768px)
+  .speakers
+    .container
+      padding-left: 15px
+      padding-right: 15px
+
+    .speakers__pictures--mobile
+      display: none
+
+    .speakers__pictures
+      display: block
+      margin-top: 12px
+
+    .speakers__pictures-card
+      border-radius: 8px
+      margin-top: 24px
+      overflow: hidden
+      position: relative
+
+    .speakers__pictures-card-data
+      bottom: 16px
+      color: white
+      left: 16px
+      position: absolute
+      width: 100%
+      z-index: 2
+
+    .speakers__pictures-card-data-name
+      font-size: 18px
+      font-weight: 700
+      line-height: 24px
+      margin-bottom: 0
+
+    .speakers__pictures-card-data-role
+      font-size: 16px
+      font-weight: 500
+      line-height: 20px

@@ -7,6 +7,7 @@
     text-rendering: optimizeLegibility
     -moz-osx-font-smoothing: grayscale
     -webkit-font-smoothing: antialiased
+    font-family: 'Gibson', sans-serif
 
   a
     &:hover
@@ -174,6 +175,7 @@
 
   .card__location
     @extend .card__philosophies
+    border-radius: 0
     height: 430px
 
   .location
@@ -185,6 +187,10 @@
         border-top-left-radius: 0
         border-top-right-radius: 0
 
+      .card__body
+        border-bottom-left-radius: 0
+        border-bottom-right-radius: 0
+
   .hidden-xs
     display: none
 
@@ -193,6 +199,9 @@
     color: $brown
 
 @media (min-width: 768px)
+  .card__location
+    border-radius: 8px
+
   .quotes__img-container
     display: block
     height: 25px

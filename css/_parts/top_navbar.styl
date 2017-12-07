@@ -17,8 +17,10 @@ $negative_logo_path = $base_url '/assets/img/icons/logo/logo_negative.png'
     z-index: 10
 
     .top_navbar__logo
+      width: 100px
+
       img
-        width: 100px
+        width: 100%
 
     .top_navbar__menu
       float: right
@@ -45,10 +47,6 @@ $negative_logo_path = $base_url '/assets/img/icons/logo/logo_negative.png'
           &:not([href]):not([tabindex]):focus,
           &:not([href]):not([tabindex]):hover
             color: $black-default
-
-      .top_navbar__logo
-        img
-          content: url($negative_logo_path)
 
   .top_navbar--mobile-content
     background-color: $white
@@ -114,9 +112,12 @@ $negative_logo_path = $base_url '/assets/img/icons/logo/logo_negative.png'
       box-shadow: 0 2px 4px 0 rgba(51, 51, 51, 0.3)
 
       .top_navbar__logo
+        width: 136px
+
         img
-          content: url($negative_logo_path)
-          width: 136px
+          width: 100%
+          // &::after
+          // content: url($negative_logo_path)
 
       .top_navbar__menu
         li

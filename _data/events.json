@@ -9,6 +9,37 @@
       "cooking": "Traditional",
       "beds": "70 peope"
     },
+    "past_edition": {
+      "date": "14 - 15 - 16 - 17 February 2018",
+      "pic": "oberholz_refuge.png"
+    },
+    "speakers": [
+      { "name": "Tim Cook", "role": "Investor", "pic": "tim_cook.png" },
+      { "name": "Tim Cook", "role": "Django expert", "pic": "tim_cook.png" },
+      { "name": "Tim Cook", "role": "Blogger", "pic": "tim_cook.png" },
+      {
+        "name": "Tim Cook",
+        "role": "Software Developer",
+        "pic": "tim_cook.png"
+      },
+      { "name": "Tim Cook", "role": "Investor", "pic": "tim_cook.png" },
+      { "name": "Tim Cook", "role": "Django expert", "pic": "tim_cook.png" },
+      { "name": "Tim Cook", "role": "Blogger", "pic": "tim_cook.png" }
+    ],
+    "attendees": [
+      { "name": "Algolia", "logo": "algolia.png" },
+      { "name": "Cachet", "logo": "algolia.png" },
+      { "name": "Ebanx", "logo": "algolia.png" },
+      { "name": "codebase", "logo": "algolia.png" },
+      { "name": "Google", "logo": "algolia.png" },
+      { "name": "Drip", "logo": "algolia.png" },
+      { "name": "DigitalOcean", "logo": "algolia.png" },
+      { "name": "cirrus", "logo": "algolia.png" }
+    ],
+    "organizers": [
+      { "name": "STEFANO BERNARDI", "role": "Investor", "pic": "bernardi.png" },
+      { "name": "LORENZO SANNA", "role": "Mountaineer", "pic": "sanna.png" }
+    ],
     "schedule": [
       {
         "day": "THURSDAY, SEPT 14",
@@ -30,6 +61,330 @@
             "what": "Hike to the Refuge",
             "description":
               "It's a 2.5-3h walk to the refuge. But it's a beautiful one."
+          }
+        ]
+      },
+      {
+        "day": "FRIDAY, SEPT 15",
+        "program": [
+          {
+            "time": "8.00 AM",
+            "what": "Breakfast",
+            "description":
+              "Meet in the Hotel lobby and load up on energies for the day."
+          },
+          {
+            "time": "11.00 AM",
+            "what": "Drone test",
+            "description":
+              "You can drive a drone in VR."
+          },
+          {
+            "time": "12.00 AM",
+            "what": "Lunch",
+            "description":
+              "The one you came from, right?"
+          }
+        ]
+      },
+      {
+        "day": "SATURDAY, SEPT 16",
+        "program": [
+          {
+            "time": "8.00 AM",
+            "what": "Breakfast",
+            "description":
+              "Meet in the Hotel lobby and load up on energies for the day."
+          }
+        ]
+      },
+      {
+        "day": "SUNDAY, SEPT 17",
+        "program": [
+          {
+            "time": "8.00 AM",
+            "what": "Breakfast",
+            "description":
+              "Meet in the Hotel lobby and load up on energies for the day."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Oberholz refuge - Obereggen",
+    "location": "Trentino - Alto  Adige, Italy",
+    "image": "1.png",
+    "when_header": "September 14-17, 2018",
+    "caratteristics": {
+      "altitude": "2240 mt",
+      "cooking": "Traditional",
+      "beds": "70 peope"
+    },
+    "past_edition": {
+      "date": "21 - 22 - 23 February 2015",
+      "pic": "oberholz_refuge.png"
+    },
+    "speakers": [
+      { "name": "Tim Cook", "role": "Investor", "pic": "tim_cook.png" },
+      { "name": "Tim Cook", "role": "Django expert", "pic": "tim_cook.png" },
+      { "name": "Tim Cook", "role": "Blogger", "pic": "tim_cook.png" },
+      {
+        "name": "Tim Cook",
+        "role": "Software Developer",
+        "pic": "tim_cook.png"
+      },
+      { "name": "Tim Cook", "role": "Investor", "pic": "tim_cook.png" },
+      { "name": "Tim Cook", "role": "Django expert", "pic": "tim_cook.png" },
+      { "name": "Tim Cook", "role": "Blogger", "pic": "tim_cook.png" }
+    ],
+    "attendees": [
+      { "name": "Algolia", "logo": "algolia.png" },
+      { "name": "Cachet", "logo": "algolia.png" },
+      { "name": "Ebanx", "logo": "algolia.png" },
+      { "name": "codebase", "logo": "algolia.png" },
+      { "name": "Google", "logo": "algolia.png" },
+      { "name": "Drip", "logo": "algolia.png" },
+      { "name": "DigitalOcean", "logo": "algolia.png" },
+      { "name": "cirrus", "logo": "algolia.png" }
+    ],
+    "organizers": [
+      { "name": "STEFANO BERNARDI", "role": "Investor", "pic": "bernardi.png" },
+      { "name": "LORENZO SANNA", "role": "Mountaineer", "pic": "sanna.png" }
+    ],
+    "schedule": [
+      {
+        "day": "THURSDAY, SEPT 14",
+        "program": [
+          {
+            "time": "8.00 AM",
+            "what": "Breakfast",
+            "description":
+              "Meet in the Hotel lobby and load up on energies for the day."
+          },
+          {
+            "time": "9.30 AM",
+            "what": "Cable car for Seiser Alm",
+            "description":
+              "It's just a short walk to the cable car that will bring us to the meadow."
+          },
+          {
+            "time": "10.00 AM",
+            "what": "Hike to the Refuge",
+            "description":
+              "It's a 2.5-3h walk to the refuge. But it's a beautiful one."
+          }
+        ]
+      },
+      {
+        "day": "FRIDAY, SEPT 15",
+        "program": [
+          {
+            "time": "8.00 AM",
+            "what": "Breakfast",
+            "description":
+              "Meet in the Hotel lobby and load up on energies for the day."
+          }
+        ]
+      },
+      {
+        "day": "SATURDAY, SEPT 16",
+        "program": [
+          {
+            "time": "8.00 AM",
+            "what": "Breakfast",
+            "description":
+              "Meet in the Hotel lobby and load up on energies for the day."
+          }
+        ]
+      },
+      {
+        "day": "SUNDAY, SEPT 17",
+        "program": [
+          {
+            "time": "8.00 AM",
+            "what": "Breakfast",
+            "description":
+              "Meet in the Hotel lobby and load up on energies for the day."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Oberholz refuge - Obereggen",
+    "location": "Trentino - Alto  Adige, Italy",
+    "image": "1.png",
+    "when_header": "September 14-17, 2018",
+    "caratteristics": {
+      "altitude": "2240 mt",
+      "cooking": "Traditional",
+      "beds": "70 peope"
+    },
+    "past_edition": {
+      "date": "21 - 22 - 23 February 2015",
+      "pic": "oberholz_refuge.png"
+    },
+    "speakers": [
+      { "name": "Tim Cook", "role": "Investor", "pic": "tim_cook.png" },
+      { "name": "Tim Cook", "role": "Django expert", "pic": "tim_cook.png" },
+      { "name": "Tim Cook", "role": "Blogger", "pic": "tim_cook.png" },
+      {
+        "name": "Tim Cook",
+        "role": "Software Developer",
+        "pic": "tim_cook.png"
+      },
+      { "name": "Tim Cook", "role": "Investor", "pic": "tim_cook.png" },
+      { "name": "Tim Cook", "role": "Django expert", "pic": "tim_cook.png" },
+      { "name": "Tim Cook", "role": "Blogger", "pic": "tim_cook.png" }
+    ],
+    "attendees": [
+      { "name": "Algolia", "logo": "algolia.png" },
+      { "name": "Cachet", "logo": "algolia.png" },
+      { "name": "Ebanx", "logo": "algolia.png" },
+      { "name": "codebase", "logo": "algolia.png" },
+      { "name": "Google", "logo": "algolia.png" },
+      { "name": "Drip", "logo": "algolia.png" },
+      { "name": "DigitalOcean", "logo": "algolia.png" },
+      { "name": "cirrus", "logo": "algolia.png" }
+    ],
+    "organizers": [
+      { "name": "STEFANO BERNARDI", "role": "Investor", "pic": "bernardi.png" },
+      { "name": "LORENZO SANNA", "role": "Mountaineer", "pic": "sanna.png" }
+    ],
+    "schedule": [
+      {
+        "day": "THURSDAY, SEPT 14",
+        "program": [
+          {
+            "time": "8.00 AM",
+            "what": "Breakfast",
+            "description":
+              "Meet in the Hotel lobby and load up on energies for the day."
+          },
+          {
+            "time": "9.30 AM",
+            "what": "Cable car for Seiser Alm",
+            "description":
+              "It's just a short walk to the cable car that will bring us to the meadow."
+          },
+          {
+            "time": "10.00 AM",
+            "what": "Hike to the Refuge",
+            "description":
+              "It's a 2.5-3h walk to the refuge. But it's a beautiful one."
+          }
+        ]
+      },
+      {
+        "day": "FRIDAY, SEPT 15",
+        "program": [
+          {
+            "time": "8.00 AM",
+            "what": "Breakfast",
+            "description":
+              "Meet in the Hotel lobby and load up on energies for the day."
+          }
+        ]
+      },
+      {
+        "day": "SATURDAY, SEPT 16",
+        "program": [
+          {
+            "time": "8.00 AM",
+            "what": "Breakfast",
+            "description":
+              "Meet in the Hotel lobby and load up on energies for the day."
+          }
+        ]
+      },
+      {
+        "day": "SUNDAY, SEPT 17",
+        "program": [
+          {
+            "time": "8.00 AM",
+            "what": "Breakfast",
+            "description":
+              "Meet in the Hotel lobby and load up on energies for the day."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Oberholz refuge - Obereggen",
+    "location": "Trentino - Alto  Adige, Italy",
+    "image": "1.png",
+    "when_header": "September 14-17, 2018",
+    "caratteristics": {
+      "altitude": "2240 mt",
+      "cooking": "Traditional",
+      "beds": "70 peope"
+    },
+    "past_edition": {
+      "date": "21 - 22 - 23 February 2015",
+      "pic": "oberholz_refuge.png"
+    },
+    "speakers": [
+      { "name": "Tim Cook", "role": "Investor", "pic": "tim_cook.png" },
+      { "name": "Tim Cook", "role": "Django expert", "pic": "tim_cook.png" },
+      { "name": "Tim Cook", "role": "Blogger", "pic": "tim_cook.png" },
+      {
+        "name": "Tim Cook",
+        "role": "Software Developer",
+        "pic": "tim_cook.png"
+      },
+      { "name": "Tim Cook", "role": "Investor", "pic": "tim_cook.png" },
+      { "name": "Tim Cook", "role": "Django expert", "pic": "tim_cook.png" },
+      { "name": "Tim Cook", "role": "Blogger", "pic": "tim_cook.png" }
+    ],
+    "attendees": [
+      { "name": "Algolia", "logo": "algolia.png" },
+      { "name": "Cachet", "logo": "algolia.png" },
+      { "name": "Ebanx", "logo": "algolia.png" },
+      { "name": "codebase", "logo": "algolia.png" },
+      { "name": "Google", "logo": "algolia.png" },
+      { "name": "Drip", "logo": "algolia.png" },
+      { "name": "DigitalOcean", "logo": "algolia.png" },
+      { "name": "cirrus", "logo": "algolia.png" }
+    ],
+    "organizers": [
+      { "name": "STEFANO BERNARDI", "role": "Investor", "pic": "bernardi.png" },
+      { "name": "LORENZO SANNA", "role": "Mountaineer", "pic": "sanna.png" }
+    ],
+    "schedule": [
+      {
+        "day": "THURSDAY, SEPT 14",
+        "program": [
+          {
+            "time": "8.00 AM",
+            "what": "Breakfast",
+            "description":
+              "Meet in the Hotel lobby and load up on energies for the day."
+          },
+          {
+            "time": "9.30 AM",
+            "what": "Cable car for Seiser Alm",
+            "description":
+              "It's just a short walk to the cable car that will bring us to the meadow."
+          },
+          {
+            "time": "10.00 AM",
+            "what": "Hike to the Refuge",
+            "description":
+              "It's a 2.5-3h walk to the refuge. But it's a beautiful one."
+          },
+          {
+            "time": "11.00 AM",
+            "what": "Drone test",
+            "description":
+              "You can drive a drone in VR."
+          },
+          {
+            "time": "12.00 AM",
+            "what": "Lunch",
+            "description":
+              "The one you came from, right?."
           }
         ]
       },
