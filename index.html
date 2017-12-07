@@ -1,6 +1,6 @@
----
-layout: home
----
+--- 
+layout: home 
+--- 
 
 {% assign current_event = site.data.events[0] %}
 
@@ -53,9 +53,9 @@ layout: home
     <div class="general__spacer"></div>
     <div class="row hidden-mobile">
       {% for p in site.data.philosophies %}
-        <div class="col-12 col-sm-4 col-md-6 col-lg-4 col-xl-3">
-          {% include components/card.html type="philosophies" title=p.title text=p.text img=p.img %}
-        </div>
+      <div class="col-12 col-sm-4 col-md-6 col-lg-4 col-xl-3">
+        {% include components/card.html type="philosophies" title=p.title text=p.text img=p.img %}
+      </div>
       {% endfor %}
     </div>
   </div>
@@ -68,9 +68,8 @@ layout: home
   </div>
   <div class="our-philosophy__mobile-leteral-scroll">
     <div class="our-philosophy__mobile-leteral-scroll-content">
-      {% for p in site.data.philosophies %}
-        {% include components/card.html type="philosophies" title=p.title text=p.text img=p.img %}
-      {% endfor %}
+      {% for p in site.data.philosophies %} {% include components/card.html type="philosophies" title=p.title text=p.text img=p.img
+      %} {% endfor %}
     </div>
   </div>
 </div>
@@ -96,16 +95,12 @@ layout: home
           The refuge is an historic hut used by mountaineers for decades, but has been completely restored and remodeled into a marvel
           of wooden architecture.
         </p>
-        {% include components/quotes.html quote="No need to bring a sleep bag, everything is ready for you.
-        We also negotiated 1 hot shower
-        per day, per guest." %}
+        {% include components/quotes.html quote="No need to bring a sleep bag, everything is ready for you. We also negotiated 1
+        hot shower per day, per guest." %}
       </div>
       <div class="col-12 col-sm-6 hidden-xs">
-        {%
-          include components/card.html type="location" title=current_event.title subtitle=current_event.location img=current_event.image
-          altitude=current_event.caratteristics.altitude
-          cooking=current_event.caratteristics.cooking
-          beds=current_event.caratteristics.beds
+        {% include components/card.html type="location" title=current_event.title subtitle=current_event.location img=current_event.image
+        altitude=current_event.caratteristics.altitude cooking=current_event.caratteristics.cooking beds=current_event.caratteristics.beds
         %}
       </div>
     </div>
@@ -113,30 +108,27 @@ layout: home
 </div>
 
 <div class="location hidden-sm hidden-md">
-  {%
-    include components/card.html type="location" title=current_event.title subtitle=current_event.location img=current_event.image
-    altitude=current_event.caratteristics.altitude
-    cooking=current_event.caratteristics.cooking
-    beds=current_event.caratteristics.beds
+  {% include components/card.html type="location" title=current_event.title subtitle=current_event.location img=current_event.image
+  altitude=current_event.caratteristics.altitude cooking=current_event.caratteristics.cooking beds=current_event.caratteristics.beds
   %}
 </div>
 
 <div class="carousel__home">
   <div id="slider" class="carousel__home-slider_1">
-    <a data-fancybox="gallery" href="{{"/assets/img/home_carousel/big/6-big.jpg" | relative_url }}" data-caption="This image has a caption">
-      <img src="{{"/assets/img/home_carousel/6-small.jpg" | relative_url }}" alt="">
+    <a data-fancybox="gallery" href="{{'/assets/img/home_carousel/big/6-big.jpg' | relative_url }}" data-caption="This image has a caption">
+      <img src="{{'/assets/img/home_carousel/6-small.jpg' | relative_url }}" alt="">
     </a>
-    <a data-fancybox="gallery" href="{{"/assets/img/home_carousel/big/7-big.jpg" | relative_url }}" data-caption="This image has a caption">
-      <img src="{{"/assets/img/home_carousel/7-small.jpg" | relative_url }}" alt="">
+    <a data-fancybox="gallery" href="{{'/assets/img/home_carousel/big/7-big.jpg' | relative_url }}" data-caption="This image has a caption">
+      <img src="{{'/assets/img/home_carousel/7-small.jpg' | relative_url }}" alt="">
     </a>
-    <a data-fancybox="gallery" href="{{"/assets/img/home_carousel/big/8-big.jpg" | relative_url }}" data-caption="This image has a caption">
-      <img src="{{"/assets/img/home_carousel/8-small.jpg" | relative_url }}" alt="">
+    <a data-fancybox="gallery" href="{{'/assets/img/home_carousel/big/8-big.jpg' | relative_url }}" data-caption="This image has a caption">
+      <img src="{{'/assets/img/home_carousel/8-small.jpg' | relative_url }}" alt="">
     </a>
-    <a data-fancybox="gallery" href="{{"/assets/img/home_carousel/big/9-big.jpg" | relative_url }}" data-caption="This image has a caption">
-      <img src="{{"/assets/img/home_carousel/9-small.jpg" | relative_url }}" alt="">
+    <a data-fancybox="gallery" href="{{'/assets/img/home_carousel/big/9-big.jpg' | relative_url }}" data-caption="This image has a caption">
+      <img src="{{'/assets/img/home_carousel/9-small.jpg' | relative_url }}" alt="">
     </a>
-    <a data-fancybox="gallery" href="{{"/assets/img/home_carousel/big/10-big.jpg" | relative_url }}" data-caption="This image has a caption">
-      <img src="{{"/assets/img/home_carousel/10-small.jpg" | relative_url }}" alt="">
+    <a data-fancybox="gallery" href="{{'/assets/img/home_carousel/big/10-big.jpg' | relative_url }}" data-caption="This image has a caption">
+      <img src="{{'/assets/img/home_carousel/10-small.jpg' | relative_url }}" alt="">
     </a>
   </div>
   <!-- <div id="slider" class="carousel__home-slider_2">
@@ -156,7 +148,7 @@ layout: home
       <img src="{{"/assets/img/home_carousel/5-small.jpg" | relative_url }}" alt="">
     </a>
   </div> -->
-  <img class="carousel__home__mountain-profile" src="{{"/assets/img/mountain_profile_2.svg" | relative_url }}" alt="">
+  <img class="carousel__home__mountain-profile" src="{{'/assets/img/mountain_profile_2.svg' | relative_url }}" alt="">
 </div>
 
 
@@ -178,56 +170,53 @@ layout: home
     <div class="container">
       <div class="row schedule__line-date-element-sizer">
         {% for schedule in current_event.schedule %}
-          <div class="
+        <div class="
             schedule__line-date-element 
             general__noselect
             tabselector__{{forloop.index}}
-            {% if forloop.last == false %}separator{% endif %}" 
-            onclick="displayScheduleTab({{forloop.index}})"
-          >
-            DAY #{{forloop.index}} <br>
-            {{schedule.day}}
-          </div>
+            {% if forloop.last == false %}separator{% endif %}" onclick="displayScheduleTab({{forloop.index}})">
+          DAY #{{forloop.index}}
+          <br> {{schedule.day}}
+        </div>
         {% endfor %}
       </div>
     </div>
     <div class="schedule__line-date-element-sizer--mobile">
-        <!-- <img src="{{'/assets/img/line_mobile.svg' | relative_url }}" alt=""> -->
-        <div class="dele">
-          {% for schedule in current_event.schedule %}
-          <div class="
+      <div class="line_background">
+        {% for schedule in current_event.schedule %}
+        <div class="
             schedule__line-date-element 
             general__noselect
-            tabselector__{{forloop.index}}" 
-            onclick="displayScheduleTab({{forloop.index}})"
-          >
-            <p class="text--fat">DAY {{forloop.index}}</p>
-          </div>
-        {% endfor %}
+            tabselector__{{forloop.index}}" onclick="displayScheduleTab({{forloop.index}})">
+          <p class="text--fat">DAY {{forloop.index}}</p>
         </div>
+        {% endfor %}
+      </div>
     </div>
   </div>
 </div>
 
 <div class="container schedule__tabs">
   {% for schedule in current_event.schedule %}
-    <div class="tab__{{forloop.index}}">
-      {% for program in schedule.program %}
-        <div class="row element">
-          <div class="col-12 col-sm-2"><p class="text--fat">{{program.time}}</p></div>
-          <div class="col-12 col-sm-10">
-            <div class="row">
-              <div class="col-12 col-sm-12">
-                <p class="text--brown">{{program.what}}</p>
-              </div>
-              <div class="col-12 col-sm-12">
-                <p class="text">{{program.description}}</p>
-              </div>
-            </div>
+  <div class="tab__{{forloop.index}}">
+    {% for program in schedule.program %}
+    <div class="row element">
+      <div class="col-12 col-sm-2">
+        <p class="text--fat">{{program.time}}</p>
+      </div>
+      <div class="col-12 col-sm-10">
+        <div class="row">
+          <div class="col-12 col-sm-12">
+            <p class="text--brown">{{program.what}}</p>
+          </div>
+          <div class="col-12 col-sm-12">
+            <p class="text">{{program.description}}</p>
           </div>
         </div>
-      {% endfor %}
+      </div>
     </div>
+    {% endfor %}
+  </div>
   {% endfor %}
 </div>
 
@@ -235,12 +224,37 @@ layout: home
   <div class="container">
     <div class="row">
       <div class="col-12">
-      {% include components/headings.html big="SPEAKERS" small="Amazing speakers for an amazing event" %}
+        {% include components/headings.html big="SPEAKERS" small="Amazing speakers for an amazing event" %}
       </div>
-      <div class="col-12">
-
+      <div class="col-12 speakers__pictures">
+        <div class="row">
+          {% for speaker in current_event.speakers %}
+            <div class="col-sm-4 col-md-4 col-lg-3">
+              <div class="speakers__pictures-card">
+                <img src="{{'/assets/img/speakers/' | relative_url }}{{speaker.pic}}" alt="">
+                <div class="speakers__pictures-card-data">
+                  <p class="speakers__pictures-card-data-name">{{speaker.name}}</p>
+                  <p class="speakers__pictures-card-data-role">{{speaker.role}}</p>
+                </div>
+                <div class="img-overlay"></div>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
       </div>
     </div>
+  </div>
+  <div class="speakers__pictures--mobile">
+    {% for speaker in current_event.speakers %}
+      <div class="speakers__pictures-card">
+        <img src="{{'/assets/img/speakers/' | relative_url }}{{speaker.pic}}" alt="">
+        <div class="speakers__pictures-card-data">
+          <p class="speakers__pictures-card-data-name">{{speaker.name}}</p>
+          <p class="speakers__pictures-card-data-role">{{speaker.role}}</p>
+        </div>
+        <div class="img-overlay"></div>
+      </div>
+    {% endfor %}
   </div>
 </div>
 

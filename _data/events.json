@@ -9,6 +9,19 @@
       "cooking": "Traditional",
       "beds": "70 peope"
     },
+    "speakers": [
+      { "name": "Tim Cook", "role": "Investor", "pic": "tim_cook.png" },
+      { "name": "Tim Cook", "role": "Django expert", "pic": "tim_cook.png" },
+      { "name": "Tim Cook", "role": "Blogger", "pic": "tim_cook.png" },
+      {
+        "name": "Tim Cook",
+        "role": "Software Developer",
+        "pic": "tim_cook.png"
+      },
+      { "name": "Tim Cook", "role": "Investor", "pic": "tim_cook.png" },
+      { "name": "Tim Cook", "role": "Django expert", "pic": "tim_cook.png" },
+      { "name": "Tim Cook", "role": "Blogger", "pic": "tim_cook.png" }
+    ],
     "schedule": [
       {
         "day": "THURSDAY, SEPT 14",
