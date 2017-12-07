@@ -174,7 +174,7 @@ layout: home
             schedule__line-date-element 
             general__noselect
             tabselector__{{forloop.index}}
-            {% if forloop.last == false %}separator{% endif %}" onclick="displayScheduleTab({{forloop.index}})">
+            {% if forloop.last == false %}separator{% endif %}" onclick="displayScheduleTab('{{forloop.index}}')">
           DAY #{{forloop.index}}
           <br> {{schedule.day}}
         </div>
@@ -306,3 +306,29 @@ layout: home
     </div>
   </div>
 </div>
+
+<div class="past-editions">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          {% include components/headings.html big="PAST EDITIONS" small="The dream team of the event" %}
+        </div>
+        <div class="col-12">
+          <div class="row">
+            {% for o in current_event.organizers %}
+            <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+              <div class="past-editions__pictures-card">
+                <img src="{{'/assets/img/organizers/' | relative_url }}{{o.pic}}" alt="">
+                <div class="past-editions__pictures-card-data">
+                  <p class="past-editions__pictures-card-data-name">{{o.name}}</p>
+                  <p class="past-editions__pictures-card-data-role">{{o.role}}</p>
+                </div>
+                <div class="img-overlay"></div>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
