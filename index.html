@@ -5,10 +5,12 @@ layout: home
 {% for tag in site.tags %}
   {% assign t = tag | first %}
   {% assign posts = tag | last %}
-  {% assign past_events = post %}
-  {% if post.tags contains "event" %}
-    {% assign current_event = post %}
-  {% endif %}
+  {% assign past_events = posts %}
+  {% for post in posts %}
+    {% if post.tags contains "event" %}
+      {% assign current_event = post %}
+    {% endif %}
+  {% endfor %}
 {% endfor %}
 
 <div class="general_destination" id="about"></div>
