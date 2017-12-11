@@ -1,9 +1,9 @@
 ---
-title: Tierser Alpl Alpine Refuge
+title: Tierser Alpl Alpine Refugee
 tags:
 - event
 layout: event
-permalink: /event/:title
+permalink: "/event/:title"
 location: Trentino - Alto Adige, Italy
 image: 1.png
 when_header: September 14-17, 2018
