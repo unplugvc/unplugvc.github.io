@@ -1,10 +1,11 @@
 @import 'settings'
 @import 'colors'
 
-$footer_background_img_path = $base_url '/assets/img/footer/footer_background.png'
+$footer_background_img_path = $base_url '/assets/img/footer/footer_background.jpg'
 
 @media (min-width: 320px)
   .footer
+    background-color: #040404
     background-image: url($footer_background_img_path)
     position: relative
 
@@ -52,11 +53,12 @@ $footer_background_img_path = $base_url '/assets/img/footer/footer_background.pn
     background-position: top
     background-repeat: no-repeat
     background-size: cover
-    margin-top: -300px
+    margin-top: -650px
+    height: 1900px
 
   .footer__claim
     padding-bottom: 300px
-    padding-top: 600px
+    padding-top: 850px
 
     p
       font-size: 48px
@@ -93,23 +95,9 @@ $footer_background_img_path = $base_url '/assets/img/footer/footer_background.pn
   .footer__informations
     margin-top: 40px
 
-@media (min-width: 1600px)
+@media (min-width: 1300px)
   .footer
-    background-position: top
-    background-repeat: no-repeat
-    background-size: 100% auto
-    margin-top: -300px
-
-  .footer__claim
-    padding-bottom: 300px
-    padding-top: 600px
-
-@media (min-width: 1900px)
-  .footer
-    background-position: top
-    background-repeat: no-repeat
-    background-size: 100% auto
-    margin-top: -300px
+    margin-top: -800px
 
   .footer__claim
     padding-bottom: 500px
