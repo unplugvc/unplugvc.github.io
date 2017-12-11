@@ -1,5 +1,45 @@
 <footer>
   <div class="footer">
-    
+    <div class="container">
+      <div class="footer__claim">
+        <p>APPLY FOR THE NEXT EDITION THE SEATS ARE LIMITED</p>
+        <a class="footer__claim-button" href="">Apply to attend!</a>
+      </div>
+      <div class="footer__sponsors">
+        <p class="footer__title">MAIN SPONSOR</p>
+        <div class="row">
+          {% for sponsor in site.data.main_sponsors %}
+          <div class="col-6 col-sm-2 col-md-2 col-lg-2">
+            <div class="footer__sponsors-pictures-card">
+              <img src="{{'/assets/img/sponsor/' | relative_url }}{{sponsor.logo}}" alt="">
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="footer__informations">
+        <div class="row">
+          <div class="col-sm-4">
+            <p class="footer__title">GOT A QUESTIONS?</p>
+            <p class="footer__text">
+              Phone.
+              <a href="tel:{{site.data.organization_data.phone_number}}">{{site.data.organization_data.phone_number}}</a>
+              <br> Mail.
+              <a href="mailto:{{site.data.organization_data.mail}}">{{site.data.organization_data.mail}}</a>
+              <br>
+              <a href="maps:{{site.data.organization_data.address}}">{{site.data.organization_data.address}}</a>
+            </p>
+          </div>
+          <div class="col-sm-4">
+            <p class="footer__title">USEFUL LINKS</p>
+            <p class="footer__text">
+              {% for link in site.data.useful_links %}
+              <a href="{{link.address}}">{{link.label}}</a>
+              <br> {% endfor %}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </footer>

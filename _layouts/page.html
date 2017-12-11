@@ -1,7 +1,6 @@
 --- 
-layout: event 
+layout: page 
 ---
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,20 +8,15 @@ layout: event
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>{{ page.title }}</title>
+  <title>Ventureretreat</title>
 </head>
 
 <body>
   {% include navbar.html %} 
-  {% include header.html type="home" %} 
 
-  {{ page.title }}
-  {{ page.schedule }}
-  {{ page.title }}
-
+  {{content}}
   {% include scripts.html %}
+  
 </body>
 
 </html>
-
-

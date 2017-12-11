@@ -1,6 +1,8 @@
 @media (min-width: 320px)
   .past-editions
     margin-top: 60px
+    position: relative
+    z-index: 2
 
     .container
       padding-left: 40px
@@ -27,22 +29,70 @@
       z-index: 2
 
     .past-editions__pictures-card-data-name
-      font-size: 24px
+      font-size: 14px
       font-weight: 700
-      line-height: 35px
+      line-height: 20px
       margin-bottom: 0
 
     .past-editions__pictures-card-data-role
-      font-size: 20px
+      font-size: 12px
       font-weight: 500
-      line-height: 24px
+      line-height: 20px
       margin-bottom: 0
+
+    .past-editions__pictures--mobile
+      overflow-x: auto
+      overflow-y: hidden
+      padding-left: 40px
+      white-space: nowrap
+
+      img
+        width: 100%
+
+      &::-webkit-scrollbar
+        background: transparent
+        width: 0
+
+      &::-webkit-scrollbar-thumb
+        background: transparent
+
+      .past-editions__pictures-card
+        border-radius: 8px
+        display: inline-block
+        margin-right: 24px
+        margin-top: 24px
+        overflow: hidden
+        position: relative
+        width: 80%
+
+        .past-editions__pictures-card-data
+          bottom: 16px
+          color: white
+          left: 16px
+          position: absolute
+          width: 100%
+          z-index: 2
+
+        .past-editions__pictures-card-data-name
+          font-size: 14px
+          font-weight: 700
+          line-height: 20px
+          margin-bottom: 0
+          white-space: normal
+
+        .past-editions__pictures-card-data-role
+          font-size: 12px
+          font-weight: 500
+          line-height: 18px
 
 @media (min-width: 768px)
   .past-editions
     .container
       padding-left: 15px
       padding-right: 15px
+
+    .past-editions__pictures--mobile
+      display: none
 
     .past-editions__pictures
       display: block
@@ -63,13 +113,13 @@
       z-index: 2
 
     .past-editions__pictures-card-data-name
-      font-size: 24px
+      font-size: 16px
       font-weight: 700
-      line-height: 35px
+      line-height: 22px
       margin-bottom: 0
 
     .past-editions__pictures-card-data-role
-      font-size: 20px
+      font-size: 14px
       font-weight: 500
-      line-height: 24px
+      line-height: 20px
       margin-bottom: 0

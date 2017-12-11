@@ -1,4 +1,116 @@
+@import 'settings'
 @import 'colors'
 
-.footer
-  background-color: $white
+$footer_background_img_path = $base_url '/assets/img/footer/footer_background.png'
+
+@media (min-width: 320px)
+  .footer
+    background-image: url($footer_background_img_path)
+    position: relative
+
+  .footer__claim
+    padding-bottom: 400px
+    padding-top: 300px
+
+    p
+      color: $white
+      font-family: 'Nexa'
+      font-size: 48px
+      font-weight: 900
+      line-height: 64px
+
+  .footer__claim-button
+    background-color: $brown
+    border-radius: 8px
+    box-shadow: 0 2px 8px 0 $black-default
+    color: $white
+    font-size: 32px
+    font-weight: 600
+    height: 80px
+    text-align: center
+    width: 304px
+
+  .footer__title
+    color: $white
+    font-size: 24px
+    font-weight: 900
+
+  .footer__text
+    color: $white
+    font-size: 18px
+    line-height: 40px
+
+    a
+      color: $white
+      line-height: 40px
+
+      &:hover
+        color: $white
+
+@media (min-width: 1024px)
+  .footer
+    background-position: top
+    background-repeat: no-repeat
+    background-size: cover
+    margin-top: -300px
+
+  .footer__claim
+    padding-bottom: 300px
+    padding-top: 600px
+
+    p
+      font-size: 48px
+      font-weight: 900
+      line-height: 64px
+      text-align: center
+
+  .footer__claim-button
+    display: block
+    font-size: 32px
+    font-weight: 600
+    height: 80px
+    line-height: 80px
+    margin: 32px auto
+    text-align: center
+    width: 304px
+
+    &:hover
+      color: $white
+
+    .footer__sponsors-pictures-card
+      background-color: $background-grey
+      border-radius: 8px
+      margin-top: 24px
+      overflow: hidden
+      position: relative
+
+      img
+        display: table
+        margin: 0 auto
+        padding: 34px 0
+        width: 72%
+
+  .footer__informations
+    margin-top: 40px
+
+@media (min-width: 1600px)
+  .footer
+    background-position: top
+    background-repeat: no-repeat
+    background-size: 100% auto
+    margin-top: -300px
+
+  .footer__claim
+    padding-bottom: 300px
+    padding-top: 600px
+
+@media (min-width: 1900px)
+  .footer
+    background-position: top
+    background-repeat: no-repeat
+    background-size: 100% auto
+    margin-top: -300px
+
+  .footer__claim
+    padding-bottom: 500px
+    padding-top: 1000px
