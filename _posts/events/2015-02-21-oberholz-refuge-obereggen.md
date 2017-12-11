@@ -12,7 +12,7 @@ caratteristics:
   cooking: Traditional
   beds: 70 peope
 past_edition:
-  period: '21 - 22 - 23 February 2015'
+  period: 21 - 22 - 23 February 2015
   pic: oberholz_refuge.png
 speakers:
 - name: Tim Cook

@@ -12,7 +12,7 @@ caratteristics:
   cooking: Traditional
   beds: 70 peope
 past_edition:
-  date: 14 - 15 - 16 - 17 February 2018
+  period: 14 - 15 - 16 - 17 February 2018
   pic: oberholz_refuge.png
 speakers:
 - name: Tim Cook

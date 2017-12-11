@@ -1,18 +1,18 @@
 ---
-title: Nambino lake - Madonna di Campiglio
+title: Geisler Alm - Funes Odlë
 tags:
 - event
 layout: event
 permalink: "/event/:title"
 location: Insert this location location
 image: 1.png
-when_header: September 14-17, 2017
+when_header: September 14-17, 2018
 caratteristics:
   altitude: 2240 mt
   cooking: Traditional
   beds: 70 peope
 past_edition:
-  period: 24 - 25 - 26 September 2017
+  period: 12 - 13 August 2016
   pic: oberholz_refuge.png
 speakers:
 - name: Tim Cook
