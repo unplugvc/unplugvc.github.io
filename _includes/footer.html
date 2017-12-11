@@ -9,7 +9,7 @@
         <p class="footer__title">MAIN SPONSOR</p>
         <div class="row">
           {% for sponsor in site.data.main_sponsors %}
-          <div class="col-6 col-sm-2 col-md-2 col-lg-2">
+          <div class="col-6 col-sm-3 col-md-3 col-lg-2">
             <div class="footer__sponsors-pictures-card">
               <img src="{{'/assets/img/sponsor/' | relative_url }}{{sponsor.logo}}" alt="">
             </div>
@@ -36,6 +36,18 @@
               {% for link in site.data.useful_links %}
               <a href="{{link.address}}">{{link.label}}</a>
               <br> {% endfor %}
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="footer__credits">
+        <div class="row">
+          <div class="col-sm-8">
+            <p class="footer__text--small">© 2018 Venture Retreat - Privacy and Cookie Policy</p>
+          </div>
+          <div class="col-sm-4">
+            <p class="footer__text--small">Made in
+              <img src="{{'/assets/img/logo_belka.svg' | relative_url }}" alt="">
             </p>
           </div>
         </div>

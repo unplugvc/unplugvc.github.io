@@ -1,34 +1,48 @@
 @import 'settings'
 @import 'colors'
 
-$footer_background_img_path = $base_url '/assets/img/footer/footer_background.png'
+$footer_background_img_path = $base_url '/assets/img/footer/footer_background.jpg'
 
 @media (min-width: 320px)
   .footer
+    background-color: #040404
     background-image: url($footer_background_img_path)
+    background-position: top center
+    background-repeat: no-repeat
+    background-size: auto 1350px
+    height: auto
+    margin-top: -450px
     position: relative
 
+    .container
+      padding-left: 40px
+      padding-right: 40px
+
   .footer__claim
-    padding-bottom: 400px
-    padding-top: 300px
+    padding-bottom: 300px
+    padding-top: 600px
+    text-align: center
 
     p
       color: $white
       font-family: 'Nexa'
-      font-size: 48px
+      font-size: 18px
       font-weight: 900
-      line-height: 64px
+      line-height: 26px
 
   .footer__claim-button
     background-color: $brown
     border-radius: 8px
     box-shadow: 0 2px 8px 0 $black-default
     color: $white
-    font-size: 32px
+    display: block
+    font-size: 26px
     font-weight: 600
-    height: 80px
+    height: 70px
+    line-height: 70px
+    margin: 0 auto
     text-align: center
-    width: 304px
+    width: 264px
 
   .footer__title
     color: $white
@@ -38,6 +52,7 @@ $footer_background_img_path = $base_url '/assets/img/footer/footer_background.pn
   .footer__text
     color: $white
     font-size: 18px
+    font-weight: 300
     line-height: 40px
 
     a
@@ -47,16 +62,37 @@ $footer_background_img_path = $base_url '/assets/img/footer/footer_background.pn
       &:hover
         color: $white
 
-@media (min-width: 1024px)
+  .footer__text--small
+    @extend .footer__text
+    font-size: 16px
+    font-weight: 500
+
+    img
+      vertical-align: baseline
+
+  .footer__sponsors-pictures-card
+    border-radius: 8px
+    overflow: hidden
+    position: relative
+
+    img
+      display: table
+      margin: 0 auto
+      width: 100%
+
+@media (min-width: 768px)
   .footer
-    background-position: top
-    background-repeat: no-repeat
     background-size: cover
+    height: auto
     margin-top: -300px
 
+    .container
+      padding-left: 15px
+      padding-right: 15px
+
   .footer__claim
-    padding-bottom: 300px
-    padding-top: 600px
+    padding-bottom: 500px
+    padding-top: 650px
 
     p
       font-size: 48px
@@ -77,40 +113,38 @@ $footer_background_img_path = $base_url '/assets/img/footer/footer_background.pn
     &:hover
       color: $white
 
-    .footer__sponsors-pictures-card
-      background-color: $background-grey
-      border-radius: 8px
-      margin-top: 24px
-      overflow: hidden
-      position: relative
-
-      img
-        display: table
-        margin: 0 auto
-        padding: 34px 0
-        width: 72%
-
   .footer__informations
     margin-top: 40px
 
-@media (min-width: 1600px)
+@media (min-width: 1024px)
   .footer
-    background-position: top
-    background-repeat: no-repeat
-    background-size: 100% auto
+    background-color: #040404
+    height: 1800px
     margin-top: -300px
 
   .footer__claim
-    padding-bottom: 300px
-    padding-top: 600px
+    padding-bottom: 400px
+    padding-top: 650px
+
+    p
+      font-size: 48px
+      font-weight: 900
+      line-height: 64px
+      text-align: center
+
+@media (min-width: 1300px)
+  .footer
+    height: auto
+    margin-top: -400px
+
+  .footer__claim
+    padding-bottom: 400px
+    padding-top: 900px
+
+  .footer__credits
+    margin-top: 48px
 
 @media (min-width: 1900px)
-  .footer
-    background-position: top
-    background-repeat: no-repeat
-    background-size: 100% auto
-    margin-top: -300px
-
   .footer__claim
-    padding-bottom: 500px
-    padding-top: 1000px
+    padding-bottom: 600px
+    padding-top: 900px
