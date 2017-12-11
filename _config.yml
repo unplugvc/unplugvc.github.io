@@ -43,6 +43,7 @@ exclude:
   - script
   - rakefile
 
+future: true
 defaults:
   - scope:
       path: "events"
