@@ -39,6 +39,7 @@ $footer_background_img_path = $base_url '/assets/img/footer/footer_background.jp
   .footer__text
     color: $white
     font-size: 18px
+    font-weight: 300
     line-height: 40px
 
     a
@@ -48,17 +49,25 @@ $footer_background_img_path = $base_url '/assets/img/footer/footer_background.jp
       &:hover
         color: $white
 
+  .footer__text--small
+    @extend .footer__text
+    font-size: 16px
+    font-weight: 500
+
+    img
+      vertical-align: baseline
+
 @media (min-width: 1024px)
   .footer
     background-position: top
     background-repeat: no-repeat
     background-size: cover
-    margin-top: -650px
-    height: 1900px
+    height: 1800px
+    margin-top: -300px
 
   .footer__claim
-    padding-bottom: 300px
-    padding-top: 850px
+    padding-bottom: 400px
+    padding-top: 650px
 
     p
       font-size: 48px
@@ -97,8 +106,17 @@ $footer_background_img_path = $base_url '/assets/img/footer/footer_background.jp
 
 @media (min-width: 1300px)
   .footer
-    margin-top: -800px
+    height: auto
+    margin-top: -400px
 
   .footer__claim
-    padding-bottom: 500px
-    padding-top: 1000px
+    padding-bottom: 400px
+    padding-top: 900px
+
+  .footer__credits
+    margin-top: 48px
+
+@media (min-width: 1900px)
+  .footer__claim
+    padding-bottom: 600px
+    padding-top: 900px
