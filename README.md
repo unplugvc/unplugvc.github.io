@@ -32,18 +32,34 @@ When merging on master branch it will deploy the resultant build.
 * `jekyll build`
 * drop `./_site` where you need
 
+## Adding data
+
+### Events
+
+The events are in the `/_posts/events/`
+
+They are jekyll posts so you have to give them a name with this structure: `YEAR-MONTH-DAY-title.md`
+
+Where `YEAR-MONTH-DAY` are the data of the starting day of the Event.
+(The latest will be put in the homepage as the current/next event)
+
+NB: The structure of the data bust be the same
+
+### Homepage
+
+* OUR PHILOSOPHY: `/_data/philosophies.json`
+* THE HIKE: `/_data/hikes.json`
+
+### Footer
+
+* MAIN SPONSOR: `/_data/main_sponsors.json`
+* GOT A QUESTIONS?: `/_data/organization_data.yml`
+* USEFUL LINKS: `/_data/useful_links.json`
+
 ## Modify data
 
 Use jekyll-admin to modify the data `http://localhost:4000/admin`
 
-* Go in the `Data Files` section
-* Select the element you want to modify
-* In the right column click on the `Switch View to GUI Editor` orange button to toggle a more readable UI
-
-
-### Current event
-
-* Dev
-  * The first element in the json *events.json* is the current event, 
-  * If you need to modify it just modify the values or ad new elements (es.: new activity in *program*)
-  * To create a new current event just copy&modify the old current event and put it at the first position in the json.
+There is a section for everything:
+* Events are `posts` so they are in the sections posts, from the list select the folder `events`
+* The other data are in the `Data Files` collection with the name listed here above (Adding data)
