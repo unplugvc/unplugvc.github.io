@@ -19,17 +19,14 @@ $row_schedule_line_img_mobile_path = $base_url '/assets/img/line_mobile.svg'
       overflow-y: hidden
       position: relative
       white-space: nowrap
+      -webkit-overflow-scrolling: touch
 
       &::-webkit-scrollbar
-        background: transparent
-        width: 0
-
-      &::-webkit-scrollbar-thumb
-        background: transparent
+        display: none
 
       li
         float: left
-        margin-left: 5px
+        vertical-align: top
 
       &.sticky-schedule-modifier
         background-color: $white
@@ -48,6 +45,7 @@ $row_schedule_line_img_mobile_path = $base_url '/assets/img/line_mobile.svg'
           overflow-y: hidden
           position: relative
           white-space: nowrap
+          -webkit-overflow-scrolling: touch
 
       .line_background
         background-image: url($row_schedule_line_img_mobile_path)
@@ -59,7 +57,6 @@ $row_schedule_line_img_mobile_path = $base_url '/assets/img/line_mobile.svg'
         margin-bottom: 0
         padding-left: 44px
         position: relative
-        // width: 768px
 
       img
         left: -40px
@@ -73,7 +70,7 @@ $row_schedule_line_img_mobile_path = $base_url '/assets/img/line_mobile.svg'
         margin-top: 0
         padding-right: 40px
         position: relative
-        // vertical-align: top
+        vertical-align: top
         z-index: 2
 
         p
