@@ -1,4 +1,6 @@
-{% assign current_event = site.data.events[0] %}
+{% for post in site.tags.event limit: 1 %}
+  {% assign current_event = post %}
+{% endfor %}
 
 <div class="header__{{include.type}}">
   {% if include.type == "home" %}
