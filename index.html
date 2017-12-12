@@ -155,7 +155,6 @@ layout: home
   <img class="carousel__home__mountain-profile" src="{{'/assets/img/mountain_profile_2.svg' | relative_url }}" alt="">
 </div>
 
-
 <div class="schedule" id="schedule">
   <div class="container">
     <div class="row">
@@ -185,18 +184,18 @@ layout: home
         {% endfor %}
       </div>
     </div>
-    <div class="schedule__line-date-element-sizer--mobile sticky-scroll-box-mobile">
-      <div class="line_background">
-        {% for schedule in current_event.schedule %}
-        <div class="
-            schedule__line-date-element 
-            general__noselect
-            tabselector__{{forloop.index}}" onclick="displayScheduleTab({{forloop.index}})">
-          <p class="text--fat">DAY {{forloop.index}}</p>
-        </div>
-        {% endfor %}
+    <div class="schedule__line-date-element-sizer--mobile">
+      
+        <ul class="line_background">
+          {% for schedule in current_event.schedule %}
+          <li class="schedule__line-date-element general__noselect tabselector__{{forloop.index}}" onclick="displayScheduleTab('{{forloop.index}}')">
+            <p class="text--fat">DAY {{forloop.index}}</p>
+          </li>
+          {% endfor %}
+          <!-- <div class="general__clear"></div> -->
+        </ul>
       </div>
-    </div>
+    
   </div>
 </div>
 

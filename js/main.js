@@ -3,7 +3,8 @@
 const state = {
   currentTab: 1,
   ww: $(window).width(),
-  baseurl: 'ventureretreat/'
+  baseurl: 'ventureretreat/',
+  initialScrolltopScheduleMenu: 0
 };
 
 /**
@@ -50,19 +51,6 @@ $(document).ready(() => {
       buttons: ['slideShow', 'fullScreen', 'thumbs', 'share', 'close']
     });
 
-  let top = $('.sticky-scroll-box-mobile').offset().top;
-  $(window).scroll(event => {
-    if ($(window).width() < 769) {
-      let y = $(this).scrollTop();
-      if (y >= top) $('.sticky-scroll-box-mobile').addClass('fixed');
-      else $('.sticky-scroll-box-mobile').removeClass('fixed');
-      $('.sticky-scroll-box-mobile').width(
-        $('.sticky-scroll-box-mobile')
-          .parent()
-          .width()
-      );
-    }
-  });
 });
 
 /**
@@ -70,7 +58,8 @@ $(document).ready(() => {
  */
 $(document).scroll(() => {
   let limit = 100;
-  if ($(window).width() < 769) {
+  let ww = $(window).width();
+  if (ww < 769) {
     limit = 0;
   }
 
@@ -86,6 +75,21 @@ $(document).scroll(() => {
       .css({ width: '100%' });
     $('.top_navbar').removeClass('negative');
     $('.top_navbar--mobile').removeClass('negative');
+  }
+
+  if (ww < 769) {
+    let y = $(window).scrollTop();
+    let menuScrolltop = $('.schedule__line-container').offset().top - 116;
+    if (y > menuScrolltop) {
+      if (!state.initialScrolltopScheduleMenu) {
+        state.initialScrolltopScheduleMenu = menuScrolltop;
+      }
+      $('.schedule__line-date-element-sizer--mobile').addClass('sticky-schedule-modifier');
+    } else {
+      if (y < state.initialScrolltopScheduleMenu) {
+        $('.schedule__line-date-element-sizer--mobile').removeClass('sticky-schedule-modifier');
+      }
+    }
   }
 });
 
