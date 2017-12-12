@@ -132,6 +132,8 @@ function displayScheduleTab(id) {
   state.currentTab = id;
   $(`.tab__${state.currentTab}`).show();
   $(`.tabselector__${state.currentTab}`).addClass('active');
+  let nextPosition = $('.schedule__tabs').offset().top - 200;
+  $('html,body').animate({scrollTop: nextPosition}, 'slow');
 }
 
 /**
