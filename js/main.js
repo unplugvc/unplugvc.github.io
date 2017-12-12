@@ -93,10 +93,15 @@ $(document).scroll(() => {
       if (!state.initialScrolltopScheduleMenu) {
         state.initialScrolltopScheduleMenu = menuScrolltop;
       }
-
-      $('.schedule__line-date-element-sizer--mobile').addClass(
-        'sticky-schedule-modifier'
-      );
+      if (windowScrolltop > state.initialScrolltopScheduleMenu + $('.schedule__tabs').height() + 50) {
+        $('.schedule__line-date-element-sizer--mobile').removeClass(
+          'sticky-schedule-modifier'
+        );
+      } else {
+        $('.schedule__line-date-element-sizer--mobile').addClass(
+          'sticky-schedule-modifier'
+        );
+      }
     } else {
       if (windowScrolltop < state.initialScrolltopScheduleMenu) {
         $('.schedule__line-date-element-sizer--mobile').removeClass(
