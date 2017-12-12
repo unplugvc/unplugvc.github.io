@@ -93,10 +93,15 @@ $(document).scroll(() => {
       if (!state.initialScrolltopScheduleMenu) {
         state.initialScrolltopScheduleMenu = menuScrolltop;
       }
-
-      $('.schedule__line-date-element-sizer--mobile').addClass(
-        'sticky-schedule-modifier'
-      );
+      if (windowScrolltop > state.initialScrolltopScheduleMenu + $('.schedule__tabs').height() + 50) {
+        $('.schedule__line-date-element-sizer--mobile').removeClass(
+          'sticky-schedule-modifier'
+        );
+      } else {
+        $('.schedule__line-date-element-sizer--mobile').addClass(
+          'sticky-schedule-modifier'
+        );
+      }
     } else {
       if (windowScrolltop < state.initialScrolltopScheduleMenu) {
         $('.schedule__line-date-element-sizer--mobile').removeClass(
@@ -127,6 +132,8 @@ function displayScheduleTab(id) {
   state.currentTab = id;
   $(`.tab__${state.currentTab}`).show();
   $(`.tabselector__${state.currentTab}`).addClass('active');
+  let nextPosition = $('.schedule__tabs').offset().top - 200;
+  $('html,body').animate({scrollTop: nextPosition}, 'slow');
 }
 
 /**
