@@ -8,10 +8,10 @@
 @import 'home/attendees'
 @import 'home/organized'
 @import 'home/past-editions'
+@import 'home/location'
+@import 'home/schedule'
 
 $row_background_img_path = $base_url '/assets/img/cartography_background.png'
-$row_schedule_line_img_path = $base_url '/assets/img/line.svg'
-$row_schedule_line_img_mobile_path = $base_url '/assets/img/line_mobile.svg'
 
 @media (min-width: 320px)
   .our-philosophy
@@ -28,11 +28,7 @@ $row_schedule_line_img_mobile_path = $base_url '/assets/img/line_mobile.svg'
     white-space: nowrap
 
     &::-webkit-scrollbar
-      background: transparent
-      width: 0
-
-    &::-webkit-scrollbar-thumb
-      background: transparent
+      display: none
 
   .our-philosophy__mobile-leteral-scroll-content
     padding-left: 15px
@@ -83,39 +79,6 @@ $row_schedule_line_img_mobile_path = $base_url '/assets/img/line_mobile.svg'
       display: table
       margin: 35px auto 0 auto
 
-  .location
-    margin-top: 100px
-
-    .card__header
-      height: 56%
-
-    .card__body
-      padding: 5px 15px
-      text-align: center
-
-    .card__header--title
-      bottom: 50px
-      font-size: 26px
-      font-weight: 500
-      letter-spacing: 1px
-
-    .title--second
-      font-size: 2vw
-      margin-bottom: 0
-      margin-top: 8px
-
-  .location__column-separator
-    border-right: 1px solid #EAEAEA
-    display: block
-    height: 100%
-    padding-bottom: 22px
-
-  .location__carateristics
-    img
-      display: table
-      margin: 0 auto
-      margin-top: 25px
-
   .carousel__home
     margin-top: 150px
     overflow-x: hidden
@@ -128,64 +91,6 @@ $row_schedule_line_img_mobile_path = $base_url '/assets/img/line_mobile.svg'
     position: absolute
     width: 500%
     z-index: 2
-
-  .schedule
-    margin-top: 60px
-
-    .schedule__line-container
-      box-shadow: 0 4px 4px 0 rgba(51, 51, 51, 0.3)
-      height: 60px
-      margin-top: 50px
-
-    .schedule__line-date-element-sizer--mobile
-      overflow-x: auto
-      overflow-y: hidden
-      position: relative
-      white-space: nowrap
-
-      .line_background
-        background-image: url($row_schedule_line_img_mobile_path)
-        background-position: center
-        background-repeat-x: repeat
-        background-repeat-y: no-repeat
-        background-size: contain
-        padding-left: 44px
-        width: 115%
-
-      img
-        left: -40px
-        position: absolute
-        width: 120%
-
-      &::-webkit-scrollbar
-        background: transparent
-        width: 0
-
-      &::-webkit-scrollbar-thumb
-        background: transparent
-
-      .schedule__line-date-element
-        display: inline-block
-        font-size: 28px
-        margin-top: 0
-        padding-right: 40px
-        position: relative
-        z-index: 2
-
-        p
-          line-height: 56px
-          margin: 0
-          margin-top: 0
-
-        &.active
-          p
-            @extend .text--fat--brown
-            border-bottom: 4px solid $brown
-            margin: 0
-            margin-top: 0
-
-    .schedule__line-date-element-sizer
-      display: none
 
   .speakers
     margin-top: 60px
@@ -242,9 +147,6 @@ $row_schedule_line_img_mobile_path = $base_url '/assets/img/line_mobile.svg'
     left: 15px
     width: calc(100% - 30px)
 
-  .card__location
-    height: 450px
-
   .carousel__home__mountain-profile
     bottom: 0
     left: 0
@@ -265,85 +167,9 @@ $row_schedule_line_img_mobile_path = $base_url '/assets/img/line_mobile.svg'
     .title--first--negative
       top: -144px
 
-  .hike__card,
-  .location
+  .hike__card
     .title--second
       font-size: 1.6vw
-
-  .card__location
-    height: 490px
-
-  .schedule__line-container
-    .container
-      height: 100%
-
-  .schedule
-    .schedule__line-container
-      background-image: url($row_schedule_line_img_path)
-      background-position: center
-      background-repeat: no-repeat
-      background-size: contain
-      box-shadow: none
-      height: 150px
-      margin-top: 50px
-
-    .schedule__line-date-element-sizer--mobile
-      display: none
-
-    .schedule__line-date-element-sizer
-      background: $white
-      border-radius: 4px
-      box-shadow: $card-shadow
-      display: flex
-      height: 80px
-      margin: auto
-      padding: 8px 0
-      position: relative
-      top: 50%
-      transform: translateY(-50%)
-      width: 80%
-
-    .schedule__line-date-element
-      cursor: pointer
-      flex: 1
-      font-family: 'Gibson'
-      font-weight: 500
-      padding: 6px 0
-      text-align: center
-
-      &.active
-        color: $brown
-        font-weight: 700
-
-      &.separator
-        border-right: 1px solid $grey-separator
-
-  .schedule__tabs
-    div[class^='tab__']
-      display: none
-      margin-top: 40px
-
-      .element
-        background-color: $background-grey
-        border-bottom: 1px solid $grey-separator
-        padding: 20px 40px
-
-        &:first-child
-          border-top-left-radius: 8px
-          border-top-right-radius: 8px
-
-        &:last-child
-          border-bottom-left-radius: 8px
-          border-bottom-right-radius: 8px
-
-        .text--brown
-          font-weight: 500
-          margin-bottom: 0
-          margin-top: 10px
-
-        .text
-          margin-bottom: 0
-          margin-top: 5px
 
 @media (min-width: 1300px)
   .schedule
@@ -354,7 +180,6 @@ $row_schedule_line_img_mobile_path = $base_url '/assets/img/line_mobile.svg'
   .our-philosophy
     padding-top: 400px
 
-  .hike__card,
-  .location
+  .hike__card
     .title--second
       font-size: 1.3vw
