@@ -58,6 +58,7 @@ defaults:
       how_was_it: 
       - "I'm a list"
       - "Every element in the list will be a section in the text"
+      video: "https://example.com/video.mp4"
       caratteristics:
         altitude: "2240 mt"
         cooking: "Traditional"
