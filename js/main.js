@@ -197,7 +197,7 @@ var wh = $(window).height();
 function update_offsets_backgrounds() {
   $('.lazyload-bkg').each(function () {
     var x = $(this).offset().top;
-    lh.push(x);
+    lh.push({offset: x, src: $(this).data("src")});
   });
   console.log(lh);
 };
@@ -206,17 +206,10 @@ let lazy_backgrounds = debounce(() => {
   wscroll = $(window).scrollTop();
   for (let i = 0; i < lh.length; i++) {
     console.log(`url('${$(".lazyload-bkg").data("src")}')`);
-    if (lh[i] <= wscroll + (wh - 200)) {
+    if (lh[i].offset <= wscroll + (wh - 200)) {
       $('.lazyload-bkg').eq(i).css({
-        backgroundImage: `url('${$(".lazyload-bkg").data("src")}')`
+        backgroundImage: `url('${lh[i].src}')`
       });
     };
   };
 });
-
-// Page Load
-// lazy();
-
-// $(window).on('scroll', function () {
-//   lazy();
-// });
