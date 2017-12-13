@@ -13,13 +13,27 @@ layout: event
 </head>
 
 <body>
-  {% include navbar.html %} 
-  {% include header.html type="home" %} 
-
-  {{ page.title }}
-  {{ page.schedule }}
-  {{ page.title }}
-
+  {% include header.html type="event" %} 
+  <div class="location">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-sm-6">
+          {% include components/headings.html big="HOW WAS IT?" small="A weekend to unplug and connect." %}
+          {% for words in page.how_was_it %} 
+            <p class="text">
+              {{ words }}
+            </p> 
+          {% endfor %}
+        </div>
+        <div class="col-12 col-sm-6 hidden-xs">
+          {% include components/card.html type="location" title=page.title subtitle=page.location img=page.image
+          altitude=page.caratteristics.altitude cooking=page.caratteristics.cooking beds=page.caratteristics.beds
+          %}
+        </div>
+      </div>
+    </div>
+  </div>
+  
   {% include scripts.html %}
 </body>
 

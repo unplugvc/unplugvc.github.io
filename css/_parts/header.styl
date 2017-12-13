@@ -20,7 +20,8 @@ $home_header_img_path = $base_url '/assets/img/mountain_placeholder.jpg'
     top: 0
     z-index: 2
 
-  .header__home-content--title-big
+  .header__home-content--title-big,
+  .header__event-content--title-big
     color: #FFFFFF
     font-family: 'Nexa'
     font-size: 24px
@@ -28,7 +29,13 @@ $home_header_img_path = $base_url '/assets/img/mountain_placeholder.jpg'
     line-height: 24px
     text-shadow: 0 2px 4px rgba(51, 51, 51, 0.8)
 
-  .header__home-content--title-medium
+    &.gibson
+      font-family: 'Gibson', sans-serif
+      font-weight: 500
+      padding-top: 20px
+
+  .header__home-content--title-medium,
+  .header__event-content--title-medium
     @extend .header__home-content--title-big
     font-size: 18px
     line-height: 18px
@@ -86,7 +93,8 @@ $home_header_img_path = $base_url '/assets/img/mountain_placeholder.jpg'
     padding: 0 23px
 
 @media (min-width: 1024px)
-  .header__home
+  .header__home,
+  .header__event
     background-image: url($home_header_img_path)
     background-position: center
     background-size: cover
@@ -100,12 +108,20 @@ $home_header_img_path = $base_url '/assets/img/mountain_placeholder.jpg'
     position: relative
     top: 0
 
-  .header__home-content--title-big
+  .header__event-content
+    margin-bottom: calc(160px + 4vh)
+    margin-top: calc(160px + 3vh)
+    position: relative
+    z-index: 2
+
+  .header__home-content--title-big,
+  .header__event-content--title-big
     color: #FFFFFF
     font-family: 'Nexa'
     font-size: 48px
     font-weight: 900
     line-height: 48px
+    z
 
   .header__home-content--title-medium
     @extend .header__home-content--title-big

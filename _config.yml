@@ -55,6 +55,9 @@ defaults:
       location: "Insert this location location"
       image: "1.png"
       when_header: "September 14-17, 2018"
+      how_was_it: 
+      - "I'm a list"
+      - "Every element in the list will be a section in the text"
       caratteristics:
         altitude: "2240 mt"
         cooking: "Traditional"
