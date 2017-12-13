@@ -225,7 +225,7 @@ let lazy_backgrounds = debounce(() => {
   wscroll = $(window).scrollTop();
   for (let i = 0; i < lh.length; i++) {
     console.log(`url('${$('.lazyload-bkg').data('src')}')`);
-    if (lh[i].offset <= wscroll + (wh - 200)) {
+    if (lh[i].offset <= wscroll + (wh - 0)) {
       $('.lazyload-bkg')
         .eq(i)
         .css({

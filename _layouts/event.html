@@ -1,8 +1,11 @@
---- 
-layout: event 
+---
+layout: event
 ---
 
+{% assign past_events = site.tags.event %}
+
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
@@ -13,24 +16,21 @@ layout: event
 </head>
 
 <body>
-  {% include navbar_internal.html %} 
-
-  {% include header.html type="event" %} 
+  {% include navbar_internal.html %} {% include header.html type="event" %}
   <div class="location">
     <div class="container">
       <div class="row">
         <div class="col-12 col-sm-6">
-          {% include components/headings.html big="HOW WAS IT?" small="A weekend to unplug and connect." %}
-          {% for words in page.how_was_it %} 
-            <p class="text">
-              {{ words }}
-            </p> 
+          {% include components/headings.html big="HOW WAS IT?" small="A weekend to unplug and connect." %} {% for words in page.how_was_it
+          %}
+          <p class="text">
+            {{ words }}
+          </p>
           {% endfor %}
         </div>
         <div class="col-12 col-sm-6 hidden-xs">
-          {% include components/card.html type="location" title=page.title subtitle=page.location img=page.image
-          altitude=page.caratteristics.altitude cooking=page.caratteristics.cooking beds=page.caratteristics.beds
-          %}
+          {% include components/card.html type="location" title=page.title subtitle=page.location img=page.image altitude=page.caratteristics.altitude
+          cooking=page.caratteristics.cooking beds=page.caratteristics.beds %}
         </div>
       </div>
     </div>
@@ -39,7 +39,7 @@ layout: event
   <div class="carousel__home">
     <div id="slider" class="carousel__home-slider_1">
       <a data-fancybox="gallery" href="{{'/assets/img/home_carousel/big/6-big.jpg' | relative_url }}" data-caption="This image has a caption">
-        <img class="lazyload"  data-src="{{'/assets/img/home_carousel/6-small.jpg' | relative_url }}" alt="">
+        <img class="lazyload" data-src="{{'/assets/img/home_carousel/6-small.jpg' | relative_url }}" alt="">
       </a>
       <a data-fancybox="gallery" href="{{'/assets/img/home_carousel/big/7-big.jpg' | relative_url }}" data-caption="This image has a caption">
         <img class="lazyload" data-src="{{'/assets/img/home_carousel/7-small.jpg' | relative_url }}" alt="">
@@ -74,10 +74,109 @@ layout: event
     <img class="carousel__home__mountain-profile" src="{{'/assets/img/mountain_profile_2.svg' | relative_url }}" alt="">
   </div>
 
-  {% include footer.html %}
+  <div class="speakers">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          {% include components/headings.html big="SPEAKERS" small="Amazing speakers for an amazing event" %}
+        </div>
+        <div class="col-12 speakers__pictures">
+          <div class="row">
+            {% for speaker in page.speakers %}
+            <div class="col-sm-4 col-md-4 col-lg-3">
+              <div class="speakers__pictures-card">
+                <img class="lazyload" data-src="{{'/assets/img/speakers/' | relative_url }}{{speaker.pic}}" alt="">
+                <div class="speakers__pictures-card-data">
+                  <p class="speakers__pictures-card-data-name">{{speaker.name}}</p>
+                  <p class="speakers__pictures-card-data-role">{{speaker.role}}</p>
+                </div>
+                <div class="img-overlay"></div>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="speakers__pictures--mobile">
+      {% for speaker in page.speakers %}
+      <div class="speakers__pictures-card">
+        <img class="lazyload" data-src="{{'/assets/img/speakers/' | relative_url }}{{speaker.pic}}" alt="">
+        <div class="speakers__pictures-card-data">
+          <p class="speakers__pictures-card-data-name">{{speaker.name}}</p>
+          <p class="speakers__pictures-card-data-role">{{speaker.role}}</p>
+        </div>
+        <div class="img-overlay"></div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="attendees">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          {% include components/headings.html big="THE ATTENDEES" small="Amazing attendees" %}
+        </div>
+        <div class="col-12">
+          <div class="row">
+            {% for a in page.attendees %}
+            <div class="col-6 col-sm-4 col-md-4 col-lg-3">
+              <div class="attendees__pictures-card">
+                <img class="lazyload" data-src="{{'/assets/img/attendees/' | relative_url }}{{a.logo}}" alt="">
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="past-editions">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          {% include components/headings.html big="PAST EDITIONS" small="Overview of previous editions" %}
+        </div>
+        <div class="col-12 past-editions__pictures">
+          <div class="row">
+            {% for o in past_events %} {% unless forloop.first %}
+            <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+              <a href="{{site.baseurl}}{{ o.url }}">
+                <div class="past-editions__pictures-card">
+                  <img class="lazyload" data-src="{{'/assets/img/edition_cards/' | relative_url }}{{o.past_edition.pic}}" alt="">
+                  <div class="past-editions__pictures-card-data">
+                    <p class="past-editions__pictures-card-data-name">{{o.title}}</p>
+                    <p class="past-editions__pictures-card-data-role">{{o.past_edition.period}}</p>
+                  </div>
+                  <div class="img-overlay"></div>
+                </div>
+              </a>
+            </div>
+            {% endunless %} {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="past-editions__pictures--mobile">
+      {% for o in past_events %} {% unless forloop.first %}
+      <a href="{{site.baseurl}}{{ o.url }}">
+        <div class="past-editions__pictures-card">
+          <img class="lazyload" data-src="{{'/assets/img/edition_cards/' | relative_url }}{{o.past_edition.pic}}" alt="">
+          <div class="past-editions__pictures-card-data">
+            <p class="past-editions__pictures-card-data-name">{{o.title}}</p>
+            <p class="past-editions__pictures-card-data-role">{{o.past_edition.period}}</p>
+          </div>
+          <div class="img-overlay"></div>
+        </div>
+      </a>
+      {% endunless %} {% endfor %}
+    </div>
+  </div>
+
+  {% include footer.html %} 
   {% include scripts.html %}
 </body>
 
 </html>
-
-
