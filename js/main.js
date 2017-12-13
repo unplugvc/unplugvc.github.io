@@ -60,58 +60,35 @@ $(document).ready(() => {
   $('.schedule__line-date-element-sizer--mobile .line_background').css({
     width: `${scheduleMenuWidth}px`
   });
+
+  /**
+   * Lazy loading on enter
+   */
+  update_offsets_backgrounds();
+  lazy_backgrounds();
+  /**
+   * Using negative toggle
+   */
+  negativeMenuToggle();
 });
 
 /**
  * Scroll listener
  */
 $(document).scroll(() => {
-  let limit = 100;
-  let ww = $(window).width();
-  if (ww < 769) {
-    limit = 0;
-  }
-
-  if ($(document).scrollTop() > limit) {
-    $('.top_navbar').addClass('negative');
-    $('.top_navbar--mobile').addClass('negative');
-    $('.top_navbar__logo img')
-      .attr('src', `/${state.baseurl}/assets/img/icons/logo/logo_negative.png`)
-      .css({ width: '100%' });
-  } else {
-    $('.top_navbar__logo img')
-      .attr('src', `/${state.baseurl}/assets/img/icons/logo/logo.png`)
-      .css({ width: '100%' });
-    $('.top_navbar').removeClass('negative');
-    $('.top_navbar--mobile').removeClass('negative');
-  }
-
-  if (ww < 769) {
-    let windowScrolltop = $(window).scrollTop();
-    let menuScrolltop = $('.schedule__line-container').offset().top - 116;
-    if (windowScrolltop > menuScrolltop) {
-      if (!state.initialScrolltopScheduleMenu) {
-        state.initialScrolltopScheduleMenu = menuScrolltop;
-      }
-      if (windowScrolltop > state.initialScrolltopScheduleMenu + $('.schedule__tabs').height() + 50) {
-        $('.schedule__line-date-element-sizer--mobile').removeClass(
-          'sticky-schedule-modifier'
-        );
-      } else {
-        $('.schedule__line-date-element-sizer--mobile').addClass(
-          'sticky-schedule-modifier'
-        );
-      }
-    } else {
-      if (windowScrolltop < state.initialScrolltopScheduleMenu) {
-        $('.schedule__line-date-element-sizer--mobile').removeClass(
-          'sticky-schedule-modifier'
-        );
-      }
-    }
-  }
+  /**
+   * Using negative toggle
+   */
+  negativeMenuToggle();
+  /**
+   * Lazy background on scroll
+   */
+  lazy_backgrounds();
 });
 
+/**
+ * Open the menu on mobile
+ */
 $('.open_menu').click(() => {
   /**
    * Change the text of button menu content toggle
@@ -127,19 +104,21 @@ $('.open_menu').click(() => {
 });
 
 function displayScheduleTab(id) {
+  let ww = $(window).width();
   $(`.tabselector__${state.currentTab}`).removeClass('active');
   $(`.tab__${state.currentTab}`).hide();
   state.currentTab = id;
   $(`.tab__${state.currentTab}`).show();
   $(`.tabselector__${state.currentTab}`).addClass('active');
-  let nextPosition = $('.schedule__tabs').offset().top - 200;
-  $('html,body').animate({scrollTop: nextPosition}, 'slow');
+  if (ww < 769) {
+    let nextPosition = $('.schedule__tabs').offset().top - 200;
+    $('html,body').animate({ scrollTop: nextPosition }, 'slow');
+  }
 }
 
 /**
  * Debounced window resize
  */
-
 var onResizeDebounced = debounce(() => {
   if ($(window).width() > 769) {
     $('.open_menu').html('MENU');
@@ -174,3 +153,97 @@ function debounce(func, wait, immediate) {
     if (callNow) func.apply(context, args);
   };
 }
+
+/**
+ * Negative toggle navbar
+ */
+
+function negativeMenuToggle() {
+  let limit = 100;
+  let ww = $(window).width();
+  if (ww < 769) {
+    limit = 0;
+  }
+
+  if ($(document).scrollTop() > limit) {
+    $('.top_navbar').addClass('negative');
+    $('.top_navbar--mobile').addClass('negative');
+    $('.top_navbar__logo img')
+      .attr('src', `/${state.baseurl}/assets/img/icons/logo/logo_negative.png`)
+      .css({ width: '100%' });
+    $('.top_navbar--go-back img').attr(
+      'src',
+      `/${state.baseurl}assets/img/icons/back_arrow_negative.svg`
+    );
+  } else {
+    $('.top_navbar__logo img')
+      .attr('src', `/${state.baseurl}/assets/img/icons/logo/logo.png`)
+      .css({ width: '100%' });
+    $('.top_navbar').removeClass('negative');
+    $('.top_navbar--mobile').removeClass('negative');
+    $('.top_navbar--go-back img').attr(
+      'src',
+      `/${state.baseurl}assets/img/icons/back_arrow.svg`
+    );
+  }
+
+  if (ww < 769) {
+    let windowScrolltop = $(window).scrollTop();
+    if ($('.schedule__line-container').length) {
+      let menuScrolltop = $('.schedule__line-container').offset().top - 116;
+      if (windowScrolltop > menuScrolltop) {
+        if (!state.initialScrolltopScheduleMenu) {
+          state.initialScrolltopScheduleMenu = menuScrolltop;
+        }
+        if (
+          windowScrolltop >
+          state.initialScrolltopScheduleMenu +
+            $('.schedule__tabs').height() +
+            50
+        ) {
+          $('.schedule__line-date-element-sizer--mobile').removeClass(
+            'sticky-schedule-modifier'
+          );
+        } else {
+          $('.schedule__line-date-element-sizer--mobile').addClass(
+            'sticky-schedule-modifier'
+          );
+        }
+      } else {
+        if (windowScrolltop < state.initialScrolltopScheduleMenu) {
+          $('.schedule__line-date-element-sizer--mobile').removeClass(
+            'sticky-schedule-modifier'
+          );
+        }
+      }
+    }
+  }
+}
+
+/**
+ * Lazyloading for backgrounds
+ */
+var ll = $('.lazyload-bkg');
+var lh = [];
+var wscroll = 0;
+var wh = $(window).height();
+
+function update_offsets_backgrounds() {
+  $('.lazyload-bkg').each(function() {
+    var x = $(this).offset().top;
+    lh.push({ offset: x, src: $(this).data('src') });
+  });
+}
+
+let lazy_backgrounds = debounce(() => {
+  wscroll = $(window).scrollTop();
+  for (let i = 0; i < lh.length; i++) {
+    if (lh[i].offset <= wscroll + (wh + 100)) {
+      $('.lazyload-bkg')
+        .eq(i)
+        .css({
+          backgroundImage: `url('${lh[i].src}')`
+        });
+    }
+  }
+});

@@ -9,6 +9,9 @@
     -moz-osx-font-smoothing: grayscale
     -webkit-font-smoothing: antialiased
 
+  &:.modal-open
+    overflow: hidden
+
   a
     &:hover
       text-decoration: none
@@ -202,6 +205,10 @@
     color: $brown
 
 @media (min-width: 768px)
+  .title--second--big
+    @extend .title--second
+    font-size: 26px
+
   .card__location
     border-radius: 8px
 

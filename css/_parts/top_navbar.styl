@@ -39,6 +39,9 @@ $negative_logo_path = $base_url '/assets/img/icons/logo/logo_negative.png'
       background-color: $white
       box-shadow: 0 2px 4px 0 rgba(51, 51, 51, 0.3)
 
+      .top_navbar--go-back
+        color: $black-default
+
       .top_navbar__menu
         a
           color: $black-default
@@ -85,6 +88,25 @@ $negative_logo_path = $base_url '/assets/img/icons/logo/logo_negative.png'
           font-family: 'Gibson', sans-serif
           font-weight: 300
 
+  .top_navbar--go-back
+    color: white
+    font-size: 32px
+    font-weight: 600
+    line-height: 48px
+    text-shadow: 0 2px 4px 0 rgba(51, 51, 51, 0.3)
+
+    img
+      float: left
+      margin-top: 36px
+
+    p
+      float: left
+      margin-left: 16px
+      margin-top: 34px
+
+    &:hover
+      color: white
+
 @media (min-width: 1024px)
   .top_navbar--mobile,
   .top_navbar--mobile-content
@@ -106,6 +128,9 @@ $negative_logo_path = $base_url '/assets/img/icons/logo/logo_negative.png'
       background: $white
       background-color: $white
       box-shadow: 0 2px 4px 0 rgba(51, 51, 51, 0.3)
+
+      .top_navbar--go-back
+        color: $black-default
 
       .top_navbar__logo
         width: 136px
