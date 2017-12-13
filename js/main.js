@@ -60,16 +60,102 @@ $(document).ready(() => {
   $('.schedule__line-date-element-sizer--mobile .line_background').css({
     width: `${scheduleMenuWidth}px`
   });
-  
+
+  /**
+   * Lazy loading on enter
+   */
   update_offsets_backgrounds();
   lazy_backgrounds();
-
+  /**
+   * Using negative toggle
+   */
+  negativeMenuToggle();
 });
 
 /**
  * Scroll listener
  */
 $(document).scroll(() => {
+  /**
+   * Using negative toggle
+   */
+  negativeMenuToggle();
+  /**
+   * Lazy background on scroll
+   */
+  lazy_backgrounds();
+});
+
+/**
+ * Open the menu on mobile
+ */
+$('.open_menu').click(() => {
+  /**
+   * Change the text of button menu content toggle
+   */
+
+  if ($('.top_navbar--mobile-content.show').length) {
+    $('.top_navbar--mobile-content').removeClass('show');
+    $('.open_menu').html('MENU');
+  } else {
+    $('.top_navbar--mobile-content').addClass('show');
+    $('.open_menu').html('CLOSE');
+  }
+});
+
+function displayScheduleTab(id) {
+  $(`.tabselector__${state.currentTab}`).removeClass('active');
+  $(`.tab__${state.currentTab}`).hide();
+  state.currentTab = id;
+  $(`.tab__${state.currentTab}`).show();
+  $(`.tabselector__${state.currentTab}`).addClass('active');
+  let nextPosition = $('.schedule__tabs').offset().top - 200;
+  $('html,body').animate({ scrollTop: nextPosition }, 'slow');
+}
+
+/**
+ * Debounced window resize
+ */
+var onResizeDebounced = debounce(() => {
+  if ($(window).width() > 769) {
+    $('.open_menu').html('MENU');
+    $('.top_navbar--mobile-content').removeClass('show');
+  }
+  state.ww = $(window).width();
+  let scheduleMenuWidth =
+    $('.schedule__line-date-element-sizer--mobile li').length * 88 + 100;
+  if (state.ww > scheduleMenuWidth) {
+    scheduleMenuWidth = state.ww;
+  }
+
+  $('.schedule__line-date-element-sizer--mobile .line_background').css({
+    width: `${scheduleMenuWidth}px`
+  });
+}, 150);
+
+window.addEventListener('resize', onResizeDebounced);
+
+function debounce(func, wait, immediate) {
+  var timeout;
+  return function() {
+    var context = this,
+      args = arguments;
+    var later = function() {
+      timeout = null;
+      if (!immediate) func.apply(context, args);
+    };
+    var callNow = immediate && !timeout;
+    clearTimeout(timeout);
+    timeout = setTimeout(later, wait);
+    if (callNow) func.apply(context, args);
+  };
+}
+
+/**
+ * Negative toggle navbar
+ */
+
+function negativeMenuToggle() {
   let limit = 100;
   let ww = $(window).width();
   if (ww < 769) {
@@ -117,99 +203,34 @@ $(document).scroll(() => {
       }
     }
   }
-  /**
-   * Lazy background on scroll
-   */
-  lazy_backgrounds();
-});
-
-/**
- * Open the menu on mobile
- */
-$('.open_menu').click(() => {
-  /**
-   * Change the text of button menu content toggle
-   */
-
-  if ($('.top_navbar--mobile-content.show').length) {
-    $('.top_navbar--mobile-content').removeClass('show');
-    $('.open_menu').html('MENU');
-  } else {
-    $('.top_navbar--mobile-content').addClass('show');
-    $('.open_menu').html('CLOSE');
-  }
-});
-
-function displayScheduleTab(id) {
-  $(`.tabselector__${state.currentTab}`).removeClass('active');
-  $(`.tab__${state.currentTab}`).hide();
-  state.currentTab = id;
-  $(`.tab__${state.currentTab}`).show();
-  $(`.tabselector__${state.currentTab}`).addClass('active');
-  let nextPosition = $('.schedule__tabs').offset().top - 200;
-  $('html,body').animate({ scrollTop: nextPosition }, 'slow');
 }
 
 /**
- * Debounced window resize
+ * Lazyloading for backgrounds
  */
-
-var onResizeDebounced = debounce(() => {
-  if ($(window).width() > 769) {
-    $('.open_menu').html('MENU');
-    $('.top_navbar--mobile-content').removeClass('show');
-  }
-  state.ww = $(window).width();
-  let scheduleMenuWidth =
-    $('.schedule__line-date-element-sizer--mobile li').length * 88 + 100;
-  if (state.ww > scheduleMenuWidth) {
-    scheduleMenuWidth = state.ww;
-  }
-
-  $('.schedule__line-date-element-sizer--mobile .line_background').css({
-    width: `${scheduleMenuWidth}px`
-  });
-}, 150);
-
-window.addEventListener('resize', onResizeDebounced);
-
-function debounce(func, wait, immediate) {
-  var timeout;
-  return function() {
-    var context = this,
-      args = arguments;
-    var later = function() {
-      timeout = null;
-      if (!immediate) func.apply(context, args);
-    };
-    var callNow = immediate && !timeout;
-    clearTimeout(timeout);
-    timeout = setTimeout(later, wait);
-    if (callNow) func.apply(context, args);
-  };
-}
-
 var ll = $('.lazyload-bkg');
-var lh = []
+var lh = [];
 var wscroll = 0;
 var wh = $(window).height();
 
 function update_offsets_backgrounds() {
-  $('.lazyload-bkg').each(function () {
+  $('.lazyload-bkg').each(function() {
     var x = $(this).offset().top;
-    lh.push({offset: x, src: $(this).data("src")});
+    lh.push({ offset: x, src: $(this).data('src') });
   });
   console.log(lh);
-};
+}
 
 let lazy_backgrounds = debounce(() => {
   wscroll = $(window).scrollTop();
   for (let i = 0; i < lh.length; i++) {
-    console.log(`url('${$(".lazyload-bkg").data("src")}')`);
+    console.log(`url('${$('.lazyload-bkg').data('src')}')`);
     if (lh[i].offset <= wscroll + (wh - 200)) {
-      $('.lazyload-bkg').eq(i).css({
-        backgroundImage: `url('${lh[i].src}')`
-      });
-    };
-  };
+      $('.lazyload-bkg')
+        .eq(i)
+        .css({
+          backgroundImage: `url('${lh[i].src}')`
+        });
+    }
+  }
 });
