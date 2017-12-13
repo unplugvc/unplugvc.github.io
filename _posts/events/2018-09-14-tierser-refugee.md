@@ -7,6 +7,9 @@ permalink: "/event/:title"
 location: Trentino - Alto Adige, Italy
 image: 1.png
 when_header: September 14-17, 2018
+how_was_it: 
+- We have chosen the best of the best. The Tierser Alpl mountain refuge sits on top of Sieser Alm, which is the largest high-altitude Alpine meadow in Europe.
+- The refuge is an historic hut used by mountaineers for decades, but has been completely restored and remodeled into a marvel of wooden architecture.
 caratteristics:
   altitude: 2240 mt
   cooking: Traditional
