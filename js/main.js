@@ -60,6 +60,10 @@ $(document).ready(() => {
   $('.schedule__line-date-element-sizer--mobile .line_background').css({
     width: `${scheduleMenuWidth}px`
   });
+  
+  update_offsets_backgrounds();
+  lazy_backgrounds();
+
 });
 
 /**
@@ -93,7 +97,10 @@ $(document).scroll(() => {
       if (!state.initialScrolltopScheduleMenu) {
         state.initialScrolltopScheduleMenu = menuScrolltop;
       }
-      if (windowScrolltop > state.initialScrolltopScheduleMenu + $('.schedule__tabs').height() + 50) {
+      if (
+        windowScrolltop >
+        state.initialScrolltopScheduleMenu + $('.schedule__tabs').height() + 50
+      ) {
         $('.schedule__line-date-element-sizer--mobile').removeClass(
           'sticky-schedule-modifier'
         );
@@ -110,8 +117,15 @@ $(document).scroll(() => {
       }
     }
   }
+  /**
+   * Lazy background on scroll
+   */
+  lazy_backgrounds();
 });
 
+/**
+ * Open the menu on mobile
+ */
 $('.open_menu').click(() => {
   /**
    * Change the text of button menu content toggle
@@ -133,7 +147,7 @@ function displayScheduleTab(id) {
   $(`.tab__${state.currentTab}`).show();
   $(`.tabselector__${state.currentTab}`).addClass('active');
   let nextPosition = $('.schedule__tabs').offset().top - 200;
-  $('html,body').animate({scrollTop: nextPosition}, 'slow');
+  $('html,body').animate({ scrollTop: nextPosition }, 'slow');
 }
 
 /**
@@ -174,3 +188,35 @@ function debounce(func, wait, immediate) {
     if (callNow) func.apply(context, args);
   };
 }
+
+var ll = $('.lazyload-bkg');
+var lh = []
+var wscroll = 0;
+var wh = $(window).height();
+
+function update_offsets_backgrounds() {
+  $('.lazyload-bkg').each(function () {
+    var x = $(this).offset().top;
+    lh.push(x);
+  });
+  console.log(lh);
+};
+
+let lazy_backgrounds = debounce(() => {
+  wscroll = $(window).scrollTop();
+  for (let i = 0; i < lh.length; i++) {
+    console.log(`url('${$(".lazyload-bkg").data("src")}')`);
+    if (lh[i] <= wscroll + (wh - 200)) {
+      $('.lazyload-bkg').eq(i).css({
+        backgroundImage: `url('${$(".lazyload-bkg").data("src")}')`
+      });
+    };
+  };
+});
+
+// Page Load
+// lazy();
+
+// $(window).on('scroll', function () {
+//   lazy();
+// });

@@ -1,10 +1,10 @@
 ---
-title: Nambino lake at Madonna di Campiglio
+title: Nambino lake
 tags:
 - event
 layout: event
 permalink: "/event/:title"
-location: Insert this location location
+location: Madonna di Campiglio
 image: 1.png
 when_header: September 14-17, 2017
 how_was_it: 
