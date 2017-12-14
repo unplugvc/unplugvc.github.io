@@ -70,6 +70,10 @@ $(document).ready(() => {
    * Using negative toggle
    */
   negativeMenuToggle();
+  /**
+   * Play video
+   */
+  playVideo();
 });
 
 /**
@@ -84,6 +88,10 @@ $(document).scroll(() => {
    * Lazy background on scroll
    */
   lazy_backgrounds();
+  /**
+   * Play video
+   */
+  playVideo();
 });
 
 /**
@@ -247,3 +255,13 @@ let lazy_backgrounds = debounce(() => {
     }
   }
 });
+
+function playVideo() {
+  if (document.getElementById('event_video')) {
+    let vid = document.getElementById('event_video');
+    let wscroll = $(window).scrollTop();
+    if ($('#event_video').offset().top <= wscroll + (wh + 100)) {
+      vid.play();
+    }
+  }
+}
