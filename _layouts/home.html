@@ -1,5 +1,5 @@
---- 
-layout: home 
+---
+layout: home
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -12,10 +12,13 @@ layout: home
 </head>
 
 <body>
-  {% include navbar.html %} 
-  {% include header.html type="home" %} 
-  {{ content }} 
+  {% include navbar.html %}
+  {% include header.html type="home" %}
+  {{ content }}
+
+  {% include components/apply_form.html %}
   {% include footer.html %}
+
   {% include scripts.html %}
 </body>
 

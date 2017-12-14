@@ -9,7 +9,7 @@
       <h3 class="header__home-content--title-small">A community of 60 entrepreneurs and investors surrounded by the Dolomites</h3>
       <h2 class="header__home-content--title-medium">WHEN</h2>
       <h2 class="header__home-content--title-medium gibson">{{current_event.when_header}}</h2>
-      <a href="" class="header__home-content--button">Apply to attend</a>
+      <a class="header__home-content--button" onclick="open_apply_form()">Apply to attend</a>
     </div>
   </div>
   {% endif %}
@@ -17,10 +17,7 @@
   <div class="header__{{include.type}}-content">
     <div class="container">
       <h1 class="header__{{include.type}}-content--title-big">{{page.title}}</h1>
-      <!-- <h3 class="header__{{include.type}}-content--title-small">A community of 60 entrepreneurs and investors surrounded by the Dolomites</h3>
-      <h2 class="header__{{include.type}}-content--title-medium">WHEN</h2>-->
       <h2 class="header__{{include.type}}-content--title-big gibson">{{page.when_header}}</h2>
-      <!--<a href="" class="header__{{include.type}}-content--button">Apply to attend</a> -->
     </div>
   </div>
   {% endif %}
