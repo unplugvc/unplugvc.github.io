@@ -70,7 +70,9 @@ $('.apply_form .content form input').blur(e => {
 });
 
 $('.apply_form__register-button').focusin(function () {
-  $('.apply_form--push-enter').addClass('active');
+  if (enableSubmitFnc()) {
+    $('.apply_form--push-enter').addClass('active');
+  }
 });
 
 $('.apply_form__register-button').focusout(function () {
