@@ -35,9 +35,21 @@ $negative_logo_path = $base_url '/assets/img/icons/logo/logo_negative.png'
         &:not([href]):not([tabindex]):hover
           color: $white
 
+    .white_logo
+      display: inherit
+
+    .black_logo
+      display: none
+
     &.negative
       background-color: $white
       box-shadow: 0 2px 4px 0 rgba(51, 51, 51, 0.3)
+
+      .white_logo
+        display: none
+
+      .black_logo
+        display: inherit
 
       .top_navbar--go-back
         color: $black-default
