@@ -16,11 +16,14 @@ layout: event
 </head>
 
 <body>
-  {% include navbar_internal.html %} {% include header.html type="event" %}
+  {% include navbar_internal.html %}
+
+  {% include header.html type="event" %}
+
   <div class="location">
     <div class="container">
       <div class="row">
-        <div class="col-12 col-sm-6">
+        <div class="col-12 col-sm-6 scroll_reveal">
           {% include components/headings.html big="HOW WAS IT?" small="A weekend to unplug and connect." %} {% for words in page.how_was_it
           %}
           <p class="text">
@@ -28,7 +31,7 @@ layout: event
           </p>
           {% endfor %}
         </div>
-        <div class="col-12 col-sm-6 hidden-xs">
+        <div class="col-12 col-sm-6 hidden-xs scroll_reveal">
           {% include components/card.html type="location" title=page.title subtitle=page.location img=page.image altitude=page.caratteristics.altitude
           cooking=page.caratteristics.cooking beds=page.caratteristics.beds %}
         </div>
@@ -36,7 +39,7 @@ layout: event
     </div>
   </div>
 
-  <div class="carousel__home">
+  <div class="carousel__home scroll_reveal">
     <div id="slider" class="carousel__home-slider_1">
       <a data-fancybox="gallery" href="{{'/assets/img/home_carousel/big/6-big.jpg' | relative_url }}" data-caption="This image has a caption">
         <img class="lazyload" data-src="{{'/assets/img/home_carousel/6-small.jpg' | relative_url }}" alt="">
@@ -77,13 +80,13 @@ layout: event
   <div class="speakers">
     <div class="container">
       <div class="row">
-        <div class="col-12">
+        <div class="col-12 scroll_reveal">
           {% include components/headings.html big="SPEAKERS" small="Amazing speakers for an amazing event" %}
         </div>
         <div class="col-12 speakers__pictures">
           <div class="row">
             {% for speaker in page.speakers %}
-            <div class="col-sm-4 col-md-4 col-lg-3">
+            <div class="col-sm-4 col-md-4 col-lg-3 scroll_reveal">
               <div class="speakers__pictures-card">
                 <img class="lazyload" data-src="{{'/assets/img/speakers/' | relative_url }}{{speaker.pic}}" alt="">
                 <div class="speakers__pictures-card-data">
@@ -98,7 +101,7 @@ layout: event
         </div>
       </div>
     </div>
-    <div class="speakers__pictures--mobile">
+    <div class="speakers__pictures--mobile scroll_reveal">
       {% for speaker in page.speakers %}
       <div class="speakers__pictures-card">
         <img class="lazyload" data-src="{{'/assets/img/speakers/' | relative_url }}{{speaker.pic}}" alt="">
@@ -112,7 +115,7 @@ layout: event
     </div>
   </div>
 
-  <div class="what-happened">
+  <div class="what-happened scroll_reveal">
     <video id="event_video" width="100%" height="auto" muted>
       <source src="{{page.video}}" type="video/mp4">
       Your browser does not support the video tag.
@@ -122,13 +125,13 @@ layout: event
   <div class="attendees">
     <div class="container">
       <div class="row">
-        <div class="col-12">
+        <div class="col-12 scroll_reveal">
           {% include components/headings.html big="THE ATTENDEES" small="Amazing attendees" %}
         </div>
         <div class="col-12">
           <div class="row">
             {% for a in page.attendees %}
-            <div class="col-6 col-sm-4 col-md-4 col-lg-3">
+            <div class="col-6 col-sm-4 col-md-4 col-lg-3 scroll_reveal">
               <div class="attendees__pictures-card">
                 <img class="lazyload" data-src="{{'/assets/img/attendees/' | relative_url }}{{a.logo}}" alt="">
               </div>
@@ -143,13 +146,13 @@ layout: event
   <div class="past-editions">
     <div class="container">
       <div class="row">
-        <div class="col-12">
+        <div class="col-12 scroll_reveal">
           {% include components/headings.html big="PAST EDITIONS" small="Overview of previous editions" %}
         </div>
         <div class="col-12 past-editions__pictures">
           <div class="row">
             {% for o in past_events %} {% unless forloop.first %}
-            <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+            <div class="col-12 col-sm-6 col-md-6 col-lg-4 scroll_reveal">
               <a href="{{site.baseurl}}{{ o.url }}">
                 <div class="past-editions__pictures-card">
                   <img class="lazyload" data-src="{{'/assets/img/edition_cards/' | relative_url }}{{o.past_edition.pic}}" alt="">
@@ -166,7 +169,7 @@ layout: event
         </div>
       </div>
     </div>
-    <div class="past-editions__pictures--mobile">
+    <div class="past-editions__pictures--mobile scroll_reveal">
       {% for o in past_events %} {% unless forloop.first %}
       <a href="{{site.baseurl}}{{ o.url }}">
         <div class="past-editions__pictures-card">
@@ -182,8 +185,8 @@ layout: event
     </div>
   </div>
 
-  {% include components/apply_form.html %} 
-  {% include footer.html %} 
+  {% include components/apply_form.html %}
+  {% include footer.html %}
   {% include scripts.html %}
 </body>
 

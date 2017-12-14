@@ -7,6 +7,11 @@ const state = {
   initialScrolltopScheduleMenu: 0
 };
 
+$(window).on('load', function () {
+  console.log('AFTER PAGE LOAD');
+  
+});
+
 /**
  * Document ready
  */
@@ -74,6 +79,15 @@ $(document).ready(() => {
    * Play video
    */
   playVideo();
+  /**
+   * Scroll reveal
+   */
+  window.sr = ScrollReveal({
+    duration: 1000,
+    scale: 1,
+    distance: '100px',
+  });
+  sr.reveal('.scroll_reveal');
 });
 
 /**
