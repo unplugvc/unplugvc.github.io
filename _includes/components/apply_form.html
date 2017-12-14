@@ -2,7 +2,10 @@
   <div class="content">
     <form>
       <div class="apply_form--close-container">
-        <a onclick="close_apply_form()">CLOSE FORM</a>
+        <a onclick="close_apply_form()">
+          <img src="{{'/assets/img/icons/close_modal.svg' | relative_url }}" alt=""> <span>CLOSE FORM</span>
+          <div class="general__clear"></div>
+        </a>
       </div>
       <p class="title--second--big">1. What’s your full name?</p>
       <input type="text" name="fullname">

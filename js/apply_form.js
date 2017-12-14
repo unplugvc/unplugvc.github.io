@@ -17,9 +17,14 @@ function open_apply_form() {
 
 function close_apply_form() {
   console.log('yolo close');
+  let ww = $(window).width();
+  let marginRightToApply = '-50vw';
+  if (ww <= 1100) {
+    marginRightToApply = '-100vw';
+  }
   $('.apply_form .content').animate(
     {
-      marginRight: '-50vw'
+      marginRight: marginRightToApply
     },
     500,
     () => {
@@ -69,13 +74,13 @@ $('.apply_form .content form input').blur(e => {
   }
 });
 
-$('.apply_form__register-button').focusin(function () {
+$('.apply_form__register-button').focusin(function() {
   if (enableSubmitFnc()) {
     $('.apply_form--push-enter').addClass('active');
   }
 });
 
-$('.apply_form__register-button').focusout(function () {
+$('.apply_form__register-button').focusout(function() {
   $('.apply_form--push-enter').removeClass('active');
 });
 

@@ -22,13 +22,15 @@
       -webkit-transition: background 0.5s ease-out
 
     .content
+      background: $white
       background-color: $white
       box-shadow: 0 0 8px 0 rgba(51, 51, 51, 0.3)
       float: right
       height: 100vh
-      margin-right: -50vw
+      margin-right: -100vw
+      overflow-y: scroll
       padding: 32px 80px 32px 32px
-      width: 50vw
+      width: 100vw
 
       .apply_form__register-button
         background-color: $background-grey
@@ -105,6 +107,14 @@
       font-weight: 600
       line-height: 16px
 
+      span
+        display: block
+        float: left
+        margin-left: 14px
+
+      img
+        float: left
+
   .apply_form
     .apply_form__register-button
       &.active,
@@ -130,9 +140,15 @@
       opacity: 0.9
       transition: all 0.3s ease
 
-@media (min-width: 1024px)
+// @media (min-width: 1024px)
+@media (min-width: 1100px)
   .apply_form--push-enter
     display: block
+
+  .apply_form
+    .content
+      margin-right: -50vw
+      width: 50vw
 
 @keyframes pulse
   0%
