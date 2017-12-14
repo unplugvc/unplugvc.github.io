@@ -2,7 +2,6 @@
 @import 'colors'
 
 // $footer_background_img_path = $base_url '/assets/img/footer/footer_background.jpg'
-
 @media (min-width: 320px)
   .footer
     background-color: #040404
@@ -35,6 +34,7 @@
     border-radius: 8px
     box-shadow: 0 2px 8px 0 $black-default
     color: $white
+    cursor: pointer
     display: block
     font-size: 26px
     font-weight: 600
@@ -101,6 +101,7 @@
       text-align: center
 
   .footer__claim-button
+    color: $white
     display: block
     font-size: 32px
     font-weight: 600
@@ -109,6 +110,12 @@
     margin: 32px auto
     text-align: center
     width: 304px
+
+    &:not([href]):not([tabindex])
+      color: $white
+
+      &:hover
+        color: $white
 
     &:hover
       color: $white
@@ -148,12 +155,13 @@
   .footer__claim
     padding-bottom: 600px
     padding-top: 900px
-  
+
 @media (min-width: 2000px)
   .footer
     background-size: cover
     height: auto
     margin-top: -600px
+
   .footer__claim
     padding-bottom: 60vh
     padding-top: 90vh
