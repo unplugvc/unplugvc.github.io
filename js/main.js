@@ -254,7 +254,7 @@ function update_offsets_backgrounds() {
 let lazy_backgrounds = debounce(() => {
   wscroll = $(window).scrollTop();
   for (let i = 0; i < lh.length; i++) {
-    if (lh[i].offset <= wscroll + (wh + 100)) {
+    if (lh[i].offset <= wscroll + (wh + 150)) {
       $('.lazyload-bkg')
         .eq(i)
         .css({
