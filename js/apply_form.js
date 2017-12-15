@@ -41,25 +41,17 @@ $('.apply_form .content').click(event => {
   event.stopPropagation();
 });
 
-$('.apply_form .content form input').blur(e => {
+$('.apply_form .content form input').keydown(e => {
   const { value, type } = e.target;
   if (value.length) {
-    if (type == 'text') {
-      $(e.target).addClass('valid');
-      $(e.target).removeClass('error');
-    }
-    if (type == 'email') {
-      if (validateEmail(value)) {
-        $(e.target).addClass('valid');
-        $(e.target).removeClass('error');
-        $('.apply_form__error_message.mail').html('');
-      } else {
-        $(e.target).removeClass('valid');
-        $(e.target).addClass('error');
-        $('.apply_form__error_message.mail').html('Wrong mail format!');
-      }
-    }
+    /*if (type == 'text') {*/
+    $(e.target).addClass('valid');
+    $(e.target).removeClass('error');
+    /*}*/
   } else {
+    if (type == 'email') {
+      $('.apply_form__error_message.mail').html('Required');
+    }
     $(e.target).removeClass('valid');
     $(e.target).removeClass('error');
     if (type == 'email') {
@@ -70,7 +62,12 @@ $('.apply_form .content form input').blur(e => {
     /**
      * Enabling the submit button
      */
-    $('.apply_form__register-button').addClass('active');
+    if (type == 'email' && !validateEmail(value)) {
+      $('.apply_form__register-button').removeClass('active');
+      $('.apply_form--push-enter').removeClass('active');
+    } else {
+      $('.apply_form__register-button').addClass('active');
+    }
   } else {
     $('.apply_form__register-button').removeClass('active');
     $('.apply_form--push-enter').removeClass('active');
