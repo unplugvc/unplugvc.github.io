@@ -1,5 +1,6 @@
 ---
 ---
+
 const state = {
   currentTab: 1,
   ww: $(window).width(),
@@ -7,9 +8,8 @@ const state = {
   initialScrolltopScheduleMenu: 0
 };
 
-$(window).on('load', function () {
+$(window).on('load', function() {
   console.log('AFTER PAGE LOAD');
-  
 });
 
 /**
@@ -85,7 +85,7 @@ $(document).ready(() => {
   window.sr = ScrollReveal({
     duration: 1000,
     scale: 1,
-    distance: '100px',
+    distance: '100px'
   });
   sr.reveal('.scroll_reveal');
 });

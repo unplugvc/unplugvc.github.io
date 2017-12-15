@@ -1,0 +1,46 @@
+@keyframes placeHolderShimmer
+  0%
+    background-position: -468px 0
+
+  100%
+    background-position: 468px 0
+
+.animated-background
+  animation-duration: 1s
+  animation-fill-mode: forwards
+  animation-iteration-count: infinite
+  animation-name: placeHolderShimmer
+  animation-timing-function: linear
+  background: #f6f7f8
+  background: linear-gradient(to right, #eeeeee 8%, #dddddd 18%, #eeeeee 33%)
+  background-size: 800px 104px
+  position: relative
+
+.animated-background--overlay__philosophies
+  @extend .animated-background
+  border-top-left-radius: 8px
+  border-top-right-radius: 8px
+  height: 42%
+  left: 0
+  position: absolute
+  top: 0
+  width: 100%
+
+.animated-background--overlay__location
+  @extend .animated-background--overlay__philosophies
+  height: 56%
+
+@media (min-width: 320px)
+  .aspect_ratio--speakers
+    @extend .animated-background
+    min-height: 224px
+
+@media (min-width: 768px)
+  .aspect_ratio--speakers
+    @extend .animated-background
+    min-height: 210px
+
+@media (min-width: 1200px)
+  .aspect_ratio--speakers
+    @extend .animated-background
+    min-height: 255px
