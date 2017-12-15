@@ -13,12 +13,36 @@ $page_overlay_mountains = $base_url '/assets/img/mountain_profile_2.svg'
     width: 100vw
     z-index: 12
 
+    .white_logo
+      display: table
+      margin: 0 auto
+      margin-top: 35vh
+      width: 15vw
+
     &.animation
       animation: overlayCloseAnimation 1s forwards
       -webkit-animation: overlayCloseAnimation 1s forwards
 
     &.hide
       display: none
+
+    .loadbar__container
+      background: $white
+      height: 20px
+      margin: 0 auto
+      margin-top: 5vh
+      position: relative
+      width: 200px
+
+      .loadbar
+        animation: flicker 5s infinite
+        background: $red
+        height: 100%
+        left: 0
+        overflow: hidden
+        position: absolute
+        top: 0
+        width: 0
 
   .page_overlay__white_space
     background: $white
@@ -46,15 +70,14 @@ $page_overlay_mountains = $base_url '/assets/img/mountain_profile_2.svg'
 @media (min-width: 768px)
   .page_overlay__white_space
     &:before
-      width: 500%
       left: -50px
+      width: 500%
 
 @media (min-width: 1024px)
   .page_overlay__white_space
     &:before
-      width: 250%
       left: -50px
-
+      width: 250%
 
 @keyframes whiteSpaceAnimation
   0%
