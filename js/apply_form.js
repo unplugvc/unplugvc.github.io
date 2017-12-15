@@ -62,6 +62,9 @@ $('.apply_form .content form input').blur(e => {
   } else {
     $(e.target).removeClass('valid');
     $(e.target).removeClass('error');
+    if (type == 'email') {
+      $('.apply_form__error_message.mail').html('');
+    }
   }
   if (enableSubmitFnc()) {
     /**
