@@ -9,7 +9,10 @@ const state = {
 };
 
 $(window).on('load', function() {
-  console.log('AFTER PAGE LOAD');
+  /* $(`.page_overlay .page_overlay__white_space`).addClass('animation'); */
+  setTimeout(function() {
+    /* $(`.page_overlay`).addClass('animation');*/
+  }, 3000);
 });
 
 /**

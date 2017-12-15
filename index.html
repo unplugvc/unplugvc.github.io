@@ -252,7 +252,7 @@ layout: home
         <div class="row">
             {% for a in current_event.attendees %}
               <div class="col-6 col-sm-4 col-md-4 col-lg-3 scroll_reveal">
-                <div class="attendees__pictures-card">
+                <div class="attendees__pictures-card aspect_ratio--attendees">
                   <img class="lazyload" data-src="{{'/assets/img/attendees/' | relative_url }}{{a.logo}}" alt="">
                 </div>
               </div>
@@ -274,7 +274,7 @@ layout: home
         <div class="row">
           {% for o in current_event.organizers %}
           <div class="col-12 col-sm-6 col-md-6 col-lg-4 scroll_reveal">
-            <div class="organized__pictures-card">
+            <div class="organized__pictures-card aspect_ratio--organizers">
               <img class="lazyload" data-src="{{'/assets/img/organizers/' | relative_url }}{{o.pic}}" alt="">
               <div class="organized__pictures-card-data">
                 <p class="organized__pictures-card-data-name">{{o.name}}</p>
@@ -303,7 +303,7 @@ layout: home
             {% unless forloop.first %}
               <div class="col-12 col-sm-6 col-md-6 col-lg-4 scroll_reveal">
                 <a href="{{site.baseurl}}{{ o.url }}">
-                  <div class="past-editions__pictures-card">
+                  <div class="past-editions__pictures-card aspect_ratio--past_editions">
                     <img class="lazyload" data-src="{{'/assets/img/edition_cards/' | relative_url }}{{o.past_edition.pic}}" alt="">
                     <div class="past-editions__pictures-card-data">
                       <p class="past-editions__pictures-card-data-name">{{o.title}}</p>
@@ -323,7 +323,7 @@ layout: home
     {% for o in past_events %}
       {% unless forloop.first %}
         <a href="{{site.baseurl}}{{ o.url }}">
-          <div class="past-editions__pictures-card">
+          <div class="past-editions__pictures-card aspect_ratio--past_editions">
             <img class="lazyload" data-src="{{'/assets/img/edition_cards/' | relative_url }}{{o.past_edition.pic}}" alt="">
             <div class="past-editions__pictures-card-data">
               <p class="past-editions__pictures-card-data-name">{{o.title}}</p>
