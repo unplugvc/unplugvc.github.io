@@ -86,7 +86,6 @@ $('.apply_form .content form input').focusout(function(e) {
   }
 });
 
-
 $('.apply_form__register-button').focusin(function() {
   if (enableSubmitFnc()) {
     $('.apply_form--push-enter').addClass('active');
