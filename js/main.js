@@ -1,5 +1,6 @@
 ---
 ---
+
 const state = {
   currentTab: 1,
   ww: $(window).width(),
@@ -7,10 +8,36 @@ const state = {
   initialScrolltopScheduleMenu: 0
 };
 
+$(window).on('load', function() {
+  $(`.page_overlay .page_overlay__white_space`).addClass('animation');
+  setTimeout(function() {
+    $(`.page_overlay`).addClass('animation');
+  }, 3000);
+});
+
 /**
  * Document ready
  */
 $(document).ready(() => {
+  let width = 100,
+    perfData = window.performance.timing,
+    estimatedTime = -(perfData.loadEventEnd - perfData.navigationStart + 1000),
+    time = parseInt((estimatedTime / 1000) % 60) * 100;
+
+  $('.page_overlay .loadbar').animate(
+    {
+      width: width + '%'
+    },
+    time
+  );
+
+  $('.page_overlay .glow').animate(
+    {
+      width: width + '%'
+    },
+    time
+  );
+
   /**
    * Init tabs
    */
@@ -74,6 +101,15 @@ $(document).ready(() => {
    * Play video
    */
   playVideo();
+  /**
+   * Scroll reveal
+   */
+  window.sr = ScrollReveal({
+    duration: 1000,
+    scale: 1,
+    distance: '100px'
+  });
+  sr.reveal('.scroll_reveal');
 });
 
 /**
@@ -176,17 +212,11 @@ function negativeMenuToggle() {
   if ($(document).scrollTop() > limit) {
     $('.top_navbar').addClass('negative');
     $('.top_navbar--mobile').addClass('negative');
-    $('.top_navbar__logo img')
-      .attr('src', `/${state.baseurl}/assets/img/icons/logo/logo_negative.png`)
-      .css({ width: '100%' });
     $('.top_navbar--go-back img').attr(
       'src',
       `/${state.baseurl}assets/img/icons/back_arrow_negative.svg`
     );
   } else {
-    $('.top_navbar__logo img')
-      .attr('src', `/${state.baseurl}/assets/img/icons/logo/logo.png`)
-      .css({ width: '100%' });
     $('.top_navbar').removeClass('negative');
     $('.top_navbar--mobile').removeClass('negative');
     $('.top_navbar--go-back img').attr(
@@ -246,7 +276,7 @@ function update_offsets_backgrounds() {
 let lazy_backgrounds = debounce(() => {
   wscroll = $(window).scrollTop();
   for (let i = 0; i < lh.length; i++) {
-    if (lh[i].offset <= wscroll + (wh + 100)) {
+    if (lh[i].offset <= wscroll + (wh + 150)) {
       $('.lazyload-bkg')
         .eq(i)
         .css({
@@ -264,4 +294,20 @@ function playVideo() {
       vid.play();
     }
   }
+}
+
+function animateValue(id, start, end, duration) {
+  var range = end - start,
+    current = start,
+    increment = end > start ? 1 : -1,
+    stepTime = Math.abs(Math.floor(duration / range)),
+    obj = $(id);
+
+  var timer = setInterval(function() {
+    current += increment;
+    $(obj).text(current + '%');
+    if (current == end) {
+      clearInterval(timer);
+    }
+  }, stepTime);
 }

@@ -38,21 +38,22 @@
         border-radius: 8px
         color: #D9D9D9
         cursor: pointer
-        font-size: 26px
+        font-size: 20px
         font-weight: 600
-        height: 80px
+        height: 56px
         margin-top: 50px
         width: 248px
 
         &.active
           background-color: $red
           border: 0
+          box-shadow: 0 0 0 0 rgba(217, 94, 103, 0.8), 0 2px 8px 0 $black-default
           color: $white
           transition: transform 0.3s ease
 
           &:hover
             box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08)
-            transform: translateY(-1px)
+            transform: translateY(-3px)
             transition: transform 0.3s ease
 
         &:disabled
@@ -71,9 +72,9 @@
         background-color: $background-grey
         border: 0
         border-radius: 8px
-        font-size: 24px
+        font-size: 16px
         font-weight: 300
-        height: 72px
+        height: 56px
         margin-top: 10px
         outline: none
         padding: 0 20px
@@ -121,7 +122,6 @@
       &.active,
       .pulse
         animation: pulse 2s infinite
-        box-shadow: 0 0 0 rgba(217, 94, 103, 0.8)
         cursor: pointer
 
       .pulse:hover
@@ -148,7 +148,7 @@
 
 @media (min-width: 1100px)
   .apply_form--push-enter
-    display: block
+    display: inline
 
   .apply_form
     p
@@ -160,27 +160,34 @@
       width: 50vw
 
       .apply_form__register-button
+        font-size: 26px
+        height: 80px
         margin-top: 80px
 
-@keyframes pulse
-  0%
-    -webkit-box-shadow: 0 0 0 0 rgba(217, 94, 103, 0.8)
-
-  70%
-    -webkit-box-shadow: 0 0 0 10px rgba(217, 94, 103, 0)
-
-  100%
-    -webkit-box-shadow: 0 0 0 0 rgba(217, 94, 103, 0)
+      input[type=text],
+      input[type=email]
+        font-size: 24px
+        height: 72px
 
 @keyframes pulse
   0%
-    box-shadow: 0 0 0 0 rgba(217, 94, 103, 0.8)
-    -moz-box-shadow: 0 0 0 0 rgba(217, 94, 103, 0.8)
+    -webkit-box-shadow: 0 0 0 0 rgba(217, 94, 103, 0.8), 0 2px 8px 0 $black-default
 
   70%
-    box-shadow: 0 0 0 10px rgba(217, 94, 103, 0)
-    -moz-box-shadow: 0 0 0 10px rgba(217, 94, 103, 0)
+    -webkit-box-shadow: 0 0 0 10px rgba(217, 94, 103, 0), 0 2px 8px 0 $black-default
 
   100%
-    box-shadow: 0 0 0 0 rgba(217, 94, 103, 0)
-    -moz-box-shadow: 0 0 0 0 rgba(217, 94, 103, 0)
+    -webkit-box-shadow: 0 0 0 0 rgba(217, 94, 103, 0), 0 2px 8px 0 $black-default
+
+@keyframes pulse
+  0%
+    box-shadow: 0 0 0 0 rgba(217, 94, 103, 0.8), 0 2px 8px 0 $black-default
+    -moz-box-shadow: 0 0 0 0 rgba(217, 94, 103, 0.8), 0 2px 8px 0 $black-default
+
+  70%
+    box-shadow: 0 0 0 10px rgba(217, 94, 103, 0), 0 2px 8px 0 $black-default
+    -moz-box-shadow: 0 0 0 10px rgba(217, 94, 103, 0), 0 2px 8px 0 $black-default
+
+  100%
+    box-shadow: 0 0 0 0 rgba(217, 94, 103, 0), 0 2px 8px 0 $black-default
+    -moz-box-shadow: 0 0 0 0 rgba(217, 94, 103, 0), 0 2px 8px 0 $black-default

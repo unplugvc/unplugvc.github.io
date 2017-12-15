@@ -2,8 +2,8 @@
   <div class="footer lazyload-bkg" data-src="{{site.baseurl}}/assets/img/footer/footer_background.jpg">
     <div class="container">
       <div class="footer__claim">
-        <p>APPLY FOR THE NEXT EDITION THE SEATS ARE LIMITED</p>
-        <a class="footer__claim-button" onclick="open_apply_form()">Apply to attend!</a>
+        <p class="scroll_reveal">APPLY FOR THE NEXT EDITION THE SEATS ARE LIMITED</p>
+        <a class="footer__claim-button scroll_reveal" onclick="open_apply_form()">Apply to attend!</a>
       </div>
       <div class="footer__sponsors">
         <p class="footer__title">MAIN SPONSOR</p>
@@ -46,9 +46,11 @@
             <p class="footer__text--small">© 2018 Venture Retreat - Privacy and Cookie Policy</p>
           </div>
           <div class="col-sm-4">
-            <p class="footer__text--small">Made in
-              <img class="lazyload" data-src="{{'/assets/img/logo_belka.svg' | relative_url }}" alt="">
-            </p>
+            <a href="http://belka.us/" target="_blank">
+              <p class="footer__text--small">Made in
+                <img src="{{'/assets/img/logo_belka.svg' | relative_url }}" alt="">
+              </p>
+            </a>
           </div>
         </div>
       </div>
