@@ -19,25 +19,6 @@ $(window).on('load', function() {
  * Document ready
  */
 $(document).ready(() => {
-  /*let width = 100,
-    perfData = window.performance.timing,
-    estimatedTime = -(perfData.loadEventEnd - perfData.navigationStart + 1000),
-    time = parseInt((estimatedTime / 1000) % 60) * 100;
-
-  $('.page_overlay .loadbar').animate(
-    {
-      width: width + '%'
-    },
-    time
-  );
-
-  $('.page_overlay .glow').animate(
-    {
-      width: width + '%'
-    },
-    time
-  );*/
-
   /**
    * Init tabs
    */
@@ -295,20 +276,3 @@ function playVideo() {
     }
   }
 }
-
-/*function animateValue(id, start, end, duration) {
-  var range = end - start,
-    current = start,
-    increment = end > start ? 1 : -1,
-    stepTime = Math.abs(Math.floor(duration / range)),
-    obj = $(id);
-
-  var timer = setInterval(function() {
-    current += increment;
-    $(obj).text(current + '%');
-    if (current == end) {
-      clearInterval(timer);
-    }
-  }, stepTime);
-}
-*/
