@@ -1,24 +1,37 @@
 ---
-layout: home
 ---
+<!DOCTYPE html>
+<html lang="en">
 
-<style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
-  }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
-</style>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>404 - Ventureretreat</title>
+</head>
 
-<div class="container">
-  <h1>404</h1>
-  <img src="https://media.giphy.com/media/g5YMCkSTYJ93G/giphy.gif" alt="">
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
-</div>
+<body>
+  <div class="quattro-zero_quattro">
+    <div class="quattro-zero_quattro__navigation">
+      <div class="container">
+        <a class="top_navbar--go-back" href="{{ site.baseurl }}/">
+          <img src="{{'/assets/img/icons/back_arrow_negative.svg' | relative_url }}" alt="">
+          <p>GO BACK TO THE HOMEPAGE</p>
+        </a>
+      </div>
+    </div>
+    <div class="quattro-zero_quattro__gif-fullscreen">
+      <div class="content">
+        <img class="white_logo" src="{{'/assets/img/icons/logo/logo.png' | relative_url }}" alt="">
+        <h1>404</h1>
+        <h2>what is this place?</h2>
+      </div>
+    </div>
+  </div>
+
+  <link rel="stylesheet" href="https://unpkg.com/bootstrap@4.0.0-beta.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{{'/css/main.css' | relative_url }}">
+
+</body>
+
+</html>
