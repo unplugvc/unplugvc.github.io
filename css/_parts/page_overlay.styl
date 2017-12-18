@@ -16,7 +16,7 @@ $page_overlay_mountains = $base_url '/assets/img/mountain_profile_2.svg'
       display: table
       margin: 0 auto
       margin-top: 35vh
-      width: 15vw
+      width: 200px
 
     &.animation
       animation: overlayCloseAnimation 1s forwards
@@ -67,7 +67,7 @@ $page_overlay_mountains = $base_url '/assets/img/mountain_profile_2.svg'
       left: -20px
       position: absolute
       top: -58px
-      width: 150%
+      width: 500%
 
     &:after
       background-image: url($page_overlay_mountains)
@@ -84,6 +84,9 @@ $page_overlay_mountains = $base_url '/assets/img/mountain_profile_2.svg'
       -webkit-transform: rotate(180deg)
 
 @media (min-width: 768px)
+  .page_overlay
+    .white_logo
+      width: 300px
   .page_overlay__white_space
     &:before
       left: -50px
