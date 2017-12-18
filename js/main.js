@@ -19,7 +19,7 @@ $(window).on('load', function() {
  * Document ready
  */
 $(document).ready(() => {
-  let width = 100,
+  /*let width = 100,
     perfData = window.performance.timing,
     estimatedTime = -(perfData.loadEventEnd - perfData.navigationStart + 1000),
     time = parseInt((estimatedTime / 1000) % 60) * 100;
@@ -36,7 +36,7 @@ $(document).ready(() => {
       width: width + '%'
     },
     time
-  );
+  );*/
 
   /**
    * Init tabs
@@ -296,7 +296,7 @@ function playVideo() {
   }
 }
 
-function animateValue(id, start, end, duration) {
+/*function animateValue(id, start, end, duration) {
   var range = end - start,
     current = start,
     increment = end > start ? 1 : -1,
@@ -311,3 +311,4 @@ function animateValue(id, start, end, duration) {
     }
   }, stepTime);
 }
+*/
