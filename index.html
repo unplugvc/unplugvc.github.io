@@ -139,8 +139,8 @@ layout: home
 </div>
 
 
-<div class="schedule scroll_reveal" id="schedule">
-  <div class="container">
+<div class="schedule" id="schedule">
+  <div class="container scroll_reveal">
     <div class="row">
       <div class="col-12">
         {% include components/headings.html big="THE SCHEDULE" small="Your home for a weekend, in the mountains" %}
@@ -168,7 +168,7 @@ layout: home
         {% endfor %}
       </div>
     </div>
-    <div class="schedule__line-date-element-sizer--mobile scroll_reveal">
+    <div class="schedule__line-date-element-sizer--mobile">
       <ul class="line_background">
         {% for schedule in current_event.schedule %}
         <li class="schedule__line-date-element general__noselect tabselector__{{forloop.index}}" onclick="displayScheduleTab('{{forloop.index}}')">
@@ -184,7 +184,7 @@ layout: home
   {% for schedule in current_event.schedule %}
   <div class="tab__{{forloop.index}}">
     {% for program in schedule.program %}
-    <div class="row element scroll_reveal">
+    <div class="row element">
       <div class="col-12 col-sm-2">
         <p class="text--fat">{{program.time}}</p>
       </div>

@@ -5,7 +5,7 @@ tags:
 layout: event
 permalink: "/event/:title"
 location: Trentino - Alto Adige, Italy
-image: http://localhost:4000/ventureretreat/IMG_0029.jpg
+image: 1.png
 when_header: September 14-17, 2018
 how_was_it:
 - We have chosen the best of the best. The Tierser Alpl mountain refuge sits on top
