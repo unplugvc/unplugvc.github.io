@@ -56,7 +56,7 @@ $(document).ready(() => {
   $('[data-fancybox="gallery"]')
     .not($('.slick-cloned'))
     .fancybox({
-      buttons: ['slideShow', 'fullScreen', 'thumbs', 'share', 'close']
+      buttons: ['close']
     });
 
   let scheduleMenuWidth =

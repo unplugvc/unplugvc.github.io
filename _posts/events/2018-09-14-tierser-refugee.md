@@ -5,7 +5,7 @@ tags:
 layout: event
 permalink: "/event/:title"
 location: Trentino - Alto Adige, Italy
-image: 1.png
+image: http://localhost:4000/ventureretreat/assets/img/events_photos/tierser_refugee/big/4.jpg
 when_header: September 14-17, 2018
 how_was_it:
 - We have chosen the best of the best. The Tierser Alpl mountain refuge sits on top
@@ -100,18 +100,29 @@ schedule:
   - time: 8.00 AM
     what: Breakfast
     description: Meet in the Hotel lobby and load up on energies for the day.
-- photos:
-  - path: '/ventureretreat/assets/img/events_photos/tierser_refugee'
-  - pics: [
-    '1.jpg',
-    '2.jpg',
-    '3.jpg',
-    '4.jpg',
-    '5.jpg',
-    '6.jpg',
-    '7.jpg',
-    '8.jpg',
-    '9.jpg',
-    '10.jpg'
-  ]
+gallery-small:
+  image:
+  - http://localhost:4000/ventureretreat/assets/img/events_photos/tierser_refugee/1.jpg
+  - http://localhost:4000/ventureretreat/assets/img/events_photos/tierser_refugee/2.jpg
+  - http://localhost:4000/ventureretreat/assets/img/events_photos/tierser_refugee/3.jpg
+  - http://localhost:4000/ventureretreat/assets/img/events_photos/tierser_refugee/4.jpg
+  - http://localhost:4000/ventureretreat/assets/img/events_photos/tierser_refugee/5.jpg
+  - http://localhost:4000/ventureretreat/assets/img/events_photos/tierser_refugee/6.jpg
+  - http://localhost:4000/ventureretreat/assets/img/events_photos/tierser_refugee/7.jpg
+  - http://localhost:4000/ventureretreat/assets/img/events_photos/tierser_refugee/8.jpg
+  - http://localhost:4000/ventureretreat/assets/img/events_photos/tierser_refugee/9.jpg
+  - http://localhost:4000/ventureretreat/assets/img/events_photos/tierser_refugee/10.jpg
+gallery-big:
+  image:
+  - http://localhost:4000/ventureretreat/assets/img/events_photos/tierser_refugee/big/1.jpg
+  - http://localhost:4000/ventureretreat/assets/img/events_photos/tierser_refugee/big/2.jpg
+  - http://localhost:4000/ventureretreat/assets/img/events_photos/tierser_refugee/big/3.jpg
+  - http://localhost:4000/ventureretreat/assets/img/events_photos/tierser_refugee/big/4.jpg
+  - http://localhost:4000/ventureretreat/assets/img/events_photos/tierser_refugee/big/5.jpg
+  - http://localhost:4000/ventureretreat/assets/img/events_photos/tierser_refugee/big/6.jpg
+  - http://localhost:4000/ventureretreat/assets/img/events_photos/tierser_refugee/big/7.jpg
+  - http://localhost:4000/ventureretreat/assets/img/events_photos/tierser_refugee/big/8.jpg
+  - http://localhost:4000/ventureretreat/assets/img/events_photos/tierser_refugee/big/9.jpg
+  - http://localhost:4000/ventureretreat/assets/img/events_photos/tierser_refugee/big/10.jpg
 ---
+
