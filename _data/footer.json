@@ -1,11 +1,11 @@
 [
   {
     "sponsor": [
-      { "name": "sudtirol", "logo": "sudtirol.png" },
-      { "name": "sudtirol", "logo": "sudtirol.png" },
-      { "name": "sudtirol", "logo": "sudtirol.png" },
-      { "name": "sudtirol", "logo": "sudtirol.png" },
-      { "name": "sudtirol", "logo": "sudtirol.png" }
+      { "name": "sudtirol", "image": "sudtirol.png" },
+      { "name": "sudtirol", "image": "sudtirol.png" },
+      { "name": "sudtirol", "image": "sudtirol.png" },
+      { "name": "sudtirol", "image": "sudtirol.png" },
+      { "name": "sudtirol", "image": "sudtirol.png" }
     ]
   }
 ]

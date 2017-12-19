@@ -1,7 +1,27 @@
 [
-  { "icon": "time.svg", "title": "TIME", "text": "2.5 hours" },
-  { "icon": "distance.svg", "title": "DISTANCE", "text": "14.3 km" },
-  { "icon": "difficulty.svg", "title": "DIFFICULTY", "text": "Low" },
-  { "icon": "people.svg", "title": "GROUP SIZE", "text": "70 people" },
-  { "icon": "days.svg", "title": "DAYS", "text": "3 days" }
+  {
+    "image": "http://localhost:4000/assets/img/icons/hike/time.svg",
+    "title": "TIME",
+    "text": "2.5 hours"
+  },
+  {
+    "image": "http://localhost:4000/assets/img/icons/hike/distance.svg",
+    "title": "DISTANCE",
+    "text": "14.3 km"
+  },
+  {
+    "image": "http://localhost:4000/assets/img/icons/hike/difficulty.svg",
+    "title": "DIFFICULTY",
+    "text": "Low"
+  },
+  {
+    "image": "http://localhost:4000/assets/img/icons/hike/people.svg",
+    "title": "GROUP SIZE",
+    "text": "70 people"
+  },
+  {
+    "image": "http://localhost:4000/assets/img/icons/hike/days.svg",
+    "title": "DAYS",
+    "text": "3 days"
+  }
 ]
