@@ -5,7 +5,7 @@ tags:
 layout: event
 permalink: "/event/:title"
 location: Madonna di Campiglio
-image: 1.png
+image: http://localhost:4000/assets/img/events_photos/tierser_refugee/2.jpg
 when_header: September 14-17, 2017
 how_was_it:
 - We have chosen the best of the best. The Tierser Alpl mountain refuge sits on top
