@@ -1,7 +1,0 @@
-[
-  { "icon": "time.svg", "title": "TIME", "text": "2.5 hours" },
-  { "icon": "distance.svg", "title": "DISTANCE", "text": "14.3 km" },
-  { "icon": "difficulty.svg", "title": "DIFFICULTY", "text": "Low" },
-  { "icon": "people.svg", "title": "GROUP SIZE", "text": "70 people" },
-  { "icon": "days.svg", "title": "DAYS", "text": "3 days" }
-]
