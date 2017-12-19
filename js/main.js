@@ -4,7 +4,7 @@
 const state = {
   currentTab: 1,
   ww: $(window).width(),
-  baseurl: 'ventureretreat/',
+  baseurl: '/',
   initialScrolltopScheduleMenu: 0
 };
 
@@ -194,17 +194,17 @@ function negativeMenuToggle() {
   if ($(document).scrollTop() > limit) {
     $('.top_navbar').addClass('negative');
     $('.top_navbar--mobile').addClass('negative');
-    $('.top_navbar--go-back img').attr(
+    /*$('.top_navbar--go-back img').attr(
       'src',
-      `/${state.baseurl}assets/img/icons/back_arrow_negative.svg`
-    );
+      `/assets/img/icons/back_arrow_negative.svg`
+    );*/
   } else {
     $('.top_navbar').removeClass('negative');
     $('.top_navbar--mobile').removeClass('negative');
-    $('.top_navbar--go-back img').attr(
+    /*$('.top_navbar--go-back img').attr(
       'src',
-      `/${state.baseurl}assets/img/icons/back_arrow.svg`
-    );
+      `/assets/img/icons/back_arrow.svg`
+    );*/
   }
 
   if (ww < 769) {

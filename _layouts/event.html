@@ -43,13 +43,14 @@ layout: event
     <div class="carousel__event--row">
       {% for image in page.gallery-small.image %}
         {% assign prev_i = forloop.index | minus: 1 %}
-        <div class="carousel__event--element" style="background-image: url('{{ image }}')">
-            <a data-fancybox="gallery" href="{{page.gallery-big.image[prev_i]}}" >
+        {% assign dev_base_url = 'http://localhost:4000' %}
+        <div class="carousel__event--element" style="background-image: url('{{ image  | replace:dev_base_url, site.url}}')">
+            <a data-fancybox="gallery" href="{{page.gallery-big.image[prev_i] | replace:'http://localhost:4000', site.url}}" >
             </a>
         </div>
       {% endfor %}
     </div>
-    <img class="carousel__home__mountain-profile" src="{{'/assets/img/mountain_profile_2.svg' | relative_url }}" alt="">
+    <img class="carousel__home__mountain-profile" src="{{'/assets/img/mountain_profile_2.svg' | relative_url}}" alt="">
   </div>
 
   <div class="speakers">
@@ -63,7 +64,7 @@ layout: event
             {% for speaker in page.speakers %}
             <div class="col-sm-4 col-md-4 col-lg-3 scroll_reveal">
               <div class="speakers__pictures-card aspect_ratio--speakers">
-                <img class="lazyload" data-src="{{'/assets/img/speakers/' | relative_url }}{{speaker.pic}}" alt="">
+                <img class="lazyload" data-src="{{speaker.image | replace:'http://localhost:4000', site.url}}" alt="">
                 <div class="speakers__pictures-card-data">
                   <p class="speakers__pictures-card-data-name">{{speaker.name}}</p>
                   <p class="speakers__pictures-card-data-role">{{speaker.role}}</p>
@@ -79,7 +80,7 @@ layout: event
     <div class="speakers__pictures--mobile scroll_reveal">
       {% for speaker in page.speakers %}
       <div class="speakers__pictures-card aspect_ratio--speakers">
-        <img class="lazyload" data-src="{{'/assets/img/speakers/' | relative_url }}{{speaker.pic}}" alt="">
+        <img class="lazyload" data-src="{{speaker.image | replace:'http://localhost:4000', site.url}}" alt="">
         <div class="speakers__pictures-card-data">
           <p class="speakers__pictures-card-data-name">{{speaker.name}}</p>
           <p class="speakers__pictures-card-data-role">{{speaker.role}}</p>
@@ -92,7 +93,7 @@ layout: event
 
   <div class="what-happened scroll_reveal">
     <video id="event_video" width="100%" height="auto" muted>
-      <source src="{{page.video}}" type="video/mp4">
+      <source src="{{page.video | replace:'http://localhost:4000', site.url}}" type="video/mp4">
       Your browser does not support the video tag.
     </video>
   </div>
@@ -108,7 +109,7 @@ layout: event
             {% for a in page.attendees %}
             <div class="col-6 col-sm-4 col-md-4 col-lg-3 scroll_reveal">
               <div class="attendees__pictures-card aspect_ratio--attendees">
-                <img class="lazyload" data-src="{{'/assets/img/attendees/' | relative_url }}{{a.logo}}" alt="">
+                <img class="lazyload" data-src="{{a.image | replace:'http://localhost:4000', site.url}}" alt="">
               </div>
             </div>
             {% endfor %}
@@ -130,7 +131,7 @@ layout: event
             <div class="col-12 col-sm-6 col-md-6 col-lg-4 scroll_reveal">
               <a href="{{site.baseurl}}{{ o.url }}">
                 <div class="past-editions__pictures-card aspect_ratio--past_editions">
-                  <img class="lazyload" data-src="{{'/assets/img/edition_cards/' | relative_url }}{{o.past_edition.pic}}" alt="">
+                  <img class="lazyload" data-src="{{o.past_edition.image | replace:'http://localhost:4000', site.url}}" alt="">
                   <div class="past-editions__pictures-card-data">
                     <p class="past-editions__pictures-card-data-name">{{o.title}}</p>
                     <p class="past-editions__pictures-card-data-role">{{o.past_edition.period}}</p>
@@ -148,7 +149,7 @@ layout: event
       {% for o in past_events %} {% unless forloop.first %}
       <a href="{{site.baseurl}}{{ o.url }}">
         <div class="past-editions__pictures-card aspect_ratio--past_editions">
-          <img class="lazyload" data-src="{{'/assets/img/edition_cards/' | relative_url }}{{o.past_edition.pic}}" alt="">
+          <img class="lazyload" data-src="{{o.past_edition.image | replace:'http://localhost:4000', site.url}}" alt="">
           <div class="past-editions__pictures-card-data">
             <p class="past-editions__pictures-card-data-name">{{o.title}}</p>
             <p class="past-editions__pictures-card-data-role">{{o.past_edition.period}}</p>
