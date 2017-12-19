@@ -19,53 +19,53 @@ caratteristics:
   beds: 70 peope
 past_edition:
   period: 14 - 15 - 16 - 17 February 2018
-  pic: oberholz_refuge.png
+  image: http://localhost:4000/assets/img/edition_cards/oberholz_refuge.png
 speakers:
 - name: Tim Cook
   role: Investor
-  pic: tim_cook.png
+  image: http://localhost:4000/assets/img/speakers/tim_cook.png
 - name: Tim Cook
   role: Django expert
-  pic: tim_cook.png
+  image: http://localhost:4000/assets/img/speakers/tim_cook.png
 - name: Tim Cook
   role: Blogger
-  pic: tim_cook.png
+  image: http://localhost:4000/assets/img/speakers/tim_cook.png
 - name: Tim Cook
   role: Software Developer
-  pic: tim_cook.png
+  image: http://localhost:4000/assets/img/speakers/tim_cook.png
 - name: Tim Cook
   role: Investor
-  pic: tim_cook.png
+  image: http://localhost:4000/assets/img/speakers/tim_cook.png
 - name: Tim Cook
   role: Django expert
-  pic: tim_cook.png
+  image: http://localhost:4000/assets/img/speakers/tim_cook.png
 - name: Tim Cook
   role: Blogger
-  pic: tim_cook.png
+  image: http://localhost:4000/assets/img/speakers/tim_cook.png
 attendees:
 - name: Algolia
-  logo: algolia.png
+  image: http://localhost:4000/assets/img/attendees/algolia.png
 - name: Cachet
-  logo: algolia.png
+  image: http://localhost:4000/assets/img/attendees/algolia.png
 - name: Ebanx
-  logo: algolia.png
+  image: http://localhost:4000/assets/img/attendees/algolia.png
 - name: codebase
-  logo: algolia.png
+  image: http://localhost:4000/assets/img/attendees/algolia.png
 - name: Google
-  logo: algolia.png
+  image: http://localhost:4000/assets/img/attendees/algolia.png
 - name: Drip
-  logo: algolia.png
+  image: http://localhost:4000/assets/img/attendees/algolia.png
 - name: DigitalOcean
-  logo: algolia.png
+  image: http://localhost:4000/assets/img/attendees/algolia.png
 - name: cirrus
-  logo: algolia.png
+  image: http://localhost:4000/assets/img/attendees/algolia.png
 organizers:
 - name: STEFANO BERNARDI
   role: Investor
-  pic: bernardi.png
+  image: http://localhost:4000/assets/img/organizers/bernardi.png
 - name: LORENZO SANNA
   role: Mountaineer
-  pic: sanna.png
+  image: http://localhost:4000/assets/img/organizers/sanna.png
 schedule:
 - day: THURSDAY, SEPT 14
   program:
