@@ -63,3 +63,11 @@ Use jekyll-admin to modify the data `http://localhost:4000/admin`
 There is a section for everything:
 * Events are `posts` so they are in the sections posts, from the list select the folder `events`
 * The other data are in the `Data Files` collection with the name listed here above (Adding data)
+
+## Adding assets 
+
+Drop your files in the `assets` folder, possibly using the current structure. 
+Please don't use the uploader in jekyll-admin, it's broken.
+
+> Image urls are absolute, so you can use the picker in jekyll-admin or an image elsewhere 
+>(example: http://localhost:4000/assets/img/pholosophies_cards/1.png or https://www.google.it/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png)
