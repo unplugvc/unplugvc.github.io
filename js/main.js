@@ -56,6 +56,7 @@ $(document).ready(() => {
   $('[data-fancybox="gallery"]')
     .not($('.slick-cloned'))
     .fancybox({
+      loop : true,
       buttons: ['close']
     });
 
