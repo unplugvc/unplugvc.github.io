@@ -24,8 +24,9 @@
   * using vscode there is the task LiveServe
 
 ## Deploy with travis-ci
+Merge in `travis-ci` branch
 
-When merging on master branch it will deploy the resultant build.
+> When merging on `travis-ci` branch it will deploy the resultant build pushing it in the `master` branch.
 
 ## Deploy manually 
 
