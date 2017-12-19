@@ -19,13 +19,6 @@ stylus:
   compress: true
   path: css
 
-# page_gen:
-#   - index_files: true
-#     data: 'events'
-#     template: 'event'
-#     name: 'title'
-#     dir: 'event'
-
 jekyll_admin:
   hidden_links:
     - configuration
