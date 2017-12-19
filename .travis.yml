@@ -1,8 +1,8 @@
 language: ruby
-# only run CI-builds on master branch
+# only run CI-builds on travis-ci branch
 branches:
   only:
-  - master
+  - travis-ci
 rvm:
 - 2.4.2
 # set execution permission on our build script
