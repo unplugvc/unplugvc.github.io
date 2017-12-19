@@ -4,7 +4,7 @@
   <div class="card__header lazyload-bkg" data-src="{{site.baseurl}}/assets/img/pholosophies_cards/{{include.img}}">
     <p class="card__header--title">{{include.title}}</p>
   {% elsif include.type == "location" %}
-  <div class="card__header lazyload-bkg" data-src="{{site.baseurl}}/assets/img/location/{{include.img}}">
+  <div class="card__header lazyload-bkg" data-src="{{include.img | replace:'http://localhost:4000', site.url}}">
     <p class="card__header--title">{{include.title}}</p>
     <p class="card__header--subtitle">{{include.subtitle}}</p>
   {% endif %}

@@ -72,8 +72,9 @@ layout: home
   </div>
   <div class="our-philosophy__mobile-leteral-scroll scroll_reveal">
     <div class="our-philosophy__mobile-leteral-scroll-content">
-      {% for p in site.data.philosophies %} {% include components/card.html type="philosophies" title=p.title text=p.text img=p.img
-      %} {% endfor %}
+      {% for p in site.data.philosophies %} 
+        {% include components/card.html type="philosophies" title=p.title text=p.text img=p.img %} 
+      {% endfor %}
     </div>
   </div>
 </div>
