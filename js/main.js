@@ -15,7 +15,7 @@ const state = {
  * Document ready
  */
 $(document).ready(() => {
-  Pace.on('done', ()=>{
+  Pace.on('done', () => {
     $(`.page_overlay .page_overlay__white_space`).addClass('animation');
     setTimeout(function() {
       $('.pace').fadeOut();
@@ -49,21 +49,8 @@ $(document).ready(() => {
     autoplay: true,
     autoplaySpeed: 2000,
     infinite: true,
-    speed: 500,
-  });
-
-  /*$('.carousel__home-slider_2').slick({
-    dots: false,
-    speed: 300,
-    slidesToShow: 1,
-    centerMode: false,
-    variableWidth: true,
-    arrows: false,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    infinite: true,
     speed: 500
-  });*/
+  });
 
   $('[data-fancybox="gallery"]')
     .not($('.slick-cloned'))
@@ -143,16 +130,37 @@ $('.open_menu').click(() => {
 
 function displayScheduleTab(id) {
   let ww = $(window).width();
+
   $(`.tabselector__${state.currentTab}`).removeClass('active');
-  $(`.tab__${state.currentTab}`).hide();
   state.currentTab = id;
-  $(`.tab__${state.currentTab}`).show();
-  $(`.tabselector__${state.currentTab}`).addClass('active');
+
   if (ww < 769) {
     let nextPosition = $('.schedule__tabs').offset().top - 200;
-    $('html,body').animate({ scrollTop: nextPosition }, 'slow');
+    $('html,body').animate({ scrollTop: nextPosition }, 'slow', function() {
+      $(`.tabselector__${state.currentTab}`).addClass('active');
+      $(`.tab__1`).css({ marginLeft: `-${100 * (state.currentTab - 1)}%` });
+    });
+  } else {
+    state.currentTab = id;
+    $(`.tabselector__${state.currentTab}`).addClass('active');
+    $(`.tab__1`).css({ marginLeft: `-${100 * (state.currentTab - 1)}%` });
   }
 }
+
+/*var lastY;
+$(`.schedule__tabs`).bind('touchstart', function (e){
+  console.log('touchstart');
+  lastY = e.touches[0].clientY;
+});
+$(`.schedule__tabs`).bind('touchmove', function (e){
+  console.log('touchmove');
+  e.preventDefault()
+  var currentY = e.touches[0].clientY;
+  if (currentY !== lastY){
+    return;
+  }
+  lastY = currentY;
+});*/
 
 /**
  * Debounced window resize
@@ -206,17 +214,9 @@ function negativeMenuToggle() {
   if ($(document).scrollTop() > limit) {
     $('.top_navbar').addClass('negative');
     $('.top_navbar--mobile').addClass('negative');
-    /*$('.top_navbar--go-back img').attr(
-      'src',
-      `/assets/img/icons/back_arrow_negative.svg`
-    );*/
   } else {
     $('.top_navbar').removeClass('negative');
     $('.top_navbar--mobile').removeClass('negative');
-    /*$('.top_navbar--go-back img').attr(
-      'src',
-      `/assets/img/icons/back_arrow.svg`
-    );*/
   }
 
   if (ww < 769) {
@@ -315,7 +315,6 @@ $('a[href*="#"]')
             var $target = $(target);
             $target.focus();
             if ($target.is(':focus')) {
-
               return false;
             } else {
               $target.attr('tabindex', '-1');

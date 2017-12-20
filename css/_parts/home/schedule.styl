@@ -99,6 +99,48 @@ $row_schedule_line_img_mobile_path = $base_url '/assets/img/line_mobile.svg'
     .schedule__line-date-element-sizer
       display: none
 
+  .schedule__tabs
+    overflow-x: hidden
+    position: relative
+    white-space: nowrap
+    width: calc(100%)
+
+    &::-webkit-scrollbar
+      display: none
+      -webkit-appearance: none
+
+    div[class^='tab__']
+      display: inline-block
+      margin-top: 40px
+      transition: margin 0.4s ease-in
+      vertical-align: top
+      width: 100%
+
+      .element
+        background-color: $background-grey
+        border-bottom: 1px solid $grey-separator-schedule
+        margin: 0 auto
+        padding: 20px 40px
+        white-space: normal
+        width: calc(100% - 30px)
+
+        &:first-child
+          border-top-left-radius: 8px
+          border-top-right-radius: 8px
+
+        &:last-child
+          border-bottom-left-radius: 8px
+          border-bottom-right-radius: 8px
+
+        .text--brown
+          font-weight: 500
+          margin-bottom: 0
+          margin-top: 10px
+
+        .text
+          margin-bottom: 0
+          margin-top: 5px
+
 @media (min-width: 768px)
   .schedule
     margin-top: 60px
@@ -153,14 +195,29 @@ $row_schedule_line_img_mobile_path = $base_url '/assets/img/line_mobile.svg'
         border-right: 1px solid $grey-separator-schedule
 
   .schedule__tabs
-    div[class^='tab__']
+    overflow-x: hidden
+    padding: 0
+    position: relative
+    white-space: nowrap
+    width: 100%
+
+    &::-webkit-scrollbar
       display: none
+      -webkit-appearance: none
+
+    div[class^='tab__']
+      display: inline-block
       margin-top: 40px
+      transition: margin 0.4s ease-in
+      vertical-align: top
+      width: 100%
 
       .element
         background-color: $background-grey
         border-bottom: 1px solid $grey-separator-schedule
+        margin: 0 auto
         padding: 20px 40px
+        width: calc(100% - 30px)
 
         &:first-child
           border-top-left-radius: 8px
