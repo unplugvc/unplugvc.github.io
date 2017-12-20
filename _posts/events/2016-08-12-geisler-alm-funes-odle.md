@@ -105,10 +105,12 @@ gallery-small:
   - http://localhost:4000/assets/img/events_photos/tierser_refugee/1.jpg
   - http://localhost:4000/assets/img/events_photos/tierser_refugee/2.jpg
   - http://localhost:4000/assets/img/events_photos/tierser_refugee/3.jpg
+  - http://localhost:4000/assets/img/events_photos/tierser_refugee/5.jpg
   - http://localhost:4000/assets/img/events_photos/tierser_refugee/4.jpg
   - http://localhost:4000/assets/img/events_photos/tierser_refugee/5.jpg
   - http://localhost:4000/assets/img/events_photos/tierser_refugee/6.jpg
   - http://localhost:4000/assets/img/events_photos/tierser_refugee/7.jpg
+  - http://localhost:4000/assets/img/events_photos/tierser_refugee/9.jpg
   - http://localhost:4000/assets/img/events_photos/tierser_refugee/8.jpg
   - http://localhost:4000/assets/img/events_photos/tierser_refugee/9.jpg
   - http://localhost:4000/assets/img/events_photos/tierser_refugee/10.jpg
@@ -117,10 +119,12 @@ gallery-big:
   - http://localhost:4000/assets/img/events_photos/tierser_refugee/big/1.jpg
   - http://localhost:4000/assets/img/events_photos/tierser_refugee/big/2.jpg
   - http://localhost:4000/assets/img/events_photos/tierser_refugee/big/3.jpg
+  - http://localhost:4000/assets/img/events_photos/tierser_refugee/big/5.jpg
   - http://localhost:4000/assets/img/events_photos/tierser_refugee/big/4.jpg
   - http://localhost:4000/assets/img/events_photos/tierser_refugee/big/5.jpg
   - http://localhost:4000/assets/img/events_photos/tierser_refugee/big/6.jpg
   - http://localhost:4000/assets/img/events_photos/tierser_refugee/big/7.jpg
+  - http://localhost:4000/assets/img/events_photos/tierser_refugee/big/9.jpg
   - http://localhost:4000/assets/img/events_photos/tierser_refugee/big/8.jpg
   - http://localhost:4000/assets/img/events_photos/tierser_refugee/big/9.jpg
   - http://localhost:4000/assets/img/events_photos/tierser_refugee/big/10.jpg
