@@ -8,16 +8,8 @@ const state = {
   initialScrolltopScheduleMenu: 0
 };
 
-/*$(window).on('load', function() {*/
-  /*/ $(`.page_overlay .page_overlay__white_space`).addClass('animation');
-  // setTimeout(function() {
-  //   $('.pace').hide();
-  // }, 100);
-  // setTimeout(function() {
-  //   $(`.page_overlay`).addClass('animation');
-  // }, 3000);*/
-  /* Pace.stop();*/
-/*});*/
+/*$(window).on('load', function() {
+});*/
 
 /**
  * Document ready
@@ -31,6 +23,11 @@ $(document).ready(() => {
     setTimeout(function() {
       $(`.page_overlay`).addClass('animation');
       $('.pace').hide();
+      setTimeout(function() {
+        $(`.header__home`).addClass('animation');
+        $(`.header__event`).addClass('animation');
+        $(`.header__mountain-profile`).addClass('animation');
+      }, 1000);
     }, 3000);
   });
 
