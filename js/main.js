@@ -10,8 +10,8 @@ const state = {
 
 $(window).on('load', function() {
   $(`.page_overlay .page_overlay__white_space`).addClass('animation');
+  Pace.stop();
   setTimeout(function() {
-    Pace.stop();
     $(`.page_overlay`).addClass('animation');
   }, 3000);
 });
