@@ -8,18 +8,32 @@ const state = {
   initialScrolltopScheduleMenu: 0
 };
 
-$(window).on('load', function() {
-  $(`.page_overlay .page_overlay__white_space`).addClass('animation');
-  Pace.stop();
-  setTimeout(function() {
-    $(`.page_overlay`).addClass('animation');
-  }, 3000);
-});
+/*$(window).on('load', function() {*/
+  /*/ $(`.page_overlay .page_overlay__white_space`).addClass('animation');
+  // setTimeout(function() {
+  //   $('.pace').hide();
+  // }, 100);
+  // setTimeout(function() {
+  //   $(`.page_overlay`).addClass('animation');
+  // }, 3000);*/
+  /* Pace.stop();*/
+/*});*/
 
 /**
  * Document ready
  */
 $(document).ready(() => {
+  Pace.on('done', ()=>{
+    $(`.page_overlay .page_overlay__white_space`).addClass('animation');
+    setTimeout(function() {
+      $('.pace').fadeOut();
+    }, 500);
+    setTimeout(function() {
+      $(`.page_overlay`).addClass('animation');
+      $('.pace').hide();
+    }, 3000);
+  });
+
   /**
    * Init tabs
    */

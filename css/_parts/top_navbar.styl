@@ -124,7 +124,6 @@ $negative_logo_path = $base_url '/assets/img/icons/logo/logo_negative.svg'
       float: left
       margin-left: 16px
       margin-top: 15px
-      text-shadow: 0 2px 4px 0 rgba(51, 51, 51, 0.3)
 
     &:hover
       color: white
@@ -168,7 +167,7 @@ $negative_logo_path = $base_url '/assets/img/icons/logo/logo_negative.svg'
       list-style: none
       margin-top: 15px
       padding-left: 0
-      transition: margin-top 0.3s ease
+      transition: margin-top 0.4s ease
 
       li
         float: left
@@ -185,22 +184,38 @@ $negative_logo_path = $base_url '/assets/img/icons/logo/logo_negative.svg'
 
     .top_navbar--go-back
       margin-top: 15px
-      transition: margin-top 0.3s ease
+      transition: all 0.4s ease
+
+      svg
+        float: left
+        margin-top: 15px
+
+      .logo_in_html--word
+        fill: #fff
+        transition: all 0.4s ease
 
     &.negative
       background: $white
       background-color: $white
       box-shadow: 0 2px 4px 0 rgba(51, 51, 51, 0.3)
       height: 76px
+      transition: color 0.4s ease
 
       .top_navbar__logo
         margin-top: 0
-        transition: margin-top 0.3s ease
+        transition: margin-top 0.4s ease
 
       .top_navbar--go-back
         color: $black-default
         margin-top: 0
-        transition: margin-top 0.3s ease
+        transition: margin-top 0.4s ease
+
+        p
+          transition: color 0.4s ease
+
+        .logo_in_html--word
+          fill: #25283D
+          transition: all 0.4s ease
 
       .top_navbar__logo
         width: 100px
