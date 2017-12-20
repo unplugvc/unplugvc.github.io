@@ -70,5 +70,7 @@ There is a section for everything:
 Drop your files in the `assets` folder, possibly using the current structure. 
 Please don't use the uploader in jekyll-admin, it's broken.
 
-> Image urls are absolute, so you can use the picker in jekyll-admin or an image elsewhere
+> Image urls are absolute, so you can use the picker in jekyll-admin or an image elsewhere.
 >(example: http://localhost:4000/assets/img/pholosophies_cards/1.png or https://www.google.it/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png)
+
+### Make sure to be on `http://localhost:4000/admin/...` if you are using the picker, so the picker will prefix `http://localhost:4000/` to the image path.
