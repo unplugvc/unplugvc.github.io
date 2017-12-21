@@ -22,7 +22,7 @@ $home_header_img_path = $base_url '/assets/img/mountain_placeholder.jpg'
   .header__home-content
     height: auto
     margin-bottom: 140px
-    margin-top: 160px
+    margin-top: 140px
     opacity: 0
     padding: 0 23px
     position: relative
@@ -100,10 +100,15 @@ $home_header_img_path = $base_url '/assets/img/mountain_placeholder.jpg'
 
   .header__mountain-profile
     bottom: 0
+    height: 20px
     left: -450px
     position: absolute
+    transition: height 1s ease
     width: 400%
     z-index: 2
+
+    &.animation
+      height: 150px
 
 @media (min-width: 768px)
   .header__home-content
