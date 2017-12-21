@@ -6,9 +6,7 @@
 
 ## Install ruby dependencies
 
-* `bundle install`
-  * permission problems ? `bundle install --path ./vendor/bundle/`
-
+* `bundle install --path ./vendor/bundle/`
 
 ## Install chrome necessary extensions
 
