@@ -147,21 +147,6 @@ function displayScheduleTab(id) {
   }
 }
 
-/*var lastY;
-$(`.schedule__tabs`).bind('touchstart', function (e){
-  console.log('touchstart');
-  lastY = e.touches[0].clientY;
-});
-$(`.schedule__tabs`).bind('touchmove', function (e){
-  console.log('touchmove');
-  e.preventDefault()
-  var currentY = e.touches[0].clientY;
-  if (currentY !== lastY){
-    return;
-  }
-  lastY = currentY;
-});*/
-
 /**
  * Debounced window resize
  */
