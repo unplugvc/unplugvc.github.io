@@ -12,7 +12,9 @@
           {% for sponsor in site.data.main_sponsors %}
           <div class="col-6 col-sm-3 col-md-3 col-lg-2">
             <div class="footer__sponsors-pictures-card">
-              <img class="lazyload" data-src="{{sponsor.image | replace:'http://localhost:4000', site.url}}" alt="">
+              <a href="{{sponsor.link}}" target="_blank">
+                <img class="lazyload" data-src="{{sponsor.image | replace:'http://localhost:4000', site.url}}" alt="">
+              </a>
             </div>
           </div>
           {% endfor %}
