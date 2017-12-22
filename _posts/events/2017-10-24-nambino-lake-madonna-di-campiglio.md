@@ -12,7 +12,7 @@ how_was_it:
   of Sieser Alm, which is the largest high-altitude Alpine meadow in Europe.
 - The refuge is an historic hut used by mountaineers for decades, but has been completely
   restored and remodeled into a marvel of wooden architecture.
-video: https://www.w3schools.com/html/mov_bbb.mp4
+video: https://s3-eu-west-1.amazonaws.com/unplug-eu/venture+retreat.mp4
 caratteristics:
   altitude: 2240 mt
   cooking: Traditional
