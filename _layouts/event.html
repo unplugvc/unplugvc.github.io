@@ -5,23 +5,23 @@ layout: event
 {% assign past_events = site.tags.event %}
 
 <!DOCTYPE html>
-<!-- 
+<!--
 
-      .-                   
-     `+d/                   
-    -hmm/                   
-   ommmm/                   
-  `mmmmm/                   
-  `mmmmm/ .:+ssyso+-`       
-  `mmmmmsydmmmmmmmmmho.     
-  `mmmmmmh+:---/+ssssyd:    
-  `mmmmmh.     /     .md-   
-  `mmmmmo..-`       .ommo   
-  `mmmmm+..`    ./oydmmm/   
-  `mmmmm/      /dmmmmmmh`   
-  `mmmmm/    `smmmmmmms`    
-  `mmmmm/  `+dmmmmmy+.      
-   :::::.   `-::-.`  
+      .-
+     `+d/
+    -hmm/
+   ommmm/
+  `mmmmm/
+  `mmmmm/ .:+ssyso+-`
+  `mmmmmsydmmmmmmmmmho.
+  `mmmmmmh+:---/+ssssyd:
+  `mmmmmh.     /     .md-
+  `mmmmmo..-`       .ommo
+  `mmmmm+..`    ./oydmmm/
+  `mmmmm/      /dmmmmmmh`
+  `mmmmm/    `smmmmmmms`
+  `mmmmm/  `+dmmmmmy+.
+   :::::.   `-::-.`
 
 Hey!
 
@@ -75,7 +75,7 @@ Belka Team
     <div class="container">
       <div class="row">
         <div class="col-12 col-sm-6 scroll_reveal">
-          {% include components/headings.html big="HOW WAS IT?" small="A weekend to unplug and connect." %} 
+          {% include components/headings.html big="HOW WAS IT?" small="A weekend to unplug and connect." %}
           {% for words in page.how_was_it %}
           <p class="text">
             {{ words }}
@@ -170,48 +170,73 @@ Belka Team
     </div>
   </div>
 
-  <div class="past-editions">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 scroll_reveal">
-          {% include components/headings.html big="PAST EDITIONS" small="Overview of previous editions" %}
-        </div>
-        <div class="col-12 past-editions__pictures">
-          <div class="row">
-            {% for o in past_events %} {% unless forloop.first %}
-            <div class="col-12 col-sm-6 col-md-6 col-lg-4 scroll_reveal">
-              <a href="{{site.baseurl}}{{ o.url }}">
-                <div class="past-editions__pictures-card aspect_ratio--past_editions">
-                  <img class="lazyload" data-src="{{o.past_edition.image | replace:'http://localhost:4000', site.url}}" alt="">
-                  <div class="past-editions__pictures-card-data">
-                    <p class="past-editions__pictures-card-data-name">{{o.title}}</p>
-                    <p class="past-editions__pictures-card-data-role">{{o.past_edition.period}}</p>
+  {% assign curDate = site.time | date: '%s' %}
+  {% assign filtered_past_events = "" | split: ',' %}
+  {% for post in past_events %}
+      {% assign postStartDate = post.date | date: '%s' %}
+      {% if postStartDate < curDate %}
+          {% assign filtered_past_events = filtered_past_events | push: post %}
+      {% endif %}
+  {% endfor %}
+
+  {% for post in filtered_past_events %}
+    {% if post.url != page.url %}
+      {% capture post_count %} {{ post_count | plus: 1 }} {% endcapture %}
+    {% endif %}
+  {% endfor %}
+
+  {% if post_count %}
+    <div class="past-editions">
+      <div class="container">
+        <div class="row">
+          
+          <div class="col-12 scroll_reveal">
+            {% include components/headings.html big="PAST EDITIONS" small="Overview of previous editions" %}
+          </div>
+
+          <div class="col-12 past-editions__pictures">
+            <div class="row">
+              {% for o in filtered_past_events %}
+                {% if o.url != page.url %}
+                  <div class="col-12 col-sm-6 col-md-6 col-lg-4 scroll_reveal">
+                    <a href="{{site.baseurl}}{{ o.url }}">
+                      <div class="past-editions__pictures-card aspect_ratio--past_editions">
+                        <img class="lazyload" data-src="{{o.past_edition.image | replace:'http://localhost:4000', site.url}}" alt="">
+                        <div class="past-editions__pictures-card-data">
+                          <p class="past-editions__pictures-card-data-name">{{o.title}}</p>
+                          <p class="past-editions__pictures-card-data-role">{{o.past_edition.period}}</p>
+                        </div>
+                        <div class="img-overlay"></div>
+                      </div>
+                    </a>
                   </div>
-                  <div class="img-overlay"></div>
-                </div>
-              </a>
+                {% endif %}
+              {% endfor %}
             </div>
-            {% endunless %} {% endfor %}
           </div>
         </div>
       </div>
+      <div class="past-editions__pictures--mobile scroll_reveal">
+        {% for o in past_events %}
+          {% if o.url != page.url %}
+            <a href="{{site.baseurl}}{{ o.url }}">
+              <div class="past-editions__pictures-card aspect_ratio--past_editions">
+                {{o.past_edition.image}}
+                <img class="lazyload"
+                  data-src="{{o.past_edition.image | replace:'http://localhost:4000', site.url}}" alt="">
+                <div class="past-editions__pictures-card-data">
+                  <p class="past-editions__pictures-card-data-name">{{o.title}}</p>
+                  <p class="past-editions__pictures-card-data-role">{{o.past_edition.period}}</p>
+                </div>
+                <div class="img-overlay"></div>
+              </div>
+            </a>
+          {% endif %}
+        {% endfor %}
+      </div>
     </div>
-    <div class="past-editions__pictures--mobile scroll_reveal">
-      {% for o in past_events %} {% unless forloop.first %}
-      <a href="{{site.baseurl}}{{ o.url }}">
-        <div class="past-editions__pictures-card aspect_ratio--past_editions">
-          {{o.past_edition.image}}
-          <img class="lazyload" data-src="{{o.past_edition.image | replace:'http://localhost:4000', site.url}}" alt="">
-          <div class="past-editions__pictures-card-data">
-            <p class="past-editions__pictures-card-data-name">{{o.title}}</p>
-            <p class="past-editions__pictures-card-data-role">{{o.past_edition.period}}</p>
-          </div>
-          <div class="img-overlay"></div>
-        </div>
-      </a>
-      {% endunless %} {% endfor %}
-    </div>
-  </div>
+  {% endif %}
+  
 
   {% include components/page_overlay.html %}
   {% include components/apply_form.html %}
