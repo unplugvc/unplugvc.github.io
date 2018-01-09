@@ -5,23 +5,23 @@
     "link": "http://belka.us/"
   },
   {
-    "name": "Sudtirol",
+    "name": "Trentino",
     "image": "http://localhost:4000/assets/img/sponsor/sudtirol.png",
-    "link": "https://it.wikipedia.org/wiki/S%C3%BCdtirol"
+    "link": "https://www.trentinomarketing.org/en/"
   },
   {
-    "name": "Sudtirol",
+    "name": "Apt Val Di Fassa",
     "image": "http://localhost:4000/assets/img/sponsor/sudtirol.png",
-    "link": "https://it.wikipedia.org/wiki/S%C3%BCdtirol"
+    "link": "https://www.fassa.com/"
   },
   {
-    "name": "Sudtirol",
+    "name": "Dolomiti",
     "image": "http://localhost:4000/assets/img/sponsor/sudtirol.png",
-    "link": "https://it.wikipedia.org/wiki/S%C3%BCdtirol"
+    "link": "http://www.dolomitiunesco.info/la-fondazione-dolomiti-unesco/?lang=en"
   },
   {
-    "name": "Sudtirol",
+    "name": "UnionHotel",
     "image": "http://localhost:4000/assets/img/sponsor/sudtirol.png",
-    "link": "https://it.wikipedia.org/wiki/S%C3%BCdtirol"
+    "link": "http://www.unionhotelscanazei.it/"
   }
 ]

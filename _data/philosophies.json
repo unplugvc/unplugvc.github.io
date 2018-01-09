@@ -10,23 +10,13 @@
     "image": "http://localhost:4000/assets/img/pholosophies_cards/Speak%20same%20language.jpg"
   },
   {
-    "title": "Professional mountain guide",
-    "text": "We will be joined by professional, licensed mountain guides. They will help us explore the trails and will be able to answer.",
-    "image": "http://localhost:4000/assets/img/pholosophies_cards/Guida%20montagna.jpg"
+    "title": "Professional ski Teacher",
+    "text": "We will be joined by professional, licensed ski teacher. They will help us explore the trails and will be able to answer.",
+    "image": "http://localhost:4000/assets/img/pholosophies_cards/skiTeacher.jpg"
   },
   {
-    "title": "Freedom from your phone",
-    "text": "Meet people in total serendipity and take time for yourself. It’s time to loosen your relationship with your mobile.",
-    "image": "http://localhost:4000/assets/img/pholosophies_cards/Phone%20addiction.jpg"
-  },
-  {
-    "title": "Night sky exploration",
-    "text": "Bozen's planetarium astronomers will guide us in a night-time exploration to understand the stars above us.",
-    "image": "http://localhost:4000/assets/img/pholosophies_cards/Sky%20exploration.jpg"
-  },
-  {
-    "title": "Morning yoga",
-    "text": "We are bringing a professional yoga and meditation teacher.",
-    "image": "http://localhost:4000/assets/img/pholosophies_cards/Yoga.jpg"
+    "title": "Wellness in the Unesco",
+    "text": "A new alpine experience centered on quality of life through the beneficial effects of spa aimed at restoring your physical and spiritual balance.",
+    "image": "http://localhost:4000/assets/img/pholosophies_cards/OCterme.png"
   }
 ]

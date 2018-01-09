@@ -1,25 +1,22 @@
 ---
-title: Nambino lake
+title: Tierser Alpl Alpine Refugee
 tags:
 - event
 layout: event
 permalink: "/event/:title"
-location: Madonna di Campiglio
-image: http://localhost:4000/assets/img/events_photos/tierser_refugee/2.jpg
+location: Trentino - Alto Adige, Italy
+image: http://localhost:4000/assets/img/location/1.png
 when_header: September 14-17, 2017
 how_was_it:
 - We have chosen the best of the best. The Tierser Alpl mountain refuge sits on top
   of Sieser Alm, which is the largest high-altitude Alpine meadow in Europe.
 - The refuge is an historic hut used by mountaineers for decades, but has been completely
   restored and remodeled into a marvel of wooden architecture.
-video: https://s3-eu-west-1.amazonaws.com/unplug-eu/venture+retreat.mp4
+video: https://www.w3schools.com/html/mov_bbb.mp4
 caratteristics:
   altitude: 2240 mt
   cooking: Traditional
   beds: 70 peope
-past_edition:
-  period: 14 - 15 - 16 - 17 February 2018
-  image: http://localhost:4000/assets/img/edition_cards/oberholz_refuge.png
 speakers:
 - name: Tim Cook
   role: Investor

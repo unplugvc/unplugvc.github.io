@@ -1,25 +1,28 @@
 ---
-title: Tierser Alpl Alpine Refugee
+title: Villetta Maria Canazei
 tags:
 - event
 layout: event
 permalink: "/event/:title"
 location: Trentino - Alto Adige, Italy
 image: http://localhost:4000/assets/img/location/1.png
-when_header: September 14-17, 2018
+when_header: March 04-07, 2018
 how_was_it:
-- We have chosen the best of the best. The Tierser Alpl mountain refuge sits on top
-  of Sieser Alm, which is the largest high-altitude Alpine meadow in Europe.
-- The refuge is an historic hut used by mountaineers for decades, but has been completely
-  restored and remodeled into a marvel of wooden architecture.
+- We have chosen the best of the best. Villetta Maria a cottage in fornt of the Marmolada
+  the highest mountain of the Dolomites. It is an occasion to really deeply connect
+  with fellow entrepreneurs and investors, but most of all to feel the pull of nature,
+  enjoying the silence and solitude that you can only get by being in the middle of
+  the mountains.
+- The cottage is an historic hut used by mountaineers for decades, but has been completely
+  restored and remodeled into an quite full confort hotel.
 video: https://www.w3schools.com/html/mov_bbb.mp4
 caratteristics:
-  altitude: 2240 mt
+  altitude: 1450 mt
   cooking: Traditional
-  beds: 70 peope
+  beds: 60 peope
 past_edition:
-  period: 14 - 15 - 16 - 17 February 2018
-  image: http://localhost:4000/assets/img/edition_cards/oberholz_refuge.png
+  period: 04 - 05 - 06 - 07 March 2018
+  image: http://localhost:4000/assets/img/edition_cards/tires.png
 speakers:
 - name: Tim Cook
   role: Investor
@@ -64,42 +67,95 @@ organizers:
   role: Investor
   image: http://localhost:4000/assets/img/organizers/bernardi.png
 - name: LORENZO SANNA
-  role: Mountaineer
+  role: Business Developer
   image: http://localhost:4000/assets/img/organizers/sanna.png
 schedule:
-- day: THURSDAY, SEPT 14
+- day: SUNDAY, MARCH 04
   program:
-  - time: 8.00 AM
+  - time: 2.00 PM
+    what: We leave from Verona
+    description: Meeting point outside the train station.
+  - time: 2.30 PM
+    what: First stop Verona Airport
+    description: Meetig point outside the port XX at Verona Airport.
+  - time: 3.45 PM
+    what: Second stop Trento Sud Autostrada
+    description: Meetig point at the parking outside the autostrada in Trento Sud.
+  - time: 17.00 PM
+    what: Arriving in Villetta Maria
+    description: Check-in time, find your room mate fot the next days!
+  - time: 17.30 PM
+    what: Only for Skier
+    description: Ski test at the ski rental.
+  - time: 18.00 PM
+    what: Strating the winter venture retreat
+    description: Aperitivo, presentation and free chat.
+  - time: 20.00 PM
+    what: Dinner at Villetta Maria
+    description: Typical dinner with unconference talks.
+- day: MONDAY, MARCH 05
+  program:
+  - time: 7.30 AM
     what: Breakfast
-    description: Meet in the Hotel lobby and load up on energies for the day.
+    description: Charge your energy for the day.
+  - time: 8.30 AM
+    what: Only for Skier
+    description: Leave Villetta Maria and go skiing.
   - time: 9.30 AM
-    what: Cable car for Seiser Alm
-    description: It's just a short walk to the cable car that will bring us to the
-      meadow.
-  - time: 10.00 AM
-    what: Hike to the Refuge
-    description: It's a 2.5-3h walk to the refuge. But it's a beautiful one.
-- day: FRIDAY, SEPT 15
+    what: Only for Non - Skier
+    description: Leave Villetta Maria and go sledding.
+  - time: 3.00 PM
+    what: Relaxing Time 
+    description: Be ready for the SPA, you need only the swimsuit.
+  - time: 5.00 PM
+    what: Talk and aperitif
+    description: Take your drink listen the inspiring talk at the SPA center.
+  - time: 10.00 PM
+    what: Back to Villetta Maria
+    description: Free chat in Villetta Maria Bar.
+- day: TUESDAY, MARCH 06
+  program:
+  - time: 7.30 AM
+    what: Breakfast
+    description: Charge your energy for the day.
+  - time: 8.30 AM
+    what: Only for Skier
+    description: Leave Villetta Maria and go skiing.
+  - time: 9.30 AM
+    what: Only for Non Skier - Snowshoe Time
+    description: Hike through the dolomites with mountain guides.
+  - time: 4.00 PM
+    what: Return to Villetta Maria
+    description: Shower, Relax, beer and free chat.
+  - time: 5.30 PM
+    what: Dinner at Malga Monzoni
+    description: Bring you warm stuff and be rady for a ride with the snowmobile to Malga Monzoni.
+  - time: 6.30 PM
+    what: Talk
+    description: A very insipiring talk with....
+  - time: 7.30 PM
+    what: Dinner and free chat
+    description: Home made, slowfood and very typical dinner at Malga Monzioni.
+  - time: 10.00 PM
+    what: Snowshoe Time
+    description: It is time to sledding back... It will be night so bring a light with you!.
+- day: WEDNESDAY, MARCH 07
   program:
   - time: 8.00 AM
     what: Breakfast
     description: Meet in the Hotel lobby and load up on energies for the day.
+  - time: 9.00 AM
+    what: Talks and free chat.
+    description:
   - time: 11.00 AM
-    what: Drone test
-    description: You can drive a drone in VR.
-  - time: 12.00 AM
+    what: Bye Bye Villetta Maria
+    description: It's time to go back at the real life!
+  - time: 12.30 AM
     what: Lunch
-    description: The one you came from, right?
-- day: SATURDAY, SEPT 16
-  program:
-  - time: 8.00 AM
-    what: Breakfast
-    description: Meet in the Hotel lobby and load up on energies for the day.
-- day: SUNDAY, SEPT 17
-  program:
-  - time: 8.00 AM
-    what: Breakfast
-    description: Meet in the Hotel lobby and load up on energies for the day.
+    description: Promise it's worth it.
+  - time: 5.00 AM
+    what: Bye!
+    description: We say good bye! Please ensure you book travel from Verona at 5:30pm at the earliest. If you need to leave earlier, please contact us before purchasing a ticket to make sure we can accomodate. We suggest spending the night in Verona and booking travel for the next morning! It is a stunning city.
 gallery-small:
   image:
   - http://localhost:4000/assets/img/events_photos/tierser_refugee/1.jpg
