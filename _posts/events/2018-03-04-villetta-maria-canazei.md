@@ -19,7 +19,7 @@ video: https://www.w3schools.com/html/mov_bbb.mp4
 caratteristics:
   altitude: 1450 mt
   cooking: Traditional
-  beds: 60 peope
+  beds: 60 people
 past_edition:
   period: 04 - 05 - 06 - 07 March 2018
   image: http://localhost:4000/assets/img/edition_cards/tires.png

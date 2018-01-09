@@ -95,17 +95,11 @@ layout: home
       <div class="col-12 col-sm-6 scroll_reveal">
         <!--{% include components/headings.html big="THE LOCATION" small="A refuge, but with comfort" %} -->
         {% include components/headings.html big="THE LOCATION" small="A small ski chalet, but with comfort" %}
+        {% for words in current_event.how_was_it %}
         <p class="text">
-          <!-- We have chosen the best of the best. The Tierser Alpl mountain refuge sits on top of Sieser Alm, which is the largest high-altitude Alpine meadow in Europe.-->
-          We have chosen the best of the best. Villetta Maria, a cottage in fornt of the Marmolada the highest mountain of the Dolomites in one of the top Ski Area in Trentino.
+          {{ words }}
         </p>
-        <p class="text">
-            It is an occasion to really deeply connect with fellow entrepreneurs and investors, but most of all to feel the pull of nature, enjoying the silence and solitude that you can only get by being in the middle of the mountains.
-        </p>
-        <p class="text">
-          <!-- The refuge is an historic hut used by mountaineers for decades, but has been completely restored and remodeled into a marvel of wooden architecture. -->
-          The refuge is an historic hut used by mountaineers for decades, but has been completely restored and remodeled into a simple chalet in the middle of the woods.
-        </p>
+        {% endfor %}
         <!-- {% include components/quotes.html quote="No need to bring a sleep bag, everything is ready for you. We also negotiated 1
         hot shower per day, per guest." %} -->
       </div>

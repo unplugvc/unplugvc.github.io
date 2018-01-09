@@ -16,7 +16,10 @@ video: https://www.w3schools.com/html/mov_bbb.mp4
 caratteristics:
   altitude: 2240 mt
   cooking: Traditional
-  beds: 70 peope
+  beds: 70 people
+past_edition:
+  period: 14 - 15 - 16 - 17 September 2017
+  image: http://localhost:4000/assets/img/edition_cards/tires.png
 speakers:
 - name: Tim Cook
   role: Investor
