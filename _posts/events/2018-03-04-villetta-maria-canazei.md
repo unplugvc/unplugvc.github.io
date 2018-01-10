@@ -184,5 +184,20 @@ gallery-big:
   - http://localhost:4000/assets/img/events_photos/tierser_refugee/big/8.jpg
   - http://localhost:4000/assets/img/events_photos/tierser_refugee/big/9.jpg
   - http://localhost:4000/assets/img/events_photos/tierser_refugee/big/10.jpg
+footer_sponsors:
+  - name: "Belka"
+    image: "http://localhost:4000/assets/img/logo_belka.svg"
+    link: "http://belka.us/"
+  - name: "Trentino"
+    image: "http://localhost:4000/assets/img/sponsor/trentino.png"
+    link: "https://www.trentinomarketing.org/en/"
+  - name: "Apt Val Di Fassa"
+    image: "http://localhost:4000/assets/img/sponsor/ValDiFassa.png"
+    link: "https://www.fassa.com/"
+  - name: "Dolomiti"
+    image: "http://localhost:4000/assets/img/sponsor/dolomitiUnesco.png"
+    link: "http://www.dolomitiunesco.info/la-fondazione-dolomiti-unesco/?lang=en"
+  - name: "UnionHotel"
+    image: "http://localhost:4000/assets/img/sponsor/unionhotel.png"
+    link: "http://www.unionhotelscanazei.it/"
 ---
-
