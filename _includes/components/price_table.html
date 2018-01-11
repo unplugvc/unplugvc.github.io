@@ -28,26 +28,73 @@
                 </div>
               </div>
             {% endfor %}
+            <div class="row">
+              <div class="col-12">
+                <p class="price_table__card--body-price">
+                  {{current_event.pricing_table[0].price}}€
+                </p>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="col-4">
-        <div class="price_table__card">
-            <div class="price_table__card--head">
-              {{current_event.pricing_table[0].title}}
-            </div>
-            <div class="price_table__card--body">
-              
-            </div>
         </div>
       </div>
       <div class="col-4">
         <div class="price_table__card">
           <div class="price_table__card--head">
-            {{current_event.pricing_table[0].title}}
+            <p class="price_table__card--head-title">
+              {{current_event.pricing_table[1].title}}
+            </p>
           </div>
           <div class="price_table__card--body">
-
+            {% for element in current_event.pricing_table[1].elements %} 
+              <div class="row price_table__card--body-element">
+                <div class="col-3">
+                  <img src="{{element.icon}}" alt="">
+                </div>
+                <div class="col-9">
+                  {% for t in element.text %} 
+                    <p>{{ t }}</p>
+                  {% endfor %}
+                </div>
+              </div>
+            {% endfor %}
+            <div class="row">
+              <div class="col-12">
+                <p class="price_table__card--body-price">
+                  {{current_event.pricing_table[1].price}}€
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="price_table__card">
+          <div class="price_table__card--head">
+            <p class="price_table__card--head-title">
+              {{current_event.pricing_table[2].title}}
+            </p>
+          </div>
+          <div class="price_table__card--body">
+            {% for element in current_event.pricing_table[2].elements %} 
+              <div class="row price_table__card--body-element">
+                <div class="col-3">
+                  <img src="{{element.icon}}" alt="">
+                </div>
+                <div class="col-9">
+                  {% for t in element.text %} 
+                    <p>{{ t }}</p>
+                  {% endfor %}
+                </div>
+              </div>
+            {% endfor %}
+            <div class="row">
+              <div class="col-12">
+                <p class="price_table__card--body-price">
+                  {{current_event.pricing_table[2].price}}€
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>

@@ -186,6 +186,29 @@ gallery-big:
   - http://localhost:4000/assets/img/events_photos/tierser_refugee/big/10.jpg
 pricing_table:
   - title: Early Bird
+    price: 400
+    elements: 
+      - icon: http://localhost:4000/assets/img/pricing_table/double_room.svg
+        text: ['3 nights in a private  Hotel***', 'Double room']
+      - icon: http://localhost:4000/assets/img/pricing_table/transfer.svg
+        text: ['Transfer to and from Verona', 'Transport to and from refuge']
+      - icon: http://localhost:4000/assets/img/pricing_table/SPA.svg
+        text: ['Entrance in the QT Dolomiti Terme SPA', 'including Dinner']
+      - icon: http://localhost:4000/assets/img/pricing_table/special_dinner.svg
+        text: ['1 Lunch in a surprise location', '1 typical dinner in the hotel','1 special dinner in a refuge']
+  - title: Double Room
+    price: 500
+    elements: 
+      - icon: http://localhost:4000/assets/img/pricing_table/double_room.svg
+        text: ['3 nights in a private  Hotel***', 'Double room']
+      - icon: http://localhost:4000/assets/img/pricing_table/transfer.svg
+        text: ['Transfer to and from Verona', 'Transport to and from refuge']
+      - icon: http://localhost:4000/assets/img/pricing_table/SPA.svg
+        text: ['Entrance in the QT Dolomiti Terme SPA', 'including Dinner']
+      - icon: http://localhost:4000/assets/img/pricing_table/special_dinner.svg
+        text: ['1 Lunch in a surprise location', '1 typical dinner in the hotel','1 special dinner in a refuge']
+  - title: Triple Room
+    price: 600
     elements: 
       - icon: http://localhost:4000/assets/img/pricing_table/double_room.svg
         text: ['3 nights in a private  Hotel***', 'Double room']
