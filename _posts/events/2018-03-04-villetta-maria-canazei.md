@@ -5,7 +5,7 @@ tags:
 layout: event
 permalink: "/event/:title"
 location: Trentino - Alto Adige, Italy
-image: http://localhost:4000/assets/img/location/1.png
+image: http://localhost:4000/assets/img/location/villetta-maria.jpeg
 when_header: March 04-07, 2018
 how_was_it:
 - We have chosen the best of the best. Villetta Maria a cottage in fornt of the Marmolada
@@ -105,7 +105,7 @@ schedule:
     what: Only for Non - Skier
     description: Leave Villetta Maria and go sledding.
   - time: 3.00 PM
-    what: Relaxing Time 
+    what: Relaxing Time
     description: Be ready for the SPA, you need only the swimsuit.
   - time: 5.00 PM
     what: Talk and aperitif
@@ -129,7 +129,8 @@ schedule:
     description: Shower, Relax, beer and free chat.
   - time: 5.30 PM
     what: Dinner at Malga Monzoni
-    description: Bring you warm stuff and be rady for a ride with the snowmobile to Malga Monzoni.
+    description: Bring you warm stuff and be rady for a ride with the snowmobile to
+      Malga Monzoni.
   - time: 6.30 PM
     what: Talk
     description: A very insipiring talk with....
@@ -138,7 +139,8 @@ schedule:
     description: Home made, slowfood and very typical dinner at Malga Monzioni.
   - time: 10.00 PM
     what: Snowshoe Time
-    description: It is time to sledding back... It will be night so bring a light with you!.
+    description: It is time to sledding back... It will be night so bring a light
+      with you!.
 - day: WEDNESDAY, MARCH 07
   program:
   - time: 8.00 AM
@@ -146,7 +148,7 @@ schedule:
     description: Meet in the Hotel lobby and load up on energies for the day.
   - time: 9.00 AM
     what: Talks and free chat.
-    description:
+    description: 
   - time: 11.00 AM
     what: Bye Bye Villetta Maria
     description: It's time to go back at the real life!
@@ -155,34 +157,37 @@ schedule:
     description: Promise it's worth it.
   - time: 5.00 AM
     what: Bye!
-    description: We say good bye! Please ensure you book travel from Verona at 5:30pm at the earliest. If you need to leave earlier, please contact us before purchasing a ticket to make sure we can accomodate. We suggest spending the night in Verona and booking travel for the next morning! It is a stunning city.
+    description: We say good bye! Please ensure you book travel from Verona at 5:30pm
+      at the earliest. If you need to leave earlier, please contact us before purchasing
+      a ticket to make sure we can accomodate. We suggest spending the night in Verona
+      and booking travel for the next morning! It is a stunning city.
 gallery-small:
   image:
-  - http://localhost:4000/assets/img/events_photos/tierser_refugee/1.jpg
-  - http://localhost:4000/assets/img/events_photos/tierser_refugee/2.jpg
-  - http://localhost:4000/assets/img/events_photos/tierser_refugee/3.jpg
-  - http://localhost:4000/assets/img/events_photos/tierser_refugee/5.jpg
-  - http://localhost:4000/assets/img/events_photos/tierser_refugee/4.jpg
-  - http://localhost:4000/assets/img/events_photos/tierser_refugee/5.jpg
-  - http://localhost:4000/assets/img/events_photos/tierser_refugee/6.jpg
-  - http://localhost:4000/assets/img/events_photos/tierser_refugee/7.jpg
-  - http://localhost:4000/assets/img/events_photos/tierser_refugee/9.jpg
-  - http://localhost:4000/assets/img/events_photos/tierser_refugee/8.jpg
-  - http://localhost:4000/assets/img/events_photos/tierser_refugee/9.jpg
-  - http://localhost:4000/assets/img/events_photos/tierser_refugee/10.jpg
+  - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/01.jpg
+  - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/02.jpg
+  - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/03.jpg
+  - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/04.jpg
+  - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/05.jpg
+  - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/06.jpg
+  - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/07.jpg
+  - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/08.jpg
+  - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/09.jpg
+  - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/10.jpg
+  - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/11.jpg
+  - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/12.jpg
 gallery-big:
   image:
-  - http://localhost:4000/assets/img/events_photos/tierser_refugee/big/1.jpg
-  - http://localhost:4000/assets/img/events_photos/tierser_refugee/big/2.jpg
-  - http://localhost:4000/assets/img/events_photos/tierser_refugee/big/3.jpg
-  - http://localhost:4000/assets/img/events_photos/tierser_refugee/big/5.jpg
-  - http://localhost:4000/assets/img/events_photos/tierser_refugee/big/4.jpg
-  - http://localhost:4000/assets/img/events_photos/tierser_refugee/big/5.jpg
-  - http://localhost:4000/assets/img/events_photos/tierser_refugee/big/6.jpg
-  - http://localhost:4000/assets/img/events_photos/tierser_refugee/big/7.jpg
-  - http://localhost:4000/assets/img/events_photos/tierser_refugee/big/9.jpg
-  - http://localhost:4000/assets/img/events_photos/tierser_refugee/big/8.jpg
-  - http://localhost:4000/assets/img/events_photos/tierser_refugee/big/9.jpg
-  - http://localhost:4000/assets/img/events_photos/tierser_refugee/big/10.jpg
+  - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/big/01.jpg
+  - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/big/02.jpg
+  - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/big/03.jpg
+  - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/big/04.jpg
+  - http://localhost:4000/assets/img/events_photos/2017_winter_retreate/big/05.jpg
+  - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/big/06.jpg
+  - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/big/07.jpg
+  - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/big/08.jpg
+  - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/big/09.jpg
+  - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/big/10.jpg
+  - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/big/11.jpg
+  - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/big/12.jpg
 ---
 
