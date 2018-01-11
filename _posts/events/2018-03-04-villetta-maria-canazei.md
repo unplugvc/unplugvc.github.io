@@ -184,6 +184,17 @@ gallery-big:
   - http://localhost:4000/assets/img/events_photos/tierser_refugee/big/8.jpg
   - http://localhost:4000/assets/img/events_photos/tierser_refugee/big/9.jpg
   - http://localhost:4000/assets/img/events_photos/tierser_refugee/big/10.jpg
+pricing_table:
+  - title: Early Bird
+    elements: 
+      - icon: http://localhost:4000/assets/img/pricing_table/double_room.svg
+        text: ['3 nights in a private  Hotel***', 'Double room']
+      - icon: http://localhost:4000/assets/img/pricing_table/transfer.svg
+        text: ['Transfer to and from Verona', 'Transport to and from refuge']
+      - icon: http://localhost:4000/assets/img/pricing_table/SPA.svg
+        text: ['Entrance in the QT Dolomiti Terme SPA', 'including Dinner']
+      - icon: http://localhost:4000/assets/img/pricing_table/special_dinner.svg
+        text: ['1 Lunch in a surprise location', '1 typical dinner in the hotel','1 special dinner in a refuge']
 header_home: 
   title: European Venture Retreat
   subtitle: A community of 60 entrepreneurs and investors surrounded by the Dolomites
