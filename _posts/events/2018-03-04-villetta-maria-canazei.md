@@ -184,6 +184,10 @@ gallery-big:
   - http://localhost:4000/assets/img/events_photos/tierser_refugee/big/8.jpg
   - http://localhost:4000/assets/img/events_photos/tierser_refugee/big/9.jpg
   - http://localhost:4000/assets/img/events_photos/tierser_refugee/big/10.jpg
+header_home: 
+  title: European Venture Retreat
+  subtitle: A community of 60 entrepreneurs and investors surrounded by the Dolomites
+  image: http://localhost:4000/assets/img/mountain_placeholder.jpg
 footer_sponsors:
   - name: "Belka"
     image: "http://localhost:4000/assets/img/logo_belka.svg"

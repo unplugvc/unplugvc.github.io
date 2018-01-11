@@ -49,6 +49,10 @@ NB: The structure of the data bust be the same
 * OUR PHILOSOPHY: `/_data/philosophies.json`
 * THE HIKE: `/_data/hikes.json`
 
+### Header
+
+* Home: the modificable data for the header are in every event markdown file (header_home)
+
 ### Footer
 
 * MAIN SPONSOR: `/_data/main_sponsors.json`
