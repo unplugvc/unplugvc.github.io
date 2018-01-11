@@ -91,6 +91,7 @@ $(document).ready(() => {
     distance: '100px'
   });
   sr.reveal('.scroll_reveal');
+  $(`.schedule__tabs`).height($(`.tab__${state.currentTab}`).height() + 80);
 });
 
 /**
@@ -133,8 +134,7 @@ function displayScheduleTab(id) {
 
   $(`.tabselector__${state.currentTab}`).removeClass('active');
   state.currentTab = id;
-
-  $(`.schedule__tabs`).height($(`.tab__${id}`).height() + 80)
+  $(`.schedule__tabs`).height($(`.tab__${id}`).height() + 80);
 
   if (ww < 769) {
     let nextPosition = $('.schedule__tabs').offset().top - 200;
@@ -167,6 +167,8 @@ var onResizeDebounced = debounce(() => {
   $('.schedule__line-date-element-sizer--mobile .line_background').css({
     width: `${scheduleMenuWidth}px`
   });
+
+  displayScheduleTab(state.currentTab);
 }, 150);
 
 window.addEventListener('resize', onResizeDebounced);
