@@ -177,66 +177,18 @@ gallery-small:
   - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/12.jpg
 gallery-big:
   image:
-<<<<<<< HEAD
-  - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/big/01.jpg
-  - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/big/02.jpg
-  - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/big/03.jpg
-  - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/big/04.jpg
-  - http://localhost:4000/assets/img/events_photos/2017_winter_retreate/big/05.jpg
-  - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/big/06.jpg
-  - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/big/07.jpg
-  - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/big/08.jpg
-  - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/big/09.jpg
-  - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/big/10.jpg
-  - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/big/11.jpg
-  - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/big/12.jpg
-=======
-  - http://localhost:4000/assets/img/events_photos/tierser_refugee/big/1.jpg
-  - http://localhost:4000/assets/img/events_photos/tierser_refugee/big/2.jpg
-  - http://localhost:4000/assets/img/events_photos/tierser_refugee/big/3.jpg
-  - http://localhost:4000/assets/img/events_photos/tierser_refugee/big/5.jpg
-  - http://localhost:4000/assets/img/events_photos/tierser_refugee/big/4.jpg
-  - http://localhost:4000/assets/img/events_photos/tierser_refugee/big/5.jpg
-  - http://localhost:4000/assets/img/events_photos/tierser_refugee/big/6.jpg
-  - http://localhost:4000/assets/img/events_photos/tierser_refugee/big/7.jpg
-  - http://localhost:4000/assets/img/events_photos/tierser_refugee/big/9.jpg
-  - http://localhost:4000/assets/img/events_photos/tierser_refugee/big/8.jpg
-  - http://localhost:4000/assets/img/events_photos/tierser_refugee/big/9.jpg
-  - http://localhost:4000/assets/img/events_photos/tierser_refugee/big/10.jpg
-pricing_table:
-  - title: Early Bird
-    price: 300
-    elements: 
-      - icon: http://localhost:4000/assets/img/pricing_table/double_room.svg
-        text: ['3 nights in a private  Hotel***', 'Double room']
-      - icon: http://localhost:4000/assets/img/pricing_table/transfer.svg
-        text: ['Transfer to and from Verona', 'Transport to and from refuge']
-      - icon: http://localhost:4000/assets/img/pricing_table/SPA.svg
-        text: ['Entrance in the QT Dolomiti Terme SPA', 'including Dinner']
-      - icon: http://localhost:4000/assets/img/pricing_table/special_dinner.svg
-        text: ['1 Lunch in a surprise location', '1 typical dinner in the hotel','1 special dinner in a refuge']
-  - title: Double Room
-    price: 500
-    elements: 
-      - icon: http://localhost:4000/assets/img/pricing_table/double_room.svg
-        text: ['3 nights in a private  Hotel***', 'Double room']
-      - icon: http://localhost:4000/assets/img/pricing_table/transfer.svg
-        text: ['Transfer to and from Verona', 'Transport to and from refuge']
-      - icon: http://localhost:4000/assets/img/pricing_table/SPA.svg
-        text: ['Entrance in the QT Dolomiti Terme SPA', 'including Dinner']
-      - icon: http://localhost:4000/assets/img/pricing_table/special_dinner.svg
-        text: ['1 Lunch in a surprise location', '1 typical dinner in the hotel','1 special dinner in a refuge']
-  - title: Triple Room
-    price: 400
-    elements: 
-      - icon: http://localhost:4000/assets/img/pricing_table/triple_room.svg
-        text: ['3 nights in a private  Hotel***', 'Double room']
-      - icon: http://localhost:4000/assets/img/pricing_table/transfer.svg
-        text: ['Transfer to and from Verona', 'Transport to and from refuge']
-      - icon: http://localhost:4000/assets/img/pricing_table/SPA.svg
-        text: ['Entrance in the QT Dolomiti Terme SPA', 'including Dinner']
-      - icon: http://localhost:4000/assets/img/pricing_table/special_dinner.svg
-        text: ['1 Lunch in a surprise location', '1 typical dinner in the hotel','1 special dinner in a refuge']
+    - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/big/01.jpg
+    - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/big/02.jpg
+    - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/big/03.jpg
+    - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/big/04.jpg
+    - http://localhost:4000/assets/img/events_photos/2017_winter_retreate/big/05.jpg
+    - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/big/06.jpg
+    - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/big/07.jpg
+    - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/big/08.jpg
+    - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/big/09.jpg
+    - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/big/10.jpg
+    - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/big/11.jpg
+    - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/big/12.jpg
 header_home: 
   title: European Venture Retreat
   subtitle: A community of 60 entrepreneurs and investors surrounded by the Dolomites
@@ -257,5 +209,3 @@ footer_sponsors:
   - name: "UnionHotel"
     image: "http://localhost:4000/assets/img/sponsor/unionhotel.png"
     link: "http://www.unionhotelscanazei.it/"
->>>>>>> d719c0550dd9265725e453d1e1eb4462dfd34b8a
----
