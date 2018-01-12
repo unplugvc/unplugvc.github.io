@@ -134,6 +134,8 @@ function displayScheduleTab(id) {
   $(`.tabselector__${state.currentTab}`).removeClass('active');
   state.currentTab = id;
 
+  $(`.schedule__tabs`).height($(`.tab__${id}`).height() + 80)
+
   if (ww < 769) {
     let nextPosition = $('.schedule__tabs').offset().top - 200;
     $('html,body').animate({ scrollTop: nextPosition }, 'slow', function() {
