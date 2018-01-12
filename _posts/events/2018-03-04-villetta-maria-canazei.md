@@ -177,6 +177,7 @@ gallery-small:
   - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/12.jpg
 gallery-big:
   image:
+<<<<<<< HEAD
   - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/big/01.jpg
   - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/big/02.jpg
   - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/big/03.jpg
@@ -189,5 +190,38 @@ gallery-big:
   - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/big/10.jpg
   - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/big/11.jpg
   - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/big/12.jpg
+=======
+  - http://localhost:4000/assets/img/events_photos/tierser_refugee/big/1.jpg
+  - http://localhost:4000/assets/img/events_photos/tierser_refugee/big/2.jpg
+  - http://localhost:4000/assets/img/events_photos/tierser_refugee/big/3.jpg
+  - http://localhost:4000/assets/img/events_photos/tierser_refugee/big/5.jpg
+  - http://localhost:4000/assets/img/events_photos/tierser_refugee/big/4.jpg
+  - http://localhost:4000/assets/img/events_photos/tierser_refugee/big/5.jpg
+  - http://localhost:4000/assets/img/events_photos/tierser_refugee/big/6.jpg
+  - http://localhost:4000/assets/img/events_photos/tierser_refugee/big/7.jpg
+  - http://localhost:4000/assets/img/events_photos/tierser_refugee/big/9.jpg
+  - http://localhost:4000/assets/img/events_photos/tierser_refugee/big/8.jpg
+  - http://localhost:4000/assets/img/events_photos/tierser_refugee/big/9.jpg
+  - http://localhost:4000/assets/img/events_photos/tierser_refugee/big/10.jpg
+header_home: 
+  title: European Venture Retreat
+  subtitle: A community of 60 entrepreneurs and investors surrounded by the Dolomites
+  image: http://localhost:4000/assets/img/mountain_placeholder.jpg
+footer_sponsors:
+  - name: "Belka"
+    image: "http://localhost:4000/assets/img/logo_belka.svg"
+    link: "http://belka.us/"
+  - name: "Trentino"
+    image: "http://localhost:4000/assets/img/sponsor/trentino.png"
+    link: "https://www.trentinomarketing.org/en/"
+  - name: "Apt Val Di Fassa"
+    image: "http://localhost:4000/assets/img/sponsor/ValDiFassa.png"
+    link: "https://www.fassa.com/"
+  - name: "Dolomiti"
+    image: "http://localhost:4000/assets/img/sponsor/dolomitiUnesco.png"
+    link: "http://www.dolomitiunesco.info/la-fondazione-dolomiti-unesco/?lang=en"
+  - name: "UnionHotel"
+    image: "http://localhost:4000/assets/img/sponsor/unionhotel.png"
+    link: "http://www.unionhotelscanazei.it/"
+>>>>>>> d719c0550dd9265725e453d1e1eb4462dfd34b8a
 ---
-
