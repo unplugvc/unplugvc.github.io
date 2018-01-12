@@ -163,25 +163,25 @@ schedule:
       and booking travel for the next morning! It is a stunning city.
 gallery-small:
   image:
-  - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/01.jpg
-  - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/02.jpg
-  - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/03.jpg
-  - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/04.jpg
-  - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/05.jpg
-  - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/06.jpg
-  - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/07.jpg
-  - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/08.jpg
-  - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/09.jpg
-  - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/10.jpg
-  - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/11.jpg
-  - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/12.jpg
+    - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/01.jpg
+    - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/02.jpg
+    - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/03.jpg
+    - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/04.jpg
+    - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/05.jpg
+    - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/06.jpg
+    - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/07.jpg
+    - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/08.jpg
+    - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/09.jpg
+    - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/10.jpg
+    - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/11.jpg
+    - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/12.jpg
 gallery-big:
   image:
     - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/big/01.jpg
     - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/big/02.jpg
     - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/big/03.jpg
     - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/big/04.jpg
-    - http://localhost:4000/assets/img/events_photos/2017_winter_retreate/big/05.jpg
+    - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/big/05.jpg
     - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/big/06.jpg
     - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/big/07.jpg
     - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/big/08.jpg
