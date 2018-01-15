@@ -16,7 +16,6 @@ function open_apply_form() {
 }
 
 function close_apply_form() {
-  console.log('yolo close');
   let ww = $(window).width();
   let marginRightToApply = '-50vw';
   if (ww <= 1100) {

@@ -138,7 +138,6 @@ $(document).scroll(() => {
   $('.top_navbar__menu a')
     .eq(current_id)
     .css({ borderBottom: '3px solid #9d774f' });
-  console.log($(document).scrollTop(), state.menu_voices_scrolltop[0][1]);
   if ($(document).scrollTop() < state.menu_voices_scrolltop[0][1]) {
     $('.top_navbar__menu a')
     .eq(0)
