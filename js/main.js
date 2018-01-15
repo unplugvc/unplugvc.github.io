@@ -109,7 +109,7 @@ $(document).scroll(() => {
    */
   playVideo();
 
-  if (!state.menu_voices_scrolltop.length) {
+  if (!state.menu_voices_scrolltop.length && $('#about').length) {
     state.menu_voices_scrolltop = [
       ['#about', $('#about').offset().top],
       ['#schedule', $('#schedule').offset().top],
@@ -118,32 +118,34 @@ $(document).scroll(() => {
     ];
   }
 
-  let current_id = 0;
-  for (let i = 0; i < state.menu_voices_scrolltop.length; i++) {
-    let scrollTop = state.menu_voices_scrolltop[i][1];
-    if (i == 1) {
-      scrollTop = scrollTop - 160;
-    } else if (i == 0) {
-      scrollTop = scrollTop - 200;
+  if ($('#about').length) {
+    let current_id = 0;
+    for (let i = 0; i < state.menu_voices_scrolltop.length; i++) {
+      let scrollTop = state.menu_voices_scrolltop[i][1];
+      if (i == 1) {
+        scrollTop = scrollTop - 160;
+      } else if (i == 0) {
+        scrollTop = scrollTop - 200;
+      }
+      if ($(document).scrollTop() >= scrollTop) {
+        current_id = i;
+      }
+  
+      var scrollHeight = $(document).height();
+      var scrollPosition = $(window).height() + $(window).scrollTop();
+      if ((scrollHeight - scrollPosition) / scrollHeight === 0) {
+        current_id = 3;
+      }
     }
-    if ($(document).scrollTop() >= scrollTop) {
-      current_id = i;
-    }
-
-    var scrollHeight = $(document).height();
-    var scrollPosition = $(window).height() + $(window).scrollTop();
-    if ((scrollHeight - scrollPosition) / scrollHeight === 0) {
-      current_id = 3;
-    }
-  }
-  $('.top_navbar__menu a').css({ borderBottom: '0px' });
-  $('.top_navbar__menu a')
-    .eq(current_id)
-    .css({ borderBottom: '3px solid #9d774f' });
-  if ($(document).scrollTop() < state.menu_voices_scrolltop[0][1] - 50) {
+    $('.top_navbar__menu a').css({ borderBottom: '0px' });
     $('.top_navbar__menu a')
-    .eq(0)
-    .css({ borderBottom: '0px' });
+      .eq(current_id)
+      .css({ borderBottom: '3px solid #9d774f' });
+    if ($(document).scrollTop() < state.menu_voices_scrolltop[0][1] - 50) {
+      $('.top_navbar__menu a')
+      .eq(0)
+      .css({ borderBottom: '0px' });
+    }
   }
 });
 
