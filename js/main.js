@@ -121,7 +121,7 @@ $(document).scroll(() => {
   if ($('#about').length) {
     let current_id = 0;
     for (let i = 0; i < state.menu_voices_scrolltop.length; i++) {
-      let scrollTop = state.menu_voices_scrolltop[i][1];
+      let scrollTop = state.menu_voices_scrolltop[i][1] - 160;
       if (i == 1) {
         scrollTop = scrollTop - 160;
       } else if (i == 0) {
