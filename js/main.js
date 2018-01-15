@@ -123,6 +123,8 @@ $(document).scroll(() => {
     let scrollTop = state.menu_voices_scrolltop[i][1];
     if (i == 1) {
       scrollTop = scrollTop - 160;
+    } else if (i == 0) {
+      scrollTop = scrollTop - 200;
     }
     if ($(document).scrollTop() >= scrollTop) {
       current_id = i;
@@ -138,7 +140,7 @@ $(document).scroll(() => {
   $('.top_navbar__menu a')
     .eq(current_id)
     .css({ borderBottom: '3px solid #9d774f' });
-  if ($(document).scrollTop() < state.menu_voices_scrolltop[0][1]) {
+  if ($(document).scrollTop() < state.menu_voices_scrolltop[0][1] - 50) {
     $('.top_navbar__menu a')
     .eq(0)
     .css({ borderBottom: '0px' });
