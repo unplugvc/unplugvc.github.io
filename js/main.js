@@ -279,6 +279,11 @@ function playVideo() {
   }
 }
 
+$('.top_navbar__menu a').click(function () {
+  $('.top_navbar__menu a').css({borderBottom: '0px'});
+  $(this).css({ borderBottom: '3px solid brown'});
+})
+
 /**
  * Smooth scroll on link click
  */
