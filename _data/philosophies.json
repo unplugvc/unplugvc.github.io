@@ -11,12 +11,12 @@
   },
   {
     "title": "Professional ski Teacher",
-    "text": "We will be joined by professional, licensed ski teacher. They will help us explore the trails and will be able to answer.",
+    "text": "We will be joined by professional, licensed ski teacher and professional mountaneers.",
     "image": "http://localhost:4000/assets/img/pholosophies_cards/skiTeacher.jpg"
   },
   {
-    "title": "Wellness in the Unesco",
-    "text": "A new alpine experience centered on quality of life through the beneficial effects of spa aimed at restoring your physical and spiritual balance.",
+    "title": "Wellness",
+    "text": "New alpine experience centered on quality of life through the beneficial effects of spa aimed at restoring your physical and spiritual balance.",
     "image": "http://localhost:4000/assets/img/pholosophies_cards/OCterme.png"
   }
 ]

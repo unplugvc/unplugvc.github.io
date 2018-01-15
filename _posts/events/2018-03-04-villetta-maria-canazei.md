@@ -1,5 +1,5 @@
 ---
-title: Villetta Maria Canazei
+title: Unplug Chalet Canazei
 date: 2018-03-04 12:00:00
 tags:
 - event
@@ -9,7 +9,7 @@ location: Trentino - Alto Adige, Italy
 image: http://localhost:4000/assets/img/location/villetta-maria.jpeg
 when_header: March 04-07, 2018
 how_was_it:
-- We have chosen the best of the best. Villetta Maria a cottage in fornt of the Marmolada
+- We have chosen the best of the best. The Unplug cottage is in fornt of the Marmolada
   the highest mountain of the Dolomites. It is an occasion to really deeply connect
   with fellow entrepreneurs and investors, but most of all to feel the pull of nature,
   enjoying the silence and solitude that you can only get by being in the middle of
@@ -78,13 +78,13 @@ schedule:
     description: Meeting point outside the train station.
   - time: 2.30 PM
     what: First stop Verona Airport
-    description: Meetig point outside the port XX at Verona Airport.
+    description: Meetig point outside the Airport.
   - time: 3.45 PM
     what: Second stop Trento Sud Autostrada
     description: Meetig point at the parking outside the autostrada in Trento Sud.
   - time: 17.00 PM
-    what: Arriving in Villetta Maria
-    description: Check-in time, find your room mate fot the next days!
+    what: Arriving to Unplug Chalet
+    description: Check-in time and find your room mate fot the next days!
   - time: 17.30 PM
     what: Only for Skier
     description: Ski test at the ski rental.
@@ -92,7 +92,7 @@ schedule:
     what: Strating the winter venture retreat
     description: Aperitivo, presentation and free chat.
   - time: 20.00 PM
-    what: Dinner at Villetta Maria
+    what: Dinner at Unplug Chalet
     description: Typical dinner with unconference talks.
 - day: MONDAY, MARCH 05
   program:
@@ -101,10 +101,10 @@ schedule:
     description: Charge your energy for the day.
   - time: 8.30 AM
     what: Only for Skier
-    description: Leave Villetta Maria and go skiing.
+    description: Leave Unplug Chalet and go skiing.
   - time: 9.30 AM
     what: Only for Non - Skier
-    description: Leave Villetta Maria and go sledding.
+    description: Leave Unplug Chalet and go sledding.
   - time: 3.00 PM
     what: Relaxing Time
     description: Be ready for the SPA, you need only the swimsuit.
@@ -112,8 +112,8 @@ schedule:
     what: Talk and aperitif
     description: Take your drink listen the inspiring talk at the SPA center.
   - time: 10.00 PM
-    what: Back to Villetta Maria
-    description: Free chat in Villetta Maria Bar.
+    what: Back to Unplug Chalet
+    description: Free chat in Unplug Chalet Bar.
 - day: TUESDAY, MARCH 06
   program:
   - time: 7.30 AM
@@ -121,12 +121,12 @@ schedule:
     description: Charge your energy for the day.
   - time: 8.30 AM
     what: Only for Skier
-    description: Leave Villetta Maria and go skiing.
+    description: Leave Unplug Chalet and go skiing.
   - time: 9.30 AM
     what: Only for Non Skier - Snowshoe Time
     description: Hike through the dolomites with mountain guides.
   - time: 4.00 PM
-    what: Return to Villetta Maria
+    what: Return to Unplug Chalet
     description: Shower, Relax, beer and free chat.
   - time: 5.30 PM
     what: Dinner at Malga Monzoni
@@ -151,7 +151,7 @@ schedule:
     what: Talks and free chat.
     description: 
   - time: 11.00 AM
-    what: Bye Bye Villetta Maria
+    what: Bye Bye Unplug Chalet
     description: It's time to go back at the real life!
   - time: 12.30 AM
     what: Lunch
@@ -195,53 +195,53 @@ pricing_table:
     price: 400
     elements: 
       - icon: http://localhost:4000/assets/img/pricing_table/double_room.svg
-        text: ['3 nights in a private  Hotel***', 'Double room']
+        text: ['3 nights in a private  Hotel***', 'Double or Triple room']
       - icon: http://localhost:4000/assets/img/pricing_table/transfer.svg
-        text: ['Transfer to and from Verona', 'Transport to and from refuge']
+        text: ['Transfer to and from Verona']
+      - icon: http://localhost:4000/assets/img/pricing_table/SPA.svg
+        text: ['Entrance in the QT Dolomiti Terme SPA', 'including Dinner']
+      - icon: http://localhost:4000/assets/img/pricing_table/special_dinner.svg
+        text: ['1 Lunch in a surprise location', '1 typical dinner in the hotel','1 special dinner in a refuge']
+  - title: Single Room
+    price: 500
+    elements: 
+      - icon: http://localhost:4000/assets/img/pricing_table/double_room.svg
+        text: ['3 nights in a private  Hotel***', 'Single Room']
+      - icon: http://localhost:4000/assets/img/pricing_table/transfer.svg
+        text: ['Transfer to and from Verona']
       - icon: http://localhost:4000/assets/img/pricing_table/SPA.svg
         text: ['Entrance in the QT Dolomiti Terme SPA', 'including Dinner']
       - icon: http://localhost:4000/assets/img/pricing_table/special_dinner.svg
         text: ['1 Lunch in a surprise location', '1 typical dinner in the hotel','1 special dinner in a refuge']
   - title: Double Room
-    price: 500
-    elements: 
-      - icon: http://localhost:4000/assets/img/pricing_table/double_room.svg
-        text: ['3 nights in a private  Hotel***', 'Double room']
-      - icon: http://localhost:4000/assets/img/pricing_table/transfer.svg
-        text: ['Transfer to and from Verona', 'Transport to and from refuge']
-      - icon: http://localhost:4000/assets/img/pricing_table/SPA.svg
-        text: ['Entrance in the QT Dolomiti Terme SPA', 'including Dinner']
-      - icon: http://localhost:4000/assets/img/pricing_table/special_dinner.svg
-        text: ['1 Lunch in a surprise location', '1 typical dinner in the hotel','1 special dinner in a refuge']
-  - title: Triple Room
     price: 600
     elements: 
       - icon: http://localhost:4000/assets/img/pricing_table/double_room.svg
         text: ['3 nights in a private  Hotel***', 'Double room']
       - icon: http://localhost:4000/assets/img/pricing_table/transfer.svg
-        text: ['Transfer to and from Verona', 'Transport to and from refuge']
+        text: ['Transfer to and from Verona']
       - icon: http://localhost:4000/assets/img/pricing_table/SPA.svg
         text: ['Entrance in the QT Dolomiti Terme SPA', 'including Dinner']
       - icon: http://localhost:4000/assets/img/pricing_table/special_dinner.svg
         text: ['1 Lunch in a surprise location', '1 typical dinner in the hotel','1 special dinner in a refuge']
 header_home: 
-  title: European Venture Retreat
+  title: Winter Venture Retreat
   subtitle: A community of 60 entrepreneurs and investors surrounded by the Dolomites
   image: http://localhost:4000/assets/img/mountain_placeholder.jpg
 footer_sponsors:
-  - name: "Belka"
-    image: "http://localhost:4000/assets/img/logo_belka.svg"
-    link: "http://belka.us/"
-  - name: "Trentino"
-    image: "http://localhost:4000/assets/img/sponsor/trentino.png"
-    link: "https://www.trentinomarketing.org/en/"
-  - name: "Apt Val Di Fassa"
-    image: "http://localhost:4000/assets/img/sponsor/ValDiFassa.png"
-    link: "https://www.fassa.com/"
-  - name: "Dolomiti"
-    image: "http://localhost:4000/assets/img/sponsor/dolomitiUnesco.png"
-    link: "http://www.dolomitiunesco.info/la-fondazione-dolomiti-unesco/?lang=en"
-  - name: "UnionHotel"
-    image: "http://localhost:4000/assets/img/sponsor/unionhotel.png"
-    link: "http://www.unionhotelscanazei.it/"
+- name: "Belka"
+  image: "http://localhost:4000/assets/img/logo_belka.svg"
+  link: "http://belka.us/"
+- name: "Trentino"
+  image: "http://localhost:4000/assets/img/sponsor/trentino.png"
+  link: "https://www.trentinomarketing.org/en/"
+- name: "Apt Val Di Fassa"
+  image: "http://localhost:4000/assets/img/sponsor/ValDiFassa.png"
+  link: "https://www.fassa.com/"
+- name: "Dolomiti"
+  image: "http://localhost:4000/assets/img/sponsor/dolomitiUnesco.png"
+  link: "http://www.dolomitiunesco.info/la-fondazione-dolomiti-unesco/?lang=en"
+- name: "UnionHotel"
+  image: "http://localhost:4000/assets/img/sponsor/unionhotel.png"
+  link: "http://www.unionhotelscanazei.it/"
 ---
