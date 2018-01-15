@@ -5,11 +5,9 @@ const state = {
   currentTab: 1,
   ww: $(window).width(),
   baseurl: '/',
-  initialScrolltopScheduleMenu: 0
+  initialScrolltopScheduleMenu: 0,
+  menu_voices_scrolltop: []
 };
-
-/*$(window).on('load', function() {
-});*/
 
 /**
  * Document ready
@@ -110,6 +108,33 @@ $(document).scroll(() => {
    * Play video
    */
   playVideo();
+
+  if (!state.menu_voices_scrolltop.length) {
+    state.menu_voices_scrolltop = [
+      ['#about', $('#about').offset().top],
+      ['#schedule', $('#schedule').offset().top],
+      ['#past_editions', $('#past_editions').offset().top],
+      ['#contacts', $('#contacts').offset().top]
+    ];
+  }
+
+  let current_id = 0;
+  for (let i = 0; i < state.menu_voices_scrolltop.length; i++) {
+    const scrollTop = state.menu_voices_scrolltop[i][1];
+    if ($(document).scrollTop() >= scrollTop - 160) {
+      current_id = i;
+    }
+
+    var scrollHeight = $(document).height();
+    var scrollPosition = $(window).height() + $(window).scrollTop();
+    if ((scrollHeight - scrollPosition) / scrollHeight === 0) {
+      current_id = 3;
+    }
+  }
+  $('.top_navbar__menu a').css({ borderBottom: '0px' });
+  $('.top_navbar__menu a')
+    .eq(current_id)
+    .css({ borderBottom: '3px solid #9d774f' });
 });
 
 /**
@@ -278,11 +303,6 @@ function playVideo() {
     }
   }
 }
-
-$('.top_navbar__menu a').click(function () {
-  $('.top_navbar__menu a').css({borderBottom: '0px'});
-  $(this).css({ borderBottom: '3px solid #9d774f'});
-})
 
 /**
  * Smooth scroll on link click
