@@ -32,13 +32,13 @@ attendees:
 - name: Aragon
   image: http://localhost:4000/assets/img/attendees/tires/aragon.png
 - name: Cherry VC
-  image: http://localhost:4000/assets/img/attendees/tires/cherryVC.jpg
+  image: http://localhost:4000/assets/img/attendees/tires/cherryVC.png
 - name: KX Technology found
-  image: http://localhost:4000/assets/img/attendees/tires/kx.jpeg
+  image: http://localhost:4000/assets/img/attendees/tires/kx.png
 - name: Placeholder Venture Capital
-  image: http://localhost:4000/assets/img/attendees/tires/placeholderVC.jpg
+  image: http://localhost:4000/assets/img/attendees/tires/placeholderVC.png
 - name: Unicredit Evo
-  image: http://localhost:4000/assets/img/attendees/tires/unicredit-evo.jpg
+  image: http://localhost:4000/assets/img/attendees/tires/unicredit-evo.png
 - name: Axa Ventures
   image: http://localhost:4000/assets/img/attendees/tires/axa-ventures.png
 - name: Balderon Capital
