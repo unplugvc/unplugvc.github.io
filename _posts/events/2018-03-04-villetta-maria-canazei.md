@@ -192,7 +192,7 @@ gallery-big:
     - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/big/12.jpg
 pricing_table:
   - title: Early Bird
-    price: 400
+    price: 890
     elements: 
       - icon: http://localhost:4000/assets/img/pricing_table/double_room.svg
         text: ['3 nights in a private  Hotel***', 'Double or Triple room']
@@ -202,22 +202,22 @@ pricing_table:
         text: ['Entrance in the QT Dolomiti Terme SPA', 'including Dinner']
       - icon: http://localhost:4000/assets/img/pricing_table/special_dinner.svg
         text: ['1 Lunch in a surprise location', '1 typical dinner in the hotel','1 special dinner in a refuge']
-  - title: Single Room
-    price: 500
+  - title: 3 - Double Rooms
+    price: 1190
     elements: 
       - icon: http://localhost:4000/assets/img/pricing_table/double_room.svg
-        text: ['3 nights in a private  Hotel***', 'Single Room']
+        text: ['3 nights in a private  Hotel***', 'Double Room']
       - icon: http://localhost:4000/assets/img/pricing_table/transfer.svg
         text: ['Transfer to and from Verona']
       - icon: http://localhost:4000/assets/img/pricing_table/SPA.svg
         text: ['Entrance in the QT Dolomiti Terme SPA', 'including Dinner']
       - icon: http://localhost:4000/assets/img/pricing_table/special_dinner.svg
         text: ['1 Lunch in a surprise location', '1 typical dinner in the hotel','1 special dinner in a refuge']
-  - title: Double Room
-    price: 600
+  - title: '4 - Single Rooms'
+    price: 1390
     elements: 
       - icon: http://localhost:4000/assets/img/pricing_table/double_room.svg
-        text: ['3 nights in a private  Hotel***', 'Double room']
+        text: ['3 nights in a private  Hotel***', 'Single room']
       - icon: http://localhost:4000/assets/img/pricing_table/transfer.svg
         text: ['Transfer to and from Verona']
       - icon: http://localhost:4000/assets/img/pricing_table/SPA.svg
@@ -229,19 +229,19 @@ header_home:
   subtitle: A community of 60 entrepreneurs and investors surrounded by the Dolomites
   image: http://localhost:4000/assets/img/mountain_placeholder.jpg
 footer_sponsors:
-- name: "Belka"
-  image: "http://localhost:4000/assets/img/logo_belka.svg"
-  link: "http://belka.us/"
-- name: "Trentino"
-  image: "http://localhost:4000/assets/img/sponsor/trentino.png"
-  link: "https://www.trentinomarketing.org/en/"
+#- name: "Belka"
+#  image: "http://localhost:4000/assets/img/logo_belka.svg"
+#  link: "http://belka.us/"
+#- name: "Trentino"
+#  image: "http://localhost:4000/assets/img/sponsor/trentino.png"
+#  link: "https://www.trentinomarketing.org/en/"
 - name: "Apt Val Di Fassa"
   image: "http://localhost:4000/assets/img/sponsor/ValDiFassa.png"
   link: "https://www.fassa.com/"
-- name: "Dolomiti"
-  image: "http://localhost:4000/assets/img/sponsor/dolomitiUnesco.png"
-  link: "http://www.dolomitiunesco.info/la-fondazione-dolomiti-unesco/?lang=en"
+#- name: "Dolomiti"
+#  image: "http://localhost:4000/assets/img/sponsor/dolomitiUnesco.png"
+#  link: "http://www.dolomitiunesco.info/la-fondazione-dolomiti-unesco/?lang=en"
 - name: "UnionHotel"
-  image: "http://localhost:4000/assets/img/sponsor/unionhotel.png"
+  image: "http://localhost:4000/assets/img/sponsor/test.png"
   link: "http://www.unionhotelscanazei.it/"
 ---

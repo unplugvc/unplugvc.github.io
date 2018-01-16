@@ -13,7 +13,7 @@ how_was_it:
   of Sieser Alm, which is the largest high-altitude Alpine meadow in Europe.
 - The refuge is an historic hut used by mountaineers for decades, but has been completely
   restored and remodeled into a marvel of wooden architecture.
-video: https://www.w3schools.com/html/mov_bbb.mp4
+video: https://youtu.be/pqKRMq3bWrw
 caratteristics:
   altitude: 2240 mt
   cooking: Traditional
@@ -22,44 +22,51 @@ past_edition:
   period: 14 - 15 - 16 - 17 September 2017
   image: http://localhost:4000/assets/img/edition_cards/tires.png
 speakers:
-- name: Tim Cook
-  role: Investor
-  image: http://localhost:4000/assets/img/speakers/tim_cook.png
-- name: Tim Cook
-  role: Django expert
-  image: http://localhost:4000/assets/img/speakers/tim_cook.png
-- name: Tim Cook
-  role: Blogger
-  image: http://localhost:4000/assets/img/speakers/tim_cook.png
-- name: Tim Cook
-  role: Software Developer
-  image: http://localhost:4000/assets/img/speakers/tim_cook.png
-- name: Tim Cook
-  role: Investor
-  image: http://localhost:4000/assets/img/speakers/tim_cook.png
-- name: Tim Cook
-  role: Django expert
-  image: http://localhost:4000/assets/img/speakers/tim_cook.png
-- name: Tim Cook
-  role: Blogger
-  image: http://localhost:4000/assets/img/speakers/tim_cook.png
+- name: Alberto Bechimol
+  role: Founder of Sportfund Onlus
+  image: http://localhost:4000/assets/img/speakers/bechimol.jpg
+- name: James Clark
+  role: Head of Tech and Lifesciences, Primary Markets
+  image: http://localhost:4000/assets/img/speakers/JamesClark.jpg
 attendees:
-- name: Algolia
-  image: http://localhost:4000/assets/img/attendees/algolia.png
-- name: Cachet
-  image: http://localhost:4000/assets/img/attendees/algolia.png
-- name: Ebanx
-  image: http://localhost:4000/assets/img/attendees/algolia.png
-- name: codebase
-  image: http://localhost:4000/assets/img/attendees/algolia.png
-- name: Google
-  image: http://localhost:4000/assets/img/attendees/algolia.png
-- name: Drip
-  image: http://localhost:4000/assets/img/attendees/algolia.png
-- name: DigitalOcean
-  image: http://localhost:4000/assets/img/attendees/algolia.png
-- name: cirrus
-  image: http://localhost:4000/assets/img/attendees/algolia.png
+- name: Aragon
+  image: http://localhost:4000/assets/img/attendees/tires/aragon.png
+- name: Cherry VC
+  image: http://localhost:4000/assets/img/attendees/tires/cherryVC.jpg
+- name: KX Technology found
+  image: http://localhost:4000/assets/img/attendees/tires/kx.jpeg
+- name: Placeholder Venture Capital
+  image: http://localhost:4000/assets/img/attendees/tires/placeholderVC.jpg
+- name: Unicredit Evo
+  image: http://localhost:4000/assets/img/attendees/tires/unicredit-evo.jpg
+- name: Axa Ventures
+  image: http://localhost:4000/assets/img/attendees/tires/axa-ventures.png
+- name: Balderon Capital
+  image: http://localhost:4000/assets/img/attendees/tires/balderton-capital.png
+- name: Bitpesa
+  image: http://localhost:4000/assets/img/attendees/tires/bitpesa.png
+- name: Blue Yeard.png
+  image: http://localhost:4000/assets/img/attendees/tires/blue-Yeard.png
+- name: Conio
+  image: http://localhost:4000/assets/img/attendees/tires/conio.png
+- name: Hoxton
+  image: http://localhost:4000/assets/img/attendees/tires/hoxton-logo.png
+- name: Ventech
+  image: http://localhost:4000/assets/img/attendees/tires/ventech.png
+- name: London Stock Exchange
+  image: http://localhost:4000/assets/img/attendees/tires/london-stock-exchange.png
+- name: Monax
+  image: http://localhost:4000/assets/img/attendees/tires/monax.png
+- name: Open Ocean
+  image: http://localhost:4000/assets/img/attendees/tires/open-ocean.png
+- name: Otium
+  image: http://localhost:4000/assets/img/attendees/tires/otium.png
+- name: Spice
+  image: http://localhost:4000/assets/img/attendees/tires/spice.png
+- name: Sunstonecapital
+  image: http://localhost:4000/assets/img/attendees/tires/Sunstonecapital.png
+- name: Ventech
+  image: http://localhost:4000/assets/img/attendees/tires/ventech.png
 organizers:
 - name: STEFANO BERNARDI
   role: Investor
@@ -168,20 +175,14 @@ header_home:
   subtitle: A community of 60 entrepreneurs and investors surrounded by the Dolomites
   image: http://localhost:4000/assets/img/mountain_placeholder.jpg
 footer_sponsors:
-- name: "Belka"
-  image: "http://localhost:4000/assets/img/logo_belka.svg"
-  link: "http://belka.us/"
-- name: "Trentino"
-  image: "http://localhost:4000/assets/img/sponsor/trentino.png"
-  link: "https://www.trentinomarketing.org/en/"
-- name: "Apt Val Di Fassa"
-  image: "http://localhost:4000/assets/img/sponsor/ValDiFassa.png"
-  link: "https://www.fassa.com/"
-- name: "Dolomiti"
-  image: "http://localhost:4000/assets/img/sponsor/dolomitiUnesco.png"
-  link: "http://www.dolomitiunesco.info/la-fondazione-dolomiti-unesco/?lang=en"
-- name: "UnionHotel"
-  image: "http://localhost:4000/assets/img/sponsor/unionhotel.png"
-  link: "http://www.unionhotelscanazei.it/"
+- name: "Hotel Salegg"
+  image: "http://localhost:4000/assets/img/sponsor/tires/salegg.png"
+  link: "https://www.hotelsalegg.com/en/"
+- name: "Alpe di Tires"
+  image: "http://localhost:4000/assets/img/sponsor/tires/tires.png"
+  link: "http://www.tierseralpl.com/index.php?lang=en"
+- name: "Pedrotti Spumanti"
+  image: "http://localhost:4000/assets/img/sponsor/tires/pedrotti.jpg"
+  link: "http://www.pedrottispumanti.it/"
 ---
 
