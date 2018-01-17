@@ -16,7 +16,7 @@ how_was_it:
   the mountains.
 - The cottage is an historic hut used by mountaineers for decades, but has been completely
   restored and remodeled into an quite full confort hotel.
-video: https://www.w3schools.com/html/mov_bbb.mp4
+video: https://www.youtube.com/embed/pqKRMq3bWrw
 caratteristics:
   altitude: 1450 mt
   cooking: Traditional
@@ -236,12 +236,12 @@ footer_sponsors:
 #  image: "http://localhost:4000/assets/img/sponsor/trentino.png"
 #  link: "https://www.trentinomarketing.org/en/"
 - name: "Apt Val Di Fassa"
-  image: "http://localhost:4000/assets/img/sponsor/ValDiFassa.png"
+  image: "http://localhost:4000/assets/img/sponsor/2018-canazei/valdifassa.png"
   link: "https://www.fassa.com/"
 #- name: "Dolomiti"
 #  image: "http://localhost:4000/assets/img/sponsor/dolomitiUnesco.png"
 #  link: "http://www.dolomitiunesco.info/la-fondazione-dolomiti-unesco/?lang=en"
 - name: "UnionHotel"
-  image: "http://localhost:4000/assets/img/sponsor/test.png"
+  image: "http://localhost:4000/assets/img/sponsor/2018-canazei/unionhotel.png"
   link: "http://www.unionhotelscanazei.it/"
 ---
