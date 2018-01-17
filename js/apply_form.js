@@ -96,13 +96,13 @@ $('.apply_form__register-button').focusout(function() {
 });
 
 $('.apply_form form').submit(function(e) {
-  e.preventDefault();
+  /*e.preventDefault();*/
   if (enableSubmitFnc()) {
     var data = $('.apply_form form').serialize();
     $('.apply_form--sending-message').show();
-    alert(data);
+    /*alert(data);*/
   }
-  return false;
+  /*return false;*/
 });
 
 function validateEmail(email) {
