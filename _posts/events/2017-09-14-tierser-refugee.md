@@ -13,7 +13,7 @@ how_was_it:
   of Sieser Alm, which is the largest high-altitude Alpine meadow in Europe.
 - The refuge is an historic hut used by mountaineers for decades, but has been completely
   restored and remodeled into a marvel of wooden architecture.
-video: https://www.youtube.com/embed/pqKRMq3bWrw?autoplay=1
+video: https://www.youtube.com/embed/pqKRMq3bWrw
 caratteristics:
   altitude: 2240 mt
   cooking: Traditional
@@ -140,38 +140,27 @@ gallery-big:
   - http://localhost:4000/assets/img/events_photos/tierser_refugee/big/10.jpg
 pricing_table:
   - title: Early Bird
-    price: 400
+    price: 389
     elements: 
       - icon: http://localhost:4000/assets/img/pricing_table/double_room.svg
-        text: ['3 nights in a private  Hotel***', 'Double room']
+        text: ['1 nights at Tires refuge']
       - icon: http://localhost:4000/assets/img/pricing_table/transfer.svg
         text: ['Transfer to and from Verona', 'Transport to and from refuge']
       - icon: http://localhost:4000/assets/img/pricing_table/SPA.svg
-        text: ['Entrance in the QT Dolomiti Terme SPA', 'including Dinner']
+        text: ['2 nights in a private hotel *** ']
       - icon: http://localhost:4000/assets/img/pricing_table/special_dinner.svg
-        text: ['1 Lunch in a surprise location', '1 typical dinner in the hotel','1 special dinner in a refuge']
+        text: ['3 Lunches', '2 dinners']
   - title: Double Room
-    price: 500
+    price: 499
     elements: 
       - icon: http://localhost:4000/assets/img/pricing_table/double_room.svg
-        text: ['3 nights in a private  Hotel***', 'Double room']
+        text: ['1 nights at Tires refuge']
       - icon: http://localhost:4000/assets/img/pricing_table/transfer.svg
         text: ['Transfer to and from Verona', 'Transport to and from refuge']
       - icon: http://localhost:4000/assets/img/pricing_table/SPA.svg
-        text: ['Entrance in the QT Dolomiti Terme SPA', 'including Dinner']
+        text: ['2 nights in a private hotel *** ']
       - icon: http://localhost:4000/assets/img/pricing_table/special_dinner.svg
-        text: ['1 Lunch in a surprise location', '1 typical dinner in the hotel','1 special dinner in a refuge']
-  - title: Triple Room
-    price: 600
-    elements: 
-      - icon: http://localhost:4000/assets/img/pricing_table/double_room.svg
-        text: ['3 nights in a private  Hotel***', 'Double room']
-      - icon: http://localhost:4000/assets/img/pricing_table/transfer.svg
-        text: ['Transfer to and from Verona', 'Transport to and from refuge']
-      - icon: http://localhost:4000/assets/img/pricing_table/SPA.svg
-        text: ['Entrance in the QT Dolomiti Terme SPA', 'including Dinner']
-      - icon: http://localhost:4000/assets/img/pricing_table/special_dinner.svg
-        text: ['1 Lunch in a surprise location', '1 typical dinner in the hotel','1 special dinner in a refuge']
+        text: ['3 Lunches', '2 dinners']
 header_home: 
   title: European Venture Retreat
   subtitle: A community of 60 entrepreneurs and investors surrounded by the Dolomites
@@ -184,7 +173,10 @@ footer_sponsors:
   image: "http://localhost:4000/assets/img/sponsor/tires/tires.png"
   link: "http://www.tierseralpl.com/index.php?lang=en"
 - name: "Pedrotti Spumanti"
-  image: "http://localhost:4000/assets/img/sponsor/tires/pedrotti.jpg"
+  image: "http://localhost:4000/assets/img/sponsor/tires/pedrotti.png"
   link: "http://www.pedrottispumanti.it/"
+- name: "Sport Found"
+  image: "http://localhost:4000/assets/img/sponsor/tires/sportfound.png"
+  link: "http://www.sportfund.it/home/"
 ---
 
