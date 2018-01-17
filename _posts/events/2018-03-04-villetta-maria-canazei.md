@@ -203,7 +203,7 @@ pricing_table:
       - icon: http://localhost:4000/assets/img/pricing_table/special_dinner.svg
         text: ['1 Lunch in a surprise location', '1 typical dinner in the hotel','1 special dinner in a refuge']
   - title: 3 - Double Rooms
-    price: 1190
+    price: 1450
     elements: 
       - icon: http://localhost:4000/assets/img/pricing_table/double_room.svg
         text: ['3 nights in a private  Hotel***', 'Double Room']
@@ -214,7 +214,7 @@ pricing_table:
       - icon: http://localhost:4000/assets/img/pricing_table/special_dinner.svg
         text: ['1 Lunch in a surprise location', '1 typical dinner in the hotel','1 special dinner in a refuge']
   - title: '4 - Single Rooms'
-    price: 1390
+    price: 1690
     elements: 
       - icon: http://localhost:4000/assets/img/pricing_table/double_room.svg
         text: ['3 nights in a private  Hotel***', 'Single room']
