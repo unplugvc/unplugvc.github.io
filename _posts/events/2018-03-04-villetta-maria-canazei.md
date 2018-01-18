@@ -9,13 +9,11 @@ location: Trentino - Alto Adige, Italy
 image: http://localhost:4000/assets/img/location/villetta-maria.jpeg
 when_header: March 04-07, 2018
 how_was_it:
-- We have chosen the best of the best. The Unplug cottage is in fornt of the Marmolada
-  the highest mountain of the Dolomites. It is an occasion to really deeply connect
+- We have chosen the best of the best. The Unplug chalet is in front of the Marmolada, the highest mountain of the Dolomites. It is an occasion to really deeply connect
   with fellow entrepreneurs and investors, but most of all to feel the pull of nature,
   enjoying the silence and solitude that you can only get by being in the middle of
   the mountains.
-- The cottage is an historic hut used by mountaineers for decades, but has been completely
-  restored and remodeled into an quite full confort hotel.
+- The chalet is an historic hut used by mountaineers for decades, but has been completely restored and remodeled into a *** hotel, with a restaurant.
 video: https://www.youtube.com/embed/pqKRMq3bWrw
 caratteristics:
   altitude: 1450 mt
@@ -195,15 +193,15 @@ pricing_table:
     price: 890
     elements: 
       - icon: http://localhost:4000/assets/img/pricing_table/double_room.svg
-        text: ['3 nights in a private  Hotel***', 'Double or Triple room']
+        text: ['3 nights in a private  Hotel***', 'Triple room']
       - icon: http://localhost:4000/assets/img/pricing_table/transfer.svg
         text: ['Transfer to and from Verona']
       - icon: http://localhost:4000/assets/img/pricing_table/SPA.svg
         text: ['Entrance in the QT Dolomiti Terme SPA', 'including Dinner']
       - icon: http://localhost:4000/assets/img/pricing_table/special_dinner.svg
         text: ['1 Lunch in a surprise location', '1 typical dinner in the hotel','1 special dinner in a refuge']
-  - title: 3 - Double Rooms
-    price: 1450
+  - title: Early Bird Private Double Room
+    price: 990
     elements: 
       - icon: http://localhost:4000/assets/img/pricing_table/double_room.svg
         text: ['3 nights in a private  Hotel***', 'Double Room']
@@ -213,7 +211,7 @@ pricing_table:
         text: ['Entrance in the QT Dolomiti Terme SPA', 'including Dinner']
       - icon: http://localhost:4000/assets/img/pricing_table/special_dinner.svg
         text: ['1 Lunch in a surprise location', '1 typical dinner in the hotel','1 special dinner in a refuge']
-  - title: '4 - Single Rooms'
+  - title: 'Single Room'
     price: 1690
     elements: 
       - icon: http://localhost:4000/assets/img/pricing_table/double_room.svg
@@ -225,9 +223,9 @@ pricing_table:
       - icon: http://localhost:4000/assets/img/pricing_table/special_dinner.svg
         text: ['1 Lunch in a surprise location', '1 typical dinner in the hotel','1 special dinner in a refuge']
 header_home: 
-  title: Winter Venture Retreat
-  subtitle: A community of 60 entrepreneurs and investors surrounded by the Dolomites
-  image: http://localhost:4000/assets/img/mountain_placeholder.jpg
+  title: 2018 Winter Venture Retreat
+  subtitle: An amazing 3-day retreat in the Dolomites with fellow investors and entrepreneurs
+  image: http://localhost:4000/assets/img/val-san-nicolo.jpg
 footer_sponsors:
 #- name: "Belka"
 #  image: "http://localhost:4000/assets/img/logo_belka.svg"

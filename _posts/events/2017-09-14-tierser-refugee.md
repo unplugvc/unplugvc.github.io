@@ -1,6 +1,5 @@
 ---
 title: Tierser Alpl Alpine Refuge
-date: 2017-09-14 12:00:00
 tags:
 - event
 layout: event
@@ -110,6 +109,7 @@ schedule:
   - time: 8.00 AM
     what: Breakfast
     description: Meet in the Hotel lobby and load up on energies for the day.
+date: '2017-09-14 12:00:00 +0000'
 gallery-small:
   image:
   - http://localhost:4000/assets/img/events_photos/tierser_refugee/1.jpg
@@ -139,44 +139,56 @@ gallery-big:
   - http://localhost:4000/assets/img/events_photos/tierser_refugee/big/9.jpg
   - http://localhost:4000/assets/img/events_photos/tierser_refugee/big/10.jpg
 pricing_table:
-  - title: Early Bird
-    price: 389
-    elements: 
-      - icon: http://localhost:4000/assets/img/pricing_table/double_room.svg
-        text: ['1 nights at Tires refuge']
-      - icon: http://localhost:4000/assets/img/pricing_table/transfer.svg
-        text: ['Transfer to and from Verona', 'Transport to and from refuge']
-      - icon: http://localhost:4000/assets/img/pricing_table/SPA.svg
-        text: ['2 nights in a private hotel *** ']
-      - icon: http://localhost:4000/assets/img/pricing_table/special_dinner.svg
-        text: ['3 Lunches', '2 dinners']
-  - title: Double Room
-    price: 499
-    elements: 
-      - icon: http://localhost:4000/assets/img/pricing_table/double_room.svg
-        text: ['1 nights at Tires refuge']
-      - icon: http://localhost:4000/assets/img/pricing_table/transfer.svg
-        text: ['Transfer to and from Verona', 'Transport to and from refuge']
-      - icon: http://localhost:4000/assets/img/pricing_table/SPA.svg
-        text: ['2 nights in a private hotel *** ']
-      - icon: http://localhost:4000/assets/img/pricing_table/special_dinner.svg
-        text: ['3 Lunches', '2 dinners']
-header_home: 
+- title: Early Bird
+  price: 389
+  elements:
+  - icon: http://localhost:4000/assets/img/pricing_table/double_room.svg
+    text:
+    - 1 nights at Tires refuge
+  - icon: http://localhost:4000/assets/img/pricing_table/transfer.svg
+    text:
+    - Transfer to and from Verona
+    - Transport to and from refuge
+  - icon: http://localhost:4000/assets/img/pricing_table/SPA.svg
+    text:
+    - 2 nights in a private hotel ***
+  - icon: http://localhost:4000/assets/img/pricing_table/special_dinner.svg
+    text:
+    - 3 Lunches
+    - 2 dinners
+- title: Double Room
+  price: 499
+  elements:
+  - icon: http://localhost:4000/assets/img/pricing_table/double_room.svg
+    text:
+    - 1 nights at Tires refuge
+  - icon: http://localhost:4000/assets/img/pricing_table/transfer.svg
+    text:
+    - Transfer to and from Verona
+    - Transport to and from refuge
+  - icon: http://localhost:4000/assets/img/pricing_table/SPA.svg
+    text:
+    - 2 nights in a private hotel ***
+  - icon: http://localhost:4000/assets/img/pricing_table/special_dinner.svg
+    text:
+    - 3 Lunches
+    - 2 dinners
+header_home:
   title: European Venture Retreat
   subtitle: A community of 60 entrepreneurs and investors surrounded by the Dolomites
-  image: http://localhost:4000/assets/img/mountain_placeholder.jpg
+  image: http://localhost:4000/assets/img/mountain_placeholder-old.jpg
 footer_sponsors:
-- name: "Hotel Salegg"
-  image: "http://localhost:4000/assets/img/sponsor/tires/salegg.png"
-  link: "https://www.hotelsalegg.com/en/"
-- name: "Alpe di Tires"
-  image: "http://localhost:4000/assets/img/sponsor/tires/tires.png"
-  link: "http://www.tierseralpl.com/index.php?lang=en"
-- name: "Pedrotti Spumanti"
-  image: "http://localhost:4000/assets/img/sponsor/tires/pedrotti.png"
-  link: "http://www.pedrottispumanti.it/"
-- name: "Sport Found"
-  image: "http://localhost:4000/assets/img/sponsor/tires/sportfound.png"
-  link: "http://www.sportfund.it/home/"
+- name: Hotel Salegg
+  image: http://localhost:4000/assets/img/sponsor/tires/salegg.png
+  link: https://www.hotelsalegg.com/en/
+- name: Alpe di Tires
+  image: http://localhost:4000/assets/img/sponsor/tires/tires.png
+  link: http://www.tierseralpl.com/index.php?lang=en
+- name: Pedrotti Spumanti
+  image: http://localhost:4000/assets/img/sponsor/tires/pedrotti.png
+  link: http://www.pedrottispumanti.it/
+- name: Sport Found
+  image: http://localhost:4000/assets/img/sponsor/tires/sportfound.png
+  link: http://www.sportfund.it/home/
 ---
 

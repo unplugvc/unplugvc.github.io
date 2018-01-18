@@ -10,13 +10,13 @@
     "image": "http://localhost:4000/assets/img/pholosophies_cards/Speak%20same%20language.jpg"
   },
   {
-    "title": "Professional ski Teacher",
-    "text": "We will be joined by professional, licensed ski teacher and professional mountaneers.",
+    "title": "Professional ski guides",
+    "text": "We will be joined by professional, licensed ski guides and professional mountaneers.",
     "image": "http://localhost:4000/assets/img/pholosophies_cards/skiTeacher.jpg"
   },
   {
     "title": "Wellness",
-    "text": "New alpine experience centered on quality of life through the beneficial effects of spa aimed at restoring your physical and spiritual balance.",
+    "text": "A new alpine experience centered on quality of life. We will have an amazing SPA session aimed at restoring your physical and spiritual balance.",
     "image": "http://localhost:4000/assets/img/pholosophies_cards/OCterme.png"
   }
 ]
