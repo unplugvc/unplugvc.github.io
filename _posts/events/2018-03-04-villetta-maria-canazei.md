@@ -72,91 +72,92 @@ schedule:
 - day: SUNDAY, MARCH 04
   program:
   - time: 2.00 PM
-    what: We leave from Verona
+    what: We leave from Verona's Train Station
     description: Meeting point outside the train station.
   - time: 2.30 PM
-    what: First stop Verona Airport
+    what: Pick up folks at Verona's Airport
     description: Meetig point outside the Airport.
   - time: 3.45 PM
-    what: Second stop Trento Sud Autostrada
+    what: Second stop, Trento Sud Autostrada
     description: Meetig point at the parking outside the autostrada in Trento Sud.
   - time: 17.00 PM
-    what: Arriving to Unplug Chalet
+    what: Arrival at Unplug's Chalet
     description: Check-in time and find your room mate fot the next days!
   - time: 17.30 PM
-    what: Only for Skier
-    description: Ski test at the ski rental.
+    what: Ski test / rental
+    description: Only for wannabe skiers
   - time: 18.00 PM
-    what: Strating the winter venture retreat
-    description: Aperitivo, presentation and free chat.
+    what: Welcome Bonfire Aperitivo
+    description: Drink, get cozy and get to meet your fellow adventurers.
   - time: 20.00 PM
-    what: Dinner at Unplug Chalet
-    description: Typical dinner with unconference talks.
+    what: Dinner at Unplug's Chalet
+    description: Typical dinner, with a simple 1 minute presentation of each guest.
 - day: MONDAY, MARCH 05
   program:
   - time: 7.30 AM
     what: Breakfast
-    description: Charge your energy for the day.
+    description: Get your energy  for the day!
   - time: 8.30 AM
-    what: Only for Skier
-    description: Leave Unplug Chalet and go skiing.
+    what: Skiing!
+    description: We leave the Chalet and go on the slopes.
   - time: 9.30 AM
-    what: Only for Non - Skier
-    description: Leave Unplug Chalet and go sledding.
+    what: Sledding!
+    description: If skiing is not your sport, we have quite the fun alternative.
   - time: 3.00 PM
-    what: Relaxing Time
-    description: Be ready for the SPA, you need only the swimsuit.
+    what: Relax
+    description: We get back to the hotel and get changed.
   - time: 5.00 PM
-    what: Talk and aperitif
-    description: Take your drink listen the inspiring talk at the SPA center.
+    what: SPA TIME!
+    description: We're off to the magnificent QC Terme Dolomiti!
+  - time: 7.00 PM
+    what: Dinner at the Spa
+    description: Light dinner in our bathrobes, with some unconference talks.
   - time: 10.00 PM
     what: Back to Unplug Chalet
-    description: Free chat in Unplug Chalet Bar.
+    description: Unplug in the Chalet's bar
 - day: TUESDAY, MARCH 06
   program:
   - time: 7.30 AM
     what: Breakfast
-    description: Charge your energy for the day.
-  - time: 8.30 AM
-    what: Only for Skier
-    description: Leave Unplug Chalet and go skiing.
+    description: Get your energy  for the day!
+   - time: 8.30 AM
+    what: Skiing!
+    description: We leave the Chalet and go on the slopes.
   - time: 9.30 AM
-    what: Only for Non Skier - Snowshoe Time
-    description: Hike through the dolomites with mountain guides.
+    what: Snowshoe Time! (For non-skiers)
+    description: Hike through the dolomites with mountain guides on snowshoes!
   - time: 4.00 PM
     what: Return to Unplug Chalet
-    description: Shower, Relax, beer and free chat.
+    description: Shower, relax, drink and chat.
   - time: 5.30 PM
-    what: Dinner at Malga Monzoni
-    description: Bring you warm stuff and be rady for a ride with the snowmobile to
-      Malga Monzoni.
+    what: Snowmobile ride to Malga Monzoni
+    description: Bring some warm stuff and be ready for an adventure
   - time: 6.30 PM
-    what: Talk
-    description: A very insipiring talk with....
+    what: Talks
+    description: Inspiring talks from your fellow mountaineers
   - time: 7.30 PM
-    what: Dinner and free chat
+    what: Dinner
     description: Home made, slowfood and very typical dinner at Malga Monzioni.
   - time: 10.00 PM
-    what: Snowshoe Time
-    description: It is time to sledding back... It will be night so bring a light
-      with you!.
+    what: Sled down the mountain!
+    description: It is time to sled back... It will be night so bring a light!
 - day: WEDNESDAY, MARCH 07
   program:
   - time: 8.00 AM
     what: Breakfast
     description: Meet in the Hotel lobby and load up on energies for the day.
   - time: 9.00 AM
-    what: Talks and free chat.
+    what: Talks for whoever is already awake.
     description: 
   - time: 11.00 AM
     what: Bye Bye Unplug Chalet
-    description: It's time to go back at the real life!
+    description: It's time to go back to the real world! Our bus leaves now.
   - time: 12.30 AM
-    what: Lunch
+    what: Surprise Goodbye Lunch
     description: Promise it's worth it.
-  - time: 5.00 AM
+  - time: 4.30 PM
     what: Bye!
-    description: We say good bye! Please ensure you book travel from Verona at 5:30pm
+    description: We say good bye! Please ensure you book travel from Verona's Airport at 5:30pm
       at the earliest. If you need to leave earlier, please contact us before purchasing
       a ticket to make sure we can accomodate. We suggest spending the night in Verona
       and booking travel for the next morning! It is a stunning city.
