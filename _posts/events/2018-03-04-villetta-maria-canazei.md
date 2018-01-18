@@ -14,7 +14,7 @@ how_was_it:
   enjoying the silence and solitude that you can only get by being in the middle of
   the mountains.
 - The chalet is an historic hut used by mountaineers for decades, but has been completely restored and remodeled into a *** hotel, with a restaurant.
-video: https://www.youtube.com/embed/pqKRMq3bWrw
+video: https://www.youtube.com/watch?v=dUyhWS0rR1A
 caratteristics:
   altitude: 1450 mt
   cooking: Traditional
