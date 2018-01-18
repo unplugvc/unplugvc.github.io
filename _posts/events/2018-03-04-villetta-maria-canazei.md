@@ -79,12 +79,12 @@ schedule:
     description: Meetig point outside the Airport.
   - time: 3.45 PM
     what: Second stop, Trento Sud Autostrada
-    description: Meetig point at the parking outside the autostrada in Trento Sud.
+    description: Meeting point at the parking outside the autostrada in Trento Sud.
   - time: 17.00 PM
     what: Arrival at Unplug's Chalet
     description: Check-in time and find your room mate fot the next days!
   - time: 17.30 PM
-    what: Ski test / rental
+    what: Ski test and rental
     description: Only for wannabe skiers
   - time: 18.00 PM
     what: Welcome Bonfire Aperitivo
@@ -96,7 +96,7 @@ schedule:
   program:
   - time: 7.30 AM
     what: Breakfast
-    description: Get your energy  for the day!
+    description: Get your energy for the day!
   - time: 8.30 AM
     what: Skiing!
     description: We leave the Chalet and go on the slopes.
@@ -114,12 +114,12 @@ schedule:
     description: Light dinner in our bathrobes, with some unconference talks.
   - time: 10.00 PM
     what: Back to Unplug Chalet
-    description: Unplug in the Chalet's bar
+    description: Unplug in our private bar
 - day: TUESDAY, MARCH 06
   program:
   - time: 7.30 AM
     what: Breakfast
-    description: Get your energy  for the day!
+    description: Get your energy for the day!
    - time: 8.30 AM
     what: Skiing!
     description: We leave the Chalet and go on the slopes.
@@ -137,7 +137,7 @@ schedule:
     description: Inspiring talks from your fellow mountaineers
   - time: 7.30 PM
     what: Dinner
-    description: Home made, slowfood and very typical dinner at Malga Monzioni.
+    description: Home made, slowfood and very typical dinner at Malga Monzoni.
   - time: 10.00 PM
     what: Sled down the mountain!
     description: It is time to sled back... It will be night so bring a light!
@@ -148,7 +148,7 @@ schedule:
     description: Meet in the Hotel lobby and load up on energies for the day.
   - time: 9.00 AM
     what: Talks for whoever is already awake.
-    description: 
+    description: Last talks before leaving
   - time: 11.00 AM
     what: Bye Bye Unplug Chalet
     description: It's time to go back to the real world! Our bus leaves now.
@@ -190,7 +190,7 @@ gallery-big:
     - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/big/11.jpg
     - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/big/12.jpg
 pricing_table:
-  - title: Early Bird
+  - title: Early Bird Ticket
     price: 890
     elements: 
       - icon: http://localhost:4000/assets/img/pricing_table/double_room.svg
@@ -201,8 +201,8 @@ pricing_table:
         text: ['Entrance in the QT Dolomiti Terme SPA', 'including Dinner']
       - icon: http://localhost:4000/assets/img/pricing_table/special_dinner.svg
         text: ['1 Lunch in a surprise location', '1 typical dinner in the hotel','1 special dinner in a refuge']
-  - title: Early Bird Private Double Room
-    price: 990
+  - title: Private Double Room Ticket
+    price: 1190
     elements: 
       - icon: http://localhost:4000/assets/img/pricing_table/double_room.svg
         text: ['3 nights in a private  Hotel***', 'Double Room']
@@ -212,7 +212,7 @@ pricing_table:
         text: ['Entrance in the QT Dolomiti Terme SPA', 'including Dinner']
       - icon: http://localhost:4000/assets/img/pricing_table/special_dinner.svg
         text: ['1 Lunch in a surprise location', '1 typical dinner in the hotel','1 special dinner in a refuge']
-  - title: 'Single Room'
+  - title: Private Single Room Ticket
     price: 1690
     elements: 
       - icon: http://localhost:4000/assets/img/pricing_table/double_room.svg

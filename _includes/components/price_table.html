@@ -1,12 +1,12 @@
 {% for post in site.tags.event limit: 1 %} 
-{% assign current_event = post %} 
+  {% assign current_event = post %} 
 {% endfor %}
 
 <div class="price_table">
   <div class="container">
     <div class="row">
       <div class="col-12 scroll_reveal">
-        {% include components/headings.html big="PRICING&CONDITIONS" small="What you see is what you get" %}
+        {% include components/headings.html big="PRICING" small="All prices already include Italian VAT at 22%" %}
       </div>
       <div class="col-12 col-sm-4">
         <div class="price_table__card">
