@@ -1,10 +1,11 @@
-{% if include.location == 'home' %}
+{% if page.url == '/' %}
   {% for post in site.tags.event limit: 1 %}
     {% assign current_event = post %}
   {% endfor %}
 {% else %}
   {% assign current_event = page %}
 {% endif %}
+
 <div class="header__{{include.type}}" style="background-image: url('{{current_event.header_home.image}}');">
   {% if include.type == "home" %}
   <div class="header__home-content">
