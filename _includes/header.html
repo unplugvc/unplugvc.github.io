@@ -5,7 +5,6 @@
 {% else %}
   {% assign current_event = page %}
 {% endif %}
-
 <div class="header__{{include.type}}" style="background-image: url('{{current_event.header_home.image}}');">
   {% if include.type == "home" %}
   <div class="header__home-content">

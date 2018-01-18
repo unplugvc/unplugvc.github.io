@@ -233,13 +233,10 @@ footer_sponsors:
 #- name: "Trentino"
 #  image: "http://localhost:4000/assets/img/sponsor/trentino.png"
 #  link: "https://www.trentinomarketing.org/en/"
-- name: "Apt Val Di Fassa"
-  image: "http://localhost:4000/assets/img/sponsor/2018-canazei/valdifassa.png"
-  link: "https://www.fassa.com/"
+- name: Token Economy
+  image: http://localhost:4000/assets/img/sponsor/tokeneconomy.png
+  link: https://www.hotelsalegg.com/en/
 #- name: "Dolomiti"
 #  image: "http://localhost:4000/assets/img/sponsor/dolomitiUnesco.png"
 #  link: "http://www.dolomitiunesco.info/la-fondazione-dolomiti-unesco/?lang=en"
-- name: "UnionHotel"
-  image: "http://localhost:4000/assets/img/sponsor/2018-canazei/unionhotel.png"
-  link: "http://www.unionhotelscanazei.it/"
 ---

@@ -178,17 +178,8 @@ header_home:
   subtitle: A community of 60 entrepreneurs and investors surrounded by the Dolomites
   image: http://localhost:4000/assets/img/mountain_placeholder-old.jpg
 footer_sponsors:
-- name: Hotel Salegg
-  image: http://localhost:4000/assets/img/sponsor/tires/salegg.png
+- name: Token Economy
+  image: http://localhost:4000/assets/img/sponsor/tokeneconomy.png
   link: https://www.hotelsalegg.com/en/
-- name: Alpe di Tires
-  image: http://localhost:4000/assets/img/sponsor/tires/tires.png
-  link: http://www.tierseralpl.com/index.php?lang=en
-- name: Pedrotti Spumanti
-  image: http://localhost:4000/assets/img/sponsor/tires/pedrotti.png
-  link: http://www.pedrottispumanti.it/
-- name: Sport Found
-  image: http://localhost:4000/assets/img/sponsor/tires/sportfound.png
-  link: http://www.sportfund.it/home/
 ---
 
