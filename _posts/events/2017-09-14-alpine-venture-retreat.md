@@ -1,5 +1,5 @@
 ---
-title: Tierser Alpl Alpine Refuge
+title: Alpine Venture Retreat
 tags:
 - event
 layout: event
@@ -21,12 +21,12 @@ past_edition:
   period: 14 - 15 - 16 - 17 September 2017
   image: http://localhost:4000/assets/img/edition_cards/tires.png
 speakers:
+- name: Chris Burniske
+  role: Partner, Placeholder
+  image: http://localhost:4000/assets/img/speakers/chris-burniske.jpg
 - name: Alberto Bechimol
-  role: Founder of Sportfund Onlus
+  role: Founder, Sportfund
   image: http://localhost:4000/assets/img/speakers/bechimol.jpg
-- name: James Clark
-  role: Head of Tech and Lifesciences, Primary Markets
-  image: http://localhost:4000/assets/img/speakers/JamesClark.jpg
 attendees:
 - name: Aragon
   image: http://localhost:4000/assets/img/attendees/tires/aragon.png
