@@ -180,6 +180,6 @@ header_home:
 footer_sponsors:
 - name: Token Economy
   image: http://localhost:4000/assets/img/sponsor/tokeneconomy.png
-  link: https://www.hotelsalegg.com/en/
+  link: https://www.tokeneconomy.co/
 ---
 

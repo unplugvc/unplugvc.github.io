@@ -173,7 +173,7 @@ pricing_table:
     price: 890
     elements: 
       - icon: http://localhost:4000/assets/img/pricing_table/double_room.svg
-        text: ['3 nights in a private  Hotel***', 'Triple room']
+        text: ['3 nights in a private  Hotel***', 'private bed in a 3 or 4 people room,']
       - icon: http://localhost:4000/assets/img/pricing_table/transfer.svg
         text: ['Transfer to and from Verona']
       - icon: http://localhost:4000/assets/img/pricing_table/SPA.svg
@@ -215,7 +215,7 @@ footer_sponsors:
 #  link: "https://www.trentinomarketing.org/en/"
 - name: Token Economy
   image: http://localhost:4000/assets/img/sponsor/tokeneconomy.png
-  link: https://www.hotelsalegg.com/en/
+  link: https://www.tokeneconomy.co
 #- name: "Dolomiti"
 #  image: "http://localhost:4000/assets/img/sponsor/dolomitiUnesco.png"
 #  link: "http://www.dolomitiunesco.info/la-fondazione-dolomiti-unesco/?lang=en"
