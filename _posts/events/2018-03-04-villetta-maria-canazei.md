@@ -23,44 +23,29 @@ past_edition:
   period: 04 - 05 - 06 - 07 March 2018
   image: http://localhost:4000/assets/img/edition_cards/tires.png
 speakers:
-- name: Tim Cook
-  role: Investor
-  image: http://localhost:4000/assets/img/speakers/tim_cook.png
-- name: Tim Cook
-  role: Django expert
-  image: http://localhost:4000/assets/img/speakers/tim_cook.png
-- name: Tim Cook
-  role: Blogger
-  image: http://localhost:4000/assets/img/speakers/tim_cook.png
-- name: Tim Cook
-  role: Software Developer
-  image: http://localhost:4000/assets/img/speakers/tim_cook.png
-- name: Tim Cook
-  role: Investor
-  image: http://localhost:4000/assets/img/speakers/tim_cook.png
-- name: Tim Cook
-  role: Django expert
-  image: http://localhost:4000/assets/img/speakers/tim_cook.png
-- name: Tim Cook
-  role: Blogger
-  image: http://localhost:4000/assets/img/speakers/tim_cook.png
-attendees:
-- name: Algolia
-  image: http://localhost:4000/assets/img/attendees/algolia.png
-- name: Cachet
-  image: http://localhost:4000/assets/img/attendees/algolia.png
-- name: Ebanx
-  image: http://localhost:4000/assets/img/attendees/algolia.png
-- name: codebase
-  image: http://localhost:4000/assets/img/attendees/algolia.png
-- name: Google
-  image: http://localhost:4000/assets/img/attendees/algolia.png
-- name: Drip
-  image: http://localhost:4000/assets/img/attendees/algolia.png
-- name: DigitalOcean
-  image: http://localhost:4000/assets/img/attendees/algolia.png
-- name: cirrus
-  image: http://localhost:4000/assets/img/attendees/algolia.png
+- name: Nadia Eghbal
+  role: Open Source Lead, Github
+  image: http://localhost:4000/assets/img/speakers/nadia.jpeg
+- name: To be announced
+  role: TBD
+  image: 
+# attendees:
+# - name: Algolia
+#   image: http://localhost:4000/assets/img/attendees/algolia.png
+# - name: Cachet
+#   image: http://localhost:4000/assets/img/attendees/algolia.png
+# - name: Ebanx
+#   image: http://localhost:4000/assets/img/attendees/algolia.png
+# - name: codebase
+#   image: http://localhost:4000/assets/img/attendees/algolia.png
+# - name: Google
+#   image: http://localhost:4000/assets/img/attendees/algolia.png
+# - name: Drip
+#   image: http://localhost:4000/assets/img/attendees/algolia.png
+# - name: DigitalOcean
+#   image: http://localhost:4000/assets/img/attendees/algolia.png
+# - name: cirrus
+#   image: http://localhost:4000/assets/img/attendees/algolia.png
 organizers:
 - name: STEFANO BERNARDI
   role: Investor
@@ -72,24 +57,18 @@ schedule:
 - day: SUNDAY, MARCH 04
   program:
   - time: 2.00 PM
-    what: We leave from Verona's Train Station
-    description: Meeting point outside the train station.
-  - time: 2.30 PM
-    what: Pick up folks at Verona's Airport
-    description: Meetig point outside the Airport.
-  - time: 3.45 PM
-    what: Second stop, Trento Sud Autostrada
-    description: Meeting point at the parking outside the autostrada in Trento Sud.
-  - time: 17.00 PM
+    what: We leave from Verona
+    description: Meeting points outside the train station and airport
+  - time: 5.00 PM
     what: Arrival at Unplug's Chalet
     description: Check-in time and find your room mate fot the next days!
-  - time: 17.30 PM
+  - time: 5.30 PM
     what: Ski test and rental
     description: Only for wannabe skiers
-  - time: 18.00 PM
+  - time: 6.00 PM
     what: Welcome Bonfire Aperitivo
     description: Drink, get cozy and get to meet your fellow adventurers.
-  - time: 20.00 PM
+  - time: 8.00 PM
     what: Dinner at Unplug's Chalet
     description: Typical dinner, with a simple 1 minute presentation of each guest.
 - day: MONDAY, MARCH 05
