@@ -49,7 +49,7 @@ speakers:
 organizers:
 - name: STEFANO BERNARDI
   role: Investor
-  image: http://localhost:4000/assets/img/organizers/bernardi.png
+  image: http://localhost:4000/assets/img/organizers/bernardi.jpg
 - name: LORENZO SANNA
   role: Business Developer
   image: http://localhost:4000/assets/img/organizers/sanna.png
