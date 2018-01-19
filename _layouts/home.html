@@ -1,7 +1,38 @@
 ---
 layout: home
 ---
+
 <!DOCTYPE html>
+
+<!-- 
+
+      .-                   
+     `+d/                   
+    -hmm/                   
+   ommmm/                   
+  `mmmmm/                   
+  `mmmmm/ .:+ssyso+-`       
+  `mmmmmsydmmmmmmmmmho.     
+  `mmmmmmh+:---/+ssssyd:    
+  `mmmmmh.     /     .md-   
+  `mmmmmo..-`       .ommo   
+  `mmmmm+..`    ./oydmmm/   
+  `mmmmm/      /dmmmmmmh`   
+  `mmmmm/    `smmmmmmms`    
+  `mmmmm/  `+dmmmmmy+.      
+   :::::.   `-::-.`  
+
+Hey!
+
+Here’s the team of Belka. We designed and developed this website! Wanna meet us? Just drop an email at hello@belka.us
+Don’t tell anyone about this easter egg ;)
+
+Thanks for the visit!
+Belka Team
+
+
+-->
+
 <html lang="en">
 
 <head>
@@ -27,6 +58,12 @@ layout: home
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="{{'/assets/img/progressive_web_app' | relative_url}}/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
+
+  <link rel="stylesheet" href="https://unpkg.com/bootstrap@4.0.0-beta.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" />
+  <!-- Custom css -->
+  <link rel="stylesheet" href="{{'/css/main.css' | relative_url }}">
 </head>
 
 <body>
@@ -36,7 +73,7 @@ layout: home
 
   {% include components/page_overlay.html %}
   {% include components/apply_form.html %}
-  {% include footer.html %}
+  {% include footer.html location="home" %}
 
   {% include scripts.html %}
 </body>

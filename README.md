@@ -13,13 +13,9 @@
 * Install chrome extension [link](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei?hl=en)
 * Activate the extension by clicking on the Livereload icon in the browser
 
-## Run with the admin (for content editors)
+## Run (with the admin)
 
 * `bundle exec jekyll serve --watch`
-
-## Run dev mode (developers)
-* `bundle exec jekyll liveserve`
-  * using vscode there is the task LiveServe
 
 ## Deploy with travis-ci
 Merge or push in `travis-ci` branch, travis-ci will trigger it's build process when there are changes in this branch.
@@ -49,9 +45,15 @@ NB: The structure of the data bust be the same
 * OUR PHILOSOPHY: `/_data/philosophies.json`
 * THE HIKE: `/_data/hikes.json`
 
+### Header
+
+* Home: the modificable data for the header are in every event markdown file (header_home)
+
 ### Footer
 
-* MAIN SPONSOR: `/_data/main_sponsors.json`
+* MAIN SPONSORS: `/_data/main_sponsors.json`
+  * Sponsors are managed also in the event file, you can have both
+  * Use the file in '_data' for the sponsors that you want in every page
 * GOT A QUESTIONS?: `/_data/organization_data.yml`
 * USEFUL LINKS: `/_data/useful_links.json`
 

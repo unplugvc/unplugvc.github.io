@@ -14,32 +14,33 @@ layout: home
 <div class="scroll_reveal container">
   <div class="row">
     <div class="col-12">
-      {% include components/headings.html big="THE RETREAT" small="A weekend to unplug and connect." %}
+      <!-- {% include components/headings.html big="THE RETREAT" small="A weekend to unplug and connect." %} -->
+      {% include components/headings.html big="THE RETREAT" small="Three days to unplug and connect." %}
     </div>
   </div>
 </div>
-
-
 <div class="scroll_reveal container">
   <div class="row how-it-was">
     <div class="col-12 col-sm-5">
       <h2 class="title--second">Another conference?</h2>
       <p class="text">
-        This is not a conference. It is a weekend in the mountains, with serious hiking and bunk bed sleeping.
+        <!--This is not a conference. It is a weekend in the mountains, with serious hiking and bunk bed sleeping.-->
+        Unplug is not a conference. We organize small, private events with the best minds around.
       </p>
       <p class="text">
-        It is an occasion to really deeply connect with fellow entrepreneurs and investors, but most of all to feel the pull of nature,
+        We structure the event as an occasion to really deeply connect with fellow entrepreneurs and investors, but most of all to feel the pull of nature,
         enjoying the silence and solitude that you can only get by being in the middle of the mountains.
       </p>
     </div>
     <div class="col-12 col-sm-1">
     </div>
     <div class="col-12 col-sm-6">
-      {% include components/quotes.html quote="We will spend 3 nights in the beautiful Dolomites, sleeping at 2,400m high up where
-      you can only hear your own breath." %}
+      <!-- {% include components/quotes.html quote="We will spend 3 nights in the beautiful Dolomites, sleeping at 2,400m high up where
+      you can only hear your own breath." %} -->
+      {% include components/quotes.html quote="Nature, mountains, good food, and a likeminded but diverse group of people. This is what we think is the perfect recipe for a short retreat from the daily hustle." %} 
       <p class="text">
         The event is deliberately light in its schedule, to maximize the amount of time you can spend actually getting to know the
-        other participants, as well as meditating with yourself.
+        other participants.
       </p>
     </div>
   </div>
@@ -50,7 +51,7 @@ layout: home
     <div class="general__spacer--big"></div>
     <div class="row">
       <div class="scroll_reveal col-12">
-        {% include components/headings.html negative="true" big="OUR PHILOSOPHY" small="Your home for a weekend, in the mountains"
+        {% include components/headings.html negative="true" big="What to expect" small="Your home for a weekend, in the mountains"
         %}
       </div>
     </div>
@@ -82,7 +83,7 @@ layout: home
 
 <div class="hike scroll_reveal">
   <div class="container">
-    <h1 class="title--first--negative">THE HIKE</h1>
+    <h1 class="title--first--negative">IN NUMBERS</h1>
   </div>
   {% include components/hike.html %}
 </div>
@@ -91,17 +92,15 @@ layout: home
   <div class="container">
     <div class="row">
       <div class="col-12 col-sm-6 scroll_reveal">
-        {% include components/headings.html big="THE LOCATION" small="A refuge, but with comfort" %}
+        <!--{% include components/headings.html big="THE LOCATION" small="A refuge, but with comfort" %} -->
+        {% include components/headings.html big="THE LOCATION" small="A small ski chalet, but with comfort" %}
+        {% for words in current_event.how_was_it %}
         <p class="text">
-          We have chosen the best of the best. The Tierser Alpl mountain refuge sits on top of Sieser Alm, which is the largest high-altitude
-          Alpine meadow in Europe.
+          {{ words }}
         </p>
-        <p class="text">
-          The refuge is an historic hut used by mountaineers for decades, but has been completely restored and remodeled into a marvel
-          of wooden architecture.
-        </p>
-        {% include components/quotes.html quote="No need to bring a sleep bag, everything is ready for you. We also negotiated 1
-        hot shower per day, per guest." %}
+        {% endfor %}
+        <!-- {% include components/quotes.html quote="No need to bring a sleep bag, everything is ready for you. We also negotiated 1
+        hot shower per day, per guest." %} -->
       </div>
       <div class="col-12 col-sm-6 hidden-xs scroll_reveal">
         {% include components/card.html type="location" title=current_event.title subtitle=current_event.location img=current_event.image
@@ -130,17 +129,17 @@ layout: home
   <img class="carousel__home__mountain-profile" src="{{'/assets/img/mountain_profile_2.svg' | relative_url }}" alt="">
 </div>
 
-
-<div class="schedule" id="schedule">
+<div class="general_destination" id="schedule"></div>
+<div class="schedule">
   <div class="container scroll_reveal">
     <div class="row">
       <div class="col-12">
-        {% include components/headings.html big="THE SCHEDULE" small="Your home for a weekend, in the mountains" %}
+        <!-- {% include components/headings.html big="THE SCHEDULE" small="Your home for a weekend, in the mountains" %} -->
+        {% include components/headings.html big="THE SCHEDULE" small="Your home for three days, in the mountains" %}
       </div>
       <div class="col-10 col-sm-6">
         <p class="text">
-          We will meet at Monte Bianco to ski altogether and have fun and stuff, you know. Hi Stefano let’s do this website I know
-          you want it!
+            We will meet in Canazei to ski altogether and have fun. Join with us for an unconventional event where you will have three days no-stop with an international inspiring bunch of people who likes technology and nature and good high tech discussion sitting around a wood stove.
         </p>
       </div>
     </div>
@@ -200,7 +199,7 @@ layout: home
   <div class="container">
     <div class="row">
       <div class="col-12 scroll_reveal">
-        {% include components/headings.html big="SPEAKERS" small="Amazing speakers for an amazing event" %}
+        {% include components/headings.html big="SPEAKERS" small="Unconventional speakers to open your mind on new topics" %}
       </div>
       <div class="col-12 speakers__pictures">
         <div class="row">
@@ -256,6 +255,7 @@ layout: home
   </div>
 </div>
 
+{% include components/price_table.html %}
 
 <div class="organized">
   <div class="container">
@@ -283,6 +283,15 @@ layout: home
   </div>
 </div>
 
+{% assign curDate = site.time | date: '%s' %}
+{% assign filtered_past_events = "" | split: ',' %}
+{% for post in past_events %}
+    {% assign postStartDate = post.date | date: '%s' %}
+    {% if postStartDate < curDate %}
+        {% assign filtered_past_events = filtered_past_events | push: post %}
+    {% endif %}
+{% endfor %}
+
 <div class="general_destination" id="past_editions"></div>
 <div class="past-editions">
   <div class="container">
@@ -292,21 +301,19 @@ layout: home
       </div>
       <div class="col-12 past-editions__pictures">
         <div class="row">
-          {% for o in past_events %}
-            {% unless forloop.first %}
-              <div class="col-12 col-sm-6 col-md-6 col-lg-4 scroll_reveal">
-                <a href="{{site.baseurl}}{{ o.url }}">
-                  <div class="past-editions__pictures-card aspect_ratio--past_editions">
-                    <img class="lazyload" data-src="{{o.past_edition.image | replace:'http://localhost:4000', site.url}}" alt="">
-                    <div class="past-editions__pictures-card-data">
-                      <p class="past-editions__pictures-card-data-name">{{o.title}}</p>
-                      <p class="past-editions__pictures-card-data-role">{{o.past_edition.period}}</p>
-                    </div>
-                    <div class="img-overlay"></div>
+          {% for o in filtered_past_events %}
+            <div class="col-12 col-sm-6 col-md-6 col-lg-4 scroll_reveal">
+              <a href="{{site.baseurl}}{{ o.url }}">
+                <div class="past-editions__pictures-card aspect_ratio--past_editions">
+                  <img class="lazyload" data-src="{{o.past_edition.image | replace:'http://localhost:4000', site.url}}" alt="">
+                  <div class="past-editions__pictures-card-data">
+                    <p class="past-editions__pictures-card-data-name">{{o.title}}</p>
+                    <p class="past-editions__pictures-card-data-role">{{o.past_edition.period}}</p>
                   </div>
-                </a>
-              </div>
-            {% endunless %}
+                  <div class="img-overlay"></div>
+                </div>
+              </a>
+            </div>
           {% endfor %}
         </div>
       </div>

@@ -5,11 +5,9 @@ const state = {
   currentTab: 1,
   ww: $(window).width(),
   baseurl: '/',
-  initialScrolltopScheduleMenu: 0
+  initialScrolltopScheduleMenu: 0,
+  menu_voices_scrolltop: []
 };
-
-/*$(window).on('load', function() {
-});*/
 
 /**
  * Document ready
@@ -91,6 +89,7 @@ $(document).ready(() => {
     distance: '100px'
   });
   sr.reveal('.scroll_reveal');
+  $(`.schedule__tabs`).height($(`.tab__${state.currentTab}`).height() + 80);
 });
 
 /**
@@ -109,6 +108,45 @@ $(document).scroll(() => {
    * Play video
    */
   playVideo();
+
+  if (!state.menu_voices_scrolltop.length && $('#about').length) {
+    state.menu_voices_scrolltop = [
+      ['#about', $('#about').offset().top],
+      ['#schedule', $('#schedule').offset().top],
+      ['#past_editions', $('#past_editions').offset().top],
+      ['#contacts', $('#contacts').offset().top]
+    ];
+  }
+
+  if ($('#about').length) {
+    let current_id = 0;
+    for (let i = 0; i < state.menu_voices_scrolltop.length; i++) {
+      let scrollTop = state.menu_voices_scrolltop[i][1] - 160;
+      if (i == 1) {
+        scrollTop = scrollTop - 160;
+      } else if (i == 0) {
+        scrollTop = scrollTop - 200;
+      }
+      if ($(document).scrollTop() >= scrollTop) {
+        current_id = i;
+      }
+  
+      var scrollHeight = $(document).height();
+      var scrollPosition = $(window).height() + $(window).scrollTop();
+      if ((scrollHeight - scrollPosition) / scrollHeight === 0) {
+        current_id = 3;
+      }
+    }
+    $('.top_navbar__menu a').css({ borderBottom: '0px' });
+    $('.top_navbar__menu a')
+      .eq(current_id)
+      .css({ borderBottom: '3px solid #9d774f' });
+    if ($(document).scrollTop() < state.menu_voices_scrolltop[0][1] - 50) {
+      $('.top_navbar__menu a')
+      .eq(0)
+      .css({ borderBottom: '0px' });
+    }
+  }
 });
 
 /**
@@ -133,6 +171,7 @@ function displayScheduleTab(id) {
 
   $(`.tabselector__${state.currentTab}`).removeClass('active');
   state.currentTab = id;
+  $(`.schedule__tabs`).height($(`.tab__${id}`).height() + 80);
 
   if (ww < 769) {
     let nextPosition = $('.schedule__tabs').offset().top - 200;
@@ -165,6 +204,8 @@ var onResizeDebounced = debounce(() => {
   $('.schedule__line-date-element-sizer--mobile .line_background').css({
     width: `${scheduleMenuWidth}px`
   });
+
+  displayScheduleTab(state.currentTab);
 }, 150);
 
 window.addEventListener('resize', onResizeDebounced);

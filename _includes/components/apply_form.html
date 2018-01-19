@@ -1,21 +1,25 @@
 <div class="apply_form">
   <div class="content">
-    <form>
+    <form accept-charset="UTF-8" action="https://usebasin.com/f/c33cc273093c" method="POST">
       <div class="apply_form--close-container">
         <a onclick="close_apply_form()">
           <img src="{{'/assets/img/icons/close_modal.svg' | relative_url }}" alt=""> <span>CLOSE FORM</span>
           <div class="general__clear"></div>
         </a>
       </div>
-      <p class="title--second--big">1. What’s your full name?</p>
+      <p class="title--second--big">What's your full name?</p>
       <input type="text" name="fullname">
 
-      <p class="title--second--big">2. What's your LinkedIn profile (or other URL where we can learn more about you)?</p>
-      <input type="text" name="linkedin">
-
-      <p class="title--second--big">3. Could you share your email address with us? So we can get in touch should we need to send you an invite!</p>
-      <input type="email" name="email">
+      <p class="title--second--big" >Email?</p>
+      <input type="email" name="email" id="email" required>
       <p class="apply_form__error_message mail"></p>
+
+      <p class="title--second--big">What do you do?</p>
+      <input type="text" name="occupation">
+
+      <p class="title--second--big">Anything else we should know?</p>
+      <input type="text" name="anything-else">
+
 
       <input type="submit" value="Register!" class="apply_form__register-button pulse" /> 
       <label class="apply_form--push-enter">push ENTER</label>

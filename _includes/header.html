@@ -1,12 +1,17 @@
-<div class="header__{{include.type}}">
-  {% if include.type == "home" %}
+{% if page.url == '/' %}
   {% for post in site.tags.event limit: 1 %}
     {% assign current_event = post %}
   {% endfor %}
+{% else %}
+  {% assign current_event = page %}
+{% endif %}
+
+<div class="header__{{include.type}}" style="background-image: url('{{current_event.header_home.image}}');">
+  {% if include.type == "home" %}
   <div class="header__home-content">
     <div class="container scroll_reveal">
-      <h1 class="header__home-content--title-big">European Venture Retreat</h1>
-      <h3 class="header__home-content--title-small">A community of 60 entrepreneurs and investors surrounded by the Dolomites</h3>
+      <h1 class="header__home-content--title-big">{{current_event.header_home.title}}</h1>
+      <h3 class="header__home-content--title-small">{{current_event.header_home.subtitle}}</h3>
       <h2 class="header__home-content--title-medium">WHEN</h2>
       <h2 class="header__home-content--title-medium gibson">{{current_event.when_header}}</h2>
       <a class="header__home-content--button" onclick="open_apply_form()">Apply to attend</a>

@@ -16,7 +16,6 @@ function open_apply_form() {
 }
 
 function close_apply_form() {
-  console.log('yolo close');
   let ww = $(window).width();
   let marginRightToApply = '-50vw';
   if (ww <= 1100) {
@@ -97,13 +96,13 @@ $('.apply_form__register-button').focusout(function() {
 });
 
 $('.apply_form form').submit(function(e) {
-  e.preventDefault();
+  /*e.preventDefault();*/
   if (enableSubmitFnc()) {
     var data = $('.apply_form form').serialize();
     $('.apply_form--sending-message').show();
-    alert(data);
+    /*alert(data);*/
   }
-  return false;
+  /*return false;*/
 });
 
 function validateEmail(email) {

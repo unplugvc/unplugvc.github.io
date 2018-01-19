@@ -5,7 +5,34 @@ layout: event
 {% assign past_events = site.tags.event %}
 
 <!DOCTYPE html>
+<!--
 
+      .-
+     `+d/
+    -hmm/
+   ommmm/
+  `mmmmm/
+  `mmmmm/ .:+ssyso+-`
+  `mmmmmsydmmmmmmmmmho.
+  `mmmmmmh+:---/+ssssyd:
+  `mmmmmh.     /     .md-
+  `mmmmmo..-`       .ommo
+  `mmmmm+..`    ./oydmmm/
+  `mmmmm/      /dmmmmmmh`
+  `mmmmm/    `smmmmmmms`
+  `mmmmm/  `+dmmmmmy+.
+   :::::.   `-::-.`
+
+Hey!
+
+Here’s the team of Belka. We designed and developed this website! Wanna meet us? Just drop an email at hello@belka.us
+Don’t tell anyone about this easter egg ;)
+
+Thanks for the visit!
+Belka Team
+
+
+-->
 <html lang="en">
 
 <head>
@@ -31,6 +58,12 @@ layout: event
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="{{'/assets/img/progressive_web_app' | relative_url}}/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
+
+  <link rel="stylesheet" href="https://unpkg.com/bootstrap@4.0.0-beta.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" />
+  <!-- Custom css -->
+  <link rel="stylesheet" href="{{'/css/main.css' | relative_url }}">
 </head>
 
 <body>
@@ -42,8 +75,8 @@ layout: event
     <div class="container">
       <div class="row">
         <div class="col-12 col-sm-6 scroll_reveal">
-          {% include components/headings.html big="HOW WAS IT?" small="A weekend to unplug and connect." %} {% for words in page.how_was_it
-          %}
+          {% include components/headings.html big="HOW WAS IT?" small="A weekend to unplug and connect." %}
+          {% for words in page.how_was_it %}
           <p class="text">
             {{ words }}
           </p>
@@ -71,56 +104,67 @@ layout: event
     <img class="carousel__home__mountain-profile" src="{{'/assets/img/mountain_profile_2.svg' | relative_url}}" alt="">
   </div>
 
-  <div class="speakers">
+  <div class="what-happened scroll_reveal">
     <div class="container">
-      <div class="row">
-        <div class="col-12 scroll_reveal">
-          {% include components/headings.html big="SPEAKERS" small="Amazing speakers for an amazing event" %}
-        </div>
-        <div class="col-12 speakers__pictures">
-          <div class="row">
-            {% for speaker in page.speakers %}
-            <div class="col-sm-4 col-md-4 col-lg-3 scroll_reveal">
-              <div class="speakers__pictures-card aspect_ratio--speakers">
-                <img class="lazyload" data-src="{{speaker.image | replace:'http://localhost:4000', site.url}}" alt="">
-                <div class="speakers__pictures-card-data">
-                  <p class="speakers__pictures-card-data-name">{{speaker.name}}</p>
-                  <p class="speakers__pictures-card-data-role">{{speaker.role}}</p>
-                </div>
-                <div class="img-overlay"></div>
-              </div>
+        <div class="row">
+            <div class="col-12 scroll_reveal">
+              {% include components/headings.html big="VIDEO" small="What happened last time" %}
             </div>
-            {% endfor %}
-          </div>
         </div>
-      </div>
-    </div>
-    <div class="speakers__pictures--mobile scroll_reveal">
-      {% for speaker in page.speakers %}
-      <div class="speakers__pictures-card aspect_ratio--speakers">
-        <img class="lazyload" data-src="{{speaker.image | replace:'http://localhost:4000', site.url}}" alt="">
-        <div class="speakers__pictures-card-data">
-          <p class="speakers__pictures-card-data-name">{{speaker.name}}</p>
-          <p class="speakers__pictures-card-data-role">{{speaker.role}}</p>
-        </div>
-        <div class="img-overlay"></div>
-      </div>
-      {% endfor %}
+    <!-- <video id="event_video" width="100%" height="auto" muted playsinline>
+      <source src="{{page.video | replace:'http://localhost:4000', site.url}}" type="video/mp4">
+      Your browser does not support the video tag.
+    </video> -->
+    <!-- <iframe width="100%" height="590px" src="https://www.youtube.com/embed/pqKRMq3bWrw?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+    </iframe> -->
+        <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/dUyhWS0rR1A' frameborder='0' allowfullscreen></iframe></div>
+  
     </div>
   </div>
 
-  <div class="what-happened scroll_reveal">
-    <video id="event_video" width="100%" height="auto" muted playsinline>
-      <source src="{{page.video | replace:'http://localhost:4000', site.url}}" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-  </div>
+  <div class="speakers">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 scroll_reveal">
+            {% include components/headings.html big="SPEAKERS" small="Amazing speakers for an amazing event" %}
+          </div>
+          <div class="col-12 speakers__pictures">
+            <div class="row">
+              {% for speaker in page.speakers %}
+              <div class="col-sm-4 col-md-4 col-lg-3 scroll_reveal">
+                <div class="speakers__pictures-card aspect_ratio--speakers">
+                  <img class="lazyload" data-src="{{speaker.image | replace:'http://localhost:4000', site.url}}" alt="">
+                  <div class="speakers__pictures-card-data">
+                    <p class="speakers__pictures-card-data-name">{{speaker.name}}</p>
+                    <p class="speakers__pictures-card-data-role">{{speaker.role}}</p>
+                  </div>
+                  <div class="img-overlay"></div>
+                </div>
+              </div>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="speakers__pictures--mobile scroll_reveal">
+        {% for speaker in page.speakers %}
+        <div class="speakers__pictures-card aspect_ratio--speakers">
+          <img class="lazyload" data-src="{{speaker.image | replace:'http://localhost:4000', site.url}}" alt="">
+          <div class="speakers__pictures-card-data">
+            <p class="speakers__pictures-card-data-name">{{speaker.name}}</p>
+            <p class="speakers__pictures-card-data-role">{{speaker.role}}</p>
+          </div>
+          <div class="img-overlay"></div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
 
   <div class="attendees">
     <div class="container">
       <div class="row">
         <div class="col-12 scroll_reveal">
-          {% include components/headings.html big="THE ATTENDEES" small="Amazing attendees" %}
+          {% include components/headings.html big="ATTENDEES" small="Representing" %}
         </div>
         <div class="col-12">
           <div class="row">
@@ -137,52 +181,79 @@ layout: event
     </div>
   </div>
 
-  <div class="past-editions">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 scroll_reveal">
-          {% include components/headings.html big="PAST EDITIONS" small="Overview of previous editions" %}
-        </div>
-        <div class="col-12 past-editions__pictures">
-          <div class="row">
-            {% for o in past_events %} {% unless forloop.first %}
-            <div class="col-12 col-sm-6 col-md-6 col-lg-4 scroll_reveal">
-              <a href="{{site.baseurl}}{{ o.url }}">
-                <div class="past-editions__pictures-card aspect_ratio--past_editions">
-                  <img class="lazyload" data-src="{{o.past_edition.image | replace:'http://localhost:4000', site.url}}" alt="">
-                  <div class="past-editions__pictures-card-data">
-                    <p class="past-editions__pictures-card-data-name">{{o.title}}</p>
-                    <p class="past-editions__pictures-card-data-role">{{o.past_edition.period}}</p>
+  {% assign curDate = site.time | date: '%s' %}
+  {% assign filtered_past_events = "" | split: ',' %}
+  {% for post in past_events %}
+      {% assign postStartDate = post.date | date: '%s' %}
+      {% if postStartDate < curDate %}
+          {% assign filtered_past_events = filtered_past_events | push: post %}
+      {% endif %}
+  {% endfor %}
+
+  {% for post in filtered_past_events %}
+    {% if post.url != page.url %}
+      {% capture post_count %} {{ post_count | plus: 1 }} {% endcapture %}
+    {% endif %}
+  {% endfor %}
+
+  {% if post_count %}
+    <div class="past-editions">
+      <div class="container">
+        <div class="row">
+          
+          <div class="col-12 scroll_reveal">
+            {% include components/headings.html big="PAST EDITIONS" small="Overview of previous editions" %}
+          </div>
+
+          <div class="col-12 past-editions__pictures">
+            <div class="row">
+              {% for o in filtered_past_events %}
+                {% if o.url != page.url %}
+                  <div class="col-12 col-sm-6 col-md-6 col-lg-4 scroll_reveal">
+                    <a href="{{site.baseurl}}{{ o.url }}">
+                      <div class="past-editions__pictures-card aspect_ratio--past_editions">
+                        <img class="lazyload" data-src="{{o.past_edition.image | replace:'http://localhost:4000', site.url}}" alt="">
+                        <div class="past-editions__pictures-card-data">
+                          <p class="past-editions__pictures-card-data-name">{{o.title}}</p>
+                          <p class="past-editions__pictures-card-data-role">{{o.past_edition.period}}</p>
+                        </div>
+                        <div class="img-overlay"></div>
+                      </div>
+                    </a>
                   </div>
-                  <div class="img-overlay"></div>
-                </div>
-              </a>
+                {% endif %}
+              {% endfor %}
             </div>
-            {% endunless %} {% endfor %}
           </div>
         </div>
       </div>
+      <div class="past-editions__pictures--mobile scroll_reveal">
+        {% for o in past_events %}
+          {% if o.url != page.url %}
+            <a href="{{site.baseurl}}{{ o.url }}">
+              <div class="past-editions__pictures-card aspect_ratio--past_editions">
+                {{o.past_edition.image}}
+                <img class="lazyload"
+                  data-src="{{o.past_edition.image | replace:'http://localhost:4000', site.url}}" alt="">
+                <div class="past-editions__pictures-card-data">
+                  <p class="past-editions__pictures-card-data-name">{{o.title}}</p>
+                  <p class="past-editions__pictures-card-data-role">{{o.past_edition.period}}</p>
+                </div>
+                <div class="img-overlay"></div>
+              </div>
+            </a>
+          {% endif %}
+        {% endfor %}
+      </div>
     </div>
-    <div class="past-editions__pictures--mobile scroll_reveal">
-      {% for o in past_events %} {% unless forloop.first %}
-      <a href="{{site.baseurl}}{{ o.url }}">
-        <div class="past-editions__pictures-card aspect_ratio--past_editions">
-          <img class="lazyload" data-src="{{o.past_edition.image | replace:'http://localhost:4000', site.url}}" alt="">
-          <div class="past-editions__pictures-card-data">
-            <p class="past-editions__pictures-card-data-name">{{o.title}}</p>
-            <p class="past-editions__pictures-card-data-role">{{o.past_edition.period}}</p>
-          </div>
-          <div class="img-overlay"></div>
-        </div>
-      </a>
-      {% endunless %} {% endfor %}
-    </div>
-  </div>
+  {% endif %}
+  
 
   {% include components/page_overlay.html %}
   {% include components/apply_form.html %}
   {% include footer.html %}
   {% include scripts.html %}
+
 </body>
 
 </html>
