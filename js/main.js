@@ -172,10 +172,10 @@ function displayScheduleTab(id) {
   $(`.tabselector__${state.currentTab}`).removeClass('active');
   state.currentTab = id;
   $(`.schedule__tabs`).height($(`.tab__${id}`).height() + 80);
-
+  $('html,body').stop(true);
   if (ww < 769) {
     let nextPosition = $('.schedule__tabs').offset().top - 200;
-    $('html,body').animate({ scrollTop: nextPosition }, 'slow', function() {
+    $('html,body').animate({ scrollTop: nextPosition }, function() {
       $(`.tabselector__${state.currentTab}`).addClass('active');
       $(`.tab__1`).css({ marginLeft: `-${100 * (state.currentTab - 1)}%` });
     });
@@ -205,7 +205,6 @@ var onResizeDebounced = debounce(() => {
     width: `${scheduleMenuWidth}px`
   });
 
-  displayScheduleTab(state.currentTab);
 }, 150);
 
 window.addEventListener('resize', onResizeDebounced);
