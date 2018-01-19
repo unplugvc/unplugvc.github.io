@@ -120,7 +120,7 @@ schedule:
   - time: 7.30 AM
     what: Breakfast
     description: Get your energy for the day!
-   - time: 8.30 AM
+  - time: 8.30 AM
     what: Skiing!
     description: We leave the Chalet and go on the slopes.
   - time: 9.30 AM
