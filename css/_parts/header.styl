@@ -85,6 +85,7 @@ $home_header_img_path = $base_url '/assets/img/mountain_placeholder.jpg'
     line-height: 64px
     margin-top: 44px
     text-align: center
+    transition: transform 0.3s ease
     width: 198px
 
     &:focus
@@ -92,7 +93,10 @@ $home_header_img_path = $base_url '/assets/img/mountain_placeholder.jpg'
       text-decoration: none
 
     &:hover
+      animation: pulse 2s infinite
       color: $white
+      cursor: pointer
+      transition: transform 0.3s ease
 
   .header__page
     background-color: green
@@ -205,3 +209,26 @@ $home_header_img_path = $base_url '/assets/img/mountain_placeholder.jpg'
   .header__home-content
     margin-bottom: calc(160px + 8vh)
     top: 30px
+
+@keyframes pulse
+  0%
+    -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.8), 0 2px 8px 0 $black-default
+
+  70%
+    -webkit-box-shadow: 0 0 0 10px rgba(255, 255, 255, 0), 0 2px 8px 0 $black-default
+
+  100%
+    -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0), 0 2px 8px 0 $black-default
+
+@keyframes pulse
+  0%
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.8), 0 2px 8px 0 $black-default
+    -moz-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.8), 0 2px 8px 0 $black-default
+
+  70%
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0), 0 2px 8px 0 $black-default
+    -moz-box-shadow: 0 0 0 10px rgba(255, 255, 255, 0), 0 2px 8px 0 $black-default
+
+  100%
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0), 0 2px 8px 0 $black-default
+    -moz-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0), 0 2px 8px 0 $black-default
