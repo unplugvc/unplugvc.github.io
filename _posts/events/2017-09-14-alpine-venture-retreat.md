@@ -4,7 +4,8 @@ tags:
 - event
 layout: event
 permalink: "/event/:title"
-location: Trentino - Alto Adige, Italy
+venue: Tierseralp Refuge
+location: Seiser Alm, Sudtirol, Italy
 image: http://localhost:4000/assets/img/location/1.png
 when_header: September 14-17, 2017
 how_was_it:
