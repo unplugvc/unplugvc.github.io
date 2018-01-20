@@ -5,7 +5,8 @@ tags:
 - event
 layout: event
 permalink: "/event/:title"
-location: Trentino - Alto Adige, Italy
+venue: Unplug Chalet
+location: Canazei, Trentino, Italy
 image: http://localhost:4000/assets/img/location/villetta-maria.jpeg
 when_header: March 04-07, 2018
 how_was_it:
