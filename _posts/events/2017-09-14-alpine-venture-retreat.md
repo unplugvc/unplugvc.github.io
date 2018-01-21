@@ -1,5 +1,5 @@
 ---
-title: Alpine Venture Retreat
+title: European Venture Retreat
 tags:
 - event
 layout: event
