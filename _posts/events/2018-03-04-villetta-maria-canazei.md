@@ -14,7 +14,7 @@ how_was_it:
   with fellow entrepreneurs and investors, but most of all to feel the pull of nature,
   enjoying the silence and solitude that you can only get by being in the middle of
   the mountains.
-- The chalet is an historic hut used by mountaineers for decades, but has been completely restored and remodeled into a *** hotel, with a restaurant.
+- The chalet is secluded in the woods, where you can't hear a sound other than animals, but it's just a 7 minutes drives from Canazei, a small gem of a village in the heart of the Dolomites. It is a 3-star hotel with its own restaurant and bar.
 video: https://www.youtube.com/watch?v=dUyhWS0rR1A
 caratteristics:
   altitude: 1450 mt
