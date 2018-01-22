@@ -174,7 +174,7 @@ pricing_table:
     price: 890
     elements: 
       - icon: http://localhost:4000/assets/img/pricing_table/double_room.svg
-        text: ['3 nights in a private  Hotel***', 'private bed in a 3 or 4 people room,']
+        text: ['3 nights in a private  Hotel***', 'private bed in a 3 or 4 people room']
       - icon: http://localhost:4000/assets/img/pricing_table/transfer.svg
         text: ['Transfer to and from Verona']
       - icon: http://localhost:4000/assets/img/pricing_table/SPA.svg
