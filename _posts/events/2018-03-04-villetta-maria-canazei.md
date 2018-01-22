@@ -208,15 +208,15 @@ header_home:
   subtitle: An amazing 3-day retreat in the Dolomites with fellow investors and entrepreneurs
   image: https://unplug.vc/assets/img/val-san-nicolo.jpg
 footer_sponsors:
-#- name: "Belka"
-#  image: "http://localhost:4000/assets/img/logo_belka.svg"
-#  link: "http://belka.us/"
 #- name: "Trentino"
 #  image: "http://localhost:4000/assets/img/sponsor/trentino.png"
 #  link: "https://www.trentinomarketing.org/en/"
 - name: Token Economy
   image: http://localhost:4000/assets/img/sponsor/tokeneconomy.png
   link: https://www.tokeneconomy.co
+- name: Belka
+  image: http://localhost:4000/assets/img/sponsor/logo_belka.svg
+  link: https://belka.us/en
 #- name: "Dolomiti"
 #  image: "http://localhost:4000/assets/img/sponsor/dolomitiUnesco.png"
 #  link: "http://www.dolomitiunesco.info/la-fondazione-dolomiti-unesco/?lang=en"
