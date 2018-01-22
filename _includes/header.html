@@ -6,7 +6,9 @@
   {% assign current_event = page %}
 {% endif %}
 
-<div class="header__{{include.type}}" style="background-image: url('{{current_event.header_home.image}}');">
+{% assign dev_base_url = 'http://localhost:4000' %}
+
+<div class="header__{{include.type}}" style="background-image: url('{{ current_event.header_home.image | replace:dev_base_url, site.url}}')">
   {% if include.type == "home" %}
   <div class="header__home-content">
     <div class="container scroll_reveal">
