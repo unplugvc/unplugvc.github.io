@@ -95,7 +95,7 @@ Belka Team
       {% for image in page.gallery-small.image %}
         {% assign prev_i = forloop.index | minus: 1 %}
         {% assign dev_base_url = 'http://localhost:4000' %}
-        <div class="carousel__event--element" style="background-image: url('{{ image  | replace:dev_base_url, site.url}}')">
+        <div class="carousel__event--element" style="background-image: url('{{ image | replace:dev_base_url, site.url}}')">
             <a data-fancybox="gallery" href="{{page.gallery-big.image[prev_i] | replace:'http://localhost:4000', site.url}}" >
             </a>
         </div>
