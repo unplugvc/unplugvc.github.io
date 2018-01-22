@@ -29,7 +29,7 @@ speakers:
   image: http://localhost:4000/assets/img/speakers/nadia.jpeg
 - name: To be announced
   role: TBD
-  image: 
+  image: http://localhost:4000/assets/img/speakers/placeholder_speakers.jpg
 # attendees:
 # - name: Algolia
 #   image: http://localhost:4000/assets/img/attendees/algolia.png
