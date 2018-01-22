@@ -206,7 +206,7 @@ pricing_table:
 header_home: 
   title: 2018 Winter Venture Retreat
   subtitle: An amazing 3-day retreat in the Dolomites with fellow investors and entrepreneurs
-  image: http://unplug.vc/assets/img/val-san-nicolo.jpg
+  image: https://unplug.vc/assets/img/val-san-nicolo.jpg
 footer_sponsors:
 #- name: "Belka"
 #  image: "http://localhost:4000/assets/img/logo_belka.svg"
