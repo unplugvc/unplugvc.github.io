@@ -19,7 +19,7 @@
             {% for element in current_event.pricing_table[0].elements %} 
               <div class="row price_table__card--body-element">
                 <div class="col-3">
-                  <img src="{{element.icon}}" alt="">
+                  <img src="{{element.icon | replace:'http://localhost:4000', site.url}}" alt="">
                 </div>
                 <div class="col-9">
                   {% for t in element.text %} 
@@ -49,7 +49,7 @@
             {% for element in current_event.pricing_table[1].elements %} 
               <div class="row price_table__card--body-element">
                 <div class="col-3">
-                  <img src="{{element.icon}}" alt="">
+                  <img src="{{element.icon | replace:'http://localhost:4000', site.url}}" alt="">
                 </div>
                 <div class="col-9">
                   {% for t in element.text %} 
@@ -79,7 +79,7 @@
             {% for element in current_event.pricing_table[2].elements %} 
               <div class="row price_table__card--body-element">
                 <div class="col-3">
-                  <img src="{{element.icon}}" alt="">
+                  <img src="{{element.icon | replace:'http://localhost:4000', site.url}}" alt="">
                 </div>
                 <div class="col-9">
                   {% for t in element.text %} 
