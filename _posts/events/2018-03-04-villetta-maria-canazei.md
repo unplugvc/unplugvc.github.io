@@ -181,6 +181,8 @@ pricing_table:
         text: ['Entrance in the QT Dolomiti Terme SPA', 'including Dinner']
       - icon: http://localhost:4000/assets/img/pricing_table/special_dinner.svg
         text: ['1 Lunch in a surprise location', '1 typical dinner in the hotel','1 special dinner in a refuge']
+      - icon:
+        text: ['22% Italian VAT included']
   - title: Private Double Room Ticket
     price: 1190
     elements: 
@@ -192,6 +194,8 @@ pricing_table:
         text: ['Entrance in the QT Dolomiti Terme SPA', 'including Dinner']
       - icon: http://localhost:4000/assets/img/pricing_table/special_dinner.svg
         text: ['1 Lunch in a surprise location', '1 typical dinner in the hotel','1 special dinner in a refuge']
+      - icon:
+        text: ['22% Italian VAT included']
   - title: Private Single Room Ticket
     price: 1690
     elements: 
@@ -203,6 +207,8 @@ pricing_table:
         text: ['Entrance in the QT Dolomiti Terme SPA', 'including Dinner']
       - icon: http://localhost:4000/assets/img/pricing_table/special_dinner.svg
         text: ['1 Lunch in a surprise location', '1 typical dinner in the hotel','1 special dinner in a refuge']
+      - icon:
+        text: ['22% Italian VAT included']
 header_home: 
   title: 2018 Winter Venture Retreat
   subtitle: An amazing 3-day retreat in the Dolomites with fellow investors and entrepreneurs
