@@ -223,6 +223,9 @@ footer_sponsors:
 - name: Belka
   image: http://localhost:4000/assets/img/sponsor/logo_belka.svg
   link: https://belka.us/en
+- name: Tunistic Capital
+  image: http://localhost:4000/assets/img/sponsor/tunistic.jpg
+  link: https://tunistic.com
 #- name: "Dolomiti"
 #  image: "http://localhost:4000/assets/img/sponsor/dolomitiUnesco.png"
 #  link: "http://www.dolomitiunesco.info/la-fondazione-dolomiti-unesco/?lang=en"
