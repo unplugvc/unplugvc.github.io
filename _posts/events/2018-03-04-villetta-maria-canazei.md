@@ -214,9 +214,6 @@ header_home:
   subtitle: An amazing 3-day retreat in the Dolomites with fellow investors and entrepreneurs
   image: https://unplug.vc/assets/img/val-san-nicolo.jpg
 footer_sponsors:
-#- name: "Trentino"
-#  image: "http://localhost:4000/assets/img/sponsor/trentino.png"
-#  link: "https://www.trentinomarketing.org/en/"
 - name: Token Economy
   image: http://localhost:4000/assets/img/sponsor/tokeneconomy.png
   link: https://www.tokeneconomy.co
