@@ -22,7 +22,7 @@ caratteristics:
   beds: 60 people
 past_edition:
   period: 04 - 05 - 06 - 07 March 2018
-  image: http://localhost:4000/assets/img/edition_cards/tires.png
+  image: http://localhost:4000/assets/img/location/villetta-canazei-card.png
 speakers:
 - name: Nadia Eghbal
   role: Open Source Lead, Github
