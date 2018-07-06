@@ -5,7 +5,7 @@ tags:
 layout: event
 permalink: "/event/:title"
 location: Maddona di Campiglio, Trentino, Italy
-image: http://localhost:4000/assets/img/location/villetta-maria.jpeg
+image: http://localhost:4000/assets/img/tuckett/RIfugio-Tuckett-15_122216_1412333835_o.jpg
 when_header: September 12-14, 2018
 how_was_it:
 - We have chosen the best of the best. The Unplug chalet is in front of the Marmolada,
@@ -18,22 +18,22 @@ how_was_it:
   of the Dolomites. It is a 3-star hotel with its own restaurant and bar.
 video: https://www.youtube.com/watch?v=dUyhWS0rR1A
 caratteristics:
-  altitude: 1450 mt
-  cooking: Traditional
-  beds: 60 people
+  altitude: 2250 mt
+  cooking: Local and Traditional
+  beds: 100 people
 past_edition:
   period: 04 - 05 - 06 - 07 March 2018
   image: http://localhost:4000/assets/img/edition_cards/tires.png
-speakers:
-- name: Nadia Eghbal
-  role: Open Source Lead, Github
-  image: http://localhost:4000/assets/img/speakers/nadia.jpeg
-- name: To be announced
-  role: TBD
-  image: http://localhost:4000/assets/img/speakers/placeholder_speakers.jpg
-attendees:
-- name: Algolia
-  image: http://localhost:4000/assets/img/attendees/algolia.png
+# speakers:
+# - name: Nadia Eghbal
+#   role: Open Source Lead, Github
+#   image: http://localhost:4000/assets/img/speakers/nadia.jpeg
+# - name: To be announced
+#   role: TBD
+#   image: http://localhost:4000/assets/img/speakers/placeholder_speakers.jpg
+# attendees:
+# - name: Algolia
+#   image: http://localhost:4000/assets/img/attendees/algolia.png
 organizers:
 - name: STEFANO BERNARDI
   role: Investor
