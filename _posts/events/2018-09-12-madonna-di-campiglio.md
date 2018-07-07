@@ -8,21 +8,17 @@ location: Maddona di Campiglio, Trentino, Italy
 image: http://localhost:4000/assets/img/tuckett/RIfugio-Tuckett-15_122216_1412333835_o.jpg
 when_header: September 12-14, 2018
 how_was_it:
-- We have chosen the best of the best. The Unplug chalet is in front of the Marmolada,
-  the highest mountain of the Dolomites. It is an occasion to really deeply connect
-  with fellow entrepreneurs and investors, but most of all to feel the pull of nature,
-  enjoying the silence and solitude that you can only get by being in the middle of
-  the mountains.
-- The chalet is secluded in the woods, where you can't hear a sound other than animals,
-  but it's just a 7 minutes drives from Canazei, a small gem of a village in the heart
-  of the Dolomites. It is a 3-star hotel with its own restaurant and bar.
+- We have chosen the best of the best. The Unplug refuge is in the heart of Brenta Dolomites, grandiose mountains in the north part of Trentino. It is an occasion to really deeply connect with fellow entrepreneurs and investors, but most of all to feel the pull of nature, enjoying the silence and solitude that you can only get by being in the middle of the mountains.
+
+- The hut is set in the Dolomites at 2272 mt., where your view can spread above the neighboring mountains and you can't hear a sound other than animals. The location maintains the typical character of alpine refuge, with basic-wood accommodations, intense food experience and cozy atmosphere.
+
 video: https://www.youtube.com/watch?v=dUyhWS0rR1A
 caratteristics:
   altitude: 2250 mt
   cooking: Local and Traditional
   beds: 100 people
 past_edition:
-  period: 04 - 05 - 06 - 07 March 2018
+  period: 12 - 13 - 14 - 15 September 2018
   image: http://localhost:4000/assets/img/edition_cards/tires.png
 # speakers:
 # - name: Nadia Eghbal
@@ -40,83 +36,83 @@ organizers:
   image: http://localhost:4000/assets/img/organizers/ste.jpg
 - name: LORENZO SANNA
   role: Business Developer
-  image: http://localhost:4000/assets/img/organizers/sanna.png
+  image: http://localhost:4000/assets/img/organizers/lor.png
 schedule:
-- day: SUNDAY, MARCH 04
+- day: WEDNESDAY, SEPTEMBER 12
   program:
-  - time: 2.00 PM
-    what: We leave from Verona
-    description: Meeting points outside the train station and airport
-  - time: 5.00 PM
-    what: Arrival at Unplug's Chalet
-    description: Check-in time and find your room mate fot the next days!
+  - time: 1.30 PM
+    what: We leave from Milano Malpensa Airport
+    description: Meeting points outside the Terminal 2
   - time: 5.30 PM
-    what: Ski test and rental
-    description: Only for wannabe skiers
-  - time: 6.00 PM
+    what: Arrival at Unplug's Resort
+    description: Check-in time and find your room mate fot the next days!
+  - time: 19.00 PM
+    what: Leaving the resort
+    description: Take the cable car to the Unplug Chalet
+  - time: 20.00 PM
     what: Welcome Bonfire Aperitivo
     description: Drink, get cozy and get to meet your fellow adventurers.
-  - time: 8.00 PM
+  - time: 20.30 PM
     what: Dinner at Unplug's Chalet
     description: Typical dinner, with a simple 1 minute presentation of each guest.
-- day: MONDAY, MARCH 05
+- day: THURSDAY, SEPTEMBER 13
   program:
   - time: 7.30 AM
     what: Breakfast
     description: Get your energy for the day!
-  - time: 8.30 AM
-    what: Skiing!
-    description: We leave the Chalet and go on the slopes.
-  - time: 9.30 AM
-    what: Sledding!
-    description: If skiing is not your sport, we have quite the fun alternative.
-  - time: 3.00 PM
-    what: Relax
-    description: We get back to the hotel and get changed.
-  - time: 5.00 PM
-    what: SPA TIME!
-    description: We're off to the magnificent QC Terme Dolomiti!
-  - time: 7.00 PM
-    what: Dinner at the Spa
-    description: Light dinner in our bathrobes, with some unconference talks.
-  - time: 10.00 PM
-    what: Back to Unplug Chalet
-    description: Unplug in our private bar
-- day: TUESDAY, MARCH 06
+  - time: 10.00 AM
+    what: Bring your backpak!
+    description: We leave the Resort and to reach our hiking path.
+  - time: 10.40 AM
+    what: Hiking!
+    description: The hiking adventure will start!
+  - time: 12.00 PM
+    what: Lunch
+    description: Typical lunch to Rifugio Casinei
+  - time: 15.00 PM
+    what: Let's see the Hut!
+    description: Accommodation, relax and chat
+  - time: 17.00 PM
+    what: Yoga
+    description: Streching with the yoga teacher
+  - time: 19.30 PM
+    what: Dinner
+    description: Home made, slowfood and very typical dinner.
+- day: FRIDAY, SEPTEMBER 14
   program:
+  - time: 6.30 AM
+    what: Yoga
+    description: Connect body and mind with the nature!
   - time: 7.30 AM
     what: Breakfast
     description: Get your energy for the day!
-  - time: 8.30 AM
-    what: Skiing!
-    description: We leave the Chalet and go on the slopes.
   - time: 9.30 AM
-    what: Snowshoe Time! (For non-skiers)
-    description: Hike through the dolomites with mountain guides on snowshoes!
-  - time: 4.00 PM
-    what: Return to Unplug Chalet
-    description: Shower, relax, drink and chat.
+    what: Chatting/Relax/Meditation!
+    description: Feel free to spend the morning as you want
+  - time: 12.30 AM
+    what: Lunch Time
+    description: Typical Alpine Lunch
+  - time: 14.30 PM
+    what: Bye Bye Mpuntain Hut!
+    description: We go In a new Hiking adventure
   - time: 5.30 PM
-    what: Snowmobile ride to Malga Monzoni
-    description: Bring some warm stuff and be ready for an adventure
-  - time: 6.30 PM
-    what: Talks
-    description: Inspiring talks from your fellow mountaineers
+    what: Back to the Unplug Resort
+    description: Shower/SPA/Relax/Chatting
   - time: 7.30 PM
     what: Dinner
-    description: Home made, slowfood and very typical dinner at Malga Monzoni.
-  - time: 10.00 PM
-    what: Sled down the mountain!
-    description: It is time to sled back... It will be night so bring a light!
-- day: WEDNESDAY, MARCH 07
+    description: Home made, slowfood and very typical food
+  - time: 9.00 PM
+    what: Talks
+    description: Inspiring talks from your fellow mountaineers
+- day: SATURDAY, SEPTEMBER 13
   program:
-  - time: 8.00 AM
+  - time: 7.30 AM
     what: Breakfast
     description: Meet in the Hotel lobby and load up on energies for the day.
-  - time: 9.00 AM
+  - time: 8.30 AM
     what: Talks for whoever is already awake.
     description: Last talks before leaving
-  - time: 11.00 AM
+  - time: 10.00 AM
     what: Bye Bye Unplug Chalet
     description: It's time to go back to the real world! Our bus leaves now.
   - time: 12.30 AM
@@ -124,10 +120,10 @@ schedule:
     description: Promise it's worth it.
   - time: 4.30 PM
     what: Bye!
-    description: We say good bye! Please ensure you book travel from Verona's Airport
+    description: We say good bye! Please ensure you book travel from Milano Malpensa Airport
       at 5:30pm at the earliest. If you need to leave earlier, please contact us before
       purchasing a ticket to make sure we can accomodate. We suggest spending the
-      night in Verona and booking travel for the next morning! It is a stunning city.
+      night in Milano and booking travel for the next morning! It is a stunning city.
 date: '2018-09-12 12:00:00 +0000'
 venue: Rifugio Tuckett e Sella
 gallery-small:
@@ -164,17 +160,15 @@ pricing_table:
   elements:
   - icon: http://localhost:4000/assets/img/pricing_table/double_room.svg
     text:
-    - 3 nights in a private  Hotel***
-    - private bed in a 3 or 4 people room
+    - 2 nights in a Hotel****
+    - 1 nights in a Mountain hut
+    - private bed in a 2 people room
   - icon: http://localhost:4000/assets/img/pricing_table/transfer.svg
     text:
-    - Transfer to and from Verona
-  - icon: http://localhost:4000/assets/img/pricing_table/SPA.svg
-    text:
-    - Entrance in the QT Dolomiti Terme SPA
-    - including Dinner
+    - Transfer to and from Airport Milano Malpensa
   - icon: http://localhost:4000/assets/img/pricing_table/special_dinner.svg
     text:
+    - 1 special dinner in a mountain Chalet
     - 1 Lunch in a surprise location
     - 1 typical dinner in the hotel
     - 1 special dinner in a refuge
@@ -237,4 +231,3 @@ footer_sponsors:
   image: http://localhost:4000/assets/img/sponsor/semantic.png
   link: https://semantic.vc
 ---
-

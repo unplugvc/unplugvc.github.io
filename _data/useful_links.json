@@ -1,18 +1,18 @@
 [
   {
+    "label": "Unplug Resort",
+    "address": "http://www.hotelcarlomagno.com/en"
+  },
+  {
+    "label": "Unplug Hut",
+    "address": "http://www.rifugio-tuckett.it/en/"
+  },
+  {
     "label": "Unplug Chalet",
-    "address": "http://www.unionhotelscanazei.it/EN/289003/hotel-villetta-maria.php"
+    "address": "http://www.chaletfiat.net/"
   },
   {
-    "label": "Dolomiti Super Ski",
-    "address": "https://www.dolomitisuperski.com/en/live-info/open-slopes"
-  },
-  {
-    "label": "QC Terme",
-    "address": "https://www.qcterme.com/en/val-di-fassa/qc-terme-dolomiti"
-  },
-  {
-    "label": "Verona Airport",
-    "address": "http://www.aeroportoverona.it/en/passeggeri_t5/"
+    "label": "Milano Malpensa Airport",
+    "address": "http://www.milanomalpensa-airport.com/en"
   }
 ]
