@@ -5,7 +5,7 @@ tags:
 layout: event
 permalink: "/event/:title"
 location: Maddona di Campiglio, Trentino, Italy
-image: http://localhost:4000/assets/img/tuckett/RIfugio-Tuckett-15_122216_1412333835_o.jpg
+image: http://localhost:4000/assets/img/location/tuckett.jpeg
 when_header: September 12-14, 2018
 how_was_it:
 - We have chosen the best of the best. The Unplug refuge is in the heart of Brenta Dolomites, grandiose mountains in the north part of Trentino. It is an occasion to really deeply connect with fellow entrepreneurs and investors, but most of all to feel the pull of nature, enjoying the silence and solitude that you can only get by being in the middle of the mountains.
@@ -128,101 +128,102 @@ date: '2018-09-12 12:00:00 +0000'
 venue: Rifugio Tuckett e Sella
 gallery-small:
   image:
-  - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/01.jpg
-  - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/02.jpg
-  - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/03.jpg
-  - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/04.jpg
-  - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/05.jpg
-  - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/06.jpg
-  - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/07.jpg
-  - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/08.jpg
-  - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/09.jpg
-  - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/10.jpg
-  - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/11.jpg
-  - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/12.jpg
+  - http://localhost:4000/assets/img/events_photos/tuckett/01.jpg
+  - http://localhost:4000/assets/img/events_photos/tuckett/02.jpg
+  - http://localhost:4000/assets/img/events_photos/tuckett/03.jpg
+  - http://localhost:4000/assets/img/events_photos/tuckett/04.jpg
+  - http://localhost:4000/assets/img/events_photos/tuckett/05.jpg
+  - http://localhost:4000/assets/img/events_photos/tuckett/06.jpg
+  - http://localhost:4000/assets/img/events_photos/tuckett/07.jpg
+  - http://localhost:4000/assets/img/events_photos/tuckett/08.jpg
+  - http://localhost:4000/assets/img/events_photos/tuckett/09.jpg
+  - http://localhost:4000/assets/img/events_photos/tuckett/10.jpg
+  - http://localhost:4000/assets/img/events_photos/tuckett/11.jpg
+  - http://localhost:4000/assets/img/events_photos/tuckett/12.jpg
+  - http://localhost:4000/assets/img/events_photos/tuckett/13.jpg
+  - http://localhost:4000/assets/img/events_photos/tuckett/14.jpg
+  - http://localhost:4000/assets/img/events_photos/tuckett/15.jpg
+  - http://localhost:4000/assets/img/events_photos/tuckett/16.jpg
 gallery-big:
   image:
-  - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/big/01.jpg
-  - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/big/02.jpg
-  - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/big/03.jpg
-  - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/big/04.jpg
-  - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/big/05.jpg
-  - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/big/06.jpg
-  - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/big/07.jpg
-  - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/big/08.jpg
-  - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/big/09.jpg
-  - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/big/10.jpg
-  - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/big/11.jpg
-  - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/big/12.jpg
+  - http://localhost:4000/assets/img/events_photos/tuckett/big/01.jpg
+  - http://localhost:4000/assets/img/events_photos/tuckett/big/02.jpg
+  - http://localhost:4000/assets/img/events_photos/tuckett/big/03.jpg
+  - http://localhost:4000/assets/img/events_photos/tuckett/big/04.jpg
+  - http://localhost:4000/assets/img/events_photos/tuckett/big/05.jpg
+  - http://localhost:4000/assets/img/events_photos/tuckett/big/06.jpg
+  - http://localhost:4000/assets/img/events_photos/tuckett/big/07.jpg
+  - http://localhost:4000/assets/img/events_photos/tuckett/big/08.jpg
+  - http://localhost:4000/assets/img/events_photos/tuckett/big/09.jpg
+  - http://localhost:4000/assets/img/events_photos/tuckett/big/10.jpg
+  - http://localhost:4000/assets/img/events_photos/tuckett/big/11.jpg
+  - http://localhost:4000/assets/img/events_photos/tuckett/big/12.jpg
+  - http://localhost:4000/assets/img/events_photos/tuckett/big/13.jpg
+  - http://localhost:4000/assets/img/events_photos/tuckett/big/14.jpg
+  - http://localhost:4000/assets/img/events_photos/tuckett/big/15.jpg
+  - http://localhost:4000/assets/img/events_photos/tuckett/big/16.jpg
 pricing_table:
 - title: Early Bird Ticket
   price: 890
   elements:
   - icon: http://localhost:4000/assets/img/pricing_table/double_room.svg
     text:
-    - 2 nights in a Hotel****
-    - 1 nights in a Mountain hut
-    - private bed in a 2 people room
+    - 2 nights in a Hotel**** with SPA in Double Room 
+    - 1 night in a Mountain hut
   - icon: http://localhost:4000/assets/img/pricing_table/transfer.svg
     text:
-    - Transfer to and from Airport Milano Malpensa
+    - Transfer to and from
+    - Airport Milano Malpensa
   - icon: http://localhost:4000/assets/img/pricing_table/special_dinner.svg
     text:
-    - 1 special dinner in a mountain Chalet
+    - 1 Special dinner in Chalet
     - 1 Lunch in a surprise location
-    - 1 typical dinner in the hotel
-    - 1 special dinner in a refuge
+    - all the lunches and dinners
   - icon: 
     text:
     - 22% Italian VAT included
-- title: Private Double Room Ticket
-  price: 1190
-  elements:
-  - icon: http://localhost:4000/assets/img/pricing_table/double_room.svg
-    text:
-    - 3 nights in a private  Hotel***
-    - Double Room
-  - icon: http://localhost:4000/assets/img/pricing_table/transfer.svg
-    text:
-    - Transfer to and from Verona
-  - icon: http://localhost:4000/assets/img/pricing_table/SPA.svg
-    text:
-    - Entrance in the QT Dolomiti Terme SPA
-    - including Dinner
-  - icon: http://localhost:4000/assets/img/pricing_table/special_dinner.svg
-    text:
-    - 1 Lunch in a surprise location
-    - 1 typical dinner in the hotel
-    - 1 special dinner in a refuge
-  - icon: 
-    text:
-    - 22% Italian VAT included
-- title: Private Single Room Ticket
+- title: Single Room Ticket
   price: 1690
   elements:
   - icon: http://localhost:4000/assets/img/pricing_table/double_room.svg
     text:
-    - 3 nights in a private  Hotel***
-    - Single room
+    - 2 nights in a Hotel**** with SPA in Double Room 
+    - 1 night in a Mountain hut
   - icon: http://localhost:4000/assets/img/pricing_table/transfer.svg
     text:
-    - Transfer to and from Verona
-  - icon: http://localhost:4000/assets/img/pricing_table/SPA.svg
-    text:
-    - Entrance in the QT Dolomiti Terme SPA
-    - including Dinner
+    - Transfer to and from
+    - Airport Milano Malpensa
   - icon: http://localhost:4000/assets/img/pricing_table/special_dinner.svg
     text:
+    - 1 Special dinner in Chalet
     - 1 Lunch in a surprise location
-    - 1 typical dinner in the hotel
-    - 1 special dinner in a refuge
+    - all the lunches and dinners
+  - icon: 
+    text:
+    - 22% Italian VAT included
+- title: Normal Ticket
+  price: 1290
+  elements:
+  - icon: http://localhost:4000/assets/img/pricing_table/double_room.svg
+    text:
+    - 2 nights in a Hotel**** with SPA in Double Room 
+    - 1 night in a Mountain hut
+  - icon: http://localhost:4000/assets/img/pricing_table/transfer.svg
+    text:
+    - Transfer to and from
+    - Airport Milano Malpensa
+  - icon: http://localhost:4000/assets/img/pricing_table/special_dinner.svg
+    text:
+    - 1 Special dinner in a Chalet
+    - 1 Lunch in a surprise location
+    - all the lunches and dinners
   - icon: 
     text:
     - 22% Italian VAT included
 header_home:
   title: 2018 Summer Unplug Retreat
   subtitle: An amazing 3-day retreat in the Dolomites with fellow investors and entrepreneurs
-  image: http://localhost:4000/assets/img/tuckett/1018343_large71280.jpg
+  image: http://localhost:4000/assets/img/tucket_placeholder.jpg
 footer_sponsors:
 - name: Token Economy
   image: http://localhost:4000/assets/img/sponsor/tokeneconomy.png

@@ -18,5 +18,10 @@
     "title": "Alpine dinner",
     "text": "A new alpine experience centered on quality of food. We will start with a dinner in an amazing chalet, surrounded by the peace of nature.",
     "image": "http://localhost:4000/assets/img/pholosophies_cards/fiat.jpg"
+  },
+  {
+    "title": "Yoga Sessions",
+    "text": "Regenerate your mind-body connection with our Yoga instructors, in the peace and tranquillity of a mountain wilderness.",
+    "image": "http://localhost:4000/assets/img/pholosophies_cards/Yoga.jpg"
   }
 ]
