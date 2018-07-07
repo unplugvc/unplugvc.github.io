@@ -15,7 +15,7 @@ how_was_it:
   enjoying the silence and solitude that you can only get by being in the middle of
   the mountains.
 - The chalet is secluded in the woods, where you can't hear a sound other than animals, but it's just a 7 minutes drives from Canazei, a small gem of a village in the heart of the Dolomites. It is a 3-star hotel with its own restaurant and bar.
-video: https://www.youtube.com/watch?v=dUyhWS0rR1A
+video: https://youtu.be/KYI5mAWJClA
 caratteristics:
   altitude: 1450 mt
   cooking: Traditional

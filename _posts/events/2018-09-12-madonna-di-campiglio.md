@@ -187,7 +187,7 @@ pricing_table:
   elements:
   - icon: http://localhost:4000/assets/img/pricing_table/double_room.svg
     text:
-    - 2 nights in a Hotel**** with SPA in Double Room 
+    - 2 nights in a Hotel**** with SPA in Single Room 
     - 1 night in a Mountain hut
   - icon: http://localhost:4000/assets/img/pricing_table/transfer.svg
     text:
