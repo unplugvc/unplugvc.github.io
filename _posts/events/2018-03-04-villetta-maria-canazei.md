@@ -15,7 +15,7 @@ how_was_it:
   enjoying the silence and solitude that you can only get by being in the middle of
   the mountains.
 - The chalet is secluded in the woods, where you can't hear a sound other than animals, but it's just a 7 minutes drives from Canazei, a small gem of a village in the heart of the Dolomites. It is a 3-star hotel with its own restaurant and bar.
-video: https://youtu.be/KYI5mAWJClA
+video: https://www.youtube.com/embed/KYI5mAWJClA
 caratteristics:
   altitude: 1450 mt
   cooking: Traditional
@@ -27,26 +27,53 @@ speakers:
 - name: Nadia Eghbal
   role: Open Source Lead, Github
   image: http://localhost:4000/assets/img/speakers/nadia.jpeg
-- name: To be announced
-  role: TBD
-  image: http://localhost:4000/assets/img/speakers/placeholder_speakers.jpg
-# attendees:
-# - name: Algolia
-#   image: http://localhost:4000/assets/img/attendees/algolia.png
-# - name: Cachet
-#   image: http://localhost:4000/assets/img/attendees/algolia.png
-# - name: Ebanx
-#   image: http://localhost:4000/assets/img/attendees/algolia.png
-# - name: codebase
-#   image: http://localhost:4000/assets/img/attendees/algolia.png
-# - name: Google
-#   image: http://localhost:4000/assets/img/attendees/algolia.png
-# - name: Drip
-#   image: http://localhost:4000/assets/img/attendees/algolia.png
-# - name: DigitalOcean
-#   image: http://localhost:4000/assets/img/attendees/algolia.png
-# - name: cirrus
-#   image: http://localhost:4000/assets/img/attendees/algolia.png
+attendees:
+- name: Open Collective
+  image: http://localhost:4000/assets/img/attendees/villetta-maria/open-collective.png
+- name: Samnsung-Next
+  image: http://localhost:4000/assets/img/attendees/villetta-maria/samnsung-next.png
+- name: GP Bbullhound
+  image: http://localhost:4000/assets/img/attendees/villetta-maria/gpbullhound.png
+- name: Schibsted Media Group
+  image: http://localhost:4000/assets/img/attendees/villetta-maria/schibsted-media-group.png
+- name: MMC-ventures.png
+  image: http://localhost:4000/assets/img/attendees/villetta-maria/MMC-ventures.png
+- name: Anthemis Group
+  image: http://localhost:4000/assets/img/attendees/villetta-maria/anthemis-group.png
+- name: Cherry Ventures
+  image: http://localhost:4000/assets/img/attendees/villetta-maria/cherry-ventures.png
+- name: Local Globe
+  image: http://localhost:4000/assets/img/attendees/villetta-maria/local-globe.png
+- name: Local Globe
+  image: http://localhost:4000/assets/img/attendees/villetta-maria/co-found.png
+- name: Libertus Capital
+  image: http://localhost:4000/assets/img/attendees/villetta-maria/LIbertus-Capital.png
+- name: Fabric Ventures
+  image: http://localhost:4000/assets/img/attendees/villetta-maria/fabric-ventures.png
+- name: IDEO
+  image: http://localhost:4000/assets/img/attendees/villetta-maria/ideo.png
+- name: Facebook
+  image: http://localhost:4000/assets/img/attendees/villetta-maria/facebook.png
+- name: Google
+  image: http://localhost:4000/assets/img/attendees/villetta-maria/google.png
+- name: Github.png
+  image: http://localhost:4000/assets/img/attendees/villetta-maria/github.png
+- name: Storj
+  image: http://localhost:4000/assets/img/attendees/villetta-maria/storj.png
+- name: NU Cypher
+  image: http://localhost:4000/assets/img/attendees/villetta-maria/nucyper.png
+- name: Coinlist
+  image: http://localhost:4000/assets/img/attendees/villetta-maria/coinlist.png
+- name: Oscoin
+  image: http://localhost:4000/assets/img/attendees/villetta-maria/oscoin.png
+- name: Openocean
+  image: http://localhost:4000/assets/img/attendees/villetta-maria/openocean.png
+- name: Fidelity
+  image: http://localhost:4000/assets/img/attendees/villetta-maria/fidelity.png
+- name: Project A
+  image: http://localhost:4000/assets/img/attendees/villetta-maria/projecta.png
+- name: American Family
+  image: http://localhost:4000/assets/img/attendees/villetta-maria/americanFamily.png
 organizers:
 - name: STEFANO BERNARDI
   role: Investor
@@ -155,6 +182,10 @@ gallery-small:
     - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/10.jpg
     - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/11.jpg
     - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/12.jpg
+    - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/13.jpg
+    - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/14.jpg
+    - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/15.jpg
+    - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/16.jpg
 gallery-big:
   image:
     - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/big/01.jpg
@@ -169,6 +200,10 @@ gallery-big:
     - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/big/10.jpg
     - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/big/11.jpg
     - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/big/12.jpg
+    - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/big/13.jpg
+    - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/big/14.jpg
+    - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/big/15.jpg
+    - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/big/16.jpg
 pricing_table:
   - title: Early Bird Ticket
     price: 890

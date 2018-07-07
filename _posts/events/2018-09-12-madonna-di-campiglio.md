@@ -12,7 +12,8 @@ how_was_it:
 
 - The hut is set in the Dolomites at 2272 mt., where your view can spread above the neighboring mountains and you can't hear a sound other than animals. The location maintains the typical character of alpine refuge, with basic-wood accommodations, intense food experience and cozy atmosphere.
 
-video: https://www.youtube.com/watch?v=dUyhWS0rR1A
+#video: https://www.youtube.com/watch?v=dUyhWS0rR1A
+video: https://www.youtube.com/embed/KYI5mAWJClA
 caratteristics:
   altitude: 2250 mt
   cooking: Local and Traditional
@@ -20,16 +21,11 @@ caratteristics:
 past_edition:
   period: 12 - 13 - 14 - 15 September 2018
   image: http://localhost:4000/assets/img/edition_cards/tires.png
-# speakers:
-# - name: Nadia Eghbal
-#   role: Open Source Lead, Github
-#   image: http://localhost:4000/assets/img/speakers/nadia.jpeg
-# - name: To be announced
-#   role: TBD
-#   image: http://localhost:4000/assets/img/speakers/placeholder_speakers.jpg
-# attendees:
-# - name: Algolia
-#   image: http://localhost:4000/assets/img/attendees/algolia.png
+
+speakers:
+- name: To be announced
+  role: TBD
+  image: http://localhost:4000/assets/img/speakers/placeholder_speakers.jpg
 organizers:
 - name: STEFANO BERNARDI
   role: Investor
