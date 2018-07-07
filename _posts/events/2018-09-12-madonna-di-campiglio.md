@@ -227,4 +227,8 @@ footer_sponsors:
 - name: Semantic Ventures
   image: http://localhost:4000/assets/img/sponsor/semantic.png
   link: https://semantic.vc
+- name: You??
+  image: http://localhost:4000/assets/img/sponsor/you.png
+  link: mailto:team@unplug.vc
 ---
+
