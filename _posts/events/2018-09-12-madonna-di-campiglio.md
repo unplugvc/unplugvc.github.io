@@ -4,7 +4,7 @@ tags:
 - event
 layout: event
 permalink: "/event/:title"
-location: Maddona di Campiglio, Trentino, Italy
+location: Madonna di Campiglio, Trentino, Italy
 image: http://localhost:4000/assets/img/location/tuckett.jpeg
 when_header: September 12-14, 2018
 how_was_it:
