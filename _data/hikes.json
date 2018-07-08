@@ -1,22 +1,27 @@
 [
   {
+    "image": "http://localhost:4000/assets/img/icons/hike/people.svg",
+    "title": "Group size",
+    "text": "100 people"
+  },
+  {
     "image": "http://localhost:4000/assets/img/icons/hike/distance.svg",
-    "title": "Ski Slopes",
-    "text": "1200 km"
+    "title": "Vertical Ascent",
+    "text": "680 meters"
+  },
+  {
+    "image": "http://localhost:4000/assets/img/icons/hike/time.svg",
+    "title": "Hike time",
+    "text": "2.30h"
   },
   {
     "image": "http://localhost:4000/assets/img/icons/hike/difficulty.svg",
-    "title": "FUN",
+    "title": "Fun",
     "text": "High"
   },
   {
-    "image": "http://localhost:4000/assets/img/icons/hike/people.svg",
-    "title": "GROUP SIZE",
-    "text": "70 people"
-  },
-  {
     "image": "http://localhost:4000/assets/img/icons/hike/days.svg",
-    "title": "DAYS",
-    "text": "3 days"
+    "title": "Days",
+    "text": "3"
   }
 ]

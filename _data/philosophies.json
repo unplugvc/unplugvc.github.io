@@ -1,22 +1,42 @@
 [
   {
+    "title": "Hiking",
+    "text": "We will take our hike to the refuge in the Dolomites, an absolute mecca for outdoor enthusiast, we will cross majestic mountains with expert alpine guides.",
+    "image": "http://localhost:4000/assets/img/pholosophies_cards/hiking.jpg"
+  },
+  {
+    "title": "Alpine dinner",
+    "text": "This year, we've added a new amazing alpine experience: we will start with a dinner in a luxury mountain chalet, surrounded by the peace of nature.",
+    "image": "http://localhost:4000/assets/img/pholosophies_cards/fiat.jpg"
+  },
+  {
+    "title": "Wellness",
+    "text": "Our ****s hotel has a 1000sqm SPA which will help restore your physical and spiritual balance.",
+    "image": "http://localhost:4000/assets/img/pholosophies_cards/spa.png"
+  },
+  {
+    "title": "Yoga",
+    "text": "Regenerate your mind-body connection with our Yoga instructors, in the peace and tranquillity of a mountain setting.",
+    "image": "http://localhost:4000/assets/img/pholosophies_cards/Yoga.jpg"
+  },
+  {
     "title": "Amazing traditional food",
     "text": "Enjoy 3 days of authentic italian mountain food, straight from ancient, simpler times.",
     "image": "http://localhost:4000/assets/img/pholosophies_cards/Food.jpg"
   },
   {
-    "title": "Speak the same language",
+    "title": "Professional apline guides",
+    "text": "We will be joined by professional, licensed alpine guides and mountaineers.",
+    "image": "http://localhost:4000/assets/img/pholosophies_cards/mountaneers.png"
+  },
+  {
+    "title": "Astronomical exploration",
+    "text": "Do you ever find yourself staring up at the stars? We will have actual astronomers explain the wonders of the universe like you've never seen them.",
+    "image": "http://localhost:4000/assets/img/pholosophies_cards/sky-exploration.jpg"
+  },
+  {
+    "title": "Invite only",
     "text": "The event is invite-only and you will spend time with like-minded but diverse and extremely impressive people.",
     "image": "http://localhost:4000/assets/img/pholosophies_cards/Speak%20same%20language.jpg"
-  },
-  {
-    "title": "Professional ski guides",
-    "text": "We will be joined by professional, licensed ski guides and professional mountaneers.",
-    "image": "http://localhost:4000/assets/img/pholosophies_cards/skiTeacher.jpg"
-  },
-  {
-    "title": "Wellness",
-    "text": "A new alpine experience centered on quality of life. We will have an amazing SPA session aimed at restoring your physical and spiritual balance.",
-    "image": "http://localhost:4000/assets/img/pholosophies_cards/OCterme.png"
   }
 ]
