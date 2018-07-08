@@ -105,7 +105,7 @@ schedule:
   - time: 9.00 PM
     what: Talks
     description: Inspiring talks from your fellow mountaineers
-- day: SATURDAY, SEPTEMBER 13
+- day: SATURDAY, SEPTEMBER 15
   program:
   - time: 7.30 AM
     what: Breakfast
