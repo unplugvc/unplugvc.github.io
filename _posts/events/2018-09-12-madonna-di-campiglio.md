@@ -8,9 +8,11 @@ location: Maddona di Campiglio, Trentino, Italy
 image: http://localhost:4000/assets/img/location/tuckett.jpeg
 when_header: September 12-14, 2018
 how_was_it:
-- We have chosen the best of the best. The Unplug refuge is in the heart of Brenta Dolomites, grandiose mountains in the north part of Trentino. It is an occasion to really deeply connect with fellow entrepreneurs and investors, but most of all to feel the pull of nature, enjoying the silence and solitude that you can only get by being in the middle of the mountains.
+- We have chosen the best of the best. Unplug will be hosted in two amazing venues The Unplug Resort and The Unplug Refuge.
 
-- The hut is set in the Dolomites at 2272 mt., where your view can spread above the neighboring mountains and you can't hear a sound other than animals. The location maintains the typical character of alpine refuge, with basic-wood accommodations, intense food experience and cozy atmosphere.
+- The Resort is a ****s hotel, in Madonna di Campiglio, often called "the pearl of the Dolomites". The Refuge instead is a mountain hut in the heart of Brenta Dolomites, grandiose mountains in the northern part of Trentino. This hut is set in the Dolomites at 2272 mt., where your view can spread above the neighboring mountains and you can't hear a sound other than animals. The location maintains the typical character of an alpine refuge, with basic-wood accommodations, intense food experience and cozy atmosphere.
+
+- We will be sleeping in bunk bed dormitory rooms, which will give you a connection to your fellow hikers you won't get anywhere else. But then we'll hike back down to our hotel where you can relax in one of the biggests SPAs of the Alps.
 
 #video: https://www.youtube.com/watch?v=dUyhWS0rR1A
 video: https://www.youtube.com/embed/KYI5mAWJClA
@@ -22,14 +24,14 @@ past_edition:
   period: 12 - 13 - 14 - 15 September 2018
   image: http://localhost:4000/assets/img/edition_cards/tires.png
 
-speakers:
-- name: To be announced
-  role: TBD
-  image: http://localhost:4000/assets/img/speakers/placeholder_speakers.jpg
+# speakers:
+# - name: To be announced
+#   role: TBD
+#   image: http://localhost:4000/assets/img/speakers/placeholder_speakers.jpg
 organizers:
 - name: STEFANO BERNARDI
   role: Investor
-  image: http://localhost:4000/assets/img/organizers/ste.jpg
+  image: http://localhost:4000/assets/img/organizers/stefano.jpg
 - name: LORENZO SANNA
   role: Business Developer
   image: http://localhost:4000/assets/img/organizers/lor.png
@@ -38,62 +40,65 @@ schedule:
   program:
   - time: 1.30 PM
     what: We leave from Milano Malpensa Airport
-    description: Meeting points outside the Terminal 2
+    description: Meeting point is outside Terminal 2
   - time: 5.30 PM
     what: Arrival at Unplug's Resort
-    description: Check-in time and find your room mate fot the next days!
-  - time: 19.00 PM
-    what: Leaving the resort
+    description: Check-in and find your roommate fot the next days!
+  - time: 7.00 PM
+    what: Cablecar time
     description: Take the cable car to the Unplug Chalet
-  - time: 20.00 PM
+  - time: 8.00 PM
     what: Welcome Bonfire Aperitivo
-    description: Drink, get cozy and get to meet your fellow adventurers.
-  - time: 20.30 PM
+    description: Drink, get cozy and get to meet your fellow adventurers
+  - time: 8.30 PM
     what: Dinner at Unplug's Chalet
-    description: Typical dinner, with a simple 1 minute presentation of each guest.
+    description: Typical dinner in a luxury mountain chalet, with a simple 1 minute presentation of each guest
 - day: THURSDAY, SEPTEMBER 13
   program:
+  - time: 6.30 AM
+    what: Yoga
+    description: For the morning larks!
   - time: 7.30 AM
     what: Breakfast
     description: Get your energy for the day!
   - time: 10.00 AM
     what: Bring your backpak!
-    description: We leave the Resort and to reach our hiking path.
+    description: We leave the Resort to reach our hiking path
   - time: 10.40 AM
     what: Hiking!
-    description: The hiking adventure will start!
+    description: We start our ascent towards the Unplug Hut
   - time: 12.00 PM
     what: Lunch
-    description: Typical lunch to Rifugio Casinei
-  - time: 15.00 PM
-    what: Let's see the Hut!
-    description: Accommodation, relax and chat
-  - time: 17.00 PM
-    what: Yoga
-    description: Streching with the yoga teacher
+    description: We stop for a typical lunch at Rifugio Casinei
+  - time: 3.00 PM
+    what: Enjoy and relax
+    description: As we finally get to the Hut, you can start finding your bed and enjoy the scenery
+  - time: 4.30 PM
+    what: Chats and discussions
+    description: Get to know your fellow unpluggers a bit more
   - time: 19.30 PM
     what: Dinner
-    description: Home made, slowfood and very typical dinner.
+    description: Home made, slowfood and very typical dinner
 - day: FRIDAY, SEPTEMBER 14
   program:
   - time: 6.30 AM
     what: Yoga
-    description: Connect body and mind with the nature!
+    description: Connect body and mind with nature
   - time: 7.30 AM
     what: Breakfast
     description: Get your energy for the day!
   - time: 9.30 AM
-    what: Chatting/Relax/Meditation!
+    what: Free time for chats, meditation or small hikes
     description: Feel free to spend the morning as you want
   - time: 12.30 AM
     what: Lunch Time
-    description: Typical Alpine Lunch
+    description: Typical alpine Lunch
   - time: 14.30 PM
-    what: Bye Bye Mpuntain Hut!
-    description: We go In a new Hiking adventure
+    what: Bye Bye Mountain Hut!
+    description: We start our descent through the "waterfalls trail", in which you can take a shower if you want
   - time: 5.30 PM
     what: Back to the Unplug Resort
-    description: Shower/SPA/Relax/Chatting
+    description: Shower / SPA / Relax / Drinks
   - time: 7.30 PM
     what: Dinner
     description: Home made, slowfood and very typical food
@@ -106,10 +111,10 @@ schedule:
     what: Breakfast
     description: Meet in the Hotel lobby and load up on energies for the day.
   - time: 8.30 AM
-    what: Talks for whoever is already awake.
-    description: Last talks before leaving
+    what: Discussion tables
+    description: If you're already awake
   - time: 10.00 AM
-    what: Bye Bye Unplug Chalet
+    what: Bye Bye Unplug Resort
     description: It's time to go back to the real world! Our bus leaves now.
   - time: 12.30 AM
     what: Surprise Goodbye Lunch
@@ -164,7 +169,7 @@ pricing_table:
   elements:
   - icon: http://localhost:4000/assets/img/pricing_table/double_room.svg
     text:
-    - 2 nights in a Hotel**** with SPA in Double Room 
+    - 2 nights in a **** Hotel with SPA in Double Room 
     - 1 night in a Mountain hut
   - icon: http://localhost:4000/assets/img/pricing_table/transfer.svg
     text:
@@ -172,37 +177,17 @@ pricing_table:
     - Airport Milano Malpensa
   - icon: http://localhost:4000/assets/img/pricing_table/special_dinner.svg
     text:
-    - 1 Special dinner in Chalet
-    - 1 Lunch in a surprise location
-    - all the lunches and dinners
-  - icon: 
-    text:
-    - 22% Italian VAT included
-- title: Single Room Ticket
-  price: 1690
-  elements:
-  - icon: http://localhost:4000/assets/img/pricing_table/double_room.svg
-    text:
-    - 2 nights in a Hotel**** with SPA in Single Room 
-    - 1 night in a Mountain hut
-  - icon: http://localhost:4000/assets/img/pricing_table/transfer.svg
-    text:
-    - Transfer to and from
-    - Airport Milano Malpensa
-  - icon: http://localhost:4000/assets/img/pricing_table/special_dinner.svg
-    text:
-    - 1 Special dinner in Chalet
-    - 1 Lunch in a surprise location
-    - all the lunches and dinners
+    - 3 dinners, of which 1 in our special dinner in our Chalet
+    - 3 lunches, of which 1 in a surprise location
   - icon: 
     text:
     - 22% Italian VAT included
 - title: Normal Ticket
-  price: 1290
+  price: 1190
   elements:
   - icon: http://localhost:4000/assets/img/pricing_table/double_room.svg
     text:
-    - 2 nights in a Hotel**** with SPA in Double Room 
+    - 2 nights in a **** Hotel with SPA in Double Room 
     - 1 night in a Mountain hut
   - icon: http://localhost:4000/assets/img/pricing_table/transfer.svg
     text:
@@ -210,9 +195,26 @@ pricing_table:
     - Airport Milano Malpensa
   - icon: http://localhost:4000/assets/img/pricing_table/special_dinner.svg
     text:
-    - 1 Special dinner in a Chalet
-    - 1 Lunch in a surprise location
-    - all the lunches and dinners
+    - 3 dinners, of which 1 in our special dinner in our Chalet
+    - 3 lunches, of which 1 in a surprise location
+  - icon: 
+    text:
+    - 22% Italian VAT included
+- title: Single Room Ticket
+  price: 1390
+  elements:
+  - icon: http://localhost:4000/assets/img/pricing_table/double_room.svg
+    text:
+    - 2 nights in a **** Hotel with SPA in Single Room 
+    - 1 night in a Mountain hut
+  - icon: http://localhost:4000/assets/img/pricing_table/transfer.svg
+    text:
+    - Transfer to and from
+    - Airport Milano Malpensa
+  - icon: http://localhost:4000/assets/img/pricing_table/special_dinner.svg
+    text:
+    - 3 dinners, of which 1 in our special dinner in our Chalet
+    - 3 lunches, of which 1 in a surprise location
   - icon: 
     text:
     - 22% Italian VAT included
@@ -227,7 +229,7 @@ footer_sponsors:
 - name: Semantic Ventures
   image: http://localhost:4000/assets/img/sponsor/semantic.png
   link: https://semantic.vc
-- name: You??
+- name: You?
   image: http://localhost:4000/assets/img/sponsor/you.png
   link: mailto:team@unplug.vc
 ---
