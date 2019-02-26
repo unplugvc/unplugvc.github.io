@@ -1,18 +1,10 @@
 [
   {
-    "label": "Unplug Resort",
-    "address": "http://www.hotelcarlomagno.com/en"
+    "label": "Hotel Therme Meran",
+    "address": "https://www.hoteltermemerano.it/en"
   },
   {
     "label": "Unplug Hut",
-    "address": "http://www.rifugio-tuckett.it/en/"
-  },
-  {
-    "label": "Unplug Chalet",
-    "address": "http://www.chaletfiat.net/"
-  },
-  {
-    "label": "Milano Malpensa Airport",
-    "address": "http://www.milanomalpensa-airport.com/en"
+    "address": "http://www.rifugiodorigoni.it/en"
   }
 ]

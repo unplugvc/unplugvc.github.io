@@ -1,11 +1,11 @@
 ---
-title: Summer 18 Unplug
+title: UNPLUG V3
 tags:
 - event
 layout: event
 permalink: "/event/:title"
 location: Madonna di Campiglio, Trentino, Italy
-image: http://localhost:4000/assets/img/location/tuckett.jpeg
+image: http://localhost:4000/assets/img/location/tuckett.jpg
 when_header: September 12-14, 2018
 how_was_it:
 - We have chosen the best of the best. Unplug will be hosted in two amazing venues The Unplug Resort and The Unplug Refuge.
@@ -14,8 +14,8 @@ how_was_it:
 
 - We will be sleeping in bunk bed dormitory rooms, which will give you a connection to your fellow hikers you won't get anywhere else. But then we'll hike back down to our hotel where you can relax in one of the biggests SPAs of the Alps.
 
-#video: https://www.youtube.com/watch?v=dUyhWS0rR1A
-video: https://www.youtube.com/embed/KYI5mAWJClA
+#video: https://www.youtube.com/watch?v=kvSf09IXdvk
+video: https://www.youtube.com/embed/kvSf09IXdvk
 caratteristics:
   altitude: 2250 mt
   cooking: Local and Traditional
@@ -35,6 +35,51 @@ organizers:
 - name: LORENZO SANNA
   role: Business Developer
   image: http://localhost:4000/assets/img/organizers/lor.png
+attendees:
+- name: 1kx
+  image: http://localhost:4000/assets/img/attendees/unplugv3/1kx.png
+- name: Anthemis Group
+  image: http://localhost:4000/assets/img/attendees/unplugv3/anthemis.png
+- name: Blockstate
+  image: http://localhost:4000/assets/img/attendees/unplugv3/blockstate.png
+- name: Bloctrax
+  image: http://localhost:4000/assets/img/attendees/unplugv3/bloctrax.png
+- name: CartHook
+  image: http://localhost:4000/assets/img/attendees/unplugv3/carthook.png
+- name: Centrifuge
+  image: http://localhost:4000/assets/img/attendees/unplugv3/centrifuge.png
+- name: Cofound.it
+  image: http://localhost:4000/assets/img/attendees/unplugv3/cofound.png
+- name: Consensys
+  image: http://localhost:4000/assets/img/attendees/unplugv3/consensys.png
+- name: Dharma
+  image: http://localhost:4000/assets/img/attendees/unplugv3/dharma.png
+- name: edChain
+  image: http://localhost:4000/assets/img/attendees/unplugv3/edchain.png
+- name: ETHBerlin
+  image: http://localhost:4000/assets/img/attendees/unplugv3/ethBerlin.png
+- name: Facebook
+  image: http://localhost:4000/assets/img/attendees/unplugv3/facebook.png
+- name: GP.Bullhound
+  image: http://localhost:4000/assets/img/attendees/unplugv3/gpbullhound.png
+- name: Hoxton Ventures
+  image: http://localhost:4000/assets/img/attendees/unplugv3/hoxton.png
+- name: Index Ventures
+  image: http://localhost:4000/assets/img/attendees/unplugv3/indexVentures.png
+- name: Libertus Capital
+  image: http://localhost:4000/assets/img/attendees/unplugv3/libertus.png
+- name: Outlier Ventures 
+  image: http://localhost:4000/assets/img/attendees/unplugv3/ov.png
+- name: Set
+  image: http://localhost:4000/assets/img/attendees/unplugv3/set.png
+- name: Techstar
+  image: http://localhost:4000/assets/img/attendees/unplugv3/techstar.png
+- name: The Bakery
+  image: http://localhost:4000/assets/img/attendees/unplugv3/thebakery.png
+- name: Upvest
+  image: http://localhost:4000/assets/img/attendees/unplugv3/upvest.png
+- name: ZK capital
+  image: http://localhost:4000/assets/img/attendees/unplugv3/zkcapital.png
 schedule:
 - day: WEDNESDAY, SEPTEMBER 12
   program:
@@ -139,12 +184,16 @@ gallery-small:
   - http://localhost:4000/assets/img/events_photos/tuckett/08.jpg
   - http://localhost:4000/assets/img/events_photos/tuckett/09.jpg
   - http://localhost:4000/assets/img/events_photos/tuckett/10.jpg
-  - http://localhost:4000/assets/img/events_photos/tuckett/11.jpg
   - http://localhost:4000/assets/img/events_photos/tuckett/12.jpg
   - http://localhost:4000/assets/img/events_photos/tuckett/13.jpg
   - http://localhost:4000/assets/img/events_photos/tuckett/14.jpg
   - http://localhost:4000/assets/img/events_photos/tuckett/15.jpg
+  - http://localhost:4000/assets/img/events_photos/tuckett/11.jpg
   - http://localhost:4000/assets/img/events_photos/tuckett/16.jpg
+  - http://localhost:4000/assets/img/events_photos/tuckett/19.jpg
+  - http://localhost:4000/assets/img/events_photos/tuckett/20.jpg
+  - http://localhost:4000/assets/img/events_photos/tuckett/17.jpg
+  - http://localhost:4000/assets/img/events_photos/tuckett/18.jpg
 gallery-big:
   image:
   - http://localhost:4000/assets/img/events_photos/tuckett/big/01.jpg
@@ -163,6 +212,10 @@ gallery-big:
   - http://localhost:4000/assets/img/events_photos/tuckett/big/14.jpg
   - http://localhost:4000/assets/img/events_photos/tuckett/big/15.jpg
   - http://localhost:4000/assets/img/events_photos/tuckett/big/16.jpg
+  - http://localhost:4000/assets/img/events_photos/tuckett/big/17.jpg
+  - http://localhost:4000/assets/img/events_photos/tuckett/big/18.jpg
+  - http://localhost:4000/assets/img/events_photos/tuckett/big/19.jpg
+  - http://localhost:4000/assets/img/events_photos/tuckett/big/20.jpg
 pricing_table:
 - title: Early Bird Ticket
   price: 890
@@ -233,4 +286,3 @@ footer_sponsors:
   image: http://localhost:4000/assets/img/sponsor/you.png
   link: mailto:team@unplug.vc
 ---
-
