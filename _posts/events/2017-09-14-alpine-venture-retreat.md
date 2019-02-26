@@ -1,5 +1,5 @@
 ---
-title: European Venture Retreat
+title: UNPLUG V1
 tags:
 - event
 layout: event
@@ -183,4 +183,3 @@ footer_sponsors:
   image: http://localhost:4000/assets/img/sponsor/tokeneconomy.png
   link: https://www.tokeneconomy.co/
 ---
-
