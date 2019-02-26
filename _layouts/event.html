@@ -1,0 +1,295 @@
+---
+layout: event
+---
+
+{% assign past_events = site.tags.event %}
+
+<!DOCTYPE html>
+<!--
+
+      .-
+     `+d/
+    -hmm/
+   ommmm/
+  `mmmmm/
+  `mmmmm/ .:+ssyso+-`
+  `mmmmmsydmmmmmmmmmho.
+  `mmmmmmh+:---/+ssssyd:
+  `mmmmmh.     /     .md-
+  `mmmmmo..-`       .ommo
+  `mmmmm+..`    ./oydmmm/
+  `mmmmm/      /dmmmmmmh`
+  `mmmmm/    `smmmmmmms`
+  `mmmmm/  `+dmmmmmy+.
+   :::::.   `-::-.`
+
+Hey!
+
+Here’s the team of Belka. We designed and developed this website! Wanna meet us? Just drop an email at hello@belka.us
+Don’t tell anyone about this easter egg ;)
+
+Thanks for the visit!
+Belka Team
+
+
+-->
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta property="og:image" content="https://unplug.vc/assets/img/ogimage.png">
+
+  <title>{{ page.title }}</title>
+
+  <link rel="apple-touch-icon" sizes="57x57" href="{{'/assets/img/progressive_web_app' | relative_url}}/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="{{'/assets/img/progressive_web_app' | relative_url}}/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="{{'/assets/img/progressive_web_app' | relative_url}}/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="{{'/assets/img/progressive_web_app' | relative_url}}/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="{{'/assets/img/progressive_web_app' | relative_url}}/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="{{'/assets/img/progressive_web_app' | relative_url}}/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="{{'/assets/img/progressive_web_app' | relative_url}}/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="{{'/assets/img/progressive_web_app' | relative_url}}/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{'/assets/img/progressive_web_app' | relative_url}}/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="{{'/assets/img/progressive_web_app' | relative_url}}/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{'/assets/img/progressive_web_app' | relative_url}}/favicon-16x16.png">
+  <link rel="manifest" href="{{'/assets/img/progressive_web_app' | relative_url}}/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="{{'/assets/img/progressive_web_app' | relative_url}}/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="stylesheet" href="https://unpkg.com/bootstrap@4.0.0-beta.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" />
+  <!-- Custom css -->
+  <link rel="stylesheet" href="{{'/css/main.css' | relative_url }}">
+</head>
+
+<body>
+  {% include navbar_internal.html %}
+
+  {% include header.html type="event" %}
+
+  <div class="location">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-sm-6 scroll_reveal">
+          {% include components/headings.html big="HOW WAS IT?" small="A weekend to unplug and connect." %}
+          {% for words in page.how_was_it %}
+          <p class="text">
+            {{ words }}
+          </p>
+          {% endfor %}
+        </div>
+        <div class="col-12 col-sm-6 hidden-xs scroll_reveal">
+          {% include components/card.html type="location" title=page.venue subtitle=page.location img=page.image altitude=page.caratteristics.altitude
+          cooking=page.caratteristics.cooking beds=page.caratteristics.beds %}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="carousel__event scroll_reveal">
+    <div class="carousel__event--row">
+      {% for image in page.gallery-small.image %}
+        {% assign prev_i = forloop.index | minus: 1 %}
+        {% assign dev_base_url = 'http://localhost:4000' %}
+        <div class="carousel__event--element" style="background-image: url('{{ image | replace:dev_base_url, site.url}}')">
+            <a data-fancybox="gallery" href="{{page.gallery-big.image[prev_i] | replace:'http://localhost:4000', site.url}}" >
+            </a>
+        </div>
+      {% endfor %}
+    </div>
+    <img class="carousel__home__mountain-profile" src="{{'/assets/img/mountain_profile_2.svg' | relative_url}}" alt="">
+  </div>
+
+  <div class="what-happened scroll_reveal">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 scroll_reveal">
+              {% include components/headings.html big="VIDEO" small="What happened last time" %}
+            </div>
+        </div>
+    <!-- <video id="event_video" width="100%" height="auto" muted playsinline>
+      <source src="{{page.video | replace:'http://localhost:4000', site.url}}" type="video/mp4">
+      Your browser does not support the video tag.
+    </video> -->
+    <!-- <iframe width="100%" height="590px" src="https://www.youtube.com/embed/pqKRMq3bWrw?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+        </iframe> -->
+      <style>
+        .embed-container {
+          position: relative;
+          padding-bottom: 56.25%;
+          height: 0;
+          overflow: hidden;
+          max-width: 100%;
+        }
+
+        .embed-container iframe,
+        .embed-container object,
+        .embed-container embed {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        }
+      </style>
+      <div class='embed-container'>
+        <iframe src='https://www.youtube.com/embed/KYI5mAWJClA' frameborder='0' allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+  {% for speaker in page.speakers %}
+    {% capture speaker_count %} {{ speaker_count | plus: 1 }} {% endcapture %}
+  {% endfor %}
+
+  {% if speaker_count %}
+    <div class="speakers">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 scroll_reveal">
+            {% include components/headings.html big="SPEAKERS" small="Amazing speakers for an amazing event" %}
+          </div>
+          <div class="col-12 speakers__pictures">
+            <div class="row">
+              {% for speaker in page.speakers %}
+              <div class="col-sm-4 col-md-4 col-lg-3 scroll_reveal">
+                <div class="speakers__pictures-card aspect_ratio--speakers">
+                  <img class="lazyload" data-src="{{speaker.image | replace:'http://localhost:4000', site.url}}" alt="">
+                  <div class="speakers__pictures-card-data">
+                    <p class="speakers__pictures-card-data-name">{{speaker.name}}</p>
+                    <p class="speakers__pictures-card-data-role">{{speaker.role}}</p>
+                  </div>
+                  <div class="img-overlay"></div>
+                </div>
+              </div>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="speakers__pictures--mobile scroll_reveal">
+        {% for speaker in page.speakers %}
+        <div class="speakers__pictures-card aspect_ratio--speakers">
+          <img class="lazyload" data-src="{{speaker.image | replace:'http://localhost:4000', site.url}}" alt="">
+          <div class="speakers__pictures-card-data">
+            <p class="speakers__pictures-card-data-name">{{speaker.name}}</p>
+            <p class="speakers__pictures-card-data-role">{{speaker.role}}</p>
+          </div>
+          <div class="img-overlay"></div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  {% endif %}
+
+
+  {% for speaker in page.attendees %}
+    {% capture attendees_count %} {{ attendees_count | plus: 1 }} {% endcapture %}
+  {% endfor %}
+
+  {% if attendees_count %}
+    <div class="attendees">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 scroll_reveal">
+            {% include components/headings.html big="ATTENDEES" small="Representing" %}
+          </div>
+          <div class="col-12">
+            <div class="row">
+              {% for a in page.attendees %}
+              <div class="col-6 col-sm-4 col-md-4 col-lg-3 scroll_reveal">
+                <div class="attendees__pictures-card aspect_ratio--attendees">
+                  <img class="lazyload" data-src="{{a.image | replace:'http://localhost:4000', site.url}}" alt="">
+                </div>
+              </div>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  {% endif %}
+
+
+  {% assign curDate = site.time | date: '%s' %}
+  {% assign filtered_past_events = "" | split: ',' %}
+  {% for post in past_events %}
+      {% assign postStartDate = post.date | date: '%s' %}
+      {% if postStartDate < curDate %}
+          {% assign filtered_past_events = filtered_past_events | push: post %}
+      {% endif %}
+  {% endfor %}
+
+  {% for post in filtered_past_events %}
+    {% if post.url != page.url %}
+      {% capture post_count %} {{ post_count | plus: 1 }} {% endcapture %}
+    {% endif %}
+  {% endfor %}
+
+  {% if post_count %}
+    <div class="past-editions">
+      <div class="container">
+        <div class="row">
+          
+          <div class="col-12 scroll_reveal">
+            {% include components/headings.html big="PAST EDITIONS" small="Overview of previous editions" %}
+          </div>
+
+          <div class="col-12 past-editions__pictures">
+            <div class="row">
+              {% for o in filtered_past_events %}
+                {% if o.url != page.url %}
+                  <div class="col-12 col-sm-6 col-md-6 col-lg-4 scroll_reveal">
+                    <a href="{{site.baseurl}}{{ o.url }}">
+                      <div class="past-editions__pictures-card aspect_ratio--past_editions">
+                        <img class="lazyload" data-src="{{o.past_edition.image | replace:'http://localhost:4000', site.url}}" alt="">
+                        <div class="past-editions__pictures-card-data">
+                          <p class="past-editions__pictures-card-data-name">{{o.title}}</p>
+                          <p class="past-editions__pictures-card-data-role">{{o.past_edition.period}}</p>
+                        </div>
+                        <div class="img-overlay"></div>
+                      </div>
+                    </a>
+                  </div>
+                {% endif %}
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="past-editions__pictures--mobile scroll_reveal">
+        {% for o in past_events %}
+          {% if o.url != page.url %}
+            <a href="{{site.baseurl}}{{ o.url }}">
+              <div class="past-editions__pictures-card aspect_ratio--past_editions">
+                {{o.past_edition.image}}
+                <img class="lazyload"
+                  data-src="{{o.past_edition.image | replace:'http://localhost:4000', site.url}}" alt="">
+                <div class="past-editions__pictures-card-data">
+                  <p class="past-editions__pictures-card-data-name">{{o.title}}</p>
+                  <p class="past-editions__pictures-card-data-role">{{o.past_edition.period}}</p>
+                </div>
+                <div class="img-overlay"></div>
+              </div>
+            </a>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  {% endif %}
+  
+
+  {% include components/page_overlay.html %}
+  {% include components/apply_form.html %}
+  {% include footer.html %}
+  {% include scripts.html %}
+
+</body>
+
+</html>

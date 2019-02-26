@@ -1,0 +1,88 @@
+@keyframes placeHolderShimmer
+  0%
+    background-position: -468px 0
+
+  100%
+    background-position: 468px 0
+
+.animated-background
+  animation-duration: 1s
+  animation-fill-mode: forwards
+  animation-iteration-count: infinite
+  animation-name: placeHolderShimmer
+  animation-timing-function: linear
+  animation-timing-function: cubic-bezier(0.22, 0.61, 0.36, 1)
+  background: #f6f7f8
+  background-image: linear-gradient(to right, #ae8a61 5%, #73733c 28%, #ae8a61 53%)
+  background-size: 800px 104px
+  position: relative
+
+.animated-background--overlay__philosophies
+  @extend .animated-background
+  border-top-left-radius: 8px
+  border-top-right-radius: 8px
+  height: 42%
+  left: 0
+  position: absolute
+  top: 0
+  width: 100%
+
+.animated-background--overlay__location
+  @extend .animated-background--overlay__philosophies
+  height: 56%
+
+@media (min-width: 320px)
+  .aspect_ratio--speakers
+    @extend .animated-background
+
+  .aspect_ratio--organizers
+    @extend .animated-background
+    min-height: 215px
+
+  .aspect_ratio--past_editions
+    @extend .animated-background
+    min-height: 114px
+
+  .aspect_ratio--attendees
+    min-height: 91px
+
+@media (min-width: 768px)
+  .aspect_ratio--speakers
+    @extend .animated-background
+    min-height: 210px
+
+  .aspect_ratio--organizers
+    @extend .animated-background
+    min-height: 330px
+
+  .aspect_ratio--past_editions
+    @extend .animated-background
+    min-height: 140px
+
+  .aspect_ratio--attendees
+    min-height: 105px
+
+@media (min-width: 1024px)
+  .aspect_ratio--organizers
+    @extend .animated-background
+    min-height: 290px
+
+  .aspect_ratio--past_editions
+    @extend .animated-background
+    min-height: 123px
+
+@media (min-width: 1200px)
+  .aspect_ratio--speakers
+    @extend .animated-background
+    min-height: 255px
+
+  .aspect_ratio--organizers
+    @extend .animated-background
+    min-height: 350px
+
+  .aspect_ratio--past_editions
+    @extend .animated-background
+    min-height: 149px
+
+  .aspect_ratio--attendees
+    min-height: 113px

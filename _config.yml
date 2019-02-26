@@ -1,0 +1,88 @@
+title: StyLivJek
+email: your-email@example.com
+description: > # this means to ignore newlines until "baseurl:"
+  StyLivJek, a jekyll configuration
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://unplug.vc" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: jekyllrb
+github_username:  jekyll
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - hawkins
+  - jekyll-babel
+  - jekyll-minifier
+
+stylus:
+  compress: true
+  path: css
+
+jekyll_admin:
+  hidden_links:
+    - configuration
+
+# Exclude from processing.
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - script
+  - rakefile
+
+future: true
+defaults:
+  - scope:
+      path: "events"
+      type: "posts"
+    values:
+      tags: ["event"]
+      layout: "event"
+      permalink: "/event/:title"
+      location: "Insert this location location"
+      image: "http://localhost:4000/assets/img/location/1.png"
+      when_header: "September 14-17, 2018"
+      how_was_it: 
+      - "I'm a list"
+      - "Every element in the list will be a section in the text"
+      video: "https://example.com/video.mp4"
+      caratteristics:
+        altitude: "2240 mt"
+        cooking: "Traditional"
+        beds: "70 peope"
+      past_edition:
+        period: "14 - 15 - 16 - 17 February 2018"
+        image: "http://localhost:4000/assets/img/edition_cards/oberholz_refuge.png"
+      speakers:
+      - name: "Tim Cook"
+        role: "Investor"
+        image: "http://localhost:4000/assets/img/speakers/tim_cook.png"
+      attendees:
+      - name: "Algolia"
+        image: "http://localhost:4000/assets/img/attendees/algolia.png"
+      organizers:
+      - name: "STEFANO BERNARDI"
+        role: "Investor"
+        image: "http://localhost:4000/assets/img/organizers/bernardi.png"
+      - name: "LORENZO SANNA"
+        role: "Mountaineer"
+        image: "http://localhost:4000/assets/img/organizers/sanna.png"
+      schedule:
+      - day: "THURSDAY, SEPT 14"
+        program:
+        - time: "8.00 AM"
+          what: "Breakfast"
+          description: "Meet in the Hotel lobby and load up on energies for the day."
+        - time: "9.30 AM"
+          what: "Cable car for Seiser Alm"
+          description: "It's just a short walk to the cable car that will bring us to the
+            meadow."
+        - time: "10.00 AM"
+          what: "Hike to the Refuge"
+          description: "It's a 2.5-3h walk to the refuge. But it's a beautiful one."

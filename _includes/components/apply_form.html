@@ -1,0 +1,31 @@
+<div class="apply_form">
+  <div class="content">
+    <form accept-charset="UTF-8" action="https://usebasin.com/f/c33cc273093c" method="POST">
+      <div class="apply_form--close-container">
+        <a onclick="close_apply_form()">
+          <img src="{{'/assets/img/icons/close_modal.svg' | relative_url }}" alt=""> <span>CLOSE FORM</span>
+          <div class="general__clear"></div>
+        </a>
+      </div>
+      <p class="title--second--big">What's your full name?</p>
+      <input type="text" name="fullname">
+
+      <p class="title--second--big" >Email?</p>
+      <input type="email" name="email" id="email" required>
+      <p class="apply_form__error_message mail"></p>
+
+      <p class="title--second--big">What do you do?</p>
+      <input type="text" name="occupation">
+
+      <p class="title--second--big">Anything else we should know?</p>
+      <input type="text" name="anything-else">
+
+      <p class="title--second--big">Who else you think we should invite?</p>
+      <input type="text" name="who-else">
+
+      <input type="submit" value="Register!" class="apply_form__register-button pulse" /> 
+      <label class="apply_form--push-enter">push ENTER</label>
+      <p class="apply_form--sending-message"></p>
+    </form>
+  </div>
+</div>

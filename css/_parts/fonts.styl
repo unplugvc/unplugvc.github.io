@@ -1,0 +1,49 @@
+@import 'settings'
+
+/*
+   Nexa
+*/
+$nexa_path = $base_url '/assets/fonts/Nexa/NexaRustSans-Black.otf'
+/*
+   Gibson
+*/
+$gibson_light_path = $base_url '/assets/fonts/Gibson/gibson-light-webfont.ttf'
+$gibson_path = $base_url '/assets/fonts/Gibson/gibson-webfont.ttf'
+$gibson_semibold_path = $base_url '/assets/fonts/Gibson/gibson-semibold-webfont.ttf'
+$gibson_bold_path = $base_url '/assets/fonts/Gibson/gibson-bold-webfont.ttf'
+
+/*
+   Nexa
+*/
+@font-face
+  font-family: 'Nexa'
+  font-style: normal
+  font-weight: bolder
+  src: url($nexa_path)
+
+/*
+   Gibson
+*/
+@font-face
+  font-family: 'Gibson'
+  font-style: normal
+  font-weight: 300
+  src: url($gibson_path)
+
+@font-face
+  font-family: 'Gibson'
+  font-style: normal
+  font-weight: 200
+  src: url($gibson_light_path)
+
+@font-face
+  font-family: 'Gibson'
+  font-style: normal
+  font-weight: 500
+  src: url($gibson_semibold_path)
+
+@font-face
+  font-family: 'Gibson'
+  font-style: normal
+  font-weight: 700
+  src: url($gibson_bold_path)
