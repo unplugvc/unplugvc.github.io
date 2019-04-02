@@ -214,7 +214,7 @@ pricing_table:
     - 22% Italian VAT included
 header_home:
   title: Unplug V4
-  subtitle: An amazing 3-day retreat in the Dolomites with fellow investors and entrepreneurs
+  subtitle: An amazing 3 days retreat in the Dolomites with fellow investors and entrepreneurs
   image: http://localhost:4000/assets/img/mountain_placeholder.jpg
 footer_sponsors:
 - name: Token Economy
