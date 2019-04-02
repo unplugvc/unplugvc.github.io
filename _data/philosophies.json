@@ -1,17 +1,17 @@
 [
   {
-    "title": "Hiking",
-    "text": "We will take our hike to the refuge in the Dolomites, an absolute mecca for outdoor enthusiast, we will cross majestic mountains with expert alpine guides.",
+    "title": "Hikking",
+    "text": "We will take our hike to the refuge in the Oltres Cevedake, an absolute mecca for outdoor enthusiast with expert alpine guides.",
     "image": "http://localhost:4000/assets/img/pholosophies_cards/hiking.jpg"
   },
   {
-    "title": "Alpine dinner",
-    "text": "This year, we've added a new amazing alpine experience: we will start with a dinner in a luxury mountain chalet, surrounded by the peace of nature.",
-    "image": "http://localhost:4000/assets/img/pholosophies_cards/fiat.jpg"
+    "title": "Rafting",
+    "text": "This year, we've added a new amazing adrenalina experience Rafting on the River Noce in the Val di Sole in Trentino.",
+    "image": "http://localhost:4000/assets/img/pholosophies_cards/rafting.jpg"
   },
   {
     "title": "Wellness",
-    "text": "Our ****s hotel has a 1000sqm SPA which will help restore your physical and spiritual balance.",
+    "text": "Our ***s hotel offers a confrotable SPA which will help restore your physical and spiritual balance.",
     "image": "http://localhost:4000/assets/img/pholosophies_cards/spa.png"
   },
   {
@@ -30,9 +30,9 @@
     "image": "http://localhost:4000/assets/img/pholosophies_cards/mountaneers.png"
   },
   {
-    "title": "Astronomical exploration",
-    "text": "Do you ever find yourself staring up at the stars? We will have actual astronomers explain the wonders of the universe like you've never seen them.",
-    "image": "http://localhost:4000/assets/img/pholosophies_cards/sky-exploration.jpg"
+    "title": "Party",
+    "text": "After a long walk and a regenerating SPA why don't close the evening with a good party with DJ your new friends!",
+    "image": "http://localhost:4000/assets/img/pholosophies_cards/dj.jpg"
   },
   {
     "title": "Invite only",

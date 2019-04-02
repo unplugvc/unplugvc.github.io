@@ -12,7 +12,7 @@
   {
     "image": "http://localhost:4000/assets/img/icons/hike/time.svg",
     "title": "Hike time",
-    "text": "3"
+    "text": "4 hours"
   },
   {
     "image": "http://localhost:4000/assets/img/icons/hike/difficulty.svg",
@@ -22,6 +22,6 @@
   {
     "image": "http://localhost:4000/assets/img/icons/hike/days.svg",
     "title": "Days",
-    "text": "7"
+    "text": "3"
   }
 ]
