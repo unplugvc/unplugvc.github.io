@@ -12,7 +12,7 @@ how_was_it:
 
 - The Resort is a ***s hotel, in Dimaro. The Refuge is a mountain hut in the heart of “Ortles Cevedale”, grandiose mountains in the northern part of Trentino. From the stunning location of the hut at 2.436 mt., your view can spread above the neighboring mountains and the only sounds you will hear will come from nature. The location maintains the typical character of an alpine refuge, with basic-wood accommodations, intense food experience and cozy atmosphere.
 
-- We will sleep in bunk bed dormitory rooms and the. But then we'll hike back down to our hotel where you can relax hand have nice SPA.
+- We will sleep in bunk bed dormitory rooms but then we'll hike back down to our hotel where you can relax hand have nice SPA.
 
 #video: https://www.youtube.com/watch?v=kvSf09IXdvk
 video: https://www.youtube.com/embed/kvSf09IXdvk
