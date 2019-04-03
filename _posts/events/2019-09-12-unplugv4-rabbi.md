@@ -4,27 +4,24 @@ tags:
 - event
 layout: event
 permalink: "/event/:title"
-venue: Dorigoni's Hut
-location: Rabbi, Trentino, Italy
+location: Rabbi, Dimaro, Trentino, Italy
 image: http://localhost:4000/assets/img/location/dorigoni.jpg
-when_header: June 23-29, 2019
+when_header: June 26-29, 2019
 how_was_it:
-- The Unplug V4 will be a memorable event based in Trentino Alto Adige/Italy. The event is 3+3 where the first 3 days of the week you stay with your team and work. All the main facilities are provided in order to stimulate the efficiency and bonding of team activities.
+- We have chosen the best of the best. Unplug will be hosted in two amazing venues The Unplug Resort and The Unplug Refuge.
 
-- The last 3 days let’s give the time to spread the Unplug mood. We will hike up to the top of the mountain, walking close with other entrepreneurs coming from all part of the world to create connections and to get new inspiration.
-
--  The Resort is a ****s hotel, based in Merano, the Refuge is a mountain hut in the heart of “Ortles Cevedale”, grandiose mountains in the northern part of Trentino. From the stunning location of the hut at 2.436 mt., your view can spread above the neighboring mountains and the only sounds you will hear will come from nature. #The hut maintains the typical character of an alpine refuge, with basic-wood accommodations, intense food experience, and cozy atmosphere.
+- The Resort is a ***s hotel, in Dimaro. The Refuge is a mountain hut in the heart of “Ortles Cevedale”, grandiose mountains in the northern part of Trentino. From the stunning location of the hut at 2.436 mt., your view can spread above the neighboring mountains and the only sounds you will hear will come from nature. The location maintains the typical character of an alpine refuge, with basic-wood accommodations, intense food experience and cozy atmosphere.
 
 - We will sleep in bunk bed dormitory rooms and the. But then we'll hike back down to our hotel where you can relax hand have nice SPA.
 
-#video: https://www.youtube.com/watch?v=dUyhWS0rR1A
-video: https://www.youtube.com/embed/KYI5mAWJClA
+#video: https://www.youtube.com/watch?v=kvSf09IXdvk
+video: https://www.youtube.com/embed/kvSf09IXdvk
 caratteristics:
-  altitude: 2437 mt
+  altitude: 2436 mt
   cooking: Local and Traditional
   beds: 80 people
 past_edition:
-  period: 23 - 29 June 2019
+  period: 26 - 27 - 28 - 29 September 2019
   image: http://localhost:4000/assets/img/edition_cards/tires.png
 
 # speakers:
@@ -39,99 +36,91 @@ organizers:
   role: Business Developer
   image: http://localhost:4000/assets/img/organizers/lor.png
 schedule:
-- day: SUN, June 23
-  # program:
-  # - time: 1.30 PM
-  #   what: We leave from Milano Malpensa Airport
-  #   description: Meeting point is outside Terminal 2
-  # - time: 5.30 PM
-  #   what: Arrival at Unplug's Resort
-  #   description: Check-in and find your roommate fot the next days!
-  # - time: 7.00 PM
-  #   what: Cablecar time
-  #   description: Take the cable car to the Unplug Chalet
-  # - time: 8.00 PM
-  #   what: Welcome Bonfire Aperitivo
-  #   description: Drink, get cozy and get to meet your fellow adventurers
-  # - time: 8.30 PM
-  #   what: Dinner at Unplug's Chalet
-  #   description: Typical dinner in a luxury mountain chalet, with a simple 1 minute presentation of each guest
-- day: MON, June 24
-  # program:
-  # - time: 6.30 AM
-  #   what: Yoga
-  #   description: For the morning larks!
-  # - time: 7.30 AM
-  #   what: Breakfast
-  #   description: Get your energy for the day!
-  # - time: 10.00 AM
-  #   what: Bring your backpak!
-  #   description: We leave the Resort to reach our hiking path
-  # - time: 10.40 AM
-  #   what: Hiking!
-  #   description: We start our ascent towards the Unplug Hut
-  # - time: 12.00 PM
-  #   what: Lunch
-  #   description: We stop for a typical lunch at Rifugio Casinei
-  # - time: 3.00 PM
-  #   what: Enjoy and relax
-  #   description: As we finally get to the Hut, you can start finding your bed and enjoy the scenery
-  # - time: 4.30 PM
-  #   what: Chats and discussions
-  #   description: Get to know your fellow unpluggers a bit more
-  # - time: 19.30 PM
-  #   what: Dinner
-  #   description: Home made, slowfood and very typical dinner
-- day: TUE, June 25
-  # program:
-  # - time: 6.30 AM
-  #   what: Yoga
-  #   description: Connect body and mind with nature
-  # - time: 7.30 AM
-  #   what: Breakfast
-  #   description: Get your energy for the day!
-  # - time: 9.30 AM
-  #   what: Free time for chats, meditation or small hikes
-  #   description: Feel free to spend the morning as you want
-  # - time: 12.30 AM
-  #   what: Lunch Time
-  #   description: Typical alpine Lunch
-  # - time: 14.30 PM
-  #   what: Bye Bye Mountain Hut!
-  #   description: We start our descent through the "waterfalls trail", in which you can take a shower if you want
-  # - time: 5.30 PM
-  #   what: Back to the Unplug Resort
-  #   description: Shower / SPA / Relax / Drinks
-  # - time: 7.30 PM
-  #   what: Dinner
-  #   description: Home made, slowfood and very typical food
-  # - time: 9.00 PM
-  #   what: Talks
-  #   description: Inspiring talks from your fellow mountaineers
-- day: WED, June 26
-  # program:
-  # - time: 7.30 AM
-  #   what: Breakfast
-  #   description: Meet in the Hotel lobby and load up on energies for the day.
-  # - time: 8.30 AM
-  #   what: Discussion tables
-  #   description: If you're already awake
-  # - time: 10.00 AM
-  #   what: Bye Bye Unplug Resort
-  #   description: It's time to go back to the real world! Our bus leaves now.
-  # - time: 12.30 AM
-  #   what: Surprise Goodbye Lunch
-  #   description: Promise it's worth it.
-  # - time: 4.30 PM
-  #   what: Bye!
-  #   description: We say good bye! Please ensure you book travel from Milano Malpensa Airport
-  #     at 5:30pm at the earliest. If you need to leave earlier, please contact us before
-  #     purchasing a ticket to make sure we can accomodate. We suggest spending the
-  #     night in Milano and booking travel for the next morning! It is a stunning city.
-- day: THU, June 27
-- day: FRI, June 28
-- day: SAT, June 29
-date: '2019-06-23 12:00:00 +0000'
+- day: WEDNESDAY, JUNE 26
+  program:
+  - time: 15.00 PM
+    what: We leave from Verona Airport
+    description: Meeting point is outside the airport
+  - time: 5.30 PM
+    what: Arrival at Unplug's Resort
+    description: Check-in and find your roommate fot the next days and relax!
+  - time: 7.30 PM
+    what: Welcome Bonfire Aperitivo
+    description: Drink, get cozy and get to meet your fellow adventurers
+  - time: 8.30 PM
+    what: Dinner at Unplug's Resort
+    description: Typical dinner, with a simple 1 minute presentation of each guest.
+- day: THURSDAY, JUNE 27
+  program:
+  - time: 6.30 AM
+    what: Yoga
+    description: For the morning larks!
+  - time: 7.30 AM
+    what: Breakfast
+    description: Get your energy for the day!
+  - time: 9.00 AM
+    what: Bring your backpak!
+    description: We leave the Resort to reach our hiking path through the "waterfalls trail".
+  - time: 10.00 AM
+    what: Hiking!
+    description: We start our ascent towards the Unplug Hut
+  - time: 12.00 PM
+    what: Picnic
+    description: We stop for a picnic in the nature.
+  - time: 3.00 PM
+    what: Enjoy and relax
+    description: As we finally get to the Hut, you can start finding your bed and enjoy the scenery
+  - time: 4.30 PM
+    what: Chats and discussions
+    description: Get to know your fellow unpluggers a bit more
+  - time: 19.30 PM
+    what: Dinner
+    description: Home made, slowfood and very typical dinner
+- day: FRIDAY, JUNE 28
+  program:
+  - time: 6.30 AM
+    what: Yoga
+    description: Connect body and mind with nature
+  - time: 7.30 AM
+    what: Breakfast
+    description: Get your energy for the day!
+  - time: 9.30 AM
+    what: Hiking Time
+    description: We start our descent to the Unplug Resort, passing through typical ALM.
+  - time: 12.30 AM
+    what: Lunch Time
+    description: Typical alpine Lunch
+  - time: 15.00 PM
+    what: Adrenalina time
+    description: We descent the river Noce in an epic adrenalia adventure.
+  - time: 18.00 PM
+    what: Back to the Unplug Resort
+    description: Shower / SPA / Relax / Drinks
+  - time: 20.30 PM
+    what: Dinner
+    description: Home made, slowfood and very typical food
+  - time: 22.00 PM
+    what: DJ and sube party!!
+    description: Unplug V4 Closing party!
+- day: SATURDAY, JUNE 29
+  program:
+  - time: 7.30 AM
+    what: Breakfast
+    description: Meet in the Hotel lobby and load up on energies for the day.
+  - time: 8.30 AM
+    what: Discussion tables
+    description: If you're already awake
+  - time: 10.00 AM
+    what: Bye Bye Unplug Resort
+    description: It's time to go back to the real world! Our bus leaves now.
+  - time: 12.30 PM
+    what: Bye!
+    description: We say good bye! Please ensure you book travel from Verona Airport
+      at 14:30pm at the earliest. If you need to leave earlier, please contact us before
+      purchasing a ticket to make sure we can accomodate. We suggest spending the
+      night in Verona and booking travel for the next morning! It is a stunning city.
+date: '2019-06-26 12:00:00 +0000'
+venue: Rifugio Dorigoni
 gallery-small:
   image:
   - http://localhost:4000/assets/img/events_photos/dorigoni/01.jpg
@@ -144,11 +133,11 @@ gallery-small:
   - http://localhost:4000/assets/img/events_photos/dorigoni/08.jpg
   - http://localhost:4000/assets/img/events_photos/dorigoni/09.jpg
   - http://localhost:4000/assets/img/events_photos/dorigoni/10.jpg
-  - http://localhost:4000/assets/img/events_photos/dorigoni/11.jpg
   - http://localhost:4000/assets/img/events_photos/dorigoni/12.jpg
   - http://localhost:4000/assets/img/events_photos/dorigoni/13.jpg
   - http://localhost:4000/assets/img/events_photos/dorigoni/14.jpg
   - http://localhost:4000/assets/img/events_photos/dorigoni/15.jpg
+  - http://localhost:4000/assets/img/events_photos/dorigoni/11.jpg
   - http://localhost:4000/assets/img/events_photos/dorigoni/16.jpg
 gallery-big:
   image:
@@ -225,7 +214,7 @@ pricing_table:
     - 22% Italian VAT included
 header_home:
   title: Unplug V4
-  subtitle: An amazing 7-days retreat in the Dolomites with teams, fellow investors and entrepreneurs
+  subtitle: An amazing 3 days retreat in the Dolomites with fellow investors and entrepreneurs
   image: http://localhost:4000/assets/img/mountain_placeholder.jpg
 footer_sponsors:
 - name: Token Economy
