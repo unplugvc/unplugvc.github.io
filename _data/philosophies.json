@@ -6,18 +6,13 @@
   },
   {
     "title": "Rafting",
-    "text": "This year, we've added a new amazing adrenalina experience Rafting on the River Noce in the Val di Sole in Trentino.",
+    "text": "This year, we've added a new amazing experience Rafting on the River Noce in the Val di Sole in Trentino.",
     "image": "http://localhost:4000/assets/img/pholosophies_cards/rafting.jpg"
   },
   {
     "title": "Wellness",
     "text": "Our ***s hotel offers a confrotable SPA which will help restore your physical and spiritual balance.",
     "image": "http://localhost:4000/assets/img/pholosophies_cards/spa.png"
-  },
-  {
-    "title": "Yoga",
-    "text": "Regenerate your mind-body connection with our Yoga instructors, in the peace and tranquillity of a mountain setting.",
-    "image": "http://localhost:4000/assets/img/pholosophies_cards/Yoga.jpg"
   },
   {
     "title": "Amazing traditional food",
@@ -28,11 +23,6 @@
     "title": "Professional alpine guides",
     "text": "We will be joined by professional, licensed alpine guides and mountaineers.",
     "image": "http://localhost:4000/assets/img/pholosophies_cards/mountaneers.png"
-  },
-  {
-    "title": "Party",
-    "text": "After a long walk and a regenerating SPA why don't close the evening with a good party with DJ your new friends!",
-    "image": "http://localhost:4000/assets/img/pholosophies_cards/dj.jpg"
   },
   {
     "title": "Invite only",

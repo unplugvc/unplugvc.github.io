@@ -22,7 +22,7 @@ caratteristics:
   beds: 100 people
 past_edition:
   period: 12 - 13 - 14 - 15 September 2018
-  image: http://localhost:4000/assets/img/edition_cards/tires.png
+  image: http://localhost:4000/assets/img/edition_cards/tuckett.png
 
 # speakers:
 # - name: To be announced
