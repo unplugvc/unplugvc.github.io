@@ -8,11 +8,11 @@ location: Rabbi, Dimaro, Trentino, Italy
 image: http://localhost:4000/assets/img/location/dorigoni.jpg
 when_header: June 26-29, 2019
 how_was_it:
-- We have chosen the best of the best. Unplug will be hosted in two amazing venues The Unplug Resort and The Unplug Refuge.
+- We have chosen the best of the best. Unplug will be hosted in two amazing venues&#58; The Unplug Resort and The Unplug Refuge.
 
-- The Resort is a ***s hotel, in Dimaro. The Refuge is a mountain hut in the heart of “Ortles Cevedale”, grandiose mountains in the northern part of Trentino. From the stunning location of the hut at 2.436 mt., your view can spread above the neighboring mountains and the only sounds you will hear will come from nature. The location maintains the typical character of an alpine refuge, with basic-wood accommodations, intense food experience and cozy atmosphere.
+- The Resort is a ***s hotel, in Dimaro. The Refuge is a mountain hut in the heart of “Ortles Cevedale”, grandiose mountains in the northern part of Trentino. From the stunning location of the hut at 2.436 mt. your view can spread above the neighboring mountains and the only sounds you will hear will come from nature. The location maintains the typical character of an alpine refuge, with basic wood accommodations, intense food experience and cozy atmosphere.
 
-- We will sleep in bunk bed dormitory rooms but then we'll hike back down to our hotel where you can relax hand have nice SPA.
+- We will sleep in bunk bed dormitory rooms but then we'll hike back down to our hotel where you can relax hand have nice SPA session.
 
 #video: https://www.youtube.com/watch?v=kvSf09IXdvk
 video: https://www.youtube.com/embed/kvSf09IXdvk
@@ -40,7 +40,7 @@ schedule:
   program:
   - time: 15.00 PM
     what: We leave from Verona Airport
-    description: Meeting point is outside the airport
+    description: Meeting point is outside the airport and train stations
   - time: 5.30 PM
     what: Arrival at Unplug's Resort
     description: Check-in and find your roommate fot the next days and relax!
@@ -49,24 +49,21 @@ schedule:
     description: Drink, get cozy and get to meet your fellow adventurers
   - time: 8.30 PM
     what: Dinner at Unplug's Resort
-    description: Typical dinner, with a simple 1 minute presentation of each guest.
+    description: Typical dinner, with a simple 1 minute presentation of each guest
 - day: THURSDAY, JUNE 27
   program:
-  - time: 6.30 AM
-    what: Yoga
-    description: For the morning larks!
   - time: 7.30 AM
     what: Breakfast
     description: Get your energy for the day!
   - time: 9.00 AM
     what: Bring your backpak!
-    description: We leave the Resort to reach our hiking path through the "waterfalls trail".
+    description: We leave the Resort to reach our hiking path through the "waterfalls trail"
   - time: 10.00 AM
     what: Hiking!
     description: We start our ascent towards the Unplug Hut
   - time: 12.00 PM
     what: Picnic
-    description: We stop for a picnic in the nature.
+    description: We stop for a picnic in nature
   - time: 3.00 PM
     what: Enjoy and relax
     description: As we finally get to the Hut, you can start finding your bed and enjoy the scenery
@@ -75,44 +72,41 @@ schedule:
     description: Get to know your fellow unpluggers a bit more
   - time: 19.30 PM
     what: Dinner
-    description: Home made, slowfood and very typical dinner
+    description: Home made, slow food and very typical dinner
 - day: FRIDAY, JUNE 28
   program:
-  - time: 6.30 AM
-    what: Yoga
-    description: Connect body and mind with nature
   - time: 7.30 AM
     what: Breakfast
     description: Get your energy for the day!
   - time: 9.30 AM
     what: Hiking Time
-    description: We start our descent to the Unplug Resort, passing through typical ALM.
+    description: We start our descent to the Unplug Resort
   - time: 12.30 AM
     what: Lunch Time
     description: Typical alpine Lunch
   - time: 15.00 PM
     what: Adrenalina time
-    description: We descent the river Noce in an epic adrenalia adventure.
+    description: We descend the river Noce in an epic adrenalinic adventure
   - time: 18.00 PM
     what: Back to the Unplug Resort
     description: Shower / SPA / Relax / Drinks
   - time: 20.30 PM
     what: Dinner
-    description: Home made, slowfood and very typical food
+    description: Home made, slow food and very typical food
   - time: 22.00 PM
-    what: DJ and sube party!!
+    what: DJ party!!
     description: Unplug V4 Closing party!
 - day: SATURDAY, JUNE 29
   program:
   - time: 7.30 AM
     what: Breakfast
-    description: Meet in the Hotel lobby and load up on energies for the day.
+    description: Meet in the Hotel lobby and load up on energies for the day
   - time: 8.30 AM
     what: Discussion tables
     description: If you're already awake
   - time: 10.00 AM
     what: Bye Bye Unplug Resort
-    description: It's time to go back to the real world! Our bus leaves now.
+    description: It's time to go back to the real world! Our bus leaves now
   - time: 12.30 PM
     what: Bye!
     description: We say good bye! Please ensure you book travel from Verona Airport
@@ -158,57 +152,39 @@ gallery-big:
   - http://localhost:4000/assets/img/events_photos/dorigoni/big/15.jpg
   - http://localhost:4000/assets/img/events_photos/dorigoni/big/16.jpg
 pricing_table:
-- title: Early Bird Ticket
-  price: 890
-  elements:
-  - icon: http://localhost:4000/assets/img/pricing_table/double_room.svg
-    text:
-    - 2 nights in a **** Hotel with SPA in Double Room 
-    - 1 night in a Mountain hut
-  - icon: http://localhost:4000/assets/img/pricing_table/transfer.svg
-    text:
-    - Transfer to and from
-    - Airport Milano Malpensa
-  - icon: http://localhost:4000/assets/img/pricing_table/special_dinner.svg
-    text:
-    - 3 dinners, of which 1 in our special dinner in our Chalet
-    - 3 lunches, of which 1 in a surprise location
-  - icon: 
-    text:
-    - 22% Italian VAT included
 - title: Normal Ticket
-  price: 1190
+  price: 990
   elements:
   - icon: http://localhost:4000/assets/img/pricing_table/double_room.svg
     text:
-    - 2 nights in a **** Hotel with SPA in Double Room 
+    - 2 nights in a *** Hotel with SPA in Double Room 
     - 1 night in a Mountain hut
   - icon: http://localhost:4000/assets/img/pricing_table/transfer.svg
     text:
     - Transfer to and from
-    - Airport Milano Malpensa
+    - Verona airport and train station
   - icon: http://localhost:4000/assets/img/pricing_table/special_dinner.svg
     text:
-    - 3 dinners, of which 1 in our special dinner in our Chalet
-    - 3 lunches, of which 1 in a surprise location
+    - 3 dinners
+    - 3 lunches
   - icon: 
     text:
     - 22% Italian VAT included
 - title: Single Room Ticket
-  price: 1390
+  price: 1490
   elements:
   - icon: http://localhost:4000/assets/img/pricing_table/double_room.svg
     text:
-    - 2 nights in a **** Hotel with SPA in Single Room 
+    - 2 nights in a *** Hotel with SPA in Single Room 
     - 1 night in a Mountain hut
   - icon: http://localhost:4000/assets/img/pricing_table/transfer.svg
     text:
     - Transfer to and from
-    - Airport Milano Malpensa
+    - Verona airport and train station
   - icon: http://localhost:4000/assets/img/pricing_table/special_dinner.svg
     text:
-    - 3 dinners, of which 1 in our special dinner in our Chalet
-    - 3 lunches, of which 1 in a surprise location
+    - 3 dinners
+    - 3 lunches
   - icon: 
     text:
     - 22% Italian VAT included

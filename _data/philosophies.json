@@ -1,17 +1,17 @@
 [
   {
     "title": "Hikking",
-    "text": "We will take our hike to the refuge in the Oltres Cevedake, an absolute mecca for outdoor enthusiast with expert alpine guides.",
+    "text": "We will take our hike to the refuge in the Ortles Cevedale mountains, an absolute mecca for outdoor enthusiast, with expert alpine guides.",
     "image": "http://localhost:4000/assets/img/pholosophies_cards/hiking.jpg"
   },
   {
     "title": "Rafting",
-    "text": "This year, we've added a new amazing experience Rafting on the River Noce in the Val di Sole in Trentino.",
+    "text": "This year, we've added a new amazing experience: rafting on the Noce River in the magnificient Val di Sole.",
     "image": "http://localhost:4000/assets/img/pholosophies_cards/rafting.jpg"
   },
   {
     "title": "Wellness",
-    "text": "Our ***s hotel offers a confrotable SPA which will help restore your physical and spiritual balance.",
+    "text": "Our ***s hotel offers a comfrotable SPA which will help restore your physical and spiritual balance.",
     "image": "http://localhost:4000/assets/img/pholosophies_cards/spa.png"
   },
   {
