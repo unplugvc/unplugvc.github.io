@@ -15,7 +15,8 @@ how_was_it:
 - We will sleep in bunk bed dormitory rooms but then we'll hike back down to our hotel where you can relax hand have nice SPA session.
 
 #video: https://www.youtube.com/watch?v=kvSf09IXdvk
-video: https://www.youtube.com/embed/kvSf09IXdvk
+#video: https://www.youtube.com/embed/kvSf09IXdvk
+video: https://youtu.be/kvSf09IXdvk
 caratteristics:
   altitude: 2436 mt
   cooking: Local and Traditional
