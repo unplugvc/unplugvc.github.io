@@ -39,7 +39,7 @@ schedule:
 - day: WEDNESDAY, JUNE 26
   program:
   - time: 15.00 PM
-    what: We leave from Verona Airport
+    what: We leave from Milano Linate Airport
     description: Meeting point is outside the airport and train stations
   - time: 5.30 PM
     what: Arrival at Unplug's Resort
@@ -109,10 +109,10 @@ schedule:
     description: It's time to go back to the real world! Our bus leaves now
   - time: 12.30 PM
     what: Bye!
-    description: We say good bye! Please ensure you book travel from Verona Airport
+    description: We say good bye! Please ensure you book travel from Milano Linate Airport
       at 14:30pm at the earliest. If you need to leave earlier, please contact us before
       purchasing a ticket to make sure we can accomodate. We suggest spending the
-      night in Verona and booking travel for the next morning! It is a stunning city.
+      night in Milan and booking travel for the next morning! It is a stunning city.
 date: '2019-06-26 12:00:00 +0000'
 venue: Rifugio Dorigoni
 gallery-small:
@@ -162,7 +162,7 @@ pricing_table:
   - icon: http://localhost:4000/assets/img/pricing_table/transfer.svg
     text:
     - Transfer to and from
-    - Verona airport and train station
+    - Milano Linate airport and train station
   - icon: http://localhost:4000/assets/img/pricing_table/special_dinner.svg
     text:
     - 3 dinners
@@ -180,7 +180,7 @@ pricing_table:
   - icon: http://localhost:4000/assets/img/pricing_table/transfer.svg
     text:
     - Transfer to and from
-    - Verona airport and train station
+    - Milano Linate airport and train station
   - icon: http://localhost:4000/assets/img/pricing_table/special_dinner.svg
     text:
     - 3 dinners
