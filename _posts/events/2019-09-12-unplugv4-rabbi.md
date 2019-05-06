@@ -39,7 +39,7 @@ organizers:
 schedule:
 - day: WEDNESDAY, JUNE 26
   program:
-  - time: 15.00 PM
+  - time: 14.30 PM
     what: We leave from Milano Linate Airport
     description: Meeting point is outside the airport and train stations
   - time: 5.30 PM
