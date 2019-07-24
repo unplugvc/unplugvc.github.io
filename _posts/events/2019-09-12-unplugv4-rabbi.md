@@ -6,7 +6,7 @@ layout: event
 permalink: "/event/:title"
 location: Rabbi, Dimaro, Trentino, Italy
 image: http://localhost:4000/assets/img/location/dorigoni.jpg
-when_header: June 26-29, 2019
+when_header: Summer 2020
 how_was_it:
 - We have chosen the best of the best. Unplug will be hosted in two amazing venues&#58; The Unplug Resort and The Unplug Refuge.
 
@@ -114,7 +114,7 @@ schedule:
       at 14:30pm at the earliest. If you need to leave earlier, please contact us before
       purchasing a ticket to make sure we can accomodate. We suggest spending the
       night in Milan and booking travel for the next morning! It is a stunning city.
-date: '2019-06-26 12:00:00 +0000'
+date: '2019-10-26 12:00:00 +0000'
 venue: Rifugio Dorigoni
 gallery-small:
   image:
