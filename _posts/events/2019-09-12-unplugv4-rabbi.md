@@ -6,7 +6,7 @@ layout: event
 permalink: "/event/:title"
 location: Rabbi, Dimaro, Trentino, Italy
 image: http://localhost:4000/assets/img/location/dorigoni.jpg
-when_header: Summer 2020
+when_header: Summer 2019
 how_was_it:
 - We have chosen the best of the best. Unplug will be hosted in two amazing venues&#58; The Unplug Resort and The Unplug Refuge.
 
@@ -23,7 +23,7 @@ caratteristics:
   beds: 80 people
 past_edition:
   period: 26 - 27 - 28 - 29 September 2019
-  image: http://localhost:4000/assets/img/edition_cards/tires.png
+  image: http://localhost:4000/assets/img/edition_cards/dorigoni.jpg
 
 # speakers:
 # - name: To be announced

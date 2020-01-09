@@ -1,18 +1,18 @@
 [
   {
-    "title": "Hiking",
-    "text": "We will take our hike to the refuge in the Ortles Cevedale mountains, an absolute mecca for outdoor enthusiast, with expert alpine guides.",
-    "image": "http://localhost:4000/assets/img/pholosophies_cards/hiking.jpg"
+    "title": "Ski",
+    "text": "We will take one day skiing around the dolomites through 1200 kilometers of slopes surrounded by the dolomite's magnificent peaks.",
+    "image": "http://localhost:4000/assets/img/pholosophies_cards/ski.jpg"
   },
   {
-    "title": "Rafting",
-    "text": "This year, we've added a new amazing experience: rafting on the Noce River in the magnificient Val di Sole.",
-    "image": "http://localhost:4000/assets/img/pholosophies_cards/rafting.jpg"
+    "title": "Snowshoes",
+    "text": "This year, we've added a new amazing experience: Snowshoes around the woods in the magnificent environment of Marmolada.",
+    "image": "http://localhost:4000/assets/img/pholosophies_cards/showshoes.jpg"
   },
   {
     "title": "Wellness",
-    "text": "Our ***s hotel offers a comfrotable SPA which will help restore your physical and spiritual balance.",
-    "image": "http://localhost:4000/assets/img/pholosophies_cards/spa.png"
+    "text": "Hosted by the QC Terme Dolomiti with private healthy dinner, you will stay without technology restoring your physical and spiritual balance.",
+    "image": "http://localhost:4000/assets/img/pholosophies_cards/QCterme.png"
   },
   {
     "title": "Amazing traditional food",
@@ -22,11 +22,11 @@
   {
     "title": "Professional alpine guides",
     "text": "We will be joined by professional, licensed alpine guides and mountaineers.",
-    "image": "http://localhost:4000/assets/img/pholosophies_cards/mountaneers.png"
+    "image": "http://localhost:4000/assets/img/pholosophies_cards/mountaneer00.jpg"
   },
   {
     "title": "Invite only",
     "text": "The event is invite-only and you will spend time with like-minded but diverse and extremely impressive people.",
-    "image": "http://localhost:4000/assets/img/pholosophies_cards/Speak%20same%20language.jpg"
+    "image": "http://localhost:4000/assets/img/pholosophies_cards/private.jpg"
   }
 ]

@@ -2,16 +2,16 @@
   {
     "image": "http://localhost:4000/assets/img/icons/hike/people.svg",
     "title": "Group size",
-    "text": "80 people"
+    "text": "60 people"
   },
   {
     "image": "http://localhost:4000/assets/img/icons/hike/distance.svg",
-    "title": "Vertical ascent",
-    "text": "1000 meters"
+    "title": "Ski slopes",
+    "text": "1200 km"
   },
   {
     "image": "http://localhost:4000/assets/img/icons/hike/time.svg",
-    "title": "Hike time",
+    "title": "Snowshoes time",
     "text": "4 hours"
   },
   {
