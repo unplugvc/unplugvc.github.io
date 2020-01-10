@@ -16,13 +16,13 @@ how_was_it:
 
 #video: https://www.youtube.com/watch?v=kvSf09IXdvk
 #video: https://www.youtube.com/embed/kvSf09IXdvk
-video: https://youtu.be/kvSf09IXdvk
+video: https://www.youtube.com/embed/I9WYIX-eBWI
 caratteristics:
   altitude: 2436 mt
   cooking: Local and Traditional
   beds: 80 people
 past_edition:
-  period: 26 - 27 - 28 - 29 September 2019
+  period: 26 - 27 - 28 - 29 June 2019
   image: http://localhost:4000/assets/img/edition_cards/dorigoni.jpg
 
 # speakers:
@@ -134,6 +134,18 @@ gallery-small:
   - http://localhost:4000/assets/img/events_photos/dorigoni/15.jpg
   - http://localhost:4000/assets/img/events_photos/dorigoni/11.jpg
   - http://localhost:4000/assets/img/events_photos/dorigoni/16.jpg
+  - http://localhost:4000/assets/img/events_photos/dorigoni/17.jpg
+  - http://localhost:4000/assets/img/events_photos/dorigoni/18.jpg
+  - http://localhost:4000/assets/img/events_photos/dorigoni/19.jpg
+  - http://localhost:4000/assets/img/events_photos/dorigoni/20.jpg
+  - http://localhost:4000/assets/img/events_photos/dorigoni/21.jpg
+  - http://localhost:4000/assets/img/events_photos/dorigoni/22.jpg
+  - http://localhost:4000/assets/img/events_photos/dorigoni/23.jpg
+  - http://localhost:4000/assets/img/events_photos/dorigoni/24.jpg
+  - http://localhost:4000/assets/img/events_photos/dorigoni/25.jpg
+  - http://localhost:4000/assets/img/events_photos/dorigoni/26.jpg
+  - http://localhost:4000/assets/img/events_photos/dorigoni/27.jpg
+  
 gallery-big:
   image:
   - http://localhost:4000/assets/img/events_photos/dorigoni/big/01.jpg
@@ -152,6 +164,17 @@ gallery-big:
   - http://localhost:4000/assets/img/events_photos/dorigoni/big/14.jpg
   - http://localhost:4000/assets/img/events_photos/dorigoni/big/15.jpg
   - http://localhost:4000/assets/img/events_photos/dorigoni/big/16.jpg
+  - http://localhost:4000/assets/img/events_photos/dorigoni/big/17.jpg
+  - http://localhost:4000/assets/img/events_photos/dorigoni/big/18.jpg
+  - http://localhost:4000/assets/img/events_photos/dorigoni/big/19.jpg
+  - http://localhost:4000/assets/img/events_photos/dorigoni/big/20.jpg
+  - http://localhost:4000/assets/img/events_photos/dorigoni/big/21.jpg
+  - http://localhost:4000/assets/img/events_photos/dorigoni/big/22.jpg
+  - http://localhost:4000/assets/img/events_photos/dorigoni/big/23.jpg
+  - http://localhost:4000/assets/img/events_photos/dorigoni/big/24.jpg
+  - http://localhost:4000/assets/img/events_photos/dorigoni/big/25.jpg
+  - http://localhost:4000/assets/img/events_photos/dorigoni/big/26.jpg
+  - http://localhost:4000/assets/img/events_photos/dorigoni/big/27.jpg
 pricing_table:
 - title: Normal Ticket
   price: 990
