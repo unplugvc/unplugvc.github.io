@@ -79,7 +79,7 @@ organizers:
   image: http://localhost:4000/assets/img/organizers/bernardi.png
 - name: LORENZO SANNA
   role: Business Developer
-  image: http://localhost:4000/assets/img/organizers/lor.png
+  image: http://localhost:4000/assets/img/organizers/lor-winter.jpg
 schedule:
 - day: SUNDAY, MARCH 15
   program:
@@ -194,42 +194,29 @@ gallery-big:
     - http://localhost:4000/assets/img/events_photos/2017_winter_retreat/big/16.jpg
 pricing_table:
   - title: Early Bird
-    price: 690
+    price: 799
     elements: 
       - icon: http://localhost:4000/assets/img/pricing_table/double_room.svg
         text: ['3 nights in a private  Hotel***', 'private bed in a 3 or 4 people room']
       - icon: http://localhost:4000/assets/img/pricing_table/transfer.svg
         text: ['Transfer to and from Verona']
       - icon: http://localhost:4000/assets/img/pricing_table/SPA.svg
-        text: ['Entrance in the QT Dolomiti Terme SPA', 'including Dinner']
+        text: ['Entrance in the QC Dolomiti Terme SPA', 'including Dinner']
       - icon: http://localhost:4000/assets/img/pricing_table/special_dinner.svg
-        text: ['1 Lunch in a surprise location', '1 typical dinner in the hotel','1 special dinner in a refuge']
+        text: ['1 typical dinner in the hotel','1 special dinner in a refuge']
       - icon:
         text: ['22% Italian VAT included']
-  - title: Private Double Room
-    price: 890
-    elements: 
-      - icon: http://localhost:4000/assets/img/pricing_table/double_room.svg
-        text: ['3 nights in a private  Hotel***', 'Double Room', ' &nbsp; ']
-      - icon: http://localhost:4000/assets/img/pricing_table/transfer.svg
-        text: ['Transfer to and from Verona']
-      - icon: http://localhost:4000/assets/img/pricing_table/SPA.svg
-        text: ['Entrance in the QT Dolomiti Terme SPA', 'including Dinner']
-      - icon: http://localhost:4000/assets/img/pricing_table/special_dinner.svg
-        text: ['1 Lunch in a surprise location', '1 typical dinner in the hotel','1 special dinner in a refuge']
-      - icon:
-        text: ['22% Italian VAT included']
-  - title: Private Single Room Ticket
-    price: 1390
+  - title: Private Single Room
+    price: 1099
     elements: 
       - icon: http://localhost:4000/assets/img/pricing_table/double_room.svg
         text: ['3 nights in a private  Hotel***', 'Single room', ' &nbsp; ']
       - icon: http://localhost:4000/assets/img/pricing_table/transfer.svg
         text: ['Transfer to and from Verona']
       - icon: http://localhost:4000/assets/img/pricing_table/SPA.svg
-        text: ['Entrance in the QT Dolomiti Terme SPA', 'including Dinner']
+        text: ['Entrance in the QC Dolomiti Terme SPA', 'including Dinner']
       - icon: http://localhost:4000/assets/img/pricing_table/special_dinner.svg
-        text: ['1 Lunch in a surprise location', '1 typical dinner in the hotel','1 special dinner in a refuge']
+        text: ['1 typical dinner in the hotel','1 special dinner in a refuge']
       - icon:
         text: ['22% Italian VAT included']
 header_home: 
